@@ -1,0 +1,24 @@
+// Set scenario information
+wm_mapdescription allied "The Allies must reclaim the city and steal The Radio Transmitter Parts located in The Church."
+wm_mapdescription axis "The Axis must defend The City and The Radio Transmitter located in the church."
+wm_mapdescription neutral "The Allies should blow up The Getto Wall if they want to get to the church easly. The Axis would like to stop them."
+
+// Axis Objective Descriptions
+wm_objective_axis_desc	1	"Primary Objective:**Don't let the Allies get The Flag! You must hold this point of the city until reinforcements arrive!**"
+wm_objective_axis_desc	2	"Primary Objective:**Guard the Getto Wall! Don't let the Allies to blow it up with dynamite! If they do that- the city will be lost!**"
+wm_objective_axis_desc	3	"Primary Objective:**Prevent the Allies from destroying The Church Doors! They can't take their hands to The Radio Transmitter!**"
+wm_objective_axis_desc	4	"Primary Objective:**Guard The Tower's Secret Entrance! Even a satchel charge can destroy the seal!**"
+wm_objective_axis_desc	5	"Primary Objective:**Don't let the Allies to steal The Radio Parts from the church! If they do that the whole battle will be lost!**"
+wm_objective_axis_desc	6     "Secondary Objective:**Build The Command Post!**"
+wm_objective_axis_desc	7     "Secondary Objective:**Mind this weak wall. The Allies can blow it up!**"
+wm_objective_axis_desc	8	"Secondary Objective:**The Allies will be able to escape using The Sacristy Window if they destroy it's bars!"
+
+// Allied Objective Descriptions
+wm_objective_allied_desc	1	"Primary Objective:**Capture The Flag and hold this part of The City! From this place it will be much more easy to get to The Church.**"
+wm_objective_allied_desc	2	"Primary Objective:**Blow up The Getto Wall! If you do that The City will be yours!**"
+wm_objective_allied_desc	3	"Primary Objective:**Destroy The Church Doors and get inside.."
+wm_objective_allied_desc	4	"Primary Objective:**Find and blow up The Tower's Secret Entrance to The Church! You can use a satchel charge to break the seal.**"
+wm_objective_allied_desc	5	"Primary Objective:**Steal The Radio Transmitter Parts and take them to The Command Post!"
+wm_objective_allied_desc	6     "Secondary Objective:**Build The Command Post!**"
+wm_objective_allied_desc	7     "Secondary Objective:**You will be able to use this alternative entrance if you blow up the weak wall.**"
+wm_objective_allied_desc	8     "Secondary Objective:**Destroy The Sacristy Window bars and use new escape way!"

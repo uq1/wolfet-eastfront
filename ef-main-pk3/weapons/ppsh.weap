@@ -1,0 +1,84 @@
+weaponDef
+{
+	// This basically fills out weaponInfo_t
+	client {
+		standModel			"models/weapons2/thompson/thompson_stand.mdc"	// weapon pickup 'stand' (do we still use this?)
+		pickupModel			"models/weapons2/ppsh/ppsh-3rd.md3"
+		//pickupSound		"sound/misc/w_pkup.wav"
+		droppedAnglesHack
+		
+		weaponConfig		"models/weapons2/ppsh/weapon.cfg"
+		handsModel			"models/weapons2/ppsh/v_ppsh_anim.md3"
+		
+		flashDlightColor	1.0 0.6 0.23
+		flashSound			"sound/weapons/ppsh/thompson_fire.wav"		// supports up to 4 flash sounds
+		flashEchoSound		"sound/weapons/thompson/thompson_far.wav"		// supports up to 4 flash echo sounds
+		//lastShotSound		""										// supports up to 4 last shot sounds
+		
+		//readySound		""
+		//firingSound		""									// no weapons seem to use this, basically it's a replacement hum for readysound, but then when firing
+		//overheatSound		""
+		reloadSound			"sound/weapons/thompson/thompson_reload.wav"
+		reloadFastSound		"sound/weapons/thompson/thompson_reload_fast.wav"		// some weapons have fast reloads due to the skill system
+		//spinupSound		""									// sound started when fire button goes down, and stepped on when the first fire event happens
+		//spindownSound		""									// sound called if the above is running but player doesn't follow through and fire
+		//switchSound		""									// allow overriding of weaponswitch sound
+		
+		//weaponIcon			"icons/iconw_thompson_1"
+		weaponSelectedIcon	"icons/iconw_thompson_1_select"
+		
+		//missileModel		""
+		//missileSound		""
+		//missileTrailFunc	""									// supports "GrenadeTrail", "RocketTrail", "PyroSmokeTrail" and "DynamiteTrail" (we REALLY want a particle system for this)
+		//missileDlight		0
+		//missileDlightColor	0 0 0							// do we still use this?
+		
+		ejectBrassFunc		"MachineGunEjectBrass"				// supports "MachineGunEjectBrass" and "PanzerFaustEjectBrass"
+		
+		//modModel 1		""
+		
+		firstPerson {
+			model			"models/weapons2/ppsh/v_ppsh_main.md3"
+			flashModel		"models/weapons2/ppsh/v_ppsh_flash.mdc"
+
+			// weapon building
+			// the parts are numbered because there are some hardcoded references for some weapons to certain parts
+			weaponLink
+			{
+				part 0
+				{
+					tag		"tag_drum"
+					model	"models/weapons2/ppsh/v_ppsh_drum.md3"
+				}
+				part 1
+				{
+					tag		"tag_sleeve"
+					model	"models/weapons2/ppsh/v_ppsh_sleeve.md3"
+					axisskin	"models/weapons2/ppsh/ppsh_axis.skin"
+					alliedskin	"models/weapons2/ppsh/ppsh_allied.skin"
+				}
+				part 2
+				{
+					tag		"tag_bolt"
+					model	"models/weapons2/ppsh/v_ppsh_bolt.md3"
+				}
+				part 3
+				{
+					tag		"tag_latch"
+					model	"models/weapons2/ppsh/v_ppsh_latch.md3"
+				}
+				part 4
+				{
+					tag		"tag_lefthand"
+					model	"models/weapons2/ppsh/v_ppsh_lefthand.md3"
+				}
+			}
+		}
+		
+		thirdPerson {
+			//model			"models/weapons2/thompson/thompson.mdc"
+			model			"models/weapons2/ppsh/ppsh-3rd.md3"
+			flashmodel		"models/weapons2/ppsh/v_ppsh_flash.mdc"
+		}
+	}
+}

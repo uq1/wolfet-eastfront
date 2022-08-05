@@ -1,0 +1,69 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "5280 -1764 38"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "5144 1412 49"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-796 1803 38"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "-1040 -1809 49"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "1687 120 123"
+spawnflags "0"
+}
+{
+classname "npc_flametank"
+origin "1401 -1548 66"
+angle "90"
+}
+{
+classname "npc_tank_light"
+origin "5119 517 136"
+angle "180"
+}
+{
+classname "npc_tank_light"
+origin "-710 -442 114"
+angle "0"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9529 1051 1236"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9151 2663 2015"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9129 5138 1747"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-9146 5477 1019"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-9710 1591 1013"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-9116 -208 974"
+}
+

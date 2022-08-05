@@ -1,0 +1,36 @@
+2006-11-11: stumpy: initial changes to make a linux compile build and run
+2006-11-12: stumpy: reworked loading screen
+2006-11-12: stumpy: remove etpub's unneeded versioning scheme, consolidate ETE versions into game/etenhanced.h
+2006-11-18: stumpy: basic scoreboard cleanup, still a lot to be done still, but it's readable now
+2006-11-18: stumpy: revise loading screen to include mission briefing from .arena file
+2006-11-19: stumpy: fix throwing knives ammo count bug
+                    change flag/covie in disguise symbol in 2D HUD to default location beside the head
+                    removed lagometer background shader, use default bg and border colors
+2006-11-19: stumpy: fix disconnect icon to use the lagometer cg.hud.lagometer values
+2006-11-23: stumpy: Location name in fireteam dialog as an option, client cvar cg_locationMode used
+                    Understands etpro format "maps/MAPNAME_loc.dat" style files
+                    if client-side file "maps/MAPNAME_loc_override.dat" exists, it is used client-side
+2006-11-23: stumpy: basic square command map on HUD functionality
+2006-11-23: stumpy: FOV lines on command map for current player, other players are normal
+2006-11-23: stumpy: added cvar (cg_mapzoom) to make map zoom level on HUD persistent across maps and game sessions
+2006-11-24: stumpy: create a configstring for the skill_* cvars so that client side
+                    can accurately show XP needed for the next level in +stats
+2006-11-24: stumpy: fixed +stats display to allow for variable width font
+2006-11-25: stumpy: fixed +topshots display to allow for variable width font
+2006-11-26: stumpy: skillpoint changes are communicated upon change to client, instead of only at +stats command
+                    skill bars on hud now communicate status within current xp skill, not overall skill level attained
+2006-11-26: stumpy: resized and repositioned default ammocount font to .16 so that mobile mg ammo would display correctly
+                    resized and repositioned overheating bar
+                    fixed the size of the hud power icon
+2006-12-04: stumpy: when maxxed out on a skill, the skill bar stays filled instead of empty
+2006-12-06: stumpy: fix command map icons not showing up in the corners of the compass
+2006-12-06: stumpy: linux NPC compile scripts updates
+2006-12-09: stumpy: increased fireteam membership to 9
+                    changed HUD font/menu elements to account for bigger FT menu
+2006-12-10: stumpy: clean up scoreboard code.  right align xp, ping values in their columns
+                    fix length limiting to account for variable width font
+                    fixed the minisize-scoreboard to work right with new font, layout
+2006-12-16: stumpy: basic implementation of Marc's new loading screen pic
+2006-12-16: stumpy: misc hud text clean up to account for variable width font
+2006-12-23: stumpy: change OID location, style of print to account for variable font
+

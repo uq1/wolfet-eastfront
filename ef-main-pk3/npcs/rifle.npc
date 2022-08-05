@@ -1,0 +1,8 @@
+{
+	class	PC_ENGINEER
+	skill	2
+	weapon	WP_KAR98
+	patrol	false
+	mounted	false
+	hunter	true
+}

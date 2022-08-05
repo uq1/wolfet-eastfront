@@ -1,0 +1,15 @@
+{
+	map			"fueldump"
+	longname		"^4[^3EF^4] ^5Fuel Dump"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"Axis and Allies clash in the previously peaceful surroundings of a winter woodland fuel depot. The snowy wooded hills and valleys will be the scene of a mortal battle. Face to face, it's a fight to the death, only the victor will survive."
+	briefing		"The Allies are attacking an Axis fuel depot and must escort their Churchill AVRE Demolition Tank as it blasts through the defenses. The Axis can disable and delay the Tank with Panzerfausts, grenades, mines or explosives."
+	axiswintext		"Skilful victories such as this prove that it will take much more than just numbers to defeat the Axis. Their troops demonstrated a heroic determination and skill that leaves them masters of the battlefield and the Allied forces a shambolic defeated rabble. For the Allies to have any hope of eventual victory they cannot let their resolve falter so pathetically."
+	alliedwintext		"Stylish victories like this indicate that the tide appears to be turning in the Allies' favour. Superior Allied valour, aggression and expertise have left the Axis forces deservedly demoralised and defeated after their own meagre effort. The Axis must acquire the habit of repelling Allied attacks on their own doorstep or the doorstep may no longer be their own."
+	mapposition_x	520
+	mapposition_y	585
+}
+

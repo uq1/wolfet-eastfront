@@ -1,0 +1,89 @@
+game_manager
+{
+	spawn
+	{
+		wait 100
+		wm_camo			"snowy" 
+		accum 1 set 0 //state of the flag
+		 //game rules
+		 wait 100
+		 wm_axis_respawntime 15 //respawn time in minutes
+		 wm_allied_respawntime 15
+		 wm_number_of_objectives 1 //all things that they can do!
+		 wm_set_round_timelimit 35 // how long it takes for the map end
+		
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		wm_set_defending_team	0
+
+		// Winner on expiration of round timer (0=Axis, 1=Allies -1=None)
+		wm_setwinner	0
+
+		 // Objectives
+		 //1: Primary1 : Take the and hold the German trenches.
+
+
+	}
+}
+
+	flag
+{
+	spawn
+	{
+		wait 200
+		setstate captured invisible
+		setstate flag_obj invisible
+	}
+	
+	trigger axis_capture
+	{
+		setstate flag_obj invisible		
+		wm_announce	"Germans have re-enforced the frontline! Russian re-enforcements have fallen back!"
+		wm_objective_status	1 1 0	//"Secondary: Capture Forward Deployment"		
+		wm_objective_status	1 0 1	//"Secondary: Defend Forward Deployment"
+		//wm_teamvoiceannounce 0 "ax_bunker_reclaimed"
+		//wm_teamvoiceannounce 1 "al_bunker_reclaimed"
+		
+		accum 1 set 0		//the accum is reset afther this	
+	}
+
+	trigger allied_capture
+	{
+		wm_announce	"Russians have broken the german front line! Soviet Re-enforcements in 2 1/2 minutes!"
+		setstate flag_obj default				
+				
+		wm_objective_status	1 1 1	//"Secondary: Capture Forward Deployment"		
+		wm_objective_status	1 0 0	//"Secondary: Defend Forward Deployment"
+		wait 2000
+		setstate captured default
+		//wm_teamvoiceannounce 1 "al_bunker_captured"
+		//wm_teamvoiceannounce 0 "ax_bunker_captured"
+		
+		
+		//set the accum has been setted
+		accum 1 inc 1
+
+		//the wait part
+		wm_announce	"Soviet Re-enforcements in 1 minute"
+		accum 1 abort_if_not_equal 1
+		wait 30000
+		wm_announce	"30 seconds and the German line is lost!"
+		accum 1 abort_if_not_equal 1
+		wait 10000
+		wm_announce	"20 Seconds Left!"
+		accum 1 abort_if_not_equal 1
+		wait 5000	
+		wm_announce 	"15 Seconds longer and the Germans will face defeat!"
+		accum 1 abort_if_not_equal 1
+		wait 5000
+		wm_announce	"ONLY 10 Seconds of Russian resistance and they will have victory!"
+		accum 1 abort_if_not_equal 1
+		wait 10000	
+		wm_announce	"Russian re-enforcements have arrived!!!!"
+		accum 1 abort_if_not_equal 1
+		wait 10
+		wm_announce	"The Germans are retreating!!!!!"
+		//end game
+		wm_setwinner 1
+     		wm_endround
+	}
+}

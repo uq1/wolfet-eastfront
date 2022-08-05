@@ -1,0 +1,7 @@
+md3_hat,		"models/players/wehrmacht/axis/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"models/players/wehrmacht/axis/soldier/legs"
+u_body,			"models/players/wehrmacht/axis/cvops/body"
+u_rthand,		"models/players/wehrmacht/axis/hand"
+u_lfthand,		"models/players/wehrmacht/axis/hand"

@@ -1,0 +1,17 @@
+characterDef
+{
+	skin			"fieldops"
+
+	weaponskin		"models/players/temperate/axis/fieldops/weapon.skin"
+
+	mesh			"models/players/temperate/axis/fieldops/body.mdm"
+	animationgroup		"animations/human_base.anim"
+	animationscript		"animations/scripts/human_base.script"
+
+	undressedCorpseModel	"models/players/temperate/common/naked.mdm"
+	undressedCorpseSkin	"axis_fieldops"
+
+	hudhead			"models/players/hud/glasses.md3"
+	hudheadanims		"animations/human/heads/base.anim"
+	hudheadskin		"models/players/hud/axis_field.skin"
+}

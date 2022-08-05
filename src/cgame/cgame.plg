@@ -1,0 +1,926 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cgame - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\Release/loadnget.res" /d "NDEBUG" "C:\temp\EastFront\trunk\src\cgame\loadnget.rc"" 
+Creating temporary file "C:\DOCUME~1\SRMAES~1\CONFIG~1\Temp\RSP1C9.tmp" with contents
+[
+/nologo /G5 /MD /W4 /GX /Ob1 /Gy /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "CGAMEDLL" /D "_X86_" /D "_AFXDLL" /Fp".\Release/cgame.pch" /YX /Fo".\Release/" /GF /c 
+"C:\temp\EastFront\trunk\src\game\bg_animation.c"
+"C:\temp\EastFront\trunk\src\game\bg_animgroup.c"
+"C:\temp\EastFront\trunk\src\game\bg_campaign.c"
+"C:\temp\EastFront\trunk\src\game\bg_character.c"
+"C:\temp\EastFront\trunk\src\game\bg_classes.c"
+"C:\temp\EastFront\trunk\src\game\bg_misc.c"
+"C:\temp\EastFront\trunk\src\game\bg_physics.c"
+"C:\temp\EastFront\trunk\src\game\bg_pmove.c"
+"C:\temp\EastFront\trunk\src\game\bg_slidemove.c"
+"C:\temp\EastFront\trunk\src\game\bg_sscript.c"
+"C:\temp\EastFront\trunk\src\game\bg_stats.c"
+"C:\temp\EastFront\trunk\src\game\bg_tracemap.c"
+"C:\temp\EastFront\trunk\src\game\bg_wheel_forces.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_ai_fireteam.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_atmospheric.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_character.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_commandmap.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_consolecmds.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_debriefing.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_draw.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_drawtools.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_effects.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_ents.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_event.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_fireteamoverlay.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_fireteams.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_flamethrower.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_hud.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_info.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_limbopanel.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_loadpanel.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_localents.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_main.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_marks.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_missionbriefing.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_multiview.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_musicengine.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_newDraw.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_npc.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_om_flagsys.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_particles.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_particlesys.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_players.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_playerstate.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_polybus.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_popupmessages.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_predict.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_scoreboard.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_servercmds.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_snapshot.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_sound.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_spawn.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_statsranksmedals.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_syscalls.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_tags.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_trails.c"
+"C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_unique_entities.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_view.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_weapons.c"
+"C:\temp\EastFront\trunk\src\cgame\cg_window.c"
+"C:\temp\EastFront\trunk\src\game\q_math.c"
+"C:\temp\EastFront\trunk\src\game\q_shared.c"
+"C:\temp\EastFront\trunk\src\ui\ui_shared.c"
+"C:\temp\EastFront\trunk\src\uniquebot\unique_mem.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\SRMAES~1\CONFIG~1\Temp\RSP1C9.tmp" 
+Creating temporary file "C:\DOCUME~1\SRMAES~1\CONFIG~1\Temp\RSP1CA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib odbc32.lib odbccp32.lib winmm.lib /nologo /base:"0x30000000" /subsystem:windows /dll /incremental:no /pdb:".\Release/cgame_mp_x86.pdb" /map:".\Release/cgame_mp_x86.map" /machine:I386 /def:".\cgame.def" /out:"..\Release\cgame_mp_x86.dll" /implib:".\Release/cgame_mp_x86.lib" /pdbtype:sept 
+.\Release\bg_animation.obj
+.\Release\bg_animgroup.obj
+.\Release\bg_campaign.obj
+.\Release\bg_character.obj
+.\Release\bg_classes.obj
+.\Release\bg_misc.obj
+.\Release\bg_physics.obj
+.\Release\bg_pmove.obj
+.\Release\bg_slidemove.obj
+.\Release\bg_sscript.obj
+.\Release\bg_stats.obj
+.\Release\bg_tracemap.obj
+.\Release\bg_wheel_forces.obj
+.\Release\cg_ai_fireteam.obj
+.\Release\cg_atmospheric.obj
+.\Release\cg_character.obj
+.\Release\cg_commandmap.obj
+.\Release\cg_consolecmds.obj
+.\Release\cg_debriefing.obj
+.\Release\cg_draw.obj
+.\Release\cg_drawtools.obj
+.\Release\cg_effects.obj
+.\Release\cg_ents.obj
+.\Release\cg_event.obj
+.\Release\cg_fireteamoverlay.obj
+.\Release\cg_fireteams.obj
+.\Release\cg_flamethrower.obj
+.\Release\cg_hud.obj
+.\Release\cg_info.obj
+.\Release\cg_limbopanel.obj
+.\Release\cg_loadpanel.obj
+.\Release\cg_localents.obj
+.\Release\cg_main.obj
+.\Release\cg_marks.obj
+.\Release\cg_missionbriefing.obj
+.\Release\cg_multiview.obj
+.\Release\cg_musicengine.obj
+.\Release\cg_newDraw.obj
+.\Release\cg_npc.obj
+.\Release\cg_om_flagsys.obj
+.\Release\cg_particles.obj
+.\Release\cg_particlesys.obj
+.\Release\cg_players.obj
+.\Release\cg_playerstate.obj
+.\Release\cg_polybus.obj
+.\Release\cg_popupmessages.obj
+.\Release\cg_predict.obj
+.\Release\cg_scoreboard.obj
+.\Release\cg_servercmds.obj
+.\Release\cg_snapshot.obj
+.\Release\cg_sound.obj
+.\Release\cg_spawn.obj
+.\Release\cg_statsranksmedals.obj
+.\Release\cg_syscalls.obj
+.\Release\cg_tags.obj
+.\Release\cg_trails.obj
+.\Release\cg_unique_autowaypoint.obj
+.\Release\cg_unique_entities.obj
+.\Release\cg_view.obj
+.\Release\cg_weapons.obj
+.\Release\cg_window.obj
+.\Release\q_math.obj
+.\Release\q_shared.obj
+.\Release\ui_shared.obj
+.\Release\unique_mem.obj
+.\Release\loadnget.res
+]
+Creating command line "link.exe @C:\DOCUME~1\SRMAES~1\CONFIG~1\Temp\RSP1CA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+bg_animation.c
+bg_animgroup.c
+bg_campaign.c
+bg_character.c
+bg_classes.c
+bg_misc.c
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3128) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3129) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3130) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3131) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3132) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3133) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3134) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3135) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3136) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3137) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3138) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3139) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3140) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3141) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3142) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3143) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3144) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3145) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3146) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3147) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3148) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3149) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3150) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3151) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3152) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3153) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3154) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3155) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3156) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3157) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3158) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3159) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3160) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3161) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3162) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3163) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3164) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3165) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3166) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3167) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3168) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3169) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3170) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3171) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3172) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3173) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3174) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3175) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3176) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3177) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3178) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3179) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3180) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3181) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3182) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3183) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3184) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3185) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3186) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3187) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3188) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3189) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3190) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3191) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3192) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3193) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3194) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3195) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3196) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3197) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3198) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3199) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3200) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3201) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3202) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3203) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3204) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3205) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3206) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3207) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3208) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3209) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3210) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3211) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3212) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3213) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3215) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3216) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3217) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3218) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3219) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3220) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3221) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3222) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3223) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3224) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3225) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3226) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3227) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3228) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3229) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3230) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3231) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3232) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3233) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3234) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3235) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3236) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3237) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3238) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3239) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3240) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3241) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3242) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3243) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3244) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3245) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3246) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3247) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3248) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3249) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3250) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3251) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3252) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3253) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3254) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3255) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3256) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3257) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3258) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3259) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3260) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3261) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3262) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3263) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3264) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3265) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3266) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3267) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3268) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3269) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3270) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3271) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3272) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3273) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3274) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3275) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3276) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3277) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3278) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3279) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3280) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3281) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3282) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3283) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3284) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3285) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3286) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3287) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3288) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3289) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3290) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3291) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3292) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3293) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3294) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3295) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3296) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3297) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3298) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3299) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3300) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3301) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3302) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3303) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3304) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3305) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3306) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3307) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3308) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3309) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3310) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3311) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3312) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3313) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3314) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3315) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3316) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3317) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3318) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3319) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3320) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3321) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3322) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3323) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3324) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3325) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3326) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3327) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3328) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3329) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3330) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3331) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3332) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3333) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3334) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3335) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3336) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3337) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3338) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3339) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3340) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3341) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3342) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3343) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3344) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3346) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3347) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3348) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3349) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3350) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3351) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3352) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3353) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3354) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3355) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3356) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3357) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3358) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3128) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3129) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3130) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3131) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3132) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3133) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3134) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3135) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3136) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3137) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3138) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3139) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3140) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3141) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3142) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3143) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3144) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3145) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3146) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3147) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3148) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3149) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3150) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3151) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3152) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3153) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3154) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3155) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3156) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3157) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3158) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3159) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3160) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3161) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3162) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3163) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3164) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3165) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3166) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3167) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3168) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3169) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3170) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3171) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3172) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3173) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3174) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3175) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3176) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3177) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3178) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3179) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3180) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3181) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3182) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3183) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3184) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3185) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3186) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3187) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3188) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3189) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3190) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3191) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3192) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3193) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3194) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3195) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3196) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3197) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3198) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3199) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3200) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3201) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3202) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3203) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3204) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3205) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3206) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3207) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3208) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3209) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3210) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3211) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3212) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3213) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3215) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3216) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3217) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3218) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3219) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3220) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3221) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3222) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3223) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3224) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3225) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3226) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3227) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3228) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3229) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3230) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3231) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3232) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3233) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3234) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3235) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3236) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3237) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3238) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3239) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3240) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3241) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3242) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3243) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3244) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3245) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3246) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3247) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3248) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3249) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3250) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3251) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3252) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3253) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3254) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3255) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3256) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3257) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3258) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3259) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3260) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3261) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3262) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3263) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3264) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3265) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3266) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3267) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3268) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3269) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3270) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3271) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3272) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3273) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3274) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3275) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3276) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3277) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3278) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3279) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3280) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3281) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3282) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3283) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3284) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3285) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3286) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3287) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3288) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3289) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3290) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3291) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3292) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3293) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3294) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3295) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3296) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3297) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3298) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3299) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3300) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3301) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3302) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3303) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3304) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3305) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3306) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3307) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3308) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3309) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3310) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3311) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3312) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3313) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3314) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3315) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3316) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3317) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3318) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3319) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3320) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3321) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3322) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3323) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3324) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3325) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3326) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3327) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3328) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3329) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3330) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3331) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3332) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3333) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3334) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3335) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3336) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3337) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3338) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3339) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3340) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3341) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3342) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3343) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3344) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3346) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3347) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3348) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3349) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3350) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3351) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3352) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3353) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3354) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3355) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3356) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3357) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3358) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3128) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3129) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3130) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3131) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3132) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3133) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3134) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3135) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3136) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3137) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3138) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3139) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3140) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3141) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3142) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3143) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3144) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3145) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3146) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3147) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3148) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3149) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3150) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3151) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3152) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3153) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3154) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3155) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3156) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3157) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3158) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3159) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3160) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3161) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3162) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3163) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3164) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3165) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3166) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3167) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3168) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3169) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3170) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3171) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3172) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3173) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3174) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3175) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3176) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3177) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3178) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3179) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3180) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3181) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3182) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3183) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3184) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3185) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3186) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3187) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3188) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3189) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3190) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3191) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3192) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3193) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3194) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3195) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3196) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3197) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3198) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3199) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3200) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3201) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3202) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3203) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3204) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3205) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3206) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3207) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3208) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3209) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3210) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3211) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3212) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3213) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3215) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3216) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3217) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3218) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3219) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3220) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3221) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3222) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3223) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3224) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3225) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3226) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3227) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3228) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3229) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3230) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3231) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3232) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3233) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3234) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3235) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3236) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3237) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3238) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3239) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3240) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3241) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3242) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3243) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3244) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3245) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3246) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3247) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3248) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3249) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3250) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3251) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3252) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3253) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3254) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3255) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3256) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3257) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3258) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3259) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3260) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3261) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3262) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3263) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3264) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3265) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3266) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3267) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3268) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3269) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3270) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3271) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3272) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3273) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3274) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3275) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3276) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3277) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3278) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3279) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3280) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3281) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3282) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3283) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3284) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3285) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3286) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3287) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3288) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3289) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3290) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3291) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3292) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3293) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3294) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3295) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3296) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3297) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3298) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3299) : warning C4003: not enough actual parameters for macro 'DEFIMPY'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3300) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3301) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3302) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3303) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3304) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3305) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3306) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3307) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3308) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3309) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3310) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3311) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3312) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3313) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3314) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3315) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3316) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3317) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3318) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3319) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3320) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3321) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3322) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3323) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3324) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3325) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3326) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3327) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3328) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3329) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3330) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3331) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3332) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3333) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3334) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3335) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3336) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3337) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3338) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3339) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3340) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3341) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3342) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3343) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3344) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3346) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3347) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3348) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3349) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3350) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3351) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3352) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3353) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3354) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3355) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3356) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3357) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\intrin.def(3358) : warning C4003: not enough actual parameters for macro 'DEFIMP'
+C:\VISUAL6\VC98\INCLUDE\bld.h(114) : fatal error C1083: Cannot open include file: 'bit.h': No such file or directory
+bg_physics.c
+bg_pmove.c
+bg_slidemove.c
+bg_sscript.c
+bg_stats.c
+bg_tracemap.c
+bg_wheel_forces.c
+cg_ai_fireteam.c
+cg_atmospheric.c
+cg_character.c
+cg_commandmap.c
+cg_consolecmds.c
+cg_debriefing.c
+cg_draw.c
+cg_drawtools.c
+cg_effects.c
+cg_ents.c
+cg_event.c
+cg_fireteamoverlay.c
+cg_fireteams.c
+cg_flamethrower.c
+cg_hud.c
+cg_info.c
+cg_limbopanel.c
+cg_loadpanel.c
+cg_localents.c
+cg_main.c
+cg_marks.c
+cg_missionbriefing.c
+cg_multiview.c
+cg_musicengine.c
+C:\temp\EastFront\trunk\src\cgame\cg_musicengine.c(317) : warning C4090: 'function' : different 'const' qualifiers
+cg_newDraw.c
+cg_npc.c
+cg_om_flagsys.c
+cg_particles.c
+cg_particlesys.c
+cg_players.c
+cg_playerstate.c
+cg_polybus.c
+cg_popupmessages.c
+cg_predict.c
+cg_scoreboard.c
+cg_servercmds.c
+cg_snapshot.c
+cg_sound.c
+cg_spawn.c
+cg_statsranksmedals.c
+cg_syscalls.c
+cg_tags.c
+cg_trails.c
+cg_unique_autowaypoint.c
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(1173) : warning C4189: 'num_found' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(1429) : warning C4189: 'total_good_count' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(1428) : warning C4189: 'upto' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(1430) : warning C4189: 'bad_nodes' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(3262) : warning C4189: 'traceMins' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(3263) : warning C4189: 'traceMaxs' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(3261) : warning C4189: 'j' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\cg_unique_autowaypoint.c(4616) : warning C4189: 'm' : local variable is initialized but not referenced
+cg_unique_entities.c
+cg_view.c
+cg_weapons.c
+cg_window.c
+q_math.c
+q_shared.c
+ui_shared.c
+unique_mem.c
+C:\temp\EastFront\trunk\src\uniquebot\unique_mem.c(549) : warning C4189: 'dwNumElements' : local variable is initialized but not referenced
+C:\temp\EastFront\trunk\src\uniquebot\unique_mem.c(574) : fatal error C1601: unsupported inline assembly opcode
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+cgame_mp_x86.dll - 2 error(s), 697 warning(s)
+</pre>
+</body>
+</html>

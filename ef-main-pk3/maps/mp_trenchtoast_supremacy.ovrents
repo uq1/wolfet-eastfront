@@ -1,0 +1,7839 @@
+{
+spawnflags "3"
+vertexremapshader0 "textures/terrain/mxterra6_0;textures/terrain/vxmxterra6"
+vertexremapshader1 "textures/terrain/mxterra6_1;textures/terrain/vxmxterra6"
+vertexremapshader2 "textures/terrain/mxterra6_2;textures/terrain/vxmxterra6"
+vertexremapshader3 "textures/terrain/mxterra6_3;textures/terrain/vxmxterra6"
+vertexremapshader4 "textures/terrain/mxterra6_0to1;textures/terrain/vxmxterra6"
+vertexremapshader5 "textures/terrain/mxterra6_0to2;textures/terrain/vxmxterra6"
+vertexremapshader6 "textures/terrain/mxterra6_0to3;textures/terrain/vxmxterra6"
+vertexremapshader7 "textures/terrain/mxterra6_1to2;textures/terrain/vxmxterra6"
+vertexremapshader8 "textures/terrain/mxterra6_1to3;textures/terrain/vxmxterra6"
+vertexremapshader9 "textures/terrain/mxterra6_2to3;textures/terrain/vxmxterra6"
+classname "worldspawn"
+ambient "7"
+_color ".98 .98 1"
+gridsize "128 128 128"
+fogclip "3600"
+}
+{
+origin "3904 13752 120"
+message "Axis Passage"
+classname "target_location"
+}
+{
+origin "6504 8224 376"
+message "Allied MG42 Post"
+classname "target_location"
+}
+{
+origin "5880 7744 120"
+message "Allied Passage"
+classname "target_location"
+}
+{
+classname "info_notnull"
+targetname "t1123"
+origin "4852 9494 64"
+}
+{
+origin "4926 9402 64"
+classname "info_player_intermission"
+target "t1123"
+}
+{
+classname "target_location"
+message "Allied Base Front"
+origin "5888 6400 628"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind.wav"
+origin "4896 5760 192"
+spawnflags "1"
+}
+{
+origin "4240 12112 432"
+classname "corona"
+}
+{
+origin "3452 16128 740"
+classname "corona"
+}
+{
+classname "corona"
+origin "4116 13976 404"
+}
+{
+origin "4100 14012 404"
+classname "corona"
+}
+{
+origin "4464 6144 248"
+target "t935"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4608 6144 136"
+targetname "t935"
+classname "info_null"
+}
+{
+classname "info_null"
+targetname "t923"
+origin "5376 5568 388"
+}
+{
+classname "team_WOLF_objective"
+description "Allied Side"
+origin "5904 6408 600"
+}
+{
+classname "team_WOLF_objective"
+description "Axis Side"
+origin "3920 15120 600"
+}
+{
+origin "3840 6240 252"
+model "models/mapobjects/tree/tree_m09s.md3"
+classname "misc_gamemodel"
+}
+{
+origin "5288 8232 288"
+model "models/mapobjects/tree/tree_m07.md3"
+classname "misc_gamemodel"
+}
+{
+origin "6880 9352 234"
+model "models/mapobjects/tree/tree_m08.md3"
+classname "misc_gamemodel"
+}
+{
+origin "4992 10752 72"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "info_player_start"
+angle "225"
+origin "5760 9648 -216"
+}
+{
+radius "512"
+angle "0"
+_color "1.000000 0.803922 0.611765"
+light "200"
+target "t447"
+origin "5056 5784 268"
+classname light
+}
+{
+angle "0"
+targetname "t447"
+origin "5056 5688 188"
+classname "info_null"
+}
+{
+angle "0"
+origin "5056 5776 264"
+light "100"
+_color "1.000000 0.803922 0.611765"
+classname "lightJunior"
+}
+{
+classname light
+origin "5060 5374 620"
+target "t448"
+light "180"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+classname "info_null"
+origin "5060 5548 412"
+targetname "t448"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.803922 0.611765"
+light "100"
+origin "5060 5382 616"
+angle "0"
+}
+{
+origin "3442 9190 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3442 9190 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3442 9190 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3442 9190 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3582 9190 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3582 9190 208"
+}
+{
+origin "3582 9190 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3582 9190 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "3722 9190 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3722 9190 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3722 9190 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3722 9190 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3866 10048 100"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3866 10048 80"
+}
+{
+origin "3866 10048 24"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3866 10048 56"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "5938 7758 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "5938 7758 208"
+}
+{
+origin "5938 7758 96"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "5938 7758 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6078 7758 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6078 7758 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6078 7758 96"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6078 7758 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "6218 7758 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "6218 7758 208"
+}
+{
+origin "6218 7758 96"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "6218 7758 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "5918 9598 -92"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "5918 9598 -112"
+}
+{
+origin "5918 9598 -232"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "5918 9598 -136"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6058 9598 -92"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6058 9598 -112"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6058 9598 -232"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6058 9598 -136"
+}
+{
+origin "6290 8070 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6290 8070 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6290 8070 96"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6290 8070 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3794 9502 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3794 9502 208"
+}
+{
+origin "3794 9502 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3794 9502 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "6218 9598 -92"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "6218 9598 -112"
+}
+{
+origin "6218 9598 -136"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6290 9146 -92"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6290 9146 -112"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6286 9146 -232"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6290 9146 -136"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "6290 8722 -92"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "6290 8722 -112"
+}
+{
+origin "6286 8722 -232"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "6290 8722 -136"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "5312 6144 688"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "5312 6144 584"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "5312 6144 696"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "5760 6208 688"
+}
+{
+origin "5760 6208 584"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "5760 6208 696"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6016 6208 688"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6016 6208 584"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6016 6208 696"
+}
+{
+spawnflags "1"
+origin "5264 5184 533"
+noise "sound/world/lightwet.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/lightwet.wav"
+origin "5168 5184 533"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/lightwet.wav"
+origin "5568 5360 533"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "5568 5456 533"
+noise "sound/world/lightwet.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/lightwet.wav"
+origin "5312 5680 533"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "5312 5840 533"
+noise "sound/world/lightwet.wav"
+classname "target_speaker"
+}
+{
+origin "6218 9598 -232"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+classname "team_CTF_redplayer"
+angle "180"
+origin "5720 15864 152"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "5760 6496 776"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_blueplayer"
+origin "5752 6488 768"
+}
+{
+classname "script_multiplayer"
+scriptname "game_manager"
+origin "4808 9488 112"
+}
+{
+origin "5728 15856 160"
+angle "180"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+origin "4056 5672 160"
+classname "team_CTF_bluespawn"
+}
+{
+origin "4048 5664 152"
+classname "team_CTF_blueplayer"
+}
+{
+angle "45"
+classname "team_CTF_bluespawn"
+origin "5712 6328 776"
+spawnflags "3"
+}
+{
+angle "45"
+classname "team_CTF_blueplayer"
+origin "5704 6320 768"
+}
+{
+angle "90"
+spawnflags "3"
+origin "5848 6496 776"
+classname "team_CTF_bluespawn"
+}
+{
+angle "90"
+origin "5840 6488 768"
+classname "team_CTF_blueplayer"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4160 5672 160"
+spawnflags "3"
+}
+{
+classname "team_CTF_blueplayer"
+origin "4152 5664 152"
+}
+{
+angle "45"
+spawnflags "3"
+origin "5784 6408 776"
+classname "team_CTF_bluespawn"
+}
+{
+angle "45"
+origin "5776 6400 768"
+classname "team_CTF_blueplayer"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "5952 6496 776"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_blueplayer"
+origin "5944 6488 768"
+}
+{
+spawnflags "3"
+origin "4264 5672 160"
+classname "team_CTF_bluespawn"
+}
+{
+origin "4256 5664 152"
+classname "team_CTF_blueplayer"
+}
+{
+angle "135"
+classname "team_CTF_bluespawn"
+origin "5984 6392 776"
+spawnflags "3"
+}
+{
+angle "135"
+classname "team_CTF_blueplayer"
+origin "5976 6384 768"
+}
+{
+angle "90"
+spawnflags "3"
+origin "6040 6464 776"
+classname "team_CTF_bluespawn"
+}
+{
+angle "90"
+origin "6032 6456 768"
+classname "team_CTF_blueplayer"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4384 5672 160"
+spawnflags "3"
+}
+{
+classname "team_CTF_blueplayer"
+origin "4376 5664 152"
+}
+{
+angle "135"
+spawnflags "3"
+origin "6056 6328 776"
+classname "team_CTF_bluespawn"
+}
+{
+angle "135"
+origin "6048 6320 768"
+classname "team_CTF_blueplayer"
+}
+{
+origin "5432 15856 152"
+angle "180"
+classname "team_CTF_redplayer"
+}
+{
+classname "team_CTF_redspawn"
+spawnflags "3"
+angle "180"
+origin "5440 15848 160"
+}
+{
+classname "team_CTF_redplayer"
+angle "270"
+origin "3840 15016 768"
+}
+{
+origin "3848 15008 776"
+angle "270"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redplayer"
+angle "270"
+origin "3952 15000 768"
+}
+{
+origin "3960 15008 776"
+angle "270"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+origin "5624 15864 152"
+angle "180"
+classname "team_CTF_redplayer"
+}
+{
+classname "team_CTF_redspawn"
+spawnflags "3"
+angle "180"
+origin "5632 15856 160"
+}
+{
+classname "team_CTF_redplayer"
+angle "180"
+origin "5528 15864 152"
+}
+{
+origin "5536 15856 160"
+angle "180"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+origin "3760 15032 768"
+angle "315"
+classname "team_CTF_redplayer"
+}
+{
+classname "team_CTF_redspawn"
+spawnflags "3"
+angle "315"
+origin "3768 15024 776"
+}
+{
+classname "team_CTF_redplayer"
+angle "315"
+origin "3728 15192 768"
+}
+{
+origin "3736 15184 776"
+angle "315"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redplayer"
+angle "315"
+origin "3728 15120 768"
+}
+{
+origin "3736 15112 776"
+angle "315"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+origin "4040 15048 768"
+angle "225"
+classname "team_CTF_redplayer"
+}
+{
+classname "team_CTF_redspawn"
+spawnflags "3"
+angle "225"
+origin "4048 15056 776"
+}
+{
+classname "team_CTF_redplayer"
+angle "225"
+origin "4048 15160 768"
+}
+{
+origin "4056 15168 776"
+angle "225"
+spawnflags "3"
+classname "team_CTF_redspawn"
+}
+{
+origin "3776 15296 688"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3776 15296 584"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3776 15296 696"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "4032 15296 688"
+}
+{
+origin "4032 15296 584"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "4032 15296 696"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "4480 15360 688"
+}
+{
+origin "4480 15360 584"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "4480 15360 696"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "3574 13746 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3574 13746 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3574 13746 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3574 13746 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3714 13746 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3714 13746 208"
+}
+{
+origin "3714 13746 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3714 13746 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "3854 13746 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3854 13746 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3854 13746 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3854 13746 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3510 13434 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3510 13434 208"
+}
+{
+origin "3510 13434 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3510 13434 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3502 12782 -92"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3502 12782 -112"
+}
+{
+origin "3498 12782 -232"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3502 12782 -136"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "3502 12358 -92"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3502 12358 -112"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3498 12358 -232"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3502 12358 -136"
+}
+{
+origin "3574 11906 -92"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3574 11906 -112"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3574 11906 -232"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3574 11906 -136"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "3734 11906 -92"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "3734 11906 -112"
+}
+{
+origin "3734 11906 -232"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "3734 11906 -136"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "3878 11906 -92"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "3878 11906 -112"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "3878 11906 -136"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "3878 11906 -232"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "6070 12314 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "6070 12314 208"
+}
+{
+origin "6070 12314 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "6070 12314 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6210 12314 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6210 12314 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6210 12314 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6210 12314 184"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta.md3"
+origin "6350 12314 228"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "6350 12314 208"
+}
+{
+origin "6350 12314 88"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "6350 12314 184"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6002 12002 228"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "6002 12002 208"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "6002 12002 88"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "6002 12002 184"
+}
+{
+origin "5926 11456 100"
+model "models/mapobjects/light/cagelighta.md3"
+classname "misc_model"
+}
+{
+origin "5926 11456 80"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "5926 11456 24"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "5926 11456 56"
+}
+{
+angle "240"
+targetname "alliedsidetower"
+origin "6328 9720 -216"
+classname "team_CTF_bluespawn"
+}
+{
+angle "240"
+targetname "alliedsidetower"
+classname "team_CTF_bluespawn"
+origin "6328 9656 -216"
+}
+{
+angle "240"
+targetname "alliedsidetower"
+origin "6264 9720 -216"
+classname "team_CTF_bluespawn"
+}
+{
+angle "240"
+targetname "alliedsidetower"
+classname "team_CTF_bluespawn"
+origin "6264 9656 -216"
+}
+{
+classname "team_CTF_redspawn"
+angle "60"
+targetname "axissidetower"
+origin "3464 11784 -216"
+}
+{
+classname "team_CTF_redspawn"
+targetname "axissidetower"
+origin "3528 11784 -216"
+angle "60"
+}
+{
+origin "3464 11848 -216"
+targetname "axissidetower"
+angle "60"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+angle "60"
+targetname "axissidetower"
+origin "3528 11848 -216"
+}
+{
+varc "50"
+harc "50"
+angle "180"
+spawnflags "3"
+classname "misc_mg42"
+origin "5596 9600 344"
+targetname "t364"
+}
+{
+varc "50"
+harc "50"
+angle "90"
+spawnflags "3"
+classname "misc_mg42"
+origin "5760 9764 344"
+targetname "t451"
+}
+{
+targetname "t452"
+origin "5760 9436 344"
+classname "misc_mg42"
+spawnflags "3"
+angle "270"
+harc "50"
+varc "50"
+}
+{
+varc "50"
+harc "50"
+angle "360"
+spawnflags "3"
+classname "misc_mg42"
+origin "4196 11904 344"
+targetname "t454"
+}
+{
+targetname "t455"
+origin "4032 12068 344"
+classname "misc_mg42"
+spawnflags "3"
+angle "90"
+harc "50"
+varc "50"
+}
+{
+varc "50"
+harc "50"
+angle "270"
+spawnflags "3"
+classname "misc_mg42"
+origin "4032 11740 344"
+targetname "t456"
+}
+{
+targetname "t457"
+origin "5984 6540 608"
+classname "misc_mg42"
+spawnflags "3"
+angle "90"
+harc "50"
+varc "50"
+}
+{
+targetname "t460"
+origin "5792 6540 608"
+classname "misc_mg42"
+spawnflags "3"
+angle "90"
+harc "50"
+varc "50"
+}
+{
+varc "50"
+harc "50"
+angle "270"
+spawnflags "3"
+classname "misc_mg42"
+origin "4000 14964 608"
+targetname "t461"
+}
+{
+varc "50"
+harc "50"
+angle "270"
+spawnflags "3"
+classname "misc_mg42"
+origin "3808 14964 608"
+targetname "t462"
+}
+{
+harc "160"
+target "t465"
+classname "misc_mg42"
+origin "5568 11344 44"
+angle "270"
+varc "30"
+}
+{
+origin "6452 8266 312"
+modelscale "1.2"
+angle "225"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "135"
+modelscale "1.2"
+origin "6556 8268 312"
+}
+{
+varc "30"
+angle "90"
+origin "6504 8224 336"
+classname "misc_mg42"
+target "t466"
+}
+{
+harc "160"
+angle "90"
+origin "4224 10160 44"
+classname "misc_mg42"
+target "t467"
+varc "30"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "45"
+modelscale "1.2"
+origin "3344 13234 312"
+}
+{
+origin "3238 13233 312"
+modelscale "1.2"
+angle "315"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+target "t468"
+classname "misc_mg42"
+origin "3292 13276 336"
+angle "270"
+varc "30"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "4032 11904 400"
+}
+{
+origin "4032 11904 340"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "4032 11904 408"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "4032 12028 400"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "4032 12028 340"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "4032 12028 408"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "4156 11904 400"
+}
+{
+origin "4156 11904 340"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "4156 11904 408"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "4032 11780 400"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "4032 11780 340"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "4032 11780 408"
+}
+{
+origin "5760 9600 400"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "5760 9600 340"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "5760 9600 408"
+}
+{
+spawnflags "3"
+classname light
+light "7"
+_color "1.000000 0.866667 0.733333"
+origin "5636 9600 400"
+}
+{
+origin "5636 9600 340"
+_color "1.000000 0.803922 0.611765"
+light "42"
+classname light
+spawnflags "19"
+}
+{
+origin "5636 9600 408"
+light "150"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "5760 9724 400"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "5760 9724 340"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "5760 9724 408"
+}
+{
+origin "5760 9476 400"
+_color "1.000000 0.866667 0.733333"
+light "7"
+classname light
+spawnflags "3"
+}
+{
+spawnflags "19"
+classname light
+light "42"
+_color "1.000000 0.803922 0.611765"
+origin "5760 9476 340"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+light "150"
+origin "5760 9476 408"
+}
+{
+origin "5568 16280 296"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "5568 16280 297"
+model "models/mapobjects/light/cagelighta5k.md3"
+classname "misc_model"
+}
+{
+origin "5568 16280 200"
+light "75"
+spawnflags "19"
+_color "1.000000 0.792157 0.584314"
+classname light
+}
+{
+origin "5568 16280 264"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "target_location"
+message "Axis Bunker"
+origin "4032 11904 384"
+}
+{
+origin "5760 9600 384"
+message "Allied Bunker"
+classname "target_location"
+}
+{
+origin "3288 13280 384"
+message "Axis MG42 Post"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Axis Base Front"
+origin "3904 15104 664"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "5568 16280 288"
+scale "1.5"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "4992 11744 72"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/p_nolight.md3"
+origin "4224 5224 296"
+}
+{
+classname light
+_color "1.000000 0.792157 0.584314"
+spawnflags "19"
+light "75"
+origin "4224 5224 200"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.792157 0.584314"
+light "250"
+origin "4224 5224 264"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "4224 5224 288"
+scale "1.5"
+}
+{
+origin "3630 11882 -136"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "3678 11882 -136"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "5958 9566 -136"
+}
+{
+origin "6014 9566 -136"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "4884 9492 116"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "4940 12044 104"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "5324 13572 312"
+}
+{
+origin "3116 15948 504"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+origin "6676 5588 504"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.866667 0.729412"
+origin "6598 5506 504"
+}
+{
+origin "4468 7732 360"
+_color "1.000000 0.866667 0.729412"
+classname "lightJunior"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m08.md3"
+origin "6896 12096 240"
+}
+{
+origin "3608 7896 376"
+model "models/mapobjects/tree/tree_m08.md3"
+classname "misc_gamemodel"
+}
+{
+origin "2944 9400 248"
+model "models/mapobjects/tree/tree_m07.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m08.md3"
+origin "2592 7512 312"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m07.md3"
+origin "3808 10288 376"
+}
+{
+origin "5760 12864 368"
+model "models/mapobjects/tree/tree_m07.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m08.md3"
+origin "2900 12140 240"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m08.md3"
+origin "6176 13636 376"
+}
+{
+origin "7192 13628 360"
+model "models/mapobjects/tree/tree_m08.md3"
+classname "misc_gamemodel"
+}
+{
+origin "3652 13992 376"
+model "models/mapobjects/tree/tree_m08.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m09s.md3"
+origin "5960 15250 252"
+}
+{
+origin "5136 8016 328"
+model "models/mapobjects/tree/tree_m07.md3"
+classname "misc_gamemodel"
+modelscale ".5"
+}
+{
+angle "90"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "5684 7508 432"
+}
+{
+origin "4224 11712 460"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "315"
+}
+{
+modelscale ".5"
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m07.md3"
+origin "3634 10108 340"
+}
+{
+modelscale ".5"
+origin "5920 12696 340"
+model "models/mapobjects/tree/tree_m07.md3"
+classname "misc_gamemodel"
+}
+{
+modelscale ".5"
+classname "misc_gamemodel"
+model "models/mapobjects/tree/tree_m08.md3"
+origin "4620 13248 320"
+}
+{
+origin "4608 13428 348"
+model "models/mapobjects/tree/tree_m08.md3"
+classname "misc_gamemodel"
+modelscale ".5"
+}
+{
+origin "5054 5416 308"
+_color "1.000000 0.803922 0.611765"
+light "100"
+classname light
+spawnflags "19"
+}
+{
+spawnflags "19"
+classname light
+light "100"
+_color "1.000000 0.803922 0.611765"
+origin "4964 5760 188"
+}
+{
+classname light
+origin "4736 15726 268"
+target "t469"
+light "200"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+classname "info_null"
+origin "4736 15810 188"
+targetname "t469"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.803922 0.611765"
+light "100"
+origin "4736 15734 264"
+angle "0"
+}
+{
+radius "512"
+angle "0"
+_color "1.000000 0.803922 0.611765"
+light "180"
+target "t470"
+origin "4732 16132 620"
+classname light
+}
+{
+angle "0"
+targetname "t470"
+origin "4732 15938 412"
+classname "info_null"
+}
+{
+angle "0"
+origin "4732 16124 616"
+light "100"
+_color "1.000000 0.803922 0.611765"
+classname "lightJunior"
+}
+{
+spawnflags "19"
+classname light
+light "100"
+_color "1.000000 0.803922 0.611765"
+origin "4736 16088 308"
+}
+{
+origin "4842 15744 188"
+_color "1.000000 0.803922 0.611765"
+light "100"
+classname light
+spawnflags "19"
+}
+{
+origin "5760 6497 1192"
+_color "0.000000 0.000000 1.000000"
+classname "corona"
+scale ".05"
+}
+{
+classname "corona"
+_color "0.000000 0.000000 1.000000"
+origin "5732 6468 1320"
+scale ".05"
+}
+{
+scale ".05"
+classname "corona"
+_color "1.000000 0.000000 0.000000"
+origin "3836 11804 744"
+}
+{
+scale ".05"
+origin "3808 11775 872"
+_color "1.000000 0.000000 0.000000"
+classname "corona"
+}
+{
+model "*1"
+classname "func_explosive"
+spawnflags "36"
+type "wood"
+mass "100"
+target "t472"
+}
+{
+model "*2"
+spawnflags "16"
+classname "trigger_hurt"
+sound "sound/multiplayer/hurt_barbwire.wav"
+dmg "25"
+targetname "t472"
+}
+{
+model "*3"
+dmg "25"
+spawnflags "16"
+classname "trigger_hurt"
+sound "sound/multiplayer/hurt_barbwire.wav"
+targetname "t472"
+}
+{
+model "*4"
+target "t474"
+mass "100"
+type "wood"
+spawnflags "36"
+classname "func_explosive"
+}
+{
+model "*5"
+targetname "t474"
+dmg "25"
+sound "sound/multiplayer/hurt_barbwire.wav"
+classname "trigger_hurt"
+spawnflags "16"
+}
+{
+model "*6"
+targetname "t474"
+sound "sound/multiplayer/hurt_barbwire.wav"
+classname "trigger_hurt"
+spawnflags "16"
+dmg "25"
+}
+{
+origin "4177 10239 8"
+modelscale "1.2"
+angle "225"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "135"
+modelscale "1.2"
+origin "4280 10240 8"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "45"
+modelscale "1.2"
+origin "5620 11278 8"
+}
+{
+origin "5516 11276 8"
+modelscale "1.2"
+angle "315"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+origin "4914 11958 -16"
+modelscale "1.8"
+angle "315"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+origin "5072 11968 -16"
+modelscale "1.8"
+angle "45"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+classname "misc_model"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "135"
+modelscale "1.8"
+origin "4912 9608 -16"
+}
+{
+classname "misc_model"
+model "models/mapobjects/miltary_trim/sandbag1_45.md3"
+angle "225"
+modelscale "1.8"
+origin "4754 9599 -16"
+}
+{
+model "*7"
+classname "func_explosive"
+type "wood"
+health "10"
+spawnflags "20"
+}
+{
+classname "target_speaker"
+spawnflags "1"
+noise "sound/world/amb_radio_03.wav"
+origin "5528 5646 472"
+}
+{
+model "*8"
+targetname "t132"
+classname "func_static"
+}
+{
+origin "5592 5624 384"
+angle "135"
+classname "props_chair_side"
+}
+{
+classname "props_chair_side"
+angle "45"
+origin "5472 5624 384"
+}
+{
+model "*9"
+mass "100"
+spawnflags "4"
+health "10"
+classname "func_explosive"
+}
+{
+model "*10"
+classname "func_explosive"
+health "10"
+spawnflags "4"
+mass "100"
+}
+{
+classname "info_null"
+origin "4242 15912 388"
+target "t899"
+light "150"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+targetname "t900"
+}
+{
+radius "512"
+angle "0"
+_color "1.000000 0.803922 0.611765"
+light "150"
+target "t900"
+origin "4178 15912 520"
+classname light
+}
+{
+classname "target_speaker"
+spawnflags "1"
+noise "sound/world/amb_radio_01.wav"
+origin "4174 15942 456"
+}
+{
+origin "4176 15860 456"
+noise "sound/world/antenna.wav"
+spawnflags "1"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+spawnflags "1"
+noise "sound/world/lightwet.wav"
+origin "4192 15912 508"
+}
+{
+model "*11"
+mass "100"
+spawnflags "4"
+health "10"
+classname "func_explosive"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "5376 5568 540"
+scale "1.5"
+}
+{
+origin "5376 5568 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "5376 5568 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "5376 5568 551"
+}
+{
+classname light
+light "500"
+origin "5376 5568 528"
+_color "1.000000 0.974249 0.888412"
+target "t923"
+}
+{
+origin "5504 5568 388"
+targetname "t924"
+classname "info_null"
+}
+{
+scale "1.5"
+origin "5504 5568 540"
+_color "1.000000 0.792157 0.584314"
+classname "corona"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/p_nolight.md3"
+origin "5504 5568 548"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.792157 0.584314"
+light "250"
+origin "5504 5568 512"
+}
+{
+origin "5504 5568 551"
+model "models/mapobjects/light/cagelighta5k.md3"
+classname "misc_model"
+}
+{
+target "t924"
+_color "1.000000 0.974249 0.888412"
+origin "5504 5568 528"
+light "500"
+classname light
+}
+{
+origin "5376 5184 388"
+targetname "t925"
+classname "info_null"
+}
+{
+scale "1.5"
+origin "5376 5184 540"
+_color "1.000000 0.792157 0.584314"
+classname "corona"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/p_nolight.md3"
+origin "5376 5184 548"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.792157 0.584314"
+light "250"
+origin "5376 5184 512"
+}
+{
+origin "5376 5184 551"
+model "models/mapobjects/light/cagelighta5k.md3"
+classname "misc_model"
+}
+{
+target "t925"
+_color "1.000000 0.974249 0.888412"
+origin "5376 5184 528"
+light "500"
+classname light
+}
+{
+classname "info_null"
+targetname "t926"
+origin "5504 5184 388"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "5504 5184 540"
+scale "1.5"
+}
+{
+origin "5504 5184 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "5504 5184 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "5504 5184 551"
+}
+{
+classname light
+light "500"
+origin "5504 5184 528"
+_color "1.000000 0.974249 0.888412"
+target "t926"
+}
+{
+classname "info_null"
+targetname "t927"
+origin "5056 5184 388"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "5056 5184 540"
+scale "1.5"
+}
+{
+origin "5056 5184 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "5056 5184 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "5056 5184 551"
+}
+{
+classname light
+light "500"
+origin "5056 5184 528"
+_color "1.000000 0.974249 0.888412"
+target "t927"
+}
+{
+origin "4288 15936 388"
+targetname "t928"
+classname "info_null"
+}
+{
+scale "1.5"
+origin "4288 15936 540"
+_color "1.000000 0.792157 0.584314"
+classname "corona"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/p_nolight.md3"
+origin "4288 15936 548"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.792157 0.584314"
+light "250"
+origin "4288 15936 512"
+}
+{
+origin "4288 15936 551"
+model "models/mapobjects/light/cagelighta5k.md3"
+classname "misc_model"
+}
+{
+target "t928"
+_color "1.000000 0.974249 0.888412"
+origin "4288 15936 528"
+light "500"
+classname light
+}
+{
+classname "info_null"
+targetname "t929"
+origin "4416 15936 388"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "4416 15936 540"
+scale "1.5"
+}
+{
+origin "4416 15936 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "4416 15936 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "4416 15936 551"
+}
+{
+classname light
+light "500"
+origin "4416 15936 528"
+_color "1.000000 0.974249 0.888412"
+target "t929"
+}
+{
+classname "info_null"
+targetname "t930"
+origin "4288 16320 388"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "4288 16320 540"
+scale "1.5"
+}
+{
+origin "4288 16320 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "4288 16320 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "4288 16320 551"
+}
+{
+classname light
+light "500"
+origin "4288 16320 528"
+_color "1.000000 0.974249 0.888412"
+target "t930"
+}
+{
+origin "4416 16320 388"
+targetname "t931"
+classname "info_null"
+}
+{
+scale "1.5"
+origin "4416 16320 540"
+_color "1.000000 0.792157 0.584314"
+classname "corona"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/p_nolight.md3"
+origin "4416 16320 548"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.792157 0.584314"
+light "250"
+origin "4416 16320 512"
+}
+{
+origin "4416 16320 551"
+model "models/mapobjects/light/cagelighta5k.md3"
+classname "misc_model"
+}
+{
+target "t931"
+_color "1.000000 0.974249 0.888412"
+origin "4416 16320 528"
+light "500"
+classname light
+}
+{
+classname "info_null"
+targetname "t932"
+origin "4736 16320 388"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+origin "4736 16320 540"
+scale "1.5"
+}
+{
+origin "4736 16320 548"
+model "models/mapobjects/light/p_nolight.md3"
+classname "misc_model"
+}
+{
+origin "4736 16320 512"
+light "250"
+_color "1.000000 0.792157 0.584314"
+classname "lightJunior"
+}
+{
+classname "misc_model"
+model "models/mapobjects/light/cagelighta5k.md3"
+origin "4736 16320 551"
+}
+{
+classname light
+light "500"
+origin "4736 16320 528"
+_color "1.000000 0.974249 0.888412"
+target "t932"
+}
+{
+classname light
+origin "5056 5808 428"
+target "t933"
+light "200"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+classname "info_null"
+origin "5056 5712 348"
+targetname "t933"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.803922 0.611765"
+light "100"
+origin "5056 5800 424"
+angle "0"
+}
+{
+radius "512"
+angle "0"
+_color "1.000000 0.803922 0.611765"
+light "200"
+target "t934"
+origin "4736 15702 428"
+classname light
+}
+{
+angle "0"
+targetname "t934"
+origin "4736 15786 348"
+classname "info_null"
+}
+{
+angle "0"
+origin "4736 15710 424"
+light "100"
+_color "1.000000 0.803922 0.611765"
+classname "lightJunior"
+}
+{
+origin "4354 16710 438"
+scale ".4"
+_color "1.000000 0.000000 0.000000"
+classname "corona"
+}
+{
+classname "corona"
+_color "1.000000 0.000000 0.000000"
+scale ".4"
+origin "4486 16682 439"
+}
+{
+model "*12"
+type "metal"
+health "10"
+classname "func_explosive"
+spawnflags "20"
+}
+{
+model "*13"
+mass "100"
+spawnflags "4"
+health "10"
+classname "func_explosive"
+}
+{
+model "*14"
+classname "func_explosive"
+health "10"
+spawnflags "4"
+mass "100"
+}
+{
+classname "corona"
+_color "1.000000 0.792157 0.584314"
+scale "1.0"
+origin "4065 16240 464"
+angle "0"
+}
+{
+angle "0"
+origin "4065 16400 464"
+scale "1.0"
+_color "1.000000 0.792157 0.584314"
+classname "corona"
+}
+{
+origin "4526 16386 498"
+scale ".4"
+_color "1.000000 0.000000 0.000000"
+classname "corona"
+}
+{
+classname "info_null"
+targetname "t937"
+origin "4608 6336 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t937"
+origin "4760 6336 248"
+}
+{
+origin "4968 6744 248"
+target "t938"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4864 6848 136"
+targetname "t938"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t939"
+origin "4928 7184 248"
+}
+{
+classname "info_null"
+targetname "t939"
+origin "5032 7080 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t940"
+origin "5352 7128 248"
+}
+{
+classname "info_null"
+targetname "t940"
+origin "5248 7232 136"
+}
+{
+origin "5304 7560 248"
+target "t941"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5408 7456 136"
+targetname "t941"
+classname "info_null"
+}
+{
+origin "5784 7128 248"
+target "t942"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5888 7232 136"
+targetname "t942"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t943"
+origin "6120 7072 248"
+}
+{
+classname "info_null"
+targetname "t943"
+origin "6016 6968 136"
+}
+{
+origin "6504 6688 248"
+target "t944"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6400 6584 136"
+targetname "t944"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t945"
+origin "6168 6744 248"
+}
+{
+classname "info_null"
+targetname "t945"
+origin "6272 6848 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t946"
+origin "6792 5640 440"
+}
+{
+classname "info_null"
+targetname "t946"
+origin "6688 5536 392"
+}
+{
+origin "6888 5208 440"
+target "t947"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6784 5312 392"
+targetname "t947"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t948"
+origin "6360 5208 440"
+}
+{
+classname "info_null"
+targetname "t948"
+origin "6464 5312 392"
+}
+{
+origin "6456 5640 440"
+target "t949"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6560 5536 392"
+targetname "t949"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t950"
+origin "4304 6688 248"
+}
+{
+classname "info_null"
+targetname "t950"
+origin "4408 6792 136"
+}
+{
+origin "4448 6832 248"
+target "t951"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4344 6728 136"
+targetname "t951"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t952"
+origin "4064 7216 248"
+}
+{
+classname "info_null"
+targetname "t952"
+origin "3960 7112 136"
+}
+{
+origin "3872 7260 248"
+target "t953"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3984 7260 136"
+targetname "t953"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t954"
+origin "4000 7324 248"
+}
+{
+classname "info_null"
+targetname "t954"
+origin "3888 7324 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t955"
+origin "3872 7508 248"
+}
+{
+classname "info_null"
+targetname "t955"
+origin "3984 7508 136"
+}
+{
+origin "4000 7572 248"
+target "t956"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3888 7572 136"
+targetname "t956"
+classname "info_null"
+}
+{
+origin "3872 7756 248"
+target "t957"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3984 7756 136"
+targetname "t957"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t958"
+origin "4000 7820 248"
+}
+{
+classname "info_null"
+targetname "t958"
+origin "3888 7820 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t959"
+origin "3872 8004 248"
+}
+{
+classname "info_null"
+targetname "t959"
+origin "3984 8004 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t960"
+origin "5728 7628 248"
+}
+{
+origin "5412 7772 248"
+target "t961"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5544 7772 136"
+targetname "t961"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t962"
+origin "5728 7876 248"
+}
+{
+classname "info_null"
+targetname "t962"
+origin "5596 7876 136"
+}
+{
+origin "5408 8020 248"
+target "t963"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5540 8020 136"
+targetname "t963"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t964"
+origin "5728 8124 248"
+}
+{
+classname "info_null"
+targetname "t964"
+origin "5596 8124 136"
+}
+{
+origin "5684 7508 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "225"
+}
+{
+origin "5880 8808 120"
+target "t965"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5776 8912 8"
+targetname "t965"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t966"
+origin "5904 9120 120"
+}
+{
+classname "info_null"
+targetname "t966"
+origin "6008 9016 8"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t967"
+origin "6224 9152 120"
+}
+{
+classname "info_null"
+targetname "t967"
+origin "6120 9256 8"
+}
+{
+origin "6288 9504 120"
+target "t968"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6392 9400 8"
+targetname "t968"
+classname "info_null"
+}
+{
+origin "6608 9536 120"
+target "t969"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6504 9640 8"
+targetname "t969"
+classname "info_null"
+}
+{
+origin "6688 10252 248"
+target "t970"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6564 10252 192"
+targetname "t970"
+classname "info_null"
+}
+{
+origin "6560 10644 248"
+target "t972"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6684 10644 192"
+targetname "t972"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t974"
+origin "5392 8864 120"
+}
+{
+classname "info_null"
+targetname "t974"
+origin "5496 8968 48"
+}
+{
+origin "5536 9200 120"
+target "t975"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5432 9096 48"
+targetname "t975"
+classname "info_null"
+}
+{
+origin "5212 9036 120"
+target "t976"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5316 9140 48"
+targetname "t976"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t977"
+origin "5288 9448 120"
+}
+{
+classname "info_null"
+targetname "t977"
+origin "5184 9344 48"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t978"
+origin "4640 8528 248"
+}
+{
+classname "info_null"
+targetname "t978"
+origin "4536 8632 136"
+}
+{
+origin "4592 8768 248"
+target "t979"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4696 8664 136"
+targetname "t979"
+classname "info_null"
+}
+{
+origin "4416 8304 248"
+target "t980"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4312 8408 136"
+targetname "t980"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t981"
+origin "4320 8496 248"
+}
+{
+classname "info_null"
+targetname "t981"
+origin "4424 8392 136"
+}
+{
+origin "4096 8272 248"
+target "t982"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4200 8168 136"
+targetname "t982"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t983"
+origin "3968 8272 248"
+}
+{
+classname "info_null"
+targetname "t983"
+origin "3864 8168 136"
+}
+{
+origin "3744 8496 248"
+target "t984"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3640 8392 136"
+targetname "t984"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t985"
+origin "3648 8304 248"
+}
+{
+classname "info_null"
+targetname "t985"
+origin "3752 8408 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t986"
+origin "3472 8768 248"
+}
+{
+classname "info_null"
+targetname "t986"
+origin "3368 8664 136"
+}
+{
+origin "3424 8528 248"
+target "t987"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3528 8632 136"
+targetname "t987"
+classname "info_null"
+}
+{
+origin "3152 8800 248"
+target "t988"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3256 8904 136"
+targetname "t988"
+classname "info_null"
+}
+{
+origin "5684 7508 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "315"
+}
+{
+origin "5684 7536 396"
+target "t989"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t990"
+origin "5660 7484 396"
+}
+{
+origin "5708 7484 396"
+target "t991"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname "info_null"
+origin "5952 7232 136"
+targetname "t991"
+}
+{
+origin "5376 7232 136"
+classname "info_null"
+targetname "t990"
+}
+{
+classname "info_null"
+origin "5684 7936 136"
+targetname "t989"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t992"
+origin "4508 6728 396"
+}
+{
+origin "4532 6780 396"
+target "t993"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t994"
+origin "4484 6780 396"
+}
+{
+targetname "t994"
+origin "4240 7032 136"
+classname "info_null"
+}
+{
+targetname "t993"
+classname "info_null"
+origin "4816 7032 136"
+}
+{
+targetname "t992"
+origin "4508 6328 136"
+classname "info_null"
+}
+{
+origin "4508 6756 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "270"
+}
+{
+angle "135"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "4508 6756 432"
+}
+{
+origin "4508 6756 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "45"
+}
+{
+origin "4349 5837 248"
+target "t995"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4453 5733 136"
+targetname "t995"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t996"
+origin "4849 5760 276"
+}
+{
+classname "info_null"
+targetname "t996"
+origin "4705 5760 164"
+}
+{
+origin "4224 5283 376"
+target "t997"
+light "600"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4224 5423 236"
+targetname "t997"
+classname "info_null"
+}
+{
+origin "3896 8036 396"
+target "t998"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t999"
+origin "3920 8088 396"
+}
+{
+origin "3872 8088 396"
+target "t1000"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname "info_null"
+origin "3628 8340 136"
+targetname "t1000"
+}
+{
+origin "4204 8340 136"
+classname "info_null"
+targetname "t999"
+}
+{
+classname "info_null"
+origin "3896 7636 136"
+targetname "t998"
+}
+{
+angle "270"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "3896 8064 432"
+}
+{
+origin "3896 8064 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "135"
+}
+{
+angle "45"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "3896 8064 432"
+}
+{
+angle "360"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "6320 5376 768"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1001"
+origin "6356 5376 724"
+}
+{
+targetname "t1001"
+origin "6616 5376 476"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1002"
+origin "4892 9252 120"
+}
+{
+classname "info_null"
+targetname "t1002"
+origin "4892 9396 48"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1003"
+origin "4440 9432 120"
+}
+{
+classname "info_null"
+targetname "t1003"
+origin "4544 9536 48"
+}
+{
+origin "4160 9712 120"
+target "t1004"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4220 9772 88"
+targetname "t1004"
+classname "info_null"
+}
+{
+origin "5296 9760 120"
+target "t1005"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5192 9864 48"
+targetname "t1005"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1006"
+origin "5576 10040 120"
+}
+{
+classname "info_null"
+targetname "t1006"
+origin "5472 10144 48"
+}
+{
+origin "5728 10300 120"
+target "t1007"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5624 10300 48"
+targetname "t1007"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1008"
+origin "5728 10548 120"
+}
+{
+classname "info_null"
+targetname "t1008"
+origin "5624 10548 48"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1009"
+origin "4068 10284 120"
+angle "0"
+}
+{
+classname "info_null"
+targetname "t1009"
+origin "4172 10284 48"
+angle "0"
+}
+{
+origin "4068 10532 120"
+target "t1010"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+angle "0"
+}
+{
+origin "4172 10532 48"
+targetname "t1010"
+classname "info_null"
+angle "0"
+}
+{
+angle "45"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "4224 12096 460"
+}
+{
+origin "3744 12096 460"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "135"
+}
+{
+angle "225"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "3744 11712 460"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1011"
+origin "6072 9816 420"
+}
+{
+origin "6240 9988 252"
+classname "info_null"
+targetname "t1011"
+}
+{
+angle "45"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "6048 9792 456"
+}
+{
+origin "6048 9408 456"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "315"
+}
+{
+origin "6072 9384 420"
+target "t1012"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+targetname "t1012"
+classname "info_null"
+origin "6244 9216 252"
+}
+{
+angle "225"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "5568 9408 456"
+}
+{
+origin "5568 9792 456"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "135"
+}
+{
+origin "5540 9384 420"
+target "t1013"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+targetname "t1013"
+classname "info_null"
+origin "5372 9212 252"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1014"
+origin "5540 9816 420"
+}
+{
+origin "5368 9984 252"
+classname "info_null"
+targetname "t1014"
+}
+{
+origin "4252 12120 420"
+target "t1015"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+targetname "t1015"
+classname "info_null"
+origin "4420 12292 252"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1016"
+origin "4252 11688 420"
+}
+{
+origin "4424 11520 252"
+classname "info_null"
+targetname "t1016"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1017"
+origin "3720 11688 420"
+}
+{
+origin "3552 11516 252"
+classname "info_null"
+targetname "t1017"
+}
+{
+origin "3720 12120 420"
+target "t1018"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+targetname "t1018"
+classname "info_null"
+origin "3548 12288 252"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1019"
+origin "3232 9068 248"
+}
+{
+classname "info_null"
+targetname "t1019"
+origin "3108 9068 192"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1020"
+origin "3104 9460 248"
+}
+{
+classname "info_null"
+targetname "t1020"
+origin "3228 9460 192"
+}
+{
+origin "3232 9764 248"
+target "t1021"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3108 9764 192"
+targetname "t1021"
+classname "info_null"
+}
+{
+origin "3104 10156 248"
+target "t1022"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3228 10156 192"
+targetname "t1022"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1023"
+origin "5328 15360 248"
+}
+{
+classname "info_null"
+targetname "t1023"
+origin "5184 15360 136"
+}
+{
+origin "5184 15168 136"
+targetname "t1024"
+classname "info_null"
+}
+{
+origin "5032 15168 248"
+target "t1024"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1025"
+origin "4824 14760 248"
+}
+{
+classname "info_null"
+targetname "t1025"
+origin "4928 14656 136"
+}
+{
+origin "4864 14320 248"
+target "t1026"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4760 14424 136"
+targetname "t1026"
+classname "info_null"
+}
+{
+origin "4440 14376 248"
+target "t1027"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4544 14272 136"
+targetname "t1027"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1028"
+origin "4488 13944 248"
+}
+{
+classname "info_null"
+targetname "t1028"
+origin "4384 14048 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1029"
+origin "4008 14376 248"
+}
+{
+classname "info_null"
+targetname "t1029"
+origin "3904 14272 136"
+}
+{
+origin "3672 14432 248"
+target "t1030"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3776 14536 136"
+targetname "t1030"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1031"
+origin "3288 14816 248"
+}
+{
+classname "info_null"
+targetname "t1031"
+origin "3392 14920 136"
+}
+{
+origin "3624 14760 248"
+target "t1032"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3520 14656 136"
+targetname "t1032"
+classname "info_null"
+}
+{
+origin "3000 15864 440"
+target "t1033"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3104 15968 392"
+targetname "t1033"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1034"
+origin "2904 16296 440"
+}
+{
+classname "info_null"
+targetname "t1034"
+origin "3008 16192 392"
+}
+{
+origin "3432 16296 440"
+target "t1035"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3328 16192 392"
+targetname "t1035"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1036"
+origin "3336 15864 440"
+}
+{
+classname "info_null"
+targetname "t1036"
+origin "3232 15968 392"
+}
+{
+origin "5544 14760 248"
+target "t1037"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5440 14656 136"
+targetname "t1037"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1038"
+origin "5344 14672 248"
+}
+{
+classname "info_null"
+targetname "t1038"
+origin "5448 14776 136"
+}
+{
+origin "5728 14288 248"
+target "t1039"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5832 14392 136"
+targetname "t1039"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1040"
+origin "5920 14244 248"
+}
+{
+classname "info_null"
+targetname "t1040"
+origin "5808 14244 136"
+}
+{
+origin "5792 14180 248"
+target "t1041"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5904 14180 136"
+targetname "t1041"
+classname "info_null"
+}
+{
+origin "5920 13996 248"
+target "t1042"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5808 13996 136"
+targetname "t1042"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1043"
+origin "5792 13932 248"
+}
+{
+classname "info_null"
+targetname "t1043"
+origin "5904 13932 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1044"
+origin "5920 13748 248"
+}
+{
+classname "info_null"
+targetname "t1044"
+origin "5808 13748 136"
+}
+{
+origin "5792 13684 248"
+target "t1045"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5904 13684 136"
+targetname "t1045"
+classname "info_null"
+}
+{
+origin "5920 13500 248"
+target "t1046"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5808 13500 136"
+targetname "t1046"
+classname "info_null"
+}
+{
+origin "4064 13876 248"
+target "t1047"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4196 13876 136"
+targetname "t1047"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1048"
+origin "4380 13732 248"
+}
+{
+classname "info_null"
+targetname "t1048"
+origin "4248 13732 136"
+}
+{
+origin "4064 13628 248"
+target "t1049"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4196 13628 136"
+targetname "t1049"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1050"
+origin "4384 13484 248"
+}
+{
+classname "info_null"
+targetname "t1050"
+origin "4252 13484 136"
+}
+{
+origin "4064 13380 248"
+target "t1051"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4196 13380 136"
+targetname "t1051"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1052"
+origin "3912 12696 120"
+}
+{
+classname "info_null"
+targetname "t1052"
+origin "4016 12592 8"
+}
+{
+origin "3888 12384 120"
+target "t1053"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3784 12488 8"
+targetname "t1053"
+classname "info_null"
+}
+{
+origin "3568 12352 120"
+target "t1054"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "3672 12248 8"
+targetname "t1054"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1055"
+origin "3504 12000 120"
+}
+{
+classname "info_null"
+targetname "t1055"
+origin "3400 12104 8"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1056"
+origin "3184 11968 120"
+}
+{
+classname "info_null"
+targetname "t1056"
+origin "3288 11864 8"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1057"
+origin "3104 11252 248"
+}
+{
+classname "info_null"
+targetname "t1057"
+origin "3228 11252 192"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1058"
+origin "3232 10860 248"
+}
+{
+classname "info_null"
+targetname "t1058"
+origin "3108 10860 192"
+}
+{
+origin "4400 12640 120"
+target "t1059"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4296 12536 48"
+targetname "t1059"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1060"
+origin "4256 12304 120"
+}
+{
+classname "info_null"
+targetname "t1060"
+origin "4360 12408 48"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1061"
+origin "4580 12468 120"
+}
+{
+classname "info_null"
+targetname "t1061"
+origin "4476 12364 48"
+}
+{
+origin "4504 12056 120"
+target "t1062"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4608 12160 48"
+targetname "t1062"
+classname "info_null"
+}
+{
+origin "5152 12976 248"
+target "t1063"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5256 12872 136"
+targetname "t1063"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1064"
+origin "5200 12736 248"
+}
+{
+classname "info_null"
+targetname "t1064"
+origin "5096 12840 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1065"
+origin "5376 13200 248"
+}
+{
+classname "info_null"
+targetname "t1065"
+origin "5480 13096 136"
+}
+{
+origin "5472 13008 248"
+target "t1066"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5368 13112 136"
+targetname "t1066"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1067"
+origin "5696 13232 248"
+}
+{
+classname "info_null"
+targetname "t1067"
+origin "5592 13336 136"
+}
+{
+origin "5824 13232 248"
+target "t1068"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5928 13336 136"
+targetname "t1068"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1069"
+origin "6048 13008 248"
+}
+{
+classname "info_null"
+targetname "t1069"
+origin "6152 13112 136"
+}
+{
+origin "6144 13200 248"
+target "t1070"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6040 13096 136"
+targetname "t1070"
+classname "info_null"
+}
+{
+origin "6320 12736 248"
+target "t1071"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6424 12840 136"
+targetname "t1071"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1072"
+origin "6368 12976 248"
+}
+{
+classname "info_null"
+targetname "t1072"
+origin "6264 12872 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1073"
+origin "6640 12704 248"
+}
+{
+classname "info_null"
+targetname "t1073"
+origin "6536 12600 136"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1074"
+origin "5443 15667 248"
+}
+{
+classname "info_null"
+targetname "t1074"
+origin "5339 15771 136"
+}
+{
+target "t1075"
+origin "4943 15744 276"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5087 15744 164"
+targetname "t1075"
+classname "info_null"
+}
+{
+origin "3440 16128 732"
+target "t1076"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname "info_null"
+origin "3176 16128 476"
+targetname "t1076"
+}
+{
+origin "4900 12252 120"
+target "t1077"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4900 12108 48"
+targetname "t1077"
+classname "info_null"
+}
+{
+origin "5352 12072 120"
+target "t1078"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "5248 11968 48"
+targetname "t1078"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1079"
+origin "5632 11792 120"
+}
+{
+classname "info_null"
+targetname "t1079"
+origin "5572 11732 88"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1080"
+origin "4496 11744 120"
+}
+{
+classname "info_null"
+targetname "t1080"
+origin "4600 11640 48"
+}
+{
+origin "4216 11464 120"
+target "t1081"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4320 11360 48"
+targetname "t1081"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1082"
+origin "4064 11204 120"
+}
+{
+classname "info_null"
+targetname "t1082"
+origin "4168 11204 48"
+}
+{
+origin "4064 10956 120"
+target "t1083"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "4168 10956 48"
+targetname "t1083"
+classname "info_null"
+}
+{
+angle "0"
+origin "5724 11220 120"
+target "t1084"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+angle "0"
+origin "5620 11220 48"
+targetname "t1084"
+classname "info_null"
+}
+{
+angle "0"
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1085"
+origin "5724 10972 120"
+}
+{
+angle "0"
+classname "info_null"
+targetname "t1085"
+origin "5620 10972 48"
+}
+{
+origin "6560 12436 248"
+target "t1086"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6684 12436 192"
+targetname "t1086"
+classname "info_null"
+}
+{
+origin "6688 12044 248"
+target "t1087"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname light
+}
+{
+origin "6564 12044 192"
+targetname "t1087"
+classname "info_null"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1088"
+origin "6560 11740 248"
+}
+{
+classname "info_null"
+targetname "t1088"
+origin "6684 11740 192"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1089"
+origin "6688 11348 248"
+}
+{
+classname "info_null"
+targetname "t1089"
+origin "6564 11348 192"
+}
+{
+classname light
+_color "1.000000 1.000000 0.850980"
+light "600"
+target "t1090"
+origin "5568 16221 376"
+}
+{
+classname "info_null"
+targetname "t1090"
+origin "5568 16081 236"
+}
+{
+origin "4116 13996 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "45"
+}
+{
+angle "135"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "4116 13996 432"
+}
+{
+angle "270"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "4116 13996 432"
+}
+{
+origin "5324 14956 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "90"
+}
+{
+angle "315"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "5324 14956 432"
+}
+{
+origin "5324 14956 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "225"
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1091"
+origin "5324 14984 396"
+}
+{
+origin "5300 14932 396"
+target "t1092"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1093"
+origin "5348 14932 396"
+}
+{
+targetname "t1093"
+origin "5592 14680 136"
+classname "info_null"
+}
+{
+targetname "t1092"
+classname "info_null"
+origin "5016 14680 136"
+}
+{
+targetname "t1091"
+origin "5324 15384 136"
+classname "info_null"
+}
+{
+origin "4116 13964 396"
+target "t1094"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1095"
+origin "4140 14016 396"
+}
+{
+origin "4092 14016 396"
+target "t1096"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname "info_null"
+origin "3848 14268 136"
+targetname "t1096"
+}
+{
+origin "4424 14268 136"
+classname "info_null"
+targetname "t1095"
+}
+{
+classname "info_null"
+origin "4116 13564 136"
+targetname "t1094"
+}
+{
+origin "2904 16296 440"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3432 16296 440"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "3440 16128 732"
+}
+{
+origin "3336 15864 440"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3000 15864 440"
+}
+{
+origin "3472 16128 768"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "180"
+}
+{
+origin "3288 14816 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3624 14760 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3672 14432 248"
+}
+{
+origin "4008 14376 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "4092 14016 396"
+}
+{
+origin "4140 14016 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "4116 13964 396"
+}
+{
+origin "4488 13944 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1099"
+origin "4440 14376 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4864 14320 248"
+}
+{
+origin "4824 14760 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5344 14672 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5544 14760 248"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "5300 14932 396"
+}
+{
+origin "5348 14932 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+origin "5324 14984 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5032 15168 248"
+}
+{
+origin "5328 15360 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5443 15667 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5568 16221 376"
+light "600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4943 15744 276"
+}
+{
+origin "4520 16672 552"
+light "350"
+_color "1.000000 1.000000 1.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 1.000000"
+light "350"
+origin "4364 16760 552"
+}
+{
+origin "4204 16672 552"
+light "350"
+_color "1.000000 1.000000 1.000000"
+classname "lightJunior"
+}
+{
+origin "4624 16320 520"
+light "350"
+_color "1.000000 0.000000 0.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.000000 0.000000"
+light "350"
+origin "4528 16320 520"
+}
+{
+origin "4224 16144 520"
+light "350"
+_color "1.000000 0.000000 0.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.000000 0.000000"
+light "350"
+origin "4224 16048 520"
+}
+{
+origin "4480 15824 520"
+light "350"
+_color "1.000000 0.000000 0.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.000000 0.000000"
+light "350"
+origin "4480 15664 520"
+}
+{
+classname "lightJunior"
+origin "4178 15912 520"
+light "150"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+origin "3724 15104 848"
+light "350"
+_color "0.869565 0.991304 1.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.869565 0.991304 1.000000"
+light "350"
+origin "3844 15104 848"
+}
+{
+origin "3964 15104 848"
+light "350"
+_color "0.869565 0.991304 1.000000"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5728 14288 248"
+}
+{
+origin "5920 14244 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5792 14180 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5920 13996 248"
+}
+{
+origin "5792 13932 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5920 13748 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5792 13684 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5924 13496 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5828 13228 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6148 13196 248"
+}
+{
+origin "6052 13004 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6372 12972 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6324 12732 248"
+}
+{
+origin "6644 12700 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6562 12434 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6690 12042 248"
+}
+{
+origin "6562 11738 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6690 11346 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5698 13230 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5378 13198 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5474 13006 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5154 12974 248"
+}
+{
+origin "5202 12734 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4902 12250 120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5354 12070 120"
+}
+{
+origin "5634 11790 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5726 11218 120"
+angle "0"
+}
+{
+origin "5726 10970 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4066 10954 120"
+}
+{
+origin "4066 11202 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4218 11462 120"
+}
+{
+origin "4498 11742 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4506 12054 120"
+}
+{
+origin "4582 12466 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4258 12302 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4402 12638 120"
+}
+{
+origin "3914 12694 120"
+target "t1100"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4066 13378 248"
+}
+{
+origin "4386 13482 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4066 13626 248"
+}
+{
+origin "4382 13730 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4066 13874 248"
+}
+{
+origin "4132 11904 -120"
+light "350"
+_color "1.000000 0.000000 0.000000"
+classname "lightJunior"
+}
+{
+angle "0"
+classname "lightJunior"
+_color "0.000000 0.000000 1.000000"
+light "350"
+origin "5660 9600 -120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3890 12382 120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3570 12350 120"
+}
+{
+origin "3506 11998 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3186 11966 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3106 11250 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3234 10858 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "6976 10528 480"
+}
+{
+origin "6400 10528 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "5952 10528 480"
+}
+{
+origin "5504 10528 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "4992 10528 480"
+}
+{
+origin "4672 10528 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "4096 10528 480"
+}
+{
+origin "3648 10528 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "3200 10528 480"
+}
+{
+origin "2688 10528 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6976 9984 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 9984 704"
+}
+{
+origin "5952 9984 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5504 9984 704"
+}
+{
+origin "4992 9984 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 9984 704"
+}
+{
+origin "4096 9984 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3648 9984 704"
+}
+{
+origin "3200 9984 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 9984 704"
+}
+{
+origin "6976 9600 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 9600 704"
+}
+{
+origin "5952 9600 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5504 9600 704"
+}
+{
+origin "4992 9600 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 9600 704"
+}
+{
+origin "4096 9600 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3648 9600 704"
+}
+{
+origin "3200 9600 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 9600 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 9088 704"
+}
+{
+origin "6400 9088 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5952 9088 704"
+}
+{
+origin "5504 9088 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 9088 704"
+}
+{
+origin "4672 9088 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4096 9088 704"
+}
+{
+origin "3648 9088 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3200 9088 704"
+}
+{
+origin "2688 9088 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 8704 704"
+}
+{
+origin "6400 8704 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5952 8704 704"
+}
+{
+origin "5504 8704 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 8704 704"
+}
+{
+origin "4672 8704 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4096 8704 704"
+}
+{
+origin "3648 8704 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3200 8704 704"
+}
+{
+origin "2688 8704 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6976 8192 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 8192 704"
+}
+{
+origin "5952 8192 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5504 8192 704"
+}
+{
+origin "4992 8192 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 8192 704"
+}
+{
+origin "4096 8192 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3648 8192 704"
+}
+{
+origin "3200 8192 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 8192 704"
+}
+{
+origin "6976 7744 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 7744 704"
+}
+{
+origin "5952 7744 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5504 7744 704"
+}
+{
+origin "4992 7744 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 7744 704"
+}
+{
+origin "4096 7744 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3648 7744 704"
+}
+{
+origin "3200 7744 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 7744 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 7232 704"
+}
+{
+origin "6400 7232 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5952 7232 704"
+}
+{
+origin "5504 7232 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 7232 704"
+}
+{
+origin "4672 7232 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4096 7232 704"
+}
+{
+origin "3648 7232 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3200 7232 704"
+}
+{
+origin "2688 7232 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6976 6720 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 6720 704"
+}
+{
+origin "5952 6720 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5504 6720 704"
+}
+{
+origin "4992 6720 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 6720 704"
+}
+{
+origin "4096 6720 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3648 6720 704"
+}
+{
+origin "3200 6720 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 6080 704"
+}
+{
+origin "6400 6080 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 6080 704"
+}
+{
+origin "4672 6080 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4096 6080 704"
+}
+{
+origin "3648 6080 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6976 5504 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6400 5504 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 4928 960"
+}
+{
+origin "6400 4928 960"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "2688 11040 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "3264 11040 480"
+}
+{
+origin "3712 11040 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "4160 11040 480"
+}
+{
+origin "4672 11040 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "4992 11040 480"
+}
+{
+origin "5568 11040 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "6016 11040 480"
+}
+{
+origin "6464 11040 480"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "6976 11040 480"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 11520 704"
+}
+{
+origin "3264 11520 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3712 11520 704"
+}
+{
+origin "4160 11520 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 11520 704"
+}
+{
+origin "4992 11520 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5568 11520 704"
+}
+{
+origin "6016 11520 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6464 11520 704"
+}
+{
+origin "6976 11520 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 11904 704"
+}
+{
+origin "3264 11904 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3712 11904 704"
+}
+{
+origin "4160 11904 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 11904 704"
+}
+{
+origin "4992 11904 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5568 11904 704"
+}
+{
+origin "6016 11904 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6464 11904 704"
+}
+{
+origin "6976 11904 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "2688 12416 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3264 12416 704"
+}
+{
+origin "3712 12416 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4160 12416 704"
+}
+{
+origin "4672 12416 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 12416 704"
+}
+{
+origin "5568 12416 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6016 12416 704"
+}
+{
+origin "6464 12416 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 12416 704"
+}
+{
+origin "2688 12800 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3264 12800 704"
+}
+{
+origin "3712 12800 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4160 12800 704"
+}
+{
+origin "4672 12800 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 12800 704"
+}
+{
+origin "5568 12800 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6016 12800 704"
+}
+{
+origin "6464 12800 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 12800 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 13312 704"
+}
+{
+origin "3264 13312 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3712 13312 704"
+}
+{
+origin "4160 13312 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 13312 704"
+}
+{
+origin "4992 13312 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5568 13312 704"
+}
+{
+origin "6016 13312 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6464 13312 704"
+}
+{
+origin "6976 13312 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 13760 704"
+}
+{
+origin "3264 13760 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3712 13760 704"
+}
+{
+origin "4160 13760 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 13760 704"
+}
+{
+origin "4992 13760 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5568 13760 704"
+}
+{
+origin "6016 13760 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6464 13760 704"
+}
+{
+origin "6976 13760 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "2688 14272 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3264 14272 704"
+}
+{
+origin "3712 14272 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4160 14272 704"
+}
+{
+origin "4672 14272 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 14272 704"
+}
+{
+origin "5568 14272 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6016 14272 704"
+}
+{
+origin "6464 14272 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6976 14272 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 14784 704"
+}
+{
+origin "3264 14784 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3712 14784 704"
+}
+{
+origin "4160 14784 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4672 14784 704"
+}
+{
+origin "4992 14784 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "5568 14784 704"
+}
+{
+origin "6016 14784 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6464 14784 704"
+}
+{
+origin "2688 15424 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3264 15424 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "4992 15424 704"
+}
+{
+origin "5568 15424 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "6016 15424 704"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "2688 16000 704"
+}
+{
+origin "3264 16000 704"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "2688 16576 960"
+light "1600"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "1600"
+origin "3264 16576 960"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6888 5208 440"
+}
+{
+origin "6360 5208 440"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6356 5376 724"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6456 5640 440"
+}
+{
+origin "6792 5640 440"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6504 6688 248"
+}
+{
+origin "6168 6744 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6120 7072 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5784 7128 248"
+}
+{
+origin "5700 7488 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "5652 7488 396"
+}
+{
+origin "5676 7540 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5304 7560 248"
+}
+{
+origin "5352 7128 248"
+target "t1101"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4928 7184 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4968 6744 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4448 6832 248"
+}
+{
+origin "4248 6744 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4532 6780 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "4484 6780 396"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "4508 6728 396"
+}
+{
+origin "4760 6336 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4464 6144 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4349 5837 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "600"
+origin "4224 5283 376"
+}
+{
+origin "4849 5760 276"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4064 7216 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3872 7260 248"
+}
+{
+origin "4000 7324 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3872 7508 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4000 7572 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3872 7756 248"
+}
+{
+origin "4000 7820 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3868 8008 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3964 8276 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3644 8308 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3740 8500 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3420 8532 248"
+}
+{
+origin "3468 8772 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3148 8804 248"
+}
+{
+origin "3230 9070 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "3102 9462 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3230 9766 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "3102 10158 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4094 8274 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4414 8306 248"
+}
+{
+origin "4318 8498 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4638 8530 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4590 8770 248"
+}
+{
+origin "4890 9254 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "4438 9434 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4158 9714 120"
+}
+{
+angle "0"
+origin "4066 10286 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+angle "0"
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "4066 10534 120"
+}
+{
+origin "5726 10550 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5726 10302 120"
+}
+{
+origin "5574 10042 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5294 9762 120"
+}
+{
+origin "5286 9450 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5210 9038 120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5534 9202 120"
+}
+{
+origin "5390 8866 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+target "t1102"
+origin "5878 8810 120"
+}
+{
+origin "5726 8126 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5406 8022 248"
+}
+{
+origin "5726 7878 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "5410 7774 248"
+}
+{
+origin "5726 7630 248"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "5902 9122 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+origin "6222 9154 120"
+light "400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6286 9506 120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6606 9538 120"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6686 10254 248"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "400"
+origin "6558 10646 248"
+}
+{
+origin "5540 9816 420"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "5540 9384 420"
+}
+{
+origin "6076 9384 420"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "6080 9816 420"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "3724 12128 420"
+}
+{
+origin "3724 11696 420"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "4260 11696 420"
+}
+{
+origin "4264 12128 420"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "3916 8092 396"
+}
+{
+origin "3868 8092 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+origin "3892 8040 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+angle "90"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "5892 13436 432"
+}
+{
+origin "5892 13436 432"
+model "models/mapobjects/light/camplt45.md3"
+classname "misc_model"
+angle "315"
+}
+{
+angle "225"
+classname "misc_model"
+model "models/mapobjects/light/camplt45.md3"
+origin "5892 13436 432"
+}
+{
+origin "5892 13464 396"
+target "t1103"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname light
+_color "0.904977 1.000000 0.995475"
+light "4000"
+target "t1104"
+origin "5868 13412 396"
+}
+{
+origin "5916 13412 396"
+target "t1105"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname light
+}
+{
+classname "info_null"
+origin "6160 13160 136"
+targetname "t1105"
+}
+{
+origin "5584 13160 136"
+classname "info_null"
+targetname "t1104"
+}
+{
+classname "info_null"
+origin "5892 13864 136"
+targetname "t1103"
+}
+{
+origin "5868 13412 396"
+light "4000"
+_color "0.904977 1.000000 0.995475"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "5916 13412 396"
+}
+{
+classname "lightJunior"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "5892 13464 396"
+}
+{
+classname "corona"
+origin "4132 14012 404"
+}
+{
+origin "5324 14976 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "5340 14940 404"
+}
+{
+origin "5308 14940 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "5892 13456 404"
+}
+{
+origin "5908 13420 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "5876 13420 404"
+}
+{
+origin "5684 7528 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "5700 7492 404"
+}
+{
+origin "5668 7492 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "4508 6736 404"
+}
+{
+origin "4492 6772 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "4524 6772 404"
+}
+{
+origin "3896 8044 404"
+classname "corona"
+}
+{
+classname "corona"
+origin "3880 8080 404"
+}
+{
+origin "3912 8080 404"
+classname "corona"
+}
+{
+classname "corona"
+_color "0.904977 1.000000 0.995475"
+light "4000"
+origin "6340 5376 740"
+}
+{
+classname "corona"
+origin "4240 11696 432"
+}
+{
+origin "3728 11696 432"
+classname "corona"
+}
+{
+classname "corona"
+origin "3728 12112 432"
+}
+{
+classname "corona"
+origin "6064 9808 432"
+}
+{
+origin "6064 9392 432"
+classname "corona"
+}
+{
+classname "corona"
+origin "5552 9392 432"
+}
+{
+origin "5552 9808 432"
+classname "corona"
+}
+{
+origin "4160 10752 256"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "4672 10752 256"
+}
+{
+origin "4992 10752 256"
+light "2400"
+_color "1.000000 1.000000 0.850980"
+classname "lightJunior"
+}
+{
+classname "lightJunior"
+_color "1.000000 1.000000 0.850980"
+light "2400"
+origin "5568 10752 256"
+}
+{
+classname light
+origin "5012 5078 524"
+target "t1110"
+light "400"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+classname "info_null"
+origin "5012 5244 412"
+targetname "t1110"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.803922 0.611765"
+light "100"
+origin "5012 5086 520"
+angle "0"
+}
+{
+radius "512"
+angle "0"
+_color "1.000000 0.803922 0.611765"
+light "400"
+target "t1111"
+origin "5532 5674 524"
+classname light
+}
+{
+angle "0"
+targetname "t1111"
+origin "5532 5508 412"
+classname "info_null"
+}
+{
+angle "0"
+origin "5532 5666 520"
+light "100"
+_color "1.000000 0.803922 0.611765"
+classname "lightJunior"
+}
+{
+target "t1112"
+_color "1.000000 0.974249 0.888412"
+origin "5376 5568 520"
+light "200"
+classname light
+}
+{
+classname light
+light "200"
+origin "5504 5568 520"
+_color "1.000000 0.974249 0.888412"
+target "t1113"
+}
+{
+classname light
+light "200"
+origin "5376 5184 520"
+_color "1.000000 0.974249 0.888412"
+target "t1114"
+}
+{
+target "t1115"
+_color "1.000000 0.974249 0.888412"
+origin "5504 5184 520"
+light "200"
+classname light
+}
+{
+target "t1116"
+_color "1.000000 0.974249 0.888412"
+origin "5056 5184 520"
+light "200"
+classname light
+}
+{
+classname "target_speaker"
+noise "sound/world/transformer.wav"
+origin "5280 5088 477"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "5344 5088 477"
+noise "sound/world/transformer.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/transformer.wav"
+origin "5400 5088 477"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "5464 5088 477"
+noise "sound/world/transformer.wav"
+classname "target_speaker"
+}
+{
+origin "5056 5600 272"
+noise "sound/world/amb_wind_indoor.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind_indoor.wav"
+origin "5600 6144 637"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "5888 6576 637"
+noise "sound/world/amb_wind.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind.wav"
+origin "5248 6240 925"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "6328 5728 925"
+noise "sound/world/amb_wind.wav"
+classname "target_speaker"
+}
+{
+origin "4896 15744 192"
+noise "sound/world/amb_wind.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind_indoor.wav"
+origin "4736 15904 272"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "4192 15360 637"
+noise "sound/world/amb_wind_indoor.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind.wav"
+origin "3904 14928 637"
+spawnflags "1"
+}
+{
+spawnflags "1"
+origin "4544 15264 925"
+noise "sound/world/amb_wind.wav"
+classname "target_speaker"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind.wav"
+origin "3464 15776 925"
+spawnflags "1"
+}
+{
+classname light
+light "200"
+origin "4288 15936 520"
+_color "1.000000 0.974249 0.888412"
+target "t1117"
+}
+{
+target "t1118"
+_color "1.000000 0.974249 0.888412"
+origin "4416 15936 520"
+light "200"
+classname light
+}
+{
+target "t1119"
+_color "1.000000 0.974249 0.888412"
+origin "4288 16320 520"
+light "200"
+classname light
+}
+{
+classname light
+light "200"
+origin "4416 16320 520"
+_color "1.000000 0.974249 0.888412"
+target "t1120"
+}
+{
+target "t1121"
+_color "1.000000 0.974249 0.888412"
+origin "4736 16320 520"
+light "200"
+classname light
+}
+{
+classname light
+origin "4740 16428 524"
+target "t1122"
+light "180"
+_color "1.000000 0.803922 0.611765"
+angle "0"
+radius "512"
+}
+{
+classname "info_null"
+origin "4740 16234 412"
+targetname "t1122"
+angle "0"
+}
+{
+classname "lightJunior"
+_color "1.000000 0.803922 0.611765"
+light "100"
+origin "4740 16420 520"
+angle "0"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind.wav"
+origin "4096 13760 192"
+spawnflags "1"
+}
+{
+origin "3648 13744 168"
+noise "sound/world/amb_wind_indoor.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind_indoor.wav"
+origin "3968 11904 -128"
+spawnflags "1"
+}
+{
+origin "3936 11904 384"
+noise "sound/world/amb_wind_indoor.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+origin "5632 7744 192"
+noise "sound/world/amb_wind.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind_indoor.wav"
+origin "6080 7760 168"
+spawnflags "1"
+}
+{
+origin "5760 9600 -128"
+noise "sound/world/amb_wind_indoor.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_wind_indoor.wav"
+origin "5792 9600 384"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war2r.wav"
+origin "5104 7120 192"
+spawnflags "1"
+}
+{
+origin "4608 6376 192"
+noise "sound/world/amb_war2.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war3.wav"
+origin "4480 5680 192"
+spawnflags "1"
+}
+{
+origin "4016 7128 192"
+noise "sound/world/amb_war3r.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war2.wav"
+origin "4008 8104 192"
+spawnflags "1"
+}
+{
+origin "3176 9168 192"
+noise "sound/world/amb_war2r.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war3.wav"
+origin "4704 9184 192"
+spawnflags "1"
+}
+{
+origin "5632 8880 192"
+noise "sound/world/amb_war3.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war3r.wav"
+origin "6624 10304 192"
+spawnflags "1"
+}
+{
+origin "4872 10200 192"
+noise "sound/world/amb_war2.wav"
+classname "target_speaker"
+}
+{
+origin "4696 14344 192"
+noise "sound/world/amb_war2r.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war2.wav"
+origin "5192 15088 192"
+spawnflags "1"
+}
+{
+origin "5320 15784 192"
+noise "sound/world/amb_war3.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war3r.wav"
+origin "5784 14336 192"
+spawnflags "1"
+}
+{
+origin "5792 13360 192"
+noise "sound/world/amb_war2.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war2r.wav"
+origin "6624 12296 192"
+spawnflags "1"
+}
+{
+origin "5096 12280 192"
+noise "sound/world/amb_war3.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war3.wav"
+origin "4168 12584 192"
+spawnflags "1"
+}
+{
+origin "3176 11160 192"
+noise "sound/world/amb_war3r.wav"
+classname "target_speaker"
+spawnflags "1"
+}
+{
+classname "target_speaker"
+noise "sound/world/amb_war2.wav"
+origin "4928 11264 192"
+}
+{
+origin "5316 6148 628"
+message "Allied Base"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Allied Base"
+origin "5448 5560 472"
+}
+{
+origin "5444 5216 472"
+message "Allied Base"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Allied Base"
+origin "5052 5592 472"
+}
+{
+classname "target_location"
+message "Axis Base"
+origin "4480 15344 628"
+}
+{
+origin "4348 15932 472"
+message "Axis Base"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Axis Base"
+origin "4352 16276 472"
+}
+{
+origin "4744 15900 472"
+message "Axis Base"
+classname "target_location"
+}
+{
+origin "6624 5536 524"
+message "Southern Flag"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Southwest Flag"
+origin "4416 7676 524"
+}
+{
+origin "4832 9440 140"
+message "South Clearing Flag"
+classname "target_location"
+}
+{
+classname "target_location"
+message "North Clearing Flag"
+origin "4992 12096 148"
+}
+{
+origin "5380 13624 524"
+message "Northeast Flag"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Northern Flag"
+origin "3168 15996 524"
+}
+{
+origin "4852 9494 64"
+targetname "t1124"
+classname "info_notnull"
+}
+{
+target "t1124"
+classname "info_player_intermission"
+origin "4926 9402 64"
+spawnflags "1"
+}
+{
+classname "info_notnull"
+targetname "t1125"
+origin "4852 9494 64"
+}
+{
+spawnflags "2"
+origin "4926 9402 64"
+classname "info_player_intermission"
+target "t1125"
+}
+{
+model "*15"
+origin "5888 9600 655"
+targetname "dish_obj1"
+scriptname "dish_obj1"
+spawnflags "2"
+model2 "models/mapobjects/miltary_trim/dish_only.md3"
+classname "script_mover"
+}
+{
+model "*16"
+origin "3912 15120 1103"
+classname "script_mover"
+model2 "models/mapobjects/miltary_trim/dish_only.md3"
+spawnflags "2"
+scriptname "dish_obj2"
+targetname "dish_obj2"
+}
+{
+origin "4704 12096 72"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "5248 12096 72"
+}
+{
+origin "4992 12384 232"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "4840 9792 72"
+}
+{
+origin "4512 9440 72"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "5152 9440 72"
+}
+{
+origin "4832 9088 232"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_speaker"
+noise "sound/world/machinry.wav"
+origin "5016 5128 477"
+spawnflags "1"
+}
+{
+origin "4414 16558 456"
+noise "sound/world/machinry.wav"
+spawnflags "1"
+classname "target_speaker"
+}
+{
+classname "target_location"
+message "Allied Base"
+origin "4204 5648 288"
+}
+{
+origin "5568 15860 312"
+message "Axis Base"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Allied Passage"
+origin "6272 7744 120"
+}
+{
+origin "6288 8320 0"
+message "Allied Passage"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Allied Passage"
+origin "6296 9024 -232"
+}
+{
+origin "6288 9592 -232"
+message "Allied Passage"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Allied Passage"
+origin "5888 9600 -232"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "6504 8464 376"
+}
+{
+origin "6280 8224 376"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "6512 8000 376"
+}
+{
+origin "6712 8224 376"
+message "Central Clearing"
+classname "target_location"
+}
+{
+origin "3288 13496 376"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "3064 13256 376"
+}
+{
+origin "3296 13032 376"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "3496 13256 376"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "5552 7744 176"
+}
+{
+classname "target_location"
+message "Axis Passage"
+origin "3504 13752 120"
+}
+{
+origin "3496 13312 72"
+message "Axis Passage"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Axis Passage"
+origin "3496 12864 -152"
+}
+{
+origin "3496 12216 -192"
+message "Axis Passage"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Axis Passage"
+origin "3816 11904 -192"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "4232 13752 152"
+}
+{
+model "*17"
+classname "func_static"
+}
+{
+model "*18"
+classname "func_static"
+}
+{
+model "*19"
+classname "func_static"
+}
+{
+model "*20"
+classname "func_static"
+}
+{
+model "*21"
+classname "func_static"
+}
+{
+model "*22"
+classname "func_static"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "5880 7744 392"
+}
+{
+origin "6272 7744 392"
+message "Central Clearing"
+classname "target_location"
+}
+{
+classname "target_location"
+message "Central Clearing"
+origin "3904 13752 400"
+}
+{
+origin "3504 13752 400"
+message "Central Clearing"
+classname "target_location"
+}
+{
+scriptname "checkpoint2"
+origin "4706 6044 128"
+angle "135"
+classname "misc_control_point"
+spawnflags "1"
+}
+{
+scriptname "checkpoint2"
+origin "5075 15443 128"
+angle "135"
+classname "misc_control_point"
+spawnflags "2"
+}
+{
+scriptname "checkpoint2"
+origin "6624 5536 392"
+angle "135"
+classname "misc_control_point"
+spawnflags "1"
+}
+{
+origin "4416 7680 224"
+angle "135"
+classname "misc_control_point"
+scriptname "checkpoint1"
+}
+{
+scriptname "checkpoint3"
+origin "4832 9440 8"
+angle "135"
+classname "misc_control_point"
+}
+{
+classname "misc_control_point"
+angle "315"
+origin "4992 12096 12"
+scriptname "checkpoint4"
+}
+{
+scriptname "checkpoint5"
+origin "3168 16000 392"
+angle "315"
+classname "misc_control_point"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+angle "315"
+origin "5380 13624 196"
+scriptname "checkpoint6"
+}
+{
+//angle "90"
+origin "5984 9600 -240"
+//scriptname "void"
+//target "alliedsidetower"
+//spawnflags "9"
+classname "misc_control_point"
+//model "models/multiplayer/flagpole/flagpole_reinforce.md3"
+}
+{
+//angle "270"
+classname "misc_control_point"
+//spawnflags "5"
+//target "axissidetower"
+//scriptname "void"
+origin "3656 11904 -240"
+//model "models/multiplayer/flagpole/flagpole_reinforce.md3"
+}
+{
+classname "npc_axis_apc"
+origin "5573 16053 192"
+angles "2.449951 -92.224731 0.0"
+}
+{
+classname "npc_tank_light"
+origin "5418 10261 64"
+angle "180"
+}
+{
+classname "npc_tank_light"
+origin "4328 11209 64"
+angle "0"
+}
+{
+classname "npc_axis_apc"
+origin "4226 5453 192"
+angles "5.14602 84.435425 0.0"
+}
+
+

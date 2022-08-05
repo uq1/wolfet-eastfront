@@ -1,0 +1,15 @@
+{
+	map			"goldrush"
+	longname		"^4[^3EF^4] ^5Gold Rush"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"The once-peaceful desert town of Tobruk is torn asunder as Axis and Allied forces struggle for tactical and strategic dominance. Tobruk's narrow backstreets and byways are the setting for a desperate face-to-face clash of elite forces. It's an all-or-nothing fight to the death."
+	briefing		"The Axis are guarding a hoard of gold in the Tobruk Central Bank. The Allies must steal an Axis Jagdpanther to blow the bank open, steal the gold bars and drive them to safety in a Truck."
+	axiswintext		"It would appear that the confidence of the Allied Supreme Command has been misplaced. The opportunity to win a major tactical and propaganda victory has been squandered by the inadequacy of the Allied effort. This abortive raid failed miserably due to deficiencies in Allied skill and courage in the face of the superior fighting ability of the stubborn Axis forces. Their notable excellence in defence directly reflects their expertise and bravery. With men such as these the Axis can look forward to many further victories."	
+	alliedwintext		"The verve and panache of the Allied forces has done much to raise the hopes of their Supreme Command. Demonstrating an impressive command of all the elements of modern warfare, the Allies have won an inspiring victory: this daring smash-and-grab raid has shown that the Allied forces are fully a match for the Axis forces. On the other hand, the Axis forces are fighting as if the war has already been lost. The Axis forces will have to do better than this if they hope to avoid a transfer to the Eastern Front where their suntans will impress neither their comrades nor the waiting Russians."
+	mapposition_x	780
+	mapposition_y	985
+}
+

@@ -1,0 +1,6 @@
+# UQ1: Now logs the warnings/errors to build.log file...
+scons BUILD="release" BUILD_ROOT='build' 2> build.log 
+
+strip -s cgame.mp.i386.so
+strip -s qagame.mp.i386.so
+strip -s ui.mp.i386.so

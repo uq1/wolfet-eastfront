@@ -1,0 +1,8 @@
+md3_back,		"models/players/winter/axis/medic/acc/backpack.md3"
+md3_hat,		"models/players/winter/axis/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"models/players/winter/axis/legs0.jpg"
+u_body,			"models/players/winter/axis/medic/body.jpg"
+u_rthand,		"models/players/winter/axis/hand.jpg"
+u_lfthand,		"models/players/winter/axis/hand.jpg"

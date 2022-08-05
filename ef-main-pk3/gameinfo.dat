@@ -1,0 +1,8 @@
+//spEnabled
+//spGameTypes 1
+//defaultSPGameType 0
+//coopEnabled
+//coopGameTypes 1
+defaultCoopGameType 1
+defaultGameType 6
+usesProfiles 1

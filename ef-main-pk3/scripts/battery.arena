@@ -1,0 +1,15 @@
+{
+	map			"battery"
+	longname		"^4[^3EF^4] ^5Seawall Battery"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		20
+	alliedRespawnTime	20
+	lmsbriefing		"A giant lurks on the coast of North Africa. Built into the very living rock of the Libyan coastline, the Siegfried battery dominates the Southern Mediterranean. Siegfried's colossal 15 inch gun is terrorizing Allied shipping and protects Sicily from all Allied attempts at invasion. Here in North Africa, the Allies and Axis are put face to face, it's a fight to the death."
+	briefing		"The mighty Axis shore battery 'Siegfried' is harassing Allied shipping in the Mediterranean. The Axis must protect Siegfried from Allied attempts at sabotage."
+	axiswintext		"The tenacity and bravery shown by the Axis forces in the successful defence of the Siegfried battery has won the day and bought them yet more time to strengthen the Reich's defences. Superior Axis courage and tactical expertise have inflicted a humiliating defeat on the Allied attackers whose meagre tactical talents and faltering courage failed to impress. Allied Supreme Command is mightily displeased with this shoddy display. Lacking either guts or skill, the Allies' poor showing means that any invasion plans have had to be shelved until another way can be found to silence Siegfried."
+	alliedwintext		"This convincing Allied victory has saved their shipping from Siegfried and has brought the build-up towards an invasion of Axis-occupied Europe ever closer. The skill they have shown in assaulting beach positions will prove of vital importance in the rest of the war. The Axis High Command are dismayed: the Axis forces have shown themselves lacking in fighting spirit and incapable of defending vital objectives, even when massively fortified. The Axis must do better: if they can't control North Africa, they can hardly hope to hold on to Western Europe."
+	mapposition_x	491
+	mapposition_y	849
+}
+

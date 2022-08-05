@@ -1,0 +1,7 @@
+md3_hat,		"models/players/temperate/axis/fieldcap.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"playershadow"
+u_body,			"playershadow"
+u_rthand,		"playershadow"
+u_lfthand,		"playershadow"

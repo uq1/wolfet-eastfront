@@ -1,0 +1,8 @@
+{
+	name			"The Eastern Front"
+	shortname		"cmpgn_ef"
+	description		"The russian front."
+	maps			"moscow_forest;warsaw_poland;fueldump;stalingrad;leningrad;railgun;mp_trenchtoast;radar"
+	mapTC			374 374
+	type			"wolfmp"
+}

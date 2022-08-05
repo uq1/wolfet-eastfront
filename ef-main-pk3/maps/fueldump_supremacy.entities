@@ -1,0 +1,272 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+spawnflags "1"
+origin "-4799 -1944 864"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-3435 -1846 761"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-3613 -1949 1028"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-2062 -1984 611"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-3701 -4083 272"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-5288 -2755 560"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-7159 -2856 280"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10163 -2691 548"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10074 -2880 828"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-9777 -5350 504"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10690 -5307 504"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10263 -7022 245"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-11402 -7352 240"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10470 -6318 632"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10944 -6533 632"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-10420 -6621 832"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-11156 -6025 240"
+classname "bot_axis_defence_point"
+}
+{
+classname "misc_control_point"
+origin "-1063 -6834 301"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-11051 -5897 178"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "-2882 -1402 562"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-3286 -5730 231"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-4907 -2995 208"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-6051 -1546 320"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-10866 -2208 520"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-9093 -648 785"
+spawnflags "0"
+}
+{
+classname "npc_axis_apc"
+origin "-12122 -7082 245"
+angles "0.769043 2.307129 0.0"
+}
+{
+classname "npc_tank_medium"
+origin "-12122 -7263 245"
+angles "0.769043 2.307129 0.0"
+}
+{
+classname "npc_tank_light"
+origin "-10916 -2365 576"
+angles "1.647949 -0.697632 0.0"
+}
+{
+//classname "npc_tank_medium"
+classname "npc_tank_heavy"
+origin "-10916 -2040 576"
+angles "1.647949 -0.697632 0.0"
+}
+{
+classname "npc_flametank"
+origin "-1665 -1737 617"
+angles "5.388794 -83.748779 0.0"
+}
+{
+classname "npc_axis_apc"
+origin "103 -7555 320"
+angles "-3.630981 -179.670410 0.0"
+}
+{
+classname "npc_tank_medium"
+origin "-360 -7567 239"
+angles "-3.630981 -179.670410 0.0"
+}
+{
+//classname "npc_tank_light"
+classname "npc_tank_heavy"
+origin "-4005 -5805 297"
+angles "2.636719 32.272339 0.0"
+}
+{
+classname "npc_artillery"
+origin "-235 -7852 306"
+angle "160"
+}
+{
+classname "npc_artillery"
+origin "-9895 -2827 546"
+angle "0"
+}
+{
+classname "misc_stealth_area"
+origin "-3651 -6585 322"
+radius "96"
+}
+{
+classname "misc_stealth_area"
+origin "-4564 -1877 623"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "-4350 -3526 369"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-9507 -1061 1274"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "-8866 -4988 325"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "-8857 -3806 401"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "-8246 -3221 339"
+radius "64"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-496 -12223 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-2165 -12125 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-3745 -11933 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-4380 -12223 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-9725 -10445 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-11372 -11366 2250"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-12560 -11289 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-12832 1276 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-11617 2393 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-9480 3245 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-7534 3118 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-4256 3310 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-3047 3304 2250"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-1249 2574 2250"
+}

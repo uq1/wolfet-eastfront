@@ -1,0 +1,172 @@
+   ET menu           EF wav's by wothan
+
+10A Enemy in discuse (stop stop tavarish).
+10b Enemy in discuse (shutup stand to attention, u belong to the 9 team??)
+11a Path cleard      (hurra hurra)
+11b  -"-
+12a the enemy is weakend
+12b -""--
+13a All cleard
+13b -"-
+14a incoming
+14b -"-
+15a Fire in the whole 
+15b FIRE            (Fire in russian) like the command "shot"
+16a Im on defece
+16b Im on defece
+17a im on offence (i will kill u).
+17b im on offence
+18a taking fire
+18b taking fire
+19a Mines cleard  (rus insult).
+19b Mines cleard
+21a need a medic
+21b need a medic
+22a i need ammo
+23a i need backups
+23b i need backups
+24a we need a engy
+24b we need a engy
+25a covering fire
+25b covering fire
+25c cover me
+25d cover me       (run).
+26a Hold ur fire   (tavarish)=friends
+26b Hold ur fire   (We are here to fight imp and bla bla 
+27a where too
+27b where too      (sqard stand up).
+28a we need cov ops (No retreat).
+28b we need cov ops
+31a follow me       (attace)
+31b follow me       (???)
+32a lets go (hurry up in  russian
+32b lets go  _"_ (Drahhhh).
+33a move     _"_
+33b move     _"_
+34a clear the path
+34b clear the path
+35a defend out obj
+35b defend out obj
+36a dissarm the dynamyte
+36b dissarm the dynamyte    (stop what ur doing)
+37a clear the mines
+37b clear the mines
+38a reinforce the defence
+38b reinforce the defence
+39a reinforce the offence
+39b reinforce the offence
+43 spasiva
+57j yeahhhhhhhhhh
+57k yeahhhhhhhhhh
+57l ohhh
+61a im a soldier
+61b im a soldier
+62a im a medic
+62b im a medic
+63a im an engy
+64a im a field ops
+65a im a cov ops
+71a destuy the primery obj
+71b destuy the primery obj
+72a destuy the 2dery obj  (Who the hell are we)
+72b destuy the 2dery obj  (we are the Soviet armee)
+73a destruy constuctions
+73b destruy constuctions
+75a repair the wheicle
+75b repair the wheicle
+76a disable the whicle
+76b disable the whicle
+77a escort the whickle
+77b escort the whickle
+81a comand ecnolage
+81b comand ecnolage
+81c right away
+81d right away
+82a comand declinde
+82b comand declinde
+82c no can do
+82d no can do
+83a comand compited
+83b comand compited
+84a im constructing
+84b im constructing
+98a         attac
+98b           attac
+99a               fall back
+99b                fall back
+586a good game
+586b good game
+586c good game
+911a deploy motar
+911b deploy motar
+941a call in airstike # callin artillery 
+
+
+I cant find all the russian words i need. but its better then nothing.
+
+And its based on one old russian ET soundpack that
+is not very good. But ill replace them 
+boring sound later.
+
+Ill need somebody to fix the ingame menu so 
+its reads right, cus i have alter some 
+of the wav files to say something completly
+new....
+
+ps the call in arty is suposed to funktion
+when officer uses his binoc's to call in
+Arty...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

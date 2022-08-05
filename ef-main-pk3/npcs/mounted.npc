@@ -1,0 +1,8 @@
+{
+	class	PC_ENGINEER
+	skill	3
+	weapon	WP_MP40
+	patrol	false
+	mounted	true
+	hunter	false
+}

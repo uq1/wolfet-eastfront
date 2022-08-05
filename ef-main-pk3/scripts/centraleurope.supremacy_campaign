@@ -1,0 +1,8 @@
+{
+	name			"Central Europe"
+	shortname		"cmpgn_centraleurope"
+	description		"1943. The Axis High Command has ordered a strategic withdrawal from the 'remote and ultimately insignificant' North African theatre and their forces are busy fortifying the Atlantic coastline in expectation of Allied raids and an eventual invasion.**The Allies have much work to do before they can hope to mount a successful invasion attempt and must gain expertise in both beach and parachute landings. Clearly, the next phase of conflict will be critical."
+	maps			"radar;railgun;fueldump"
+	mapTC			374 185
+	type			"supremacy"
+}

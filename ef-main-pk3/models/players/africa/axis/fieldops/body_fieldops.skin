@@ -1,0 +1,8 @@
+md3_back2,		"models/players/africa/axis/fieldops/acc/pistol.md3"
+md3_hat,		"models/players/africa/axis/officercap.md3"
+md3_rank,		"models/players/africa/common/rank_officercap.md3"
+
+l_legs,		"models/players/africa/axis/fieldops/legs"
+u_body,		"models/players/africa/axis/fieldops/body"
+u_rthand,		"models/players/africa/axis/engineer/body"
+u_lfthand,		"models/players/africa/axis/engineer/body"

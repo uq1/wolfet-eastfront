@@ -1,0 +1,467 @@
+SCons.Script:6: DeprecationWarning: The popen2 module is deprecated.  Use the subprocess module.
+
+scons: warning: The env.Copy() method is deprecated; use the env.Clone() method instead.
+File "/media/D/Programming/EastFront/trunk/src/SConstruct", line 280, in <module>
+uniquebot/cg_unique_autowaypoint.c: In function ‘AIMod_AutoWaypoint_DrawProgress’:
+uniquebot/cg_unique_autowaypoint.c:283: warning: unused variable ‘percent_left’
+uniquebot/cg_unique_autowaypoint.c: In function ‘AIMOD_NODES_LoadNodes’:
+uniquebot/cg_unique_autowaypoint.c:4363: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4375: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4386: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4399: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4403: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4424: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4426: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4428: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4430: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4432: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4450: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4454: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4459: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c:4468: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/cg_unique_autowaypoint.c: In function ‘AIMod_AutoWaypoint_Cleaner’:
+uniquebot/cg_unique_autowaypoint.c:9813: warning: unused variable ‘reducecount’
+uniquebot/cg_unique_autowaypoint.c:9811: warning: unused variable ‘skip’
+uniquebot/cg_unique_autowaypoint.c:9810: warning: unused variable ‘nowaterremove’
+uniquebot/cg_unique_autowaypoint.c:9809: warning: unused variable ‘noiceremove’
+uniquebot/cg_unique_autowaypoint.c:9801: warning: unused variable ‘node_disable_ticker’
+botai/ai_cmd.c: In function ‘BotMatch_StartTeamLeaderShip’:
+botai/ai_cmd.c:951: warning: array subscript is above array bounds
+botai/ai_dmnet_mp.c: In function ‘AINode_MP_NavigateFromVoid’:
+botai/ai_dmnet_mp.c:6511: warning: ‘bestDir[2]’ may be used uninitialized in this function
+botai/ai_dmnet_mp.c:6511: warning: ‘bestDir[1]’ may be used uninitialized in this function
+botai/ai_dmq3.c: In function ‘BotMoveToIntermission’:
+botai/ai_dmq3.c:5345: warning: suggest parentheses around operand of ‘!’ or change ‘&’ to ‘&&’ or ‘!’ to ‘~’
+botai/ai_team.c: In function ‘BotFindSparseDefendArea’:
+botai/ai_team.c:493: warning: ‘dSpot[2]’ may be used uninitialized in this function
+botai/ai_team.c:493: warning: ‘dSpot[1]’ may be used uninitialized in this function
+In file included from game/ai_cast.c:22:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_characters.c:20:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast_characters.c:171: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:171: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:171: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:222: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:222: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:319: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:319: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:415: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:463: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:511: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:608: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:752: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:752: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:800: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:800: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c:800: warning: initialization from incompatible pointer type
+game/ai_cast_characters.c: In function ‘AIChar_spawn’:
+game/ai_cast_characters.c:1410: warning: assignment from incompatible pointer type
+game/ai_cast_characters.c:1411: warning: assignment from incompatible pointer type
+game/ai_cast_characters.c:1412: warning: assignment from incompatible pointer type
+In file included from game/ai_cast_events.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_fight.c:22:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_func_attack.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_func_boss1.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_funcs.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_script.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast_script.c:215: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:216: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:217: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:218: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:219: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:220: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:221: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:222: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:223: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:224: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:225: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:226: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:227: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:228: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:229: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:230: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:231: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:232: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:233: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:234: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:235: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:236: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:237: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:238: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:239: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:240: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:241: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:242: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:243: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:244: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:245: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:246: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:247: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:248: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:249: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:250: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:251: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:252: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:253: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:254: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:255: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:256: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:257: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:258: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:259: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:260: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:261: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:262: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:263: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:264: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:265: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:266: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:267: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:268: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:269: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:270: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:271: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:272: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:273: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:274: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:275: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:276: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:277: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:278: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:279: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:280: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:281: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:282: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:283: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:284: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:285: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:286: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:289: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:290: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:291: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:292: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:293: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:296: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:297: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:298: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:299: warning: initialization from incompatible pointer type
+game/ai_cast_script.c:300: warning: initialization from incompatible pointer type
+game/ai_cast_script.c: In function ‘AICast_ScriptRun’:
+game/ai_cast_script.c:904: warning: passing argument 1 of ‘stack->items[cs->castScriptStatus.castScriptStackHead].action->actionFunc’ from incompatible pointer type
+game/ai_cast_script.c:904: note: expected ‘struct cast_state_s *’ but argument is of type ‘struct cast_state_t *’
+In file included from game/ai_cast_sight.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+In file included from game/ai_cast_think.c:21:
+game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+game/ai_cast_think.c: In function ‘AICast_InputToUserCommand’:
+game/ai_cast_think.c:206: warning: left shift count >= width of type
+game/ai_cast_think.c: In function ‘AICast_PredictMovement’:
+game/ai_cast_think.c:1064: warning: ‘startHitVec[2]’ may be used uninitialized in this function
+game/ai_cast_think.c:1064: warning: ‘startHitVec[1]’ may be used uninitialized in this function
+game/ai_cast_think.c: In function ‘AICast_GetAvoid’:
+game/ai_cast_think.c:1199: warning: ‘bestpos[1]’ may be used uninitialized in this function
+game/ai_cast_think.c:1199: warning: ‘bestpos[2]’ may be used uninitialized in this function
+game/bg_animation.c: In function ‘BG_AnimParseAnimScript’:
+game/bg_animation.c:959: warning: pointer targets in passing argument 4 of ‘BG_CopyStringIntoBuffer’ differ in signedness
+game/bg_animation.c:509: note: expected ‘unsigned int *’ but argument is of type ‘int *’
+game/bg_malloc.c: In function ‘BG_MemoryInit’:
+game/bg_malloc.c:270: warning: format not a string literal and no format arguments
+game/bg_misc.c:40: warning: missing braces around initializer
+game/bg_misc.c:40: warning: (near initialization for ‘WeaponTableStrings[0]’)
+game/g_client.c: In function ‘SelectPOPSpawnpoint’:
+game/g_client.c:3468: warning: array subscript is below array bounds
+game/g_client.c:3468: warning: array subscript is below array bounds
+game/g_client.c:3468: warning: array subscript is below array bounds
+game/g_client.c:3459: warning: array subscript is below array bounds
+game/g_cmds.c: In function ‘ClientCommand’:
+game/g_cmds.c:5804: warning: the address of ‘token’ will always evaluate as ‘true’
+game/g_cmds.c:5812: warning: the address of ‘token’ will always evaluate as ‘true’
+game/g_cmds.c:5820: warning: the address of ‘token’ will always evaluate as ‘true’
+game/g_cmds.c:5828: warning: the address of ‘token’ will always evaluate as ‘true’
+game/g_cmds.c:6295: warning: comparison with string literal results in unspecified behavior
+game/g_cmds.c:6520: warning: the address of ‘str’ will always evaluate as ‘true’
+game/g_cmds.c: In function ‘Q_SayConcatArgs’:
+game/g_cmds.c:6617: warning: value computed is not used
+game/g_cmds.c:6622: warning: value computed is not used
+game/g_cmds.c:6625: warning: value computed is not used
+game/g_cmds.c: In function ‘Q_AddCR’:
+game/g_cmds.c:6642: warning: value computed is not used
+game/g_cmds.c:6653: warning: value computed is not used
+game/g_cmds.c: In function ‘Q_SayArgc’:
+game/g_cmds.c:6673: warning: value computed is not used
+game/g_cmds.c:6678: warning: value computed is not used
+game/g_cmds.c:6681: warning: value computed is not used
+game/g_cmds.c: In function ‘Q_SayArgv’:
+game/g_cmds.c:6710: warning: value computed is not used
+game/g_cmds.c:6711: warning: value computed is not used
+game/g_cmds.c:6718: warning: value computed is not used
+game/g_cmds.c:6723: warning: value computed is not used
+game/g_cmds.c:6726: warning: value computed is not used
+game/g_cmds.c: In function ‘G_BotLeavePlayerTank’:
+game/g_cmds.c:4668: warning: ‘client’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘G_LeavePlayerTank’:
+game/g_cmds.c:4591: warning: ‘client’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘G_LeaveTank’:
+game/g_cmds.c:4364: warning: ‘client’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘Cmd_Activate2_f’:
+game/g_cmds.c:4872: warning: ‘client’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘Cmd_UnIgnore_f’:
+game/g_cmds.c:5423: warning: ‘clientNum’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘Do_Activate_f’:
+game/g_cmds.c:4123: warning: ‘client’ may be used uninitialized in this function
+game/g_cmds.c: In function ‘Cmd_Activate_f’:
+game/g_cmds.c:4752: warning: ‘client’ may be used uninitialized in this function
+game/g_combat.c: In function ‘player_die’:
+game/g_combat.c:652: warning: implicit declaration of function ‘ClearSupression’
+game/g_combat.c:1816:2: warning: "/*" within comment
+game/g_crash.c: In function ‘CrashHandler’:
+game/g_crash.c:159: warning: format not a string literal and no format arguments
+game/g_items.c: In function ‘FinishSpawningItem’:
+game/g_items.c:1623: warning: array subscript is above array bounds
+game/g_match.c: In function ‘UpdateKillRatings’:
+game/g_match.c:1217: warning: the address of ‘weaponRating’ will never be NULL
+game/g_misc.c:5:14: warning: "/*" within comment
+game/g_script_actions.c: In function ‘G_ScriptAction_GotoMarker’:
+game/g_script_actions.c:1215: warning: ‘vec2[2]’ may be used uninitialized in this function
+game/g_script_actions.c:1215: warning: ‘vec2[1]’ may be used uninitialized in this function
+game/g_shrubbot.c: In function ‘G_shrubbot_permission’:
+game/g_shrubbot.c:107: warning: value computed is not used
+game/g_shrubbot.c:125: warning: value computed is not used
+game/g_shrubbot.c: In function ‘G_shrubbot_ban’:
+game/g_shrubbot.c:981: warning: value computed is not used
+game/g_shrubbot.c: In function ‘G_shrubbot_mute’:
+game/g_shrubbot.c:1111: warning: value computed is not used
+game/g_shrubbot.c: In function ‘G_shrubbot_showbans’:
+game/g_shrubbot.c:1451: warning: value computed is not used
+game/g_shrubbot.c: In function ‘G_shrubbot_lockteams’:
+game/g_shrubbot.c:1820: warning: value computed is not used
+game/g_shrubbot.c: In function ‘G_shrubbot_print’:
+game/g_shrubbot.c:2406: warning: format not a string literal and no format arguments
+game/g_spawn.c: In function ‘SP_worldspawn’:
+game/g_spawn.c:1297: warning: format not a string literal and no format arguments
+game/g_svcmds.c: In function ‘ConsoleChat’:
+game/g_svcmds.c:1092: warning: value computed is not used
+game/g_svcmds.c:1096: warning: value computed is not used
+game/g_svcmds.c:1108: warning: format not a string literal and no format arguments
+game/g_svcmds.c:1112: warning: format not a string literal and no format arguments
+game/g_svcmds.c: In function ‘ConsoleCommand’:
+game/g_svcmds.c:1386: warning: format not a string literal and no format arguments
+game/g_svcmds.c:1396: warning: format not a string literal and no format arguments
+game/g_team.c:8: warning: ignoring #pragma warning 
+game/g_trigger.c: In function ‘Think_SetupObjectiveInfo’:
+game/g_trigger.c:1398: warning: ‘team[1]’ may be used uninitialized in this function
+game/g_unique_entities.c: In function ‘SP_ammo_crate_spawn’:
+game/g_unique_entities.c:293: warning: comparison with string literal results in unspecified behavior
+game/g_unique_entities.c:322: warning: comparison with string literal results in unspecified behavior
+game/g_unique_entities.c: In function ‘SP_health_crate_spawn’:
+game/g_unique_entities.c:519: warning: comparison with string literal results in unspecified behavior
+game/g_unique_entities.c:548: warning: comparison with string literal results in unspecified behavior
+game/g_unique_entities.c: In function ‘constructible_sandbag_unconstructed_think’:
+game/g_unique_entities.c:657: warning: unused variable ‘origin’
+game/g_unique_entities.c: In function ‘SUPREMACY_LoadGameInfo2’:
+game/g_unique_entities.c:2037: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2041: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2042: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2048: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2053: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2054: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2055: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2086: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2090: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2091: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2106: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2110: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+game/g_unique_entities.c:2111: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+In file included from /usr/include/stdio.h:910,
+                 from game/../game/q_shared.h:89,
+                 from game/g_unique_entities.c:1:
+In function ‘fread’,
+    inlined from ‘SUPREMACY_LoadGameInfo2’ at game/g_unique_entities.c:2106:
+/usr/include/bits/stdio2.h:285: warning: call to ‘__fread_chk_warn’ declared with attribute warning: fread called with bigger size * nmemb than length of destination buffer
+game/g_utils.c: In function ‘G_LoadCampaignsFromFile’:
+game/g_utils.c:1241: warning: format not a string literal and no format arguments
+game/g_utils.c:1270: warning: format not a string literal and no format arguments
+game/g_utils.c:1278: warning: format not a string literal and no format arguments
+game/g_utils.c:1284: warning: format not a string literal and no format arguments
+game/g_utils.c:1292: warning: format not a string literal and no format arguments
+game/g_utils.c:1300: warning: format not a string literal and no format arguments
+game/g_utils.c: In function ‘G_ParseCampaigns’:
+game/g_utils.c:1508: warning: the address of ‘buf’ will always evaluate as ‘true’
+game/g_vote.c: In function ‘G_voteCmdCheck’:
+game/g_vote.c:107: warning: format not a string literal and no format arguments
+game/npc_air_vehicle.c: In function ‘NPC_AI_Air_Think’:
+game/npc_air_vehicle.c:562: warning: statement with no effect
+game/npc_air_vehicle.c: In function ‘NPC_AI_Air_Move’:
+game/npc_air_vehicle.c:238: warning: ‘origin[2]’ may be used uninitialized in this function
+game/npc_air_vehicle.c:238: warning: ‘origin[1]’ may be used uninitialized in this function
+game/npc_humanoid.c:234: warning: missing braces around initializer
+game/npc_humanoid.c:234: warning: (near initialization for ‘NPC_ClassTable[0]’)
+game/npc_humanoid.c: In function ‘NPC_CreatePathAStar’:
+game/npc_humanoid.c:380: warning: implicit declaration of function ‘sse_memset’
+game/npc_humanoid.c: In function ‘spawnpoint_close_to_bad_object’:
+game/npc_humanoid.c:1757: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1758: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1759: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1760: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1761: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1762: warning: comparison with string literal results in unspecified behavior
+game/npc_humanoid.c:1923:2: warning: "/*" within comment
+game/npc_humanoid.c: At top level:
+game/npc_humanoid.c:2697: warning: missing braces around initializer
+game/npc_humanoid.c:2697: warning: (near initialization for ‘NPC_ActionTable[0]’)
+game/npc_humanoid.c: In function ‘NPC_AI_Humanoid_Move’:
+game/npc_humanoid.c:6954: warning: implicit declaration of function ‘AIMOD_MOVEMENT_Is_Link_From_Node’
+game/npc_humanoid.c:6969: warning: implicit declaration of function ‘TravelTime’
+game/npc_humanoid.c: In function ‘NPC_Coop_Check_InUse’:
+game/npc_humanoid.c:8060: warning: assignment from incompatible pointer type
+game/npc_humanoid.c: In function ‘NPC_AI_Humanoid_Think’:
+game/npc_humanoid.c:8305: warning: statement with no effect
+game/npc_humanoid_wp.c: In function ‘NPC_AI_FODDER_Humanoid_Move’:
+game/npc_humanoid_wp.c:696: warning: passing argument 2 of ‘NPC_FODDER_CreateRoute’ from incompatible pointer type
+game/npc_humanoid_wp.c:541: note: expected ‘short int *’ but argument is of type ‘int *’
+game/npc_humanoid_wp.c:715: warning: passing argument 2 of ‘NPC_FODDER_CreateRoute’ from incompatible pointer type
+game/npc_humanoid_wp.c:541: note: expected ‘short int *’ but argument is of type ‘int *’
+game/om_flagsys.c: In function ‘OM_Flag_Spawn’:
+game/om_flagsys.c:1034: warning: comparison with string literal results in unspecified behavior
+game/q_shared.c: In function ‘Q_StrReplace’:
+game/q_shared.c:1870: warning: value computed is not used
+uniquebot/unique_autowaypoint.c: In function ‘AIMOD_LoadMapCoordFile’:
+uniquebot/unique_autowaypoint.c:294: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c:295: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c:296: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c:297: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c:298: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c:299: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_autowaypoint.c: In function ‘AIMod_AutoWaypoint_NewMethod’:
+uniquebot/unique_autowaypoint.c:2149: warning: format ‘%i’ expects type ‘int’, but argument 2 has type ‘long int’
+uniquebot/unique_autowaypoint.c: In function ‘AIMod_AutoWaypoint_Old’:
+uniquebot/unique_autowaypoint.c:2721: warning: format ‘%i’ expects type ‘int’, but argument 2 has type ‘long int’
+uniquebot/unique_coverspots.c: In function ‘AIMOD_LoadCoverPoints’:
+uniquebot/unique_coverspots.c:162: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_coverspots.c:171: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_coverspots.c:174: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_coverspots.c: In function ‘AIMOD_SaveCoverPoints’:
+uniquebot/unique_coverspots.c:208: warning: too many arguments for format
+uniquebot/unique_goal.c: In function ‘AIMOD_LoadSniperSpots’:
+uniquebot/unique_goal.c:1095: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_goal.c:1104: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_goal.c:1110: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_goal.c: In function ‘AIMOD_SaveSniperSpots’:
+uniquebot/unique_goal.c:1162: warning: too many arguments for format
+uniquebot/unique_goal.c: At top level:
+uniquebot/unique_goal.c:54: warning: ‘target’ defined but not used
+uniquebot/unique_goal.c: In function ‘BotMP_Generate_Sniper_Spots’:
+uniquebot/unique_goal.c:1429: warning: ‘possible_spots’ may be used uninitialized in this function
+uniquebot/unique_movement.c: In function ‘Bot_Set_New_Path’:
+uniquebot/unique_movement.c:3097: warning: implicit declaration of function ‘sse_memset’
+uniquebot/unique_movement.c: In function ‘AIMOD_MOVEMENT_SpecialMoves’:
+uniquebot/unique_movement.c:3650: warning: ‘return’ with no value, in function returning non-void
+uniquebot/unique_navigation.c: In function ‘Select_SP_Spawnpoint’:
+uniquebot/unique_navigation.c:586: warning: the address of ‘origin’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c:587: warning: the address of ‘origin2’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c:588: warning: the address of ‘origin3’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c:646: warning: the address of ‘origin’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c:647: warning: the address of ‘origin2’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c:648: warning: the address of ‘origin3’ will always evaluate as ‘true’
+uniquebot/unique_navigation.c: In function ‘set_follow_route’:
+uniquebot/unique_navigation.c:927: warning: implicit declaration of function ‘sse_memset’
+uniquebot/unique_navigation.c: In function ‘AIMOD_NAVIGATION_FindClosestReachableNode’:
+uniquebot/unique_navigation.c:2475: warning: ‘best_nodes_visible’ may be used uninitialized in this function
+uniquebot/unique_nodes.c: In function ‘AIMOD_NODES_LoadNodes’:
+uniquebot/unique_nodes.c:865: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:877: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:889: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:903: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:907: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:928: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:930: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:932: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:934: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:936: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:988: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:992: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:997: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c:1006: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result
+uniquebot/unique_nodes.c: In function ‘AIMOD_NODES_LoadNodes2’:
+uniquebot/unique_nodes.c:1089: warning: too many arguments for format
+uniquebot/unique_nodes.c:1090: warning: too many arguments for format
+uniquebot/unique_nodes.c:1099: warning: too many arguments for format
+uniquebot/unique_nodes.c:1100: warning: too many arguments for format
+uniquebot/unique_nodes.c: In function ‘ShowLinkInfo’:
+uniquebot/unique_nodes.c:1271: warning: format not a string literal and no format arguments
+uniquebot/unique_nodes.c:1273: warning: format not a string literal and no format arguments
+In file included from uniquebot/unique_spawn.c:43:
+uniquebot/../game/ai_cast.h:160: warning: ‘struct cast_state_s’ declared inside parameter list
+uniquebot/../game/ai_cast.h:160: warning: its scope is only this definition or declaration, which is probably not what you want
+uniquebot/../game/ai_cast.h:161: warning: ‘struct cast_state_s’ declared inside parameter list
+uniquebot/../game/ai_cast.h:162: warning: ‘struct cast_state_s’ declared inside parameter list
+uniquebot/../game/ai_cast.h:226: warning: ‘struct cast_state_s’ declared inside parameter list
+uniquebot/unique_spawn.c: In function ‘SOD_SPAWN_ReadProfile’:
+uniquebot/unique_spawn.c:1640: warning: value computed is not used
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.move_vector[2u]’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.move_vector[1u]’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.move_vector[0u]’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.node_timeout’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.tries’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.exit_node’ is used uninitialized in this function
+uniquebot/unique_spawn.c:1650: warning: ‘botstate.clientNum’ is used uninitialized in this function
+uniquebot/unique_utils.c: In function ‘RemoveFirstOpenList’:
+uniquebot/unique_utils.c:839: warning: operation on ‘i’ may be undefined
+uniquebot/unique_utils.c: In function ‘FindOnRoute’:
+uniquebot/unique_utils.c:1011: warning: operation on ‘i’ may be undefined
+uniquebot/unique_utils.c: In function ‘CreatePathAStar’:
+uniquebot/unique_utils.c:1614: warning: implicit declaration of function ‘sse_memset’
+uniquebot/unique_utils.c: In function ‘MyVisible_OLD’:
+uniquebot/unique_utils.c:5561: warning: ‘original_mins[2]’ may be used uninitialized in this function
+uniquebot/unique_utils.c:5561: warning: ‘original_mins[1]’ may be used uninitialized in this function
+uniquebot/unique_utils.c:5561: warning: ‘original_maxs[2]’ may be used uninitialized in this function
+uniquebot/unique_utils.c:5561: warning: ‘original_maxs[1]’ may be used uninitialized in this function
+uniquebot/unique_vehicle_ai.c: In function ‘Bot_Set_New_Vehicle_Path’:
+uniquebot/unique_vehicle_ai.c:226: warning: implicit declaration of function ‘sse_memset’

@@ -1,0 +1,8 @@
+md3_back,		"models/players/snowy/axis/fieldops/acc/fieldkit.md3"
+md3_hat,		"models/players/snowy/axis/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"models/players/snowy/axis/legs"
+u_body,			"models/players/snowy/axis/engineer/body_engineer"
+u_rthand,		"models/players/snowy/axis/hand2"
+u_lfthand,		"models/players/snowy/axis/hand2"

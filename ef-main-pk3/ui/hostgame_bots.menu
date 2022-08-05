@@ -1,0 +1,66 @@
+#include "ui/menudef.h"
+
+// Defines //
+
+#define WINDOW_X		16
+#define WINDOW_Y		16
+#define WINDOW_WIDTH		608
+#define WINDOW_HEIGHT		448
+#define SUBWINDOW_WIDTH		.5*(WINDOW_WIDTH-18)
+#define GROUP_NAME		"grpHostGameBots"
+
+// Macros //
+
+#include "ui/menumacros.h"
+		
+// Host Game Total War AI Menu //
+
+menuDef {
+	name		"hostgame_bots"
+	visible		0
+	fullscreen	0
+	rect		WINDOW_X WINDOW_Y WINDOW_WIDTH WINDOW_HEIGHT
+	style		WINDOW_STYLE_EMPTY
+	itemDef {
+		name		"man_fold_back2"
+		rect		-10 -10 630 470
+		style		WINDOW_STYLE_SHADER
+		background	"/ui/assets/man_fold_back2"
+		visible		1
+		decoration
+	}
+	
+	onESC {
+		close hostgame_bots ;
+		open hostgame
+	}
+
+// Window //
+	WINDOW( " ", 266 )
+	SUBWINDOW( 24, 10, (SUBWINDOW_WIDTH), 11, "AI CONFIGURATION CONTINUED" )
+	LABEL( 24, 22, (SUBWINDOW_WIDTH)-8, 10, "Page 2 of 2", .2, ITEM_ALIGN_RIGHT, .5*((SUBWINDOW_WIDTH)-4), 8 )
+
+// Left Column //
+//-------------//
+// General Bot Info //
+
+	
+
+// Right Column //
+//--------------//
+// Node Binds Info //
+
+	SUBWINDOW( 24, 32, (SUBWINDOW_WIDTH), 76, "^1NODE EDITING:" )
+	MULTI( 24, 48, (SUBWINDOW_WIDTH)-8, 10, "Allow Node Editing:", .2, 8, "bot_node_edit", cvarFloatList { "Yes" 1 "No" 0}, "Can local host players create new node routes and save these?" )
+	MULTI( 24, 60, (SUBWINDOW_WIDTH)-8, 10, "Vehicle Only Editing:", .2, 8, "bot_node_edit_tankonly", cvarFloatList { "Yes" 1 "No" 0}, "Only wish to edit vehicle waypoints?" )
+//	LABEL( 6+(SUBWINDOW_WIDTH)+6+2, 72, (SUBWINDOW_WIDTH)-8, 10, "Enter all nodes in route before saving", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	BIND( 24, 84, (SUBWINDOW_WIDTH)-8, 10, "Add Node to Route:", .2, 8, "addnode", "" )
+	BIND( 24, 96, (SUBWINDOW_WIDTH)-8, 10, "Add Axis-Only Node:", .2, 8, "addnode axis", "" )
+	BIND( 24, 108, (SUBWINDOW_WIDTH)-8, 10, "Add Allied-Only Node:", .2, 8, "addnode allied", "" )
+	BIND( 24, 120, (SUBWINDOW_WIDTH)-8, 10, "Add Vehicle Node:", .2, 8, "addnode vehicle", "" )
+	BIND( 24, 132, (SUBWINDOW_WIDTH)-8, 10, "Delete Last Node:", .2, 8, "deletenode", "" )
+	BIND( 24, 144, (SUBWINDOW_WIDTH)-8, 10, "Save Nodes:", .2, 8, "savenodes", "" )
+	
+	BUTTON( 6, WINDOW_HEIGHT-24, .5*(WINDOW_WIDTH-18), 18, "BACK", .3, 14,
+		close hostgame_bots ; open hostgame )
+}

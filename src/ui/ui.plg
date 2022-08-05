@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ui - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo".\Debug/loadnget.res" /d "_DEBUG" "C:\Programming\ET_ENHANCED\src\ui\loadnget.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6B.tmp" with contents
+[
+/nologo /G5 /MDd /W3 /GX /ZI /Od /D "_USRDLL" /D "UI_EXPORTS" /D "_MBCS" /D "_X86_" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /FR".\Debug/" /Fp".\Debug/ui.pch" /YX /Fo".\Debug/" /Fd".\Debug/" /GZ /c 
+"C:\Programming\ET_ENHANCED\src\game\bg_campaign.c"
+"C:\Programming\ET_ENHANCED\src\game\bg_classes.c"
+"C:\Programming\ET_ENHANCED\src\game\bg_misc.c"
+"C:\Programming\ET_ENHANCED\src\cgame\cg_musicengine.c"
+"C:\Programming\ET_ENHANCED\src\game\q_math.c"
+"C:\Programming\ET_ENHANCED\src\game\q_shared.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_atoms.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_gameinfo.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_loadpanel.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_main.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_players.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_shared.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_syscalls.c"
+"C:\Programming\ET_ENHANCED\src\ui\ui_util.c"
+"C:\Programming\ET_ENHANCED\src\uniquebot\unique_mem.c"
+]
+Creating command line "xicl6.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6B.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6C.tmp" with contents
+[
+winmm.lib /nologo /base:"0x40000000" /subsystem:windows /dll /incremental:yes /pdb:"..\Debug\ui.pdb" /map:".\Debug/ui_mp_x86.map" /debug /machine:I386 /def:".\ui.def" /out:"..\Debug\ui_mp_x86.dll" /implib:".\Debug/ui_mp_x86.lib" /pdbtype:sept 
+.\Debug\bg_campaign.obj
+.\Debug\bg_classes.obj
+.\Debug\bg_misc.obj
+.\Debug\cg_musicengine.obj
+.\Debug\q_math.obj
+.\Debug\q_shared.obj
+.\Debug\ui_atoms.obj
+.\Debug\ui_gameinfo.obj
+.\Debug\ui_loadpanel.obj
+.\Debug\ui_main.obj
+.\Debug\ui_players.obj
+.\Debug\ui_shared.obj
+.\Debug\ui_syscalls.obj
+.\Debug\ui_util.obj
+.\Debug\unique_mem.obj
+.\Debug\loadnget.res
+]
+Creating command line "xilink6.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2D6C.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+bg_campaign.c
+bg_classes.c
+bg_misc.c
+cg_musicengine.c
+q_math.c
+q_shared.c
+ui_atoms.c
+ui_gameinfo.c
+ui_loadpanel.c
+ui_main.c
+ui_players.c
+ui_shared.c
+ui_syscalls.c
+ui_util.c
+unique_mem.c
+Linking...
+xilink6: executing 'D:\PROGRA~1\MICROS~1\VC98\Bin\link.exe'
+   Creating library .\Debug/ui_mp_x86.lib and object .\Debug/ui_mp_x86.exp
+..\Debug\ui_mp_x86.dll : warning LNK4084: total image size 717262848 exceeds max (268435456); image may not run
+
+
+
+<h3>Results</h3>
+ui_mp_x86.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

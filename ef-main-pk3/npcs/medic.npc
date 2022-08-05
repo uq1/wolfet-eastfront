@@ -1,0 +1,8 @@
+{
+	class	PC_MEDIC
+	skill	5
+	weapon	WP_MP40
+	patrol	true
+	mounted	false
+	hunter	false
+}

@@ -1,0 +1,12 @@
+weaponDef
+{
+	// This basically fills out weaponInfo_t
+	client {
+    //pickupModel		"models/multiplayer/satchel/satchel.md3"
+    pickupModel		"models/multiplayer/satchel/radio.md3"
+		droppedAnglesHack
+		
+		missileTrailFunc	"PyroSmokeTrail"					// supports "GrenadeTrail", "RocketTrail", "PyroSmokeTrail" and "DynamiteTrail" (we REALLY want a particle system for this)
+		missileDlight		200
+	}
+}

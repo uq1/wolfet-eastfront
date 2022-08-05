@@ -1,0 +1,15 @@
+{
+	map			"Leningrad"
+	longname		"^4[^3EF^4] ^5Leningrad"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfcoop wolfsp"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"Axis must invade Leningrad."
+	briefing		"Axis now reachs Leningrad and are about to attack it."
+	axiswintext		"."	
+	alliedwintext		"."
+	mapposition_x	857
+	mapposition_y	280
+}
+

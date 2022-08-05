@@ -1,0 +1,15 @@
+// Game type info
+
+gametypes {
+  { 0 "Single Player" "SP" "Playing with yourself. Woohoo." }
+  { 1 "Cooperative" "Coop" "Playing with yourself. And with others. More woohoo." }
+  { 2 "Objective" "Obj" "Instead of playing through each Map of a Campaign, the Teams can go straight to battle in a single map of their choosing." }
+  { 3 "Stopwatch" "SW" "Each Team struggles to complete the Map's Mission Objectives against the clock. The Teams then swap sides to try to better their opponents' time." }
+  { 4 "Campaign" "Campaign" "Both teams battle across a series of maps. Skills and Rewards awarded to each player will persist from map to map." }
+  { 5 "Last Man Standing" "Last Man Standing" "Both Teams meet in a map for a fight to the death. Each player only has one life. Use it well." }
+  { 6 "Supremacy" "Supremacy" "Capture the majority of spawn areas (flags) to win." }
+  { 7 "Supremacy Campaign" "Supremacy Campaign" "Both teams battle across a series of maps. Skills and Rewards awarded to each player will persist from map to map. Capture the majority of spawn areas (flags) to win each map." }
+//  { 8 "Team Death Match" "TDM" "The traditional Team Death Match game." }
+//  { 9 "Death Match" "DM" "The traditional Death Match game." }
+//  { 10 "Capture The Flag" "CTF" "The traditional Q3 style capture the flag." }
+}

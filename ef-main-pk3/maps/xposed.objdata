@@ -1,0 +1,22 @@
+// Set scenario information
+wm_mapdescription neutral "The war continues and Axis have raided a small Belgian town last night, some Allied forces have been left behind and their only hope is to excape from the town without getting killed."
+wm_mapdescription axis "A small Allied force have been left behind after the recent bomb raids, we have to prevent them from stealing any vehicle and escaping from the town."
+wm_mapdescription allied "A small Allied force has been left behind after the bomb raids, our only hope is to steal a tank and escape from the town."
+
+// Axis Objective Descriptions
+wm_objective_axis_desc	1	"Primary Objective:**Prevent the Allied forces from stealing the tank."
+wm_objective_axis_desc	2	"Primary Objective:**Stop the Allied forces from escaping from the town!"
+wm_objective_axis_desc	3	"Secondary Objective:**Construct the 1:st tank barrier."
+wm_objective_axis_desc  4	"Secondary Objective:**Construct the 2:nd tank barrier."
+wM_objective_axis_desc	5	"Secondary Objective:**Destroy the Allied Command post!"
+wM_objective_axis_desc	6	"Secondary Objective:**Construct a command post!"
+
+
+
+// Allied Objective Descriptions
+wm_objective_allied_desc	1	"Primary Objective:**Steal the tank!"
+wm_objective_allied_desc	2	"Primary Objective:**Escape from the bombed town!"
+wm_objective_allied_desc	3	"Secondary Objective:**Destroy the 1:st tank barrier."
+wm_objective_allied_desc	4	"Secondary Objective:**Destroy the 2:nd tank barrier."
+wm_objective_allied_desc	5	"Secondary Objective:**Construct a command post!"
+wm_objective_allied_desc	6	"Secondary Objective:**Destroy the Axis command post!"

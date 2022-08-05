@@ -1,0 +1,15 @@
+{
+	map			"oasis"
+	longname		"^4[^3EF^4] ^5Siwa Oasis"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"A deserted desert town is the scene for a lethal combat. Battle rages through the abandoned ruins as Axis and Allied troops clash for possession of this strategically vital oasis. It's a fight to the death, with sand."
+	briefing		"The Allies must infiltrate the Axis Oasis garrison to destroy two anti-tank guns: either through the Old City or a flooded cave system. The Axis must protect their anti-tank guns and repel the Allied raiders."
+	axiswintext		"The Axis defences were tougher to crack than the Allies suspected. The Allies' dismal failure to take the Oasis position by either guile or force has held up their armoured advance for weeks. Allied Supreme Command are unimpressed with the quality of troops made available to them. The Axis forces have shown themselves to be heroically skilled in defence and can rest secure in the knowledge that their military ability has been proved superior to the Allies. The Axis will retain sizable forces in North Africa for some time yet."
+	alliedwintext		"The Allies' daring attack has inflicted an important defeat on the Axis forces. With the Oasis emplacement destroyed, the Allies are free to advance. Their flair for attacking strongly held defensive positions bodes well for their future engagements. The Axis have shown themselves insufficiently resilient in defence. Despite the advantage of a prepared position, they lacked fighting spirit and demonstrated a sorry lack of tactical sense. They will have to do much better to avoid their High Command’s displeasure. This audacious Allied success may well pave the way for further Axis reverses." 	
+	mapposition_x	526
+	mapposition_y	997
+}
+

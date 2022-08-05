@@ -1,0 +1,27 @@
+//
+//Brush Scripting
+//Map: mp_trenchtoast
+//Last edited by: UniqueOne
+//
+
+game_manager
+{
+	spawn
+	{
+		// Set scenario information
+		
+		wm_camo_allies		"snowy"
+		wm_camo_axis		"snowy"
+
+		// time until reinforcements in seconds
+
+		wm_axis_respawntime		30
+		wm_allied_respawntime		30
+
+		wm_number_of_objectives		1
+
+		// Set time until round ends in minutes
+
+		wm_set_round_timelimit		25
+	}
+}

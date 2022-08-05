@@ -1,0 +1,8 @@
+{
+	name			"EastFront2"
+	shortname		"cmpgn_EF_2"
+	description		"Battle the enemy across Eastern Europe!"
+	maps			"Moscow_forest;stalingrad;leningrad;xposed;warsaw_poland"
+	mapTC			174 365 
+	type			"wolfmp"
+}

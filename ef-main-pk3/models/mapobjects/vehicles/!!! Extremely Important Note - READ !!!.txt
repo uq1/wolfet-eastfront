@@ -1,0 +1,5 @@
+The files added to the CVS in this directory are TEMPORARY, ripped from RTCW and copyrighted by them. They need to be replaced ASAP!
+
+!!!DO NOT RELEASE!!!
+
+Unique1

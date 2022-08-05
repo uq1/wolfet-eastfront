@@ -1,0 +1,393 @@
+game_manager
+{       
+        spawn
+        {
+		//remapshader "models/mapobjects/tanks_sd/mg42turret" "models/mapobjects/tanks_sd/mg42turret_2"
+		
+		//remapshaderflush
+		
+		// Game rules
+		wm_camo_allies		"snowy"
+		wm_camo_axis		"temperate"
+
+		wm_axis_respawntime	25
+		wm_allied_respawntime	25
+		wm_number_of_objectives 8
+		wm_set_round_timelimit	30
+
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		wm_set_defending_team	1
+
+		// Winner on expiration of round timer (0=Axis, 1=Allies)
+		wm_setwinner	-1
+
+		// Current main objectives for each team (0=Axis, 1=Allies)
+		wm_set_main_objective		1	0
+		wm_set_main_objective		1	1
+
+		wm_objective_status 1 0 0
+		wm_objective_status 1 1 0
+		wm_objective_status 2 0 0
+		wm_objective_status 2 1 0
+		wm_objective_status 3 0 0
+		wm_objective_status 3 1 0
+		wm_objective_status 4 0 0
+		wm_objective_status 4 1 0
+		wm_objective_status 5 0 0
+		wm_objective_status 5 1 0
+		wm_objective_status 6 0 0
+		wm_objective_status 6 1 0
+		wm_objective_status 7 0 0
+		wm_objective_status 7 1 0
+                wm_objective_status 8 0 0
+		wm_objective_status 8 1 0
+
+		wm_set_main_objective		1	0
+		wm_set_main_objective		1	1
+
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		wm_set_defending_team	1
+
+		// Winner on expiration of round timer (0=Axis, 1=Allies)
+		wm_setwinner	1
+
+		wait 500
+		setautospawn	"Town"	0
+		setautospawn	"Town"	1
+               
+
+                accum 1 set 0  // maps stolen?
+		accum 4 set 0 // have the Axis stolen the tank?
+
+		// start triggered loops on/off as required (eg: command post radio sounds)
+		disablespeaker allies_compost_sound
+		disablespeaker axis_compost_sound
+		disablespeaker allies_compost_sound_lms
+		disablespeaker axis_compost_sound_lms
+
+		wait 2000
+
+	}
+}
+
+maps
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+	
+
+cityflag
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+maps_radio // Exit point of map
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+// BUILD STUFF==================================================================
+
+houseMG42
+{ 
+   spawn 
+   { 
+      wait 200 
+//      constructible_class 2
+//      trigger self startup 
+	setstate houseMG42_model default 
+      setstate houseMG42_materials invisible 
+   } 
+
+//   buildstart final 
+//   { 
+//   } 
+
+//   built final 
+//   {  
+//      setstate houseMG42_model default 
+//      setstate houseMG42_materials invisible 
+
+//      // Some kind of UI pop-up to alert players 
+//      wm_announce   "Allied team has built the house mg42!" 
+//   } 
+
+//   decayed final 
+//   { 
+//      trigger self startup 
+//   } 
+
+//   death 
+//   { 
+//      trigger self startup 
+//      // Some kind of UI pop-up to alert players 
+//      wm_announce   "Axis team has destroyed the house mg42!" 
+//   } 
+
+//   trigger startup 
+//   {  
+//      setstate houseMG42_model invisible 
+//      setstate houseMG42_materials default 
+//      repairmg42 houseMG42_model
+//   } 
+} 
+
+
+bridgeMG42 
+{ 
+   spawn 
+   { 
+      wait 200 
+//      constructible_class 2 
+//      trigger self startup 
+	setstate bridgeMG42_model default 
+      setstate bridgeMG42_materials invisible 
+   } 
+
+//   buildstart final 
+//   { 
+//   } 
+
+//   built final 
+//   {  
+//      setstate bridgeMG42_model default 
+//      setstate bridgeMG42_materials invisible 
+
+//      // Some kind of UI pop-up to alert players 
+//      wm_announce   "Allied team has built the bridge mg42!" 
+//   } 
+
+//   decayed final 
+//   { 
+//      trigger self startup 
+//   } 
+
+//   death 
+//   { 
+//      trigger self startup 
+//      // Some kind of UI pop-up to alert players 
+//      wm_announce   "Axis team has destroyed the bridge mg42!" 
+//   } 
+
+//   trigger startup 
+//   {  
+//      setstate bridgeMG42_model invisible 
+//      setstate bridgeMG42_materials default 
+//      repairmg42 bridgeMG42_model
+//   } 
+} 
+
+
+
+Bridge
+{
+	spawn
+	{
+		wait 400
+            //trigger self setup
+		//constructible_class 3
+		setstate bridge_materials invisible
+		constructible_health 9999999
+		//constructible_weaponclass 0
+		setstate bridge_materials_clip invisible
+		setstate bridge_flag invisible
+	}
+}
+
+barrier
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+
+gate
+{ 
+   spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+} 
+
+allied_compost_built
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+allied_compost_built_model
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+axis_compost_built
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+axis_compost_built_model
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+
+// TANK STUFF==================================================================
+
+
+tank_sound
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+
+tank_trigger
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_build
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_construct
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_shell
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_turret
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+antenna
+{
+        spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_flash
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+tank_smoke
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+
+// these cause timed damage from the tank barrel to the wall explosion
+hurt_barrelblast1
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+hurt_barrelblast2
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+
+
+hurt_wallblast
+{
+	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	}
+}
+

@@ -1,0 +1,133 @@
+game_manager
+{
+	spawn
+	{
+		
+				// mortis - new allied spawns
+
+		create
+		{
+			scriptName "allied_cp_spawn_obj"
+			classname "team_WOLF_objective"
+			targetname "allied_cp_spawn_obj"
+			origin "844 -2737 424"	// z = CC_FILTER_ALLIES(2) | CC_FILTER_SPAWNS(4)
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn1"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "447 -2944 420"
+			angle 177
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn7"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "600 -2342 229"
+			angle 129
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn4"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "324 -2931 292"
+			angle -149
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn8"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "739 -2156 244"
+			angle -147
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn2"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "244 -3175 347"
+			angle 80
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn5"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "269 -1969 255"
+			angle 79
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn3"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "536 -1478 420"
+			angle -179
+			spawnflags 2	// TEAM_ALLIES
+		}
+
+		create
+		{
+			scriptName "alliedhq_spawn6"
+			classname "team_CTF_bluespawn"
+			targetname "alliedhq_spawn"
+			origin "467 -1503 233"
+			angle -161
+			spawnflags 2	// TEAM_ALLIES
+		}
+	
+		
+		remapshader "models/mapobjects/tanks_sd/mg42turret" "models/mapobjects/tanks_sd/mg42turret_2"
+		
+		remapshaderflush
+		
+		// Game rules
+		wm_camo_allies		"snowy"
+		wm_camo_axis		"temperate"
+
+		wm_number_of_objectives 1
+		wm_set_round_timelimit	25
+
+		wait 50
+		// Set all the non-LMS entities invisible
+		setstate tank invisible
+		setstate barrier1 invisible
+		setstate barrier2 invisible
+		setstate defense1 invisible
+		setstate defense2 invisible
+		setstate defense1_toi invisible
+		setstate tank_smoke invisible
+		setstate tank_enabler invisible
+		setstate tank_disabler invisible
+		setstate tank_flash invisible
+		setstate tank_turret invisible
+		setstate tank_shell invisible
+		setstate tank_construct invisible
+		setstate tank_build invisible
+		setstate tank_trigger invisible
+
+		setautospawn	"Axis Spawn"	0
+		setautospawn	"Allied Spawn"	1
+		setstate Axis_wobj invisible           //Chruch spawnpoint
+		setstate axsp2	 invisible		   //Bank spawnpoint
+	}
+}
+

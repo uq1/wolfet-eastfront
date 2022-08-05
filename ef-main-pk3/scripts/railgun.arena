@@ -1,0 +1,15 @@
+{
+	map			"railgun"
+	longname		"^4[^3EF^4] ^5Rail Gun"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"The Crimea is dominated by Dora, the largest ever railway gun. Dora's emplacement is the scene of a vicious fight to the death as the Axis and Allies tussle for this titanic train-drawn terror. The winners get to live. The losers don't even get to leave."
+	briefing		"The Allies must prevent the Axis from loading and firing Dora, a colossal railway gun. The Axis must transport and load Dora's ammunition, protect her firing controls and fire her to win."
+	axiswintext		"The determination of the Axis forces even in last-ditch situations continues to inspire their High Command and is causing serious concern for the Allies. The poor showing of the Allied forces suggests that Supreme Command are being forced to field inferior troops, of limited ability and lacking in courage or effectiveness. They would do well to learn from and fear the impressive martial display of the triumphant Axis troops."
+	alliedwintext		"A sweet victory for the Allies against the last Axis artillery behemoth. The courage and skill of the Allied forces show that the technological follies of the Axis will prove no obstacle to a decisive final Allied victory. The Axis forces, on the other hand, appear to be nearing exhaustion. Incapable of asserting control of the battlefield, devoid of tactical sense and deficient in courage, they must muster some military moxie, or their children will grow up speaking American. Or Russian."
+	mapposition_x	964
+	mapposition_y	655
+}
+

@@ -1,0 +1,7 @@
+md3_hat,		"models/players/temperate/allied/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"models/players/temperate/allied/legs2.jpg"
+u_body,			"models/players/temperate/allied/cvops/body1.tga"
+u_rthand,		"models/players/temperate/axis/hand.jpg"
+u_lfthand,		"models/players/temperate/axis/hand.jpg"

@@ -1,0 +1,130 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "7146 3245 252"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-1336 5352 248"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "3080 3223 122"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "484 1089 266"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "4115 2020 261"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "3063 5585 118"
+spawnflags "2"
+}
+{
+classname "bot_allied_defence_point"
+origin "2438.132 1027.528 616.126"
+angles "7.37 127.26 0.00"
+aiTeam "2"
+}
+{
+classname "bot_allied_defence_point"
+origin "1867.007 4934.127 584.125"
+angles "17.27 -166.44 0.00"
+aiTeam "2"
+}
+{
+classname "bot_axis_defence_point"
+origin "2233.875 4934.125 584.125"
+angles "15.95 -7.08 0.00"
+}
+{
+classname "bot_allied_defence_point"
+origin "2233.875 4934.125 584.125"
+angles "15.95 -7.08 0.00"
+}
+{
+classname "bot_allied_defence_point"
+origin "2229.601 5305.872 584.125"
+angles "17.93 11.40 0.00"
+aiTeam "2"
+}
+{
+classname "bot_allied_defence_point"
+origin "4519.312 3109.789 508.125"
+angles "11.22 118.02 0.00"
+aiTeam "2"
+}
+{
+classname "bot_allied_defence_point"
+origin "3810.042 5608.918 304.125"
+angles "3.30 -163.14 0.00"
+aiTeam "2"
+}
+{
+classname "bot_allied_defence_point"
+origin "2586.301 1001.874 616.125"
+angles "13.86 43.39 0.00"
+aiTeam "2"
+}
+{
+classname "npc_tank_medium"
+origin "1270 4544 340"
+angles "4.949341 -4.427490 0.0"
+}
+{
+classname "npc_tank_light"
+origin "3164 5730 188"
+angles "2.307129 -179.137573 0.0"
+}
+{
+classname "npc_flametank"
+origin "6520 3076 322"
+angles "8.904419 85.995483 0.0"
+}
+{
+classname "npc_tank_light"
+origin "4156 2494 334"
+angles "7.695923 88.742065 0.0"
+}
+{
+classname "npc_tank_medium"
+origin "1110 1240 328"
+angles "3.845215 0.411987 0.0"
+}
+{
+classname "misc_stealth_area"
+origin "5962 5213 188"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "3515 4588 330"
+radius "48"
+}
+{
+classname "misc_stealth_area"
+origin "3076 5037 338"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "2975 1610 356"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2807 939 343"
+radius "32"
+}

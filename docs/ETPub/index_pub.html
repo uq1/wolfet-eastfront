@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>etpub client documentation</title>
+<style type="text/css">
+dt {
+        font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h2>etpub client documentation</h2>
+<a href="#cvars">cvars</a><br>
+<a href="#cmds">commands</a></br>
+<a href="#gen">General Changes</a><br>
+
+<a name="cvars"><h3>cvars</h3></a>
+
+<dl>
+
+<dt>cg_drawTime [0|1|2]</dt>
+<dd><p>Decides whether to draw the current local time beneath the FPS display.  
+When set to 1, it will display 24 hour clock, when set to 2, it will 
+display a 12 hour clock, with am/pm</p></dd>
+
+<dt>cg_drawTimeSeconds [0|1]</dt>
+<dd>
+<p>When set to 1, will display the seconds as well on the time.
+Requires cg_drawTime set to either 1 or 2</p></dd>
+
+<dt>cg_hud</dt>
+<dd>
+<p>The name of your current hud, which will be loaded upon startup</p></dd>
+
+<dt>cg_panzerhack [0|1]</dt>
+<dd>
+<p>Put your SMG in weaponbank 2  
+(instead of bank 3) when you're a soldier with level 4 Heavy Weapons</p>
+<p>Default: 1</p>
+</dd>
+
+</dl>
+<hr>
+<a name="cmds"><h3>Commands</h3></a>
+<dl>
+<dt>loadhud</dt>
+<dd>used to load a custom hud from a .hud file contained in a pk3 file.
+Also able to "/loadhud blank" to load a blank hud, or "/loadhud" to
+load the default ET hud.  When loading a hud, the default ET is loaded first,
+then the custom HUD overwrites any values specified.  So if a HUD element
+isn't specifically disabled in a custom HUD, it will be in ET default
+position</dd>
+
+<dt>edithud</dt>
+<dd>Used to edit the hud in realtime.  Can also be used to script a hud 
+so that server admins don't have to package .hud files into pk3
+<p><strong>format:</strong>
+<em>/edithud elementName [value1] [value2] . . . . [valueX]</em></p>
+<p>Current <em>elementNames</em> and <em>(values)</em> are as follows:
+<ul>
+<li>ammocount (x, y, scale)
+<li>chargebar (x, y, width)
+<li>compass (x, y, size)
+<li>upperright (y)
+<li>fireteam (x, y, width)
+<li>flagcov (x, y)
+<li>head (x, y, width, height)
+<li>healthbar (x, y, width)
+<li>healthtext (x, y, scale)
+<li>lagometer (x, y)
+<li>overheat (x, y, width, height)
+<li>skillbox1 (x, y, size)
+<li>skillbox2 (x, y, size)
+<li>skillbox3 (x, y, size)
+<li>skillpic1 (x, y, size)
+<li>skillpic2 (x, y, size)
+<li>skillpic3 (x, y, size)
+<li>skilltext1 (x, y, scale)
+<li>skilltext2 (x, y, scale)
+<li>skilltext3 (x, y, scale)
+<li>staminabar (x, y, width)
+<li>weaponcard (x, y, size)
+<li>xptext (x, y, scale)
+<li>cpmtext (x, y, scale)
+<li>chattext (x, y, scale)
+<li>votefttext (x, y)
+<li>livesleft (x, y)
+</ul></p>
+<p>All items except skilltextX are part of the original ET hud.  skillTextX
+is a textual representation of the xp levels, i.e. 0, 1, 2, 3, 4.  The 
+skill[box,pic,text] elements correspond as follows, 1 = class specific skills, 2 = battle sense, 
+3 = light weapons</p>
+<p>Default <em>scale</em> values, where used, is 25 in the default ET hud.</p>
+<p><em>upperright</em> represents the spawn counter/game timer, clock, FPS
+normally displayed on the right side of the screen.</p>
+<p>(x,y) are based on a 640 x 480 scale, regardless of the actual screen 
+resolution that ET is running.  Therefore (0,0) is upper left, (640,480)
+is lower right and (320, 240) is crosshairs</p>
+<p>To disable an element entirely, set the first value to -1.  Currently
+votefttext CANNOT be disabled</p>
+</dd>
+
+<dt>dumphud</dt>
+<dd>Dumps the current hud settings to the console in format used
+to create a .hud file</dd>
+
+</dl>
+<hr>
+<a name="gen"><h3>General Changes</h3></a>
+<ul>
+<li>New etpub in-game menu for configuring the cg_drawTime cvars
+<li>Integrates many of Chruker's <a href="http://games.chruker.dk/enemy_territory/modding_project_bugfix.php">&quot;Project: Bug Fix&quot;</a> fixes.
+<li>Support for the 'forcecvar' server command.
+<li>Uses etpub's player movement code, so client prediction will better
+    match the server.
+<li>If ETPro's etpromapscripts are used, you won't see the message 
+&quot;You are near the Back Door&quot; on battery unless you use it.
+(support for EF_FAKEBMODEL).
+<li>When playing dead, you don't see the text about being wonded and waiting
+for a medic.
+<li>On servers with the g_weapons flags 2 or 4, you won't hear the predicted
+'click' sound when using syringe or pliers underwater.
+<li>'+lookdown' and '+lookup' commands are disabled to prevent scripted 
+anti-recoil cheats.
+</ul>
+
+</body>
+</html>
+

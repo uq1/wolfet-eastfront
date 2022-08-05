@@ -1,0 +1,23 @@
+// scenario information
+wm_mapdescription	axis		"Defend the two entrenched tanks at all costs."
+wm_mapdescription	allied	"Destroy the two axis tanks to secure this portion of the city." 
+wm_mapdescription	neutral	"The Allies are attempting to take back a key portion of the city of Stalingrad.  However, two axis Panther tanks are preventing the Allies from securing this area.  The allies must destroy these two tanks, the Axis must defend them at all costs."
+
+// Axis Objective Descriptions
+wm_objective_axis_desc	1	"Primary Objective:**Defend the Main Gate!"
+wm_objective_axis_desc	2	"Primary Objective:**Defend the East Tank!"
+wm_objective_axis_desc	3	"Primary Objective:**Defend the West Tank!"
+wm_objective_axis_desc	4	"Secondary Objective:**Defend the Upper Wall!"
+wm_objective_axis_desc	5	"Secondary Objective:**Defend the Munitions Depot spawn!"
+wm_objective_axis_desc	6	"Secondary Objective:**Prevent the Allies from building a Command Post!"
+wm_objective_axis_desc	7	"Secondary Objective:**Construct an Axis Command Post!"
+
+
+// Allied Objective Descriptions
+wm_objective_allied_desc	1	"Primary Objective:**Destroy the Main Gate to secure the Munitions Spawn!"
+wm_objective_allied_desc	2	"Primary Objective:**Destroy the East Tank!"
+wm_objective_allied_desc	3	"Primary Objective:**Destroy the West Tank!"
+wm_objective_allied_desc	4	"Secondary Objective:**Destroy the Upper Wall!"
+wm_objective_allied_desc	5	"Secondary Objective:**Capture the Munitions Depot spawn!"
+wm_objective_allied_desc	6	"Secondary Objective:**Construct a Command Post!"
+wm_objective_allied_desc	7	"Secondary Objective:**Prevent the Axis from building a Command Post!"

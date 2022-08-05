@@ -1,0 +1,17 @@
+characterDef
+{
+	skin			"engineer"
+
+	weaponskin			"models/players/wehrmacht/axis/engineer/weapon.skin"
+
+	mesh				"models/players/wehrmacht/axis/engineer/body.mdm"
+	animationgroup		"animations/human_base.anim"
+	animationscript		"animations/scripts/human_base.script"
+
+	undressedCorpseModel	"models/players/wehrmacht/common/naked.mdm"
+	undressedCorpseSkin	"axis_engineer"
+
+	hudhead			"models/players/hud/head.md3"
+	hudheadanims		"animations/human/heads/base.anim"
+	hudheadskin			"models/players/hud/axis_engineer.skin"
+}

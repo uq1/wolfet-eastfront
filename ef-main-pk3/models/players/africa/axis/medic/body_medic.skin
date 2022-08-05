@@ -1,0 +1,8 @@
+md3_back,		"models/players/temperate/axis/medic/acc/backpack.md3"
+md3_hat,		"models/players/africa/axis/fieldcap.md3"
+md3_rank,		"models/players/africa/common/rank_fieldcap.md3"
+
+l_legs,		"models/players/africa/axis/medic/legs"
+u_body,		"models/players/africa/axis/medic/body"
+u_rthand,		"models/players/africa/axis/medic/body"
+u_lfthand,		"models/players/africa/axis/medic/body"

@@ -1,0 +1,218 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "-1749 -2867 276"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "-1417 4900 252"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-3098 20 203"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "237 5923 272"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-1037 1167 276"
+spawnflags "0"
+}
+{
+classname "ammo_crate"
+origin "-1135 -2486 285"
+radius "64"
+angle "-180"
+}
+{
+classname "ammo_crate"
+origin "-3040 213 222"
+radius "64"
+angle "-180"
+}
+{
+classname "ammo_crate"
+origin "-1587 5229 268"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "-1383 -2486 289"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "-3128 213 222"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "-1509 4720 268"
+radius "64"
+angle "0"
+}
+{
+classname "npc_tank_medium"
+origin "-1864 -3353 377"
+angle "90"
+}
+{
+classname "npc_tank_light"
+origin "-2103 -3353 394"
+angle "90"
+}
+{
+classname "npc_tank_medium"
+origin "-1162 5411 331"
+angle "-90"
+}
+{
+classname "npc_tank_light"
+origin "-691 4967 327"
+angle "0"
+}
+{
+origin "1723 -411 333"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-2379 -1188 379"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-1792 -1179 365"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-1787 -1392 365"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-1853 -2140 421"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-2956 -3252 660"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-2675 -3416 645"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-10 2773 361"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "453 2796 351"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "64 6205 501"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "582 2985 375"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "1121 1391 353"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "1130 1234 367"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "1287 1199 357"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "901 868 410"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "793 793 409"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "837 611 609"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "605 606 613"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "385 677 608"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "91 739 410"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-1383 2123 368"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+{
+origin "-2150 1193 365"
+_color "1.000000 1.000000 0.713726"
+scale "4"
+classname "corona"
+}
+

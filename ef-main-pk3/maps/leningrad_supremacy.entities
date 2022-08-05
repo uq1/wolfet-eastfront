@@ -1,0 +1,83 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "1801 -9564 -195"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "1761 -5714 -195"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-366 -428 -195"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "3622 -1441 -191"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "5579 124 -72"
+spawnflags "1"
+}
+{
+classname "ammo_crate"
+origin "1703 -8670 -181"
+radius "64"
+angle "180"
+}
+{
+classname "ammo_crate"
+origin "2827 -1544 -177"
+radius "64"
+angle "-90"
+}
+{
+classname "ammo_crate"
+origin "-264 -919 -181"
+radius "64"
+angle "0"
+}
+{
+classname "ammo_crate"
+origin "5415 -380 -56"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "1876 -8670 -181"
+radius "64"
+angle "180"
+}
+{
+classname "health_crate"
+origin "2824 -1198 -177"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "-441 -919 -181"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "5415 -467 -51"
+radius "64"
+angle "-90"
+}
+//{
+//classname "npc_tank_light"
+//origin "5258 -390 40"
+//angle "90"
+//}
+

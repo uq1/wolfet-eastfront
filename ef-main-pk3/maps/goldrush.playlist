@@ -1,0 +1,5 @@
+// Just a list of the music tracks's to use on your map.
+// Format is: <trackname> <minutes> <seconds> .. eg: pop/music/duel1.ogg 1 15
+pop/music/egypt1.ogg 2 51
+pop/music/egypt2.ogg 2 09
+

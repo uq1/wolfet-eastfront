@@ -1,0 +1,8 @@
+{
+	class	PC_FIELDOPS
+	skill	5
+	weapon	WP_STEN
+	patrol	true
+	mounted	false
+	hunter	true
+}

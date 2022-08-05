@@ -1,0 +1,144 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "5308 1231 2"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "7569 3515 5"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "2894 3471 2"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "374 3201 20"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "789 5345 5"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "2804 4169 3"
+spawnflags "0"
+}
+{
+classname "ammo_crate"
+origin "5588 985 -3"
+radius "64"
+angle "0"
+}
+{
+classname "ammo_crate"
+origin "3169 3260 1"
+radius "64"
+angle "0"
+}
+{
+classname "ammo_crate"
+origin "570 5388 1"
+radius "64"
+angle "-90"
+}
+{
+classname "ammo_crate"
+origin "2616 4097 2"
+radius "64"
+angle "-90"
+}
+{
+classname "ammo_crate"
+origin "7946 3545 1"
+radius "64"
+angle "90"
+}
+{
+classname "health_crate"
+origin "5643 1458 33"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "3281 3260 1"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "570 5489 1"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "2616 3948 6"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "7946 3414 1"
+radius "64"
+angle "90"
+}
+{
+classname "npc_flametank"
+origin "936 5393 69"
+angle "-90"
+}
+{
+classname "npc_tank_medium"
+origin "3230 2877 69"
+angle "180"
+}
+{
+classname "npc_tank_medium"
+origin "2665 4405 84"
+angle "90"
+}
+{
+classname "npc_tank_heavy"
+origin "7983 3793 69"
+angle "180"
+}
+{
+classname "npc_tank_heavy"
+origin "5312 713 169"
+angle "90"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9529 1051 1236"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9151 2663 2015"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9129 5138 1747"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-1146 5477 1019"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-710 1591 1013"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "-16 -208 974"
+}
+

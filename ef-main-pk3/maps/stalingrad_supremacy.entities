@@ -1,0 +1,144 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "-483 -913 -22"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "459 2654 224"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "2782 2685 4"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "5151 6799 -267"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-92 8895 -270"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "1561 5793 -230"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "3542 9063 -267"
+spawnflags "2"
+}
+{
+classname "ammo_crate"
+origin "-616 -1351 -15"
+radius "64"
+angle "0"
+}
+{
+classname "ammo_crate"
+origin "3012 2622 22"
+radius "64"
+angle "90"
+}
+{
+classname "ammo_crate"
+origin "254 2756 240"
+radius "64"
+angle "-180"
+}
+{
+classname "ammo_crate"
+origin "5247 6575 -247"
+radius "64"
+angle "0"
+}
+{
+classname "ammo_crate"
+origin "3612 9431 -247"
+radius "64"
+angle "-180"
+}
+{
+classname "ammo_crate"
+origin "-848 9166 -212"
+radius "64"
+angle "-90"
+}
+{
+classname "ammo_crate"
+origin "1727 6017 -230"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "-418 -1351 -12"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "3012 2729 20"
+radius "64"
+angle "90"
+}
+{
+classname "health_crate"
+origin "448 2756 240"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "5369 6575 -247"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "3487 9431 -247"
+radius "64"
+angle "-180"
+}
+{
+classname "health_crate"
+origin "-848 9000 -241"
+radius "64"
+angle "-90"
+}
+{
+classname "health_crate"
+origin "1449 6017 -238"
+radius "64"
+angle "-180"
+}
+{
+classname "npc_tank_light"
+origin "-1332 -753 64"
+angle "90"
+}
+{
+classname "npc_flametank"
+origin "-1069 -753 67"
+angle "90"
+}
+{
+classname "npc_tank_light"
+origin "3989 7959 -185"
+angle "90"
+}
+{
+classname "npc_flametank"
+origin "3296 7959 -194"
+angle "90"
+}
+

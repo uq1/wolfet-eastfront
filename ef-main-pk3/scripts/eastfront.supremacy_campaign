@@ -1,0 +1,8 @@
+{
+	name			"The Eastern Front"
+	shortname		"cmpgn_ef_supremacy"
+	description		"The russian front."
+	maps			"warsaw_poland;fueldump;Moscow_forest;stalingrad;mp_trenchtoast;leningrad;railgun;radar"
+	mapTC			374 374
+	type			"supremacy_campaign"
+}

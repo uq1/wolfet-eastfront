@@ -1,0 +1,15 @@
+{
+	map			"caen"
+	longname		"^4[^3EF^4] ^5Caen"
+	type			"wolfmp wolfsw supremacy supremacy_campaign wolfcoop wolfsp"
+	timelimit		30
+	axisRespawnTime		25
+	alliedRespawnTime	25
+	lmsbriefing		"Fight to the death."
+	briefing		"The Allies have occupied the town of Caen and have set up a Battalion headquarters. The Axis must push the Allies back across the river, get a tank across to break into the battalion headquarters, and steal their maps."
+	axiswintext		"By gathering this intelligence and gaining control of that bridge, our armour is now on it's way to where it is needed most."	
+	alliedwintext	"This victory shows the desparation of the Axis. Talk about a suicide mission..."
+	mapposition_x	372
+	mapposition_y	505
+}
+

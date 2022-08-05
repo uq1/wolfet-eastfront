@@ -1,0 +1,8 @@
+{
+	class	PC_SOLDIER
+	skill	4
+	weapon	WP_FLAMETHROWER
+	patrol	true
+	mounted	false
+	hunter	true
+}

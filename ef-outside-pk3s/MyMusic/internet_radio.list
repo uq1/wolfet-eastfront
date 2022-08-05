@@ -1,0 +1,70 @@
+// Internet radio sites.
+{
+	address "http://190.48.71.39:8000"
+	description "I'm Smarter Than You Radio (128k)"
+}
+{
+	address "http://207.200.96.228:8000"
+	description "Spy Radio (56k)"
+}
+{
+	address "http://207.200.96.225:8010"
+	description "Spy Radio (128k)"
+}
+{
+	address "http://87.106.11.234:8142"
+	description "X100 NetRock Radio (128k)"
+}
+{
+	address "http://66.98.164.13:9054"
+	description "WKRN (VBR)"
+}
+{
+	address "http://88.85.204.125:8000"
+	description "Sadman Station (96k)"
+}
+{
+	address "http://62.195.153.40:8000"
+	description "Radio Twilight (64k)"
+}
+{
+	address "http://38.96.148.22:8750"
+	description "Extreme Radio International (56k)"
+}
+{
+	address "http://217.170.21.154:7052"
+	description "Zeilsteen Radio (56k)"
+}
+{
+	address "http://217.153.16.221:8000"
+	description "'Unicorn' Internet Radio (48k)"
+}
+{
+	address "http://217.153.16.221:8000"
+	description "FreeRadio (48k)"
+}
+{
+	address "http://72.36.213.202:7540"
+	description "ZeroFM (40k)"
+}
+{
+	address "http://209.9.227.165:11020"
+	description "XStream Alternative (32k)"
+}
+{
+	address "http://66.250.45.118:7726"
+	description "SKY FM (24k)"
+}
+{
+	address "http://190.48.71.39:8000"
+	description "FMROSKA (16k)"
+}
+// Do not remove these!
+{
+	address ""
+	description "None"
+}
+{
+	address ""
+	description "End Marker"
+}

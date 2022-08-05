@@ -1,0 +1,45 @@
+#include "ui/menudef.h"
+
+// Defines //
+
+#define WINDOW_X		16
+#define WINDOW_Y		16
+#define WINDOW_WIDTH	128
+#define WINDOW_HEIGHT	80
+#define GROUP_NAME		"grpOptions"
+
+// Macros //
+
+#include "ui/menumacros.h"
+		
+// Options Menu //
+	
+menuDef {
+	name		"ETEnhanced"
+	visible		0
+	fullscreen	0
+	rect		WINDOW_X WINDOW_Y WINDOW_WIDTH WINDOW_HEIGHT
+	style		WINDOW_STYLE_FILLED
+	
+	onESC {
+		close ETEnhanced ;
+#ifdef FUI
+		open main
+#else
+		open ingame_main
+#endif // FUI
+	}
+
+// Window //
+
+	WINDOW( "ET Enhanced", 94 )
+	
+// Buttons //
+
+	BUTTON ( 6, 32, WINDOW_WIDTH-12, 18, "HUD", .3, 14, close ETEnhanced ; open ETEnhanced_customize_hud )
+#ifdef FUI
+	BUTTON ( 6, 56, WINDOW_WIDTH-12, 18, "BACK", .3, 14, close ETEnhanced ; open main )
+#else
+	BUTTON ( 6, 56, WINDOW_WIDTH-12, 18, "BACK", .3, 14, close ETEnhanced ; open ingame_main )
+#endif // FUI
+}

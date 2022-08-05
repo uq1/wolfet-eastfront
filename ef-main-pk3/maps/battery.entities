@@ -1,0 +1,172 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "-924 7188 2462"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "3160 7235 2312"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "2189 7580 2286"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "4484 7597 2286"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "7120 7642 2217"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "9793 7649 2233"
+}
+{
+classname "npc_cinematicplane_enter"
+origin "12396 7677 2334"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "4930 -6495 2522"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "3238 -6254 2529"
+}
+{
+classname "npc_cinematicplane_exit"
+origin "1136 -5856 2448"
+}
+{
+spawnflags "1"
+origin "1101 -3729 970"
+classname "bot_allied_defence_point"
+}
+{
+spawnflags "1"
+origin "1101 -3729 970"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1235 -3130 1125"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1648 -2910 1016"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1982 -3084 1086"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1339 -3263 1123"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "2473 -4591 960"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "2035 -4138 1216"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3705 -4654 1216"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3966 -3213 1216"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "2467 -3213 1216"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3037 -2988 960"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3459 -3000 960"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3234 -2977 960"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "3311 -4072 772"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "4154 -4880 1088"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "5612 -3520 1228"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "4178 -2462 1122"
+classname "bot_axis_defence_point"
+}
+{
+classname "misc_stealth_area"
+origin "1660 -2481 731"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "1065 -3208 1092"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "403 -3303 995"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "411 -2994 990"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "5495 -3343 1164"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "4456 -4798 1093"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "4678 -5214 1088"
+radius "32"
+}
+
+
+

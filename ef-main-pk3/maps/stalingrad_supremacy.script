@@ -1,0 +1,645 @@
+game_manager
+{
+	spawn
+	{
+		wm_camo_allies		"snowy"
+		wm_camo_axis		"snowy"
+
+		// Game rules
+		wm_axis_respawntime	30
+		wm_allied_respawntime	20
+		wm_set_round_timelimit	20
+
+		setstate munitionsflag invisible
+		setstate upperwall invisible
+		setstate maingate invisible
+		setstate northtank invisible
+		setstate southtank invisible
+//		setstate allied_radio_destroyed invisible
+//		setstate allied_radio_built invisible
+//		setstate allied_radio_built_model invisible
+//		setstate axis_radio_destroyed invisible
+//		setstate axis_radio_built invisible
+//		setstate axis_radio_built_model invisible
+//		setstate axis_command_post_lms_toi invisible
+//		setstate axis_radio_lms_closed invisible
+//		setstate axis_radio_lms_destroyed invisible
+//		setstate axis_radio_built_lms invisible
+//		setstate axis_radio_closed_lms_model invisible
+//		setstate axis_radio_destroyed_lms_model invisible
+//		setstate axis_radio_built_lms_model invisible
+//		setstate axis_command_post_clip_lms invisible
+
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		wm_set_defending_team	0
+
+		// If the round timer expires, the Axis have won, so set the current winning team
+		// Set the round winner:  0 == AXIS, 1 == ALLIED
+		wm_setwinner -1
+
+		wait 350
+
+	}
+}
+
+munitionsflag
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}
+
+upperwall //Broken section of Upper wall
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}
+
+maingate //The Main Gate
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}
+
+// North Tank
+northtank
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}
+
+// South Tank
+southtank
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}
+
+// ================================================
+// ======== END DESTRUCTIBLE STUFF ================
+// ================================================
+
+
+// ================================================
+// =============== COMMAND POSTS ==================
+// ================================================
+
+allied_radio_destroyed
+{
+	spawn
+	{
+		wait 400
+		setstate allied_radio_destroyed invisible
+		setstate allied_radio_destroyed_model invisible
+	}
+
+	trigger hide
+	{
+		setstate allied_radio_destroyed invisible
+		setstate allied_radio_destroyed_model invisible
+	}
+
+	trigger show
+	{
+		accum 0 abort_if_equal 0
+		setstate allied_radio_destroyed default
+		setstate allied_radio_destroyed_model default
+	}
+
+	trigger enable
+	{
+		accum 0 set 1
+	}
+}
+
+allied_radio_closed
+{
+	trigger hide
+	{
+		setstate allied_radio_closed invisible
+		setstate allied_radio_closed_model invisible
+	}
+
+	trigger show
+	{
+		accum 0 abort_if_equal 1
+		setstate allied_radio_closed default
+		setstate allied_radio_closed_model default
+	}
+
+	trigger disable
+	{
+		accum 0 set 1
+	}
+}
+
+allied_radio_built
+{
+	spawn
+	{
+		wait 400
+
+		constructible_class 2
+
+		trigger allied_radio_built setup
+	}
+
+	trigger setup
+	{
+		setchargetimefactor 1 soldier 1
+		setchargetimefactor 1 lieutenant 1
+		setchargetimefactor 1 medic 1
+		setchargetimefactor 1 engineer 1
+		setchargetimefactor 1 covertops 1
+		sethqstatus 1 0
+	}
+
+	buildstart final
+	{
+		trigger allied_radio_built_model trans
+
+		trigger allied_radio_destroyed hide
+		trigger allied_radio_closed 	hide
+	}
+
+	built final
+	{
+		trigger allied_radio_built_model show
+
+		trigger allied_radio_destroyed enable
+		trigger allied_radio_closed 	disable
+
+		trigger allied_radio_built_model enable_allied_features
+
+		enablespeaker allies_compost_sound
+	}
+
+	decayed final
+	{
+		trigger allied_radio_built_model hide
+
+		trigger allied_radio_destroyed show
+		trigger allied_radio_closed 	show
+	}
+
+	death
+	{
+		trigger allied_radio_built_model hide
+
+		trigger allied_radio_destroyed show
+
+		trigger allied_radio_built_model disable_allied_features
+
+		disablespeaker allies_compost_sound
+	}
+}
+
+allied_radio_built_model
+{
+	spawn
+	{
+		wait 400
+		setstate allied_radio_built_model invisible
+	}
+
+	trigger show
+	{
+		setstate allied_radio_built_model default
+	}
+
+	trigger hide
+	{
+		setstate allied_radio_built_model invisible
+	}
+
+	trigger trans
+	{
+		setstate allied_radio_built_model underconstruction
+	}
+
+	trigger enable_allied_features
+	{
+		setchargetimefactor 1 soldier 0.75
+		setchargetimefactor 1 lieutenant 0.75
+		setchargetimefactor 1 medic 0.75
+		setchargetimefactor 1 engineer 0.75
+		setchargetimefactor 1 covertops 0.75
+		sethqstatus 1 1
+
+		wm_announce	"Allied Command Post constructed. Charge speed increased!"
+
+		wm_objective_status 6 1 1
+		wm_objective_status 6 0 2
+
+	}
+
+	trigger disable_allied_features
+	{
+		// Some kind of UI pop-up to alert players
+		wm_announce	"Axis team has destroyed the Allied Command Post!"
+
+		setchargetimefactor 1 soldier 1
+		setchargetimefactor 1 lieutenant 1
+		setchargetimefactor 1 medic 1
+		setchargetimefactor 1 engineer 1
+		setchargetimefactor 1 covertops 1
+		sethqstatus 1 0
+
+		wm_objective_status 6 1 0
+		wm_objective_status 6 0 0
+	}
+}
+
+axis_radio_destroyed
+{
+	spawn
+	{
+		wait 400
+		setstate axis_radio_destroyed invisible
+		setstate axis_radio_destroyed_model invisible
+	}
+
+	trigger hide
+	{
+		setstate axis_radio_destroyed invisible
+		setstate axis_radio_destroyed_model invisible
+	}
+
+	trigger show
+	{
+		accum 0 abort_if_equal 0
+		setstate axis_radio_destroyed default
+		setstate axis_radio_destroyed_model default
+	}
+
+	trigger enable
+	{
+		accum 0 set 1
+	}
+}
+
+axis_radio_closed
+{
+	trigger hide
+	{
+		setstate axis_radio_closed invisible
+		setstate axis_radio_closed_model invisible
+	}
+
+	trigger show
+	{
+		accum 0 abort_if_equal 1
+		setstate axis_radio_closed default
+		setstate axis_radio_closed_model default
+	}
+
+	trigger disable
+	{
+		accum 0 set 1
+	}
+}
+
+axis_radio_built
+{
+	spawn
+	{
+		wait 400
+
+		constructible_class 2
+
+		trigger axis_radio_built setup
+	}
+
+	trigger setup
+	{
+		setchargetimefactor 0 soldier 1
+		setchargetimefactor 0 lieutenant 1
+		setchargetimefactor 0 medic 1
+		setchargetimefactor 0 engineer 1
+		setchargetimefactor 0 covertops 1
+		sethqstatus 0 0
+	}
+
+	buildstart final
+	{
+		trigger axis_radio_built_model trans
+
+		trigger axis_radio_destroyed hide
+		trigger axis_radio_closed 	hide
+	}
+
+	built final
+	{
+		trigger axis_radio_built_model show
+
+		trigger axis_radio_destroyed enable
+		trigger axis_radio_closed 	disable
+
+		trigger axis_radio_built_model enable_axis_features
+
+		enablespeaker axis_compost_sound
+	}
+
+	decayed final
+	{
+		trigger axis_radio_built_model hide
+
+		trigger axis_radio_destroyed show
+		trigger axis_radio_closed 	show
+	}
+
+	death
+	{
+		trigger axis_radio_built_model hide
+
+		trigger axis_radio_destroyed show
+
+		trigger axis_radio_built_model disable_axis_features
+
+		disablespeaker axis_compost_sound
+	}
+}
+
+axis_radio_built_model
+{
+	spawn
+	{
+		wait 400
+		setstate axis_radio_built_model invisible
+	}
+
+	trigger show
+	{
+		setstate axis_radio_built_model default
+	}
+
+	trigger hide
+	{
+		setstate axis_radio_built_model invisible
+	}
+
+	trigger trans
+	{
+		setstate axis_radio_built_model underconstruction
+	}
+
+	trigger enable_axis_features
+	{
+		setchargetimefactor 0 soldier 0.75
+		setchargetimefactor 0 lieutenant 0.75
+		setchargetimefactor 0 medic 0.75
+		setchargetimefactor 0 engineer 0.75
+		setchargetimefactor 0 covertops 0.75
+		sethqstatus 0 1
+
+		wm_announce	"Axis Command Post constructed. Charge speed increased!"
+
+		wm_objective_status 7 1 2
+		wm_objective_status 7 0 1
+
+	}
+
+	trigger disable_axis_features
+	{
+		// Some kind of UI pop-up to alert players
+		wm_announce	"Allied team has destroyed the Axis Command Post!"
+
+		setchargetimefactor 0 soldier 1
+		setchargetimefactor 0 lieutenant 1
+		setchargetimefactor 0 medic 1
+		setchargetimefactor 0 engineer 1
+		setchargetimefactor 0 covertops 1
+		sethqstatus 0 0
+
+		wm_objective_status 7 1 0
+		wm_objective_status 7 0 0
+	}
+}
+
+
+axis_command_post_lms_toi
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_lms_closed
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_lms_destroyed
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_built_lms
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_closed_lms_model
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_destroyed_lms_model
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_radio_built_lms_model
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+
+axis_command_post_clip_lms
+{
+	spawn
+	{
+		wait 400
+
+		remove
+	}
+}
+// ===================================================
+// ============== END COMMAND POSTS ==================
+// ===================================================
+
+
+// ===================================================
+// ================ START MG NEST ====================
+// ===================================================
+
+mg42_clip_1
+{
+	spawn
+	{
+		wait 200
+
+		constructible_class 2
+
+		trigger mg42_clip_1 setup
+	}
+
+	trigger setup
+	{
+		setstate mg42_1 invisible
+
+		setstate mg42_materials_1 default
+		setstate mg42_materials_clip_1 default
+		setstate mg42_flag_1 default
+	}
+
+	buildstart final
+	{
+		setstate mg42_1 underconstruction
+
+		setstate mg42_materials_1 default
+		setstate mg42_materials_clip_1 default
+		setstate mg42_flag_1 default
+	}
+
+	built final
+	{
+		setstate mg42_1 default
+
+		setstate mg42_materials_1 invisible
+		setstate mg42_materials_clip_1 invisible
+		setstate mg42_flag_1 invisible
+
+		wm_announce	"The East MG Nest has been constructed!"
+	}
+
+	death
+	{
+		setstate mg42_1 invisible
+		repairmg42 mg42_1
+		setstate mg42_materials_1 default
+		setstate mg42_materials_clip_1 default
+		setstate mg42_flag_1 default
+
+		wm_announce	"The East MG Nest has been damaged!"
+	}
+
+	decayed final
+	{
+		setstate mg42_1 invisible
+
+		setstate mg42_materials_1 default
+		setstate mg42_materials_clip_1 default
+		setstate mg42_flag_1 default
+	}
+}
+
+mg42_clip_2
+{
+	spawn
+	{
+		wait 200
+
+		constructible_class 2
+
+		trigger mg42_clip_2 setup
+	}
+
+	trigger setup
+	{
+		setstate mg42_2 invisible
+
+		setstate mg42_materials_2 default
+		setstate mg42_materials_clip_2 default
+		setstate mg42_flag_2 default
+	}
+
+	buildstart final
+	{
+		setstate mg42_2 underconstruction
+
+		setstate mg42_materials_2 default
+		setstate mg42_materials_clip_2 default
+		setstate mg42_flag_2 default
+	}
+
+	built final
+	{
+		setstate mg42_2 default
+
+		setstate mg42_materials_2 invisible
+		setstate mg42_materials_clip_2 invisible
+		setstate mg42_flag_2 invisible
+
+		wm_announce	"The West MG Nest has been constructed!"
+	}
+
+	death
+	{
+		setstate mg42_2 invisible
+		repairmg42 mg42_2
+		setstate mg42_materials_2 default
+		setstate mg42_materials_clip_2 default
+		setstate mg42_flag_2 default
+
+		wm_announce	"The West MG Nest has been damaged!"
+	}
+
+	decayed final
+	{
+		setstate mg42_2 invisible
+
+		setstate mg42_materials_2 default
+		setstate mg42_materials_clip_2 default
+		setstate mg42_flag_2 default
+	}
+}
+// ===================================================
+// ================= END MG NEST =====================
+// ===================================================

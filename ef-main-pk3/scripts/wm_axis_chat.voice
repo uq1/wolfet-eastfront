@@ -1,0 +1,639 @@
+//////////////////////////////////////
+// quickchat script for axis player //
+// last edited by WOTHAN 27/10/2007 //
+//////////////////////////////////////
+
+male
+
+
+////////////////////////
+// wm_quickstatements //
+////////////////////////
+
+PathCleared
+{
+	sound/chat/axis/11a.wav	"Path cleared."
+	sound/chat/axis/11b.wav	"Path cleared."
+}
+
+EnemyWeak
+{
+	sound/chat/axis/12a.wav				"The enemy is weakened."
+	sound/chat/axis/12b.wav				"The enemy is weakened."
+}
+
+AllClear
+{
+	sound/chat/axis/13a.wav	"All clear."
+}
+
+Incoming
+{
+	sound/chat/axis/14a.wav	"Incoming!"
+	sound/chat/axis/14b.wav	"ww2 Alarm signal!"
+	sound/chat/axis/14c.wav	"Alarm alarm!"
+	sound/chat/axis/14d.wav	"Get in to the tanks!"
+	sound/chat/axis/14e.wav	"Take cover!"
+	sound/chat/axis/14f.wav	"Take cover/In Decong!"
+}
+
+FireInTheHole
+{
+	sound/chat/axis/15a.wav	"Fire in the hole!"
+	sound/chat/axis/15b.wav	"Fire in the hole!"
+	sound/chat/axis/15c.wav	"Fire in the hole!"
+	sound/chat/axis/15d.wav	"ww2 Alarm signal!"
+}
+
+OnDefense
+{
+	sound/chat/axis/16a.wav	"I'm on defense."
+}
+
+OnOffense
+{
+	sound/chat/axis/17a.wav	"I'm on offense."
+}
+
+TakingFire
+{
+	sound/chat/axis/18a.wav			"Taking fire!"
+	sound/chat/axis/18b.wav			"Taking fire!"
+	sound/chat/axis/18c.wav			"Taking fire!"
+	sound/chat/axis/18d.wav			"Taking fire!"
+	sound/chat/axis/18e.wav			"Taking fire!"
+}
+
+MinesCleared
+{
+	sound/chat/axis/19a.wav	"Mines cleared."
+}
+
+EnemyDisguised
+{
+	sound/chat/axis/10a.wav	"Enemy in disguise."
+	sound/chat/axis/10b.wav	"Enemy in disguise."
+}
+
+
+//////////////////////
+// wm_quickrequests //
+//////////////////////
+
+Medic
+{
+	sound/chat/axis/21a.wav	"Need a Medic!"		sprites/voiceMedic
+	sound/chat/axis/21b.wav	"Need a Medic!"		sprites/voiceMedic
+	sound/chat/axis/21c.wav	"Need a Medic!"		sprites/voiceMedic
+        sound/chat/axis/21d.wav	"M E D I C   !"		sprites/voiceMedic
+        sound/chat/axis/21e.wav	"We need a doc fast!"   sprites/voiceMedic
+}
+
+NeedAmmo
+{
+	sound/chat/axis/22a.wav	"I need ammo!"		sprites/voiceAmmo
+	sound/chat/axis/22b.wav	"I need ammo!"		sprites/voiceAmmo
+	sound/chat/axis/22c.wav	"I need ammo!"		sprites/voiceAmmo
+	sound/chat/axis/22d.wav	"Grrrrrrrrrr AMMO!"	sprites/voiceAmmo
+}
+
+NeedBackup
+{
+	sound/chat/axis/23a.wav	"I need backup!"
+	sound/chat/axis/23b.wav	"I need backup!"
+	sound/chat/axis/23c.wav	"I need backup!"
+	sound/chat/axis/23c.wav	"We need smokenades!"
+}
+
+NeedEngineer
+{
+	sound/chat/axis/24a.wav	"We need an engineer!"
+	sound/chat/axis/24b.wav	"We need an engineer!"
+	sound/chat/axis/24c.wav	"Oh your so stupid!"
+}
+
+CoverMe
+{
+	sound/chat/axis/25a.wav	"Need covering fire!"
+	sound/chat/axis/25b.wav	"Need covering fire!"
+	sound/chat/axis/25c.wav	"Cover me!"
+	sound/chat/axis/25d.wav	"Cover me!"
+}
+
+HoldFire
+{
+	sound/chat/axis/26a.wav	"Hold your fire!"
+	sound/chat/axis/26b.wav	"Hold your fire!"
+	sound/chat/axis/26C.wav	"Hold your fire Ahhhh!"
+	sound/chat/axis/26d.wav	"Leave me alone!"
+	sound/chat/axis/26e.wav	"**** stupid!"
+	sound/chat/axis/26f.wav	"You are a pig!"
+}
+
+WhereTo
+{
+	sound/chat/axis/27a.wav	"Where to?"
+	sound/chat/axis/27b.wav	"Ver such zu beleidigen????"
+}
+
+NeedOps
+{
+	sound/chat/axis/28a.wav	"We need Covert Ops!"
+}
+
+WhatHappend
+{
+	sound/chat/axis/29a.wav	"What is happening?"
+	sound/chat/axis/29b.wav	"We got a dawm comic here?"
+	sound/chat/axis/29c.wav	"Good luck soldier?"
+	sound/chat/axis/29d.wav	"I like to go home russians are coming?"
+	sound/chat/axis/29e.wav	"U think u will live?"
+	sound/chat/axis/29f.wav	"Whats up here?"
+	sound/chat/axis/29g.wav	"Who was that?"
+	sound/chat/axis/29h.wav	"What Happend/Verdammt noch mal?"
+	sound/chat/axis/29i.wav	"Do what I say, Or i shit down ur ***?"
+	sound/chat/axis/29j.wav	"yes you'r a shithead?"
+}
+
+
+//////////////////////
+// wm_quickcommands //
+//////////////////////
+
+FollowMe
+{
+	sound/chat/axis/31a.wav	"Follow me!"
+	sound/chat/axis/31b.wav	"Follow me!!"
+	sound/chat/axis/31c.wav	"Follow me!!!"
+	sound/chat/axis/31d.wav	"I'll put my foot up ur ass!"
+}
+
+LetsGo
+{
+	sound/chat/axis/32a.wav	" Go go/los loss!"
+	sound/chat/axis/32b.wav	"Let's go/ los los los!"
+	sound/chat/axis/32c.wav	"Let's go/los los!"
+	sound/chat/axis/32d.wav	"Ab geht!"
+	sound/chat/axis/32e.wav	"Now its W A R !"
+}
+
+Move
+{
+	sound/chat/axis/33a.wav	"Move/LOS LOS LOS!"
+	sound/chat/axis/33b.wav	"Move/SNELL!"
+	sound/chat/axis/33c.wav	"Move/SNELL!"
+	sound/chat/axis/33d.wav	"Move/forward!"
+	sound/chat/axis/33e.wav	"Move/SNELL SNELL!"
+	sound/chat/axis/33f.wav	"Troop forward!"
+}
+
+ClearPath
+{
+	sound/chat/axis/34a.wav	"Clear the path!"
+}
+
+DefendObjective
+{
+	sound/chat/axis/35a.wav	"Defend our objective!"
+}
+
+DisarmDynamite
+{
+	sound/chat/axis/36a.wav	"Disarm the dynamite!"
+	sound/chat/axis/36b.wav	"SABOTAGE!"
+}
+
+ClearMines
+{
+	sound/chat/axis/37a.wav	"Clear the mines!"
+}
+
+ReinforceDefense
+{
+	sound/chat/axis/38a.wav	"Reinforce the defense!"
+	sound/chat/axis/38b.wav	"Companie cometogherther!"
+}
+
+ReinforceOffense
+{
+	sound/chat/axis/39a.wav	"Reinforce the offense!"
+	sound/chat/axis/39b.wav	"Reinforce the offense!"
+}
+
+
+//////////////////
+// wm_quickmisc //
+//////////////////
+
+Affirmative
+{
+	sound/chat/axis/41a.wav	"A MEISTER SHOT!"
+	sound/chat/axis/41b.wav	"WHERE ARE U LITTLE RAT!"
+	sound/chat/axis/41c.wav	"INTRUDER YOU HAVE NO CHANCE!"
+	sound/chat/axis/41d.wav	"Shut the hell up, are u stupid?!"
+	sound/chat/axis/41e.wav	"ILL MAKE U A GERM BULLET BAG!"
+	sound/chat/axis/41f.wav	"I SEE U IN THAT WHOLE!"
+	sound/chat/axis/41g.wav	"COME OUT COME OUT, LITTLE RAT!"
+	sound/chat/axis/41h.wav	"A BLIND SHOT BETTER!"
+	sound/chat/axis/41i.wav	"Victory or DEATH!"
+	sound/chat/axis/41j.wav	"FEIGLINGER!"
+	sound/chat/axis/41k.wav	"Victory is ours!"
+	sound/chat/axis/41l.wav	"Hands up!"
+	sound/chat/axis/41m.wav	"Come back I'm not done with you"
+}
+
+Negative
+{
+	sound/chat/axis/42a.wav	"Die u commy basted."
+	sound/chat/axis/42b.wav	"Shit bad soldeir"
+	sound/chat/axis/42c.wav	"I'm laffing so hard that i cant breath!"
+	sound/chat/axis/42d.wav	"I CAN NOT SHOT YOU,IF U HIDE!"
+	sound/chat/axis/42e.wav	"What we have here is dawm comiker"
+	sound/chat/axis/42f.wav	"Dont shoot im a civillian"
+	sound/chat/axis/42g.wav	"Thats the tactic of a coward"
+	sound/chat/axis/42h.wav	"Your father is a xxxxx"
+	sound/chat/axis/42i.wav	"Where is the asxxxxx"
+	sound/chat/axis/42j.wav	"The Russians are here, I like to go home NOW"
+	sound/chat/axis/42k.wav	"Dont shoot me?"
+	sound/chat/axis/42l.wav	"NO bodly like's me, not even you Lt!"
+
+}
+
+Thanks
+{
+	sound/chat/axis/43a.wav	"Thanks!"
+	sound/chat/axis/43b.wav	"Thanks!"
+	sound/chat/axis/43c.wav	"Thanks!"
+	sound/chat/axis/43d.wav	"Thanks u ***!"
+}
+
+Welcome
+{
+	sound/chat/axis/44a.wav	"You are welcome."
+	sound/chat/axis/44b.wav	"You are welcome."
+	sound/chat/axis/44c.wav	"You are welcome."
+	sound/chat/axis/44d.wav	"You are welcome, u ass."
+}
+
+Sorry
+{
+	sound/chat/axis/45a.wav	"Sorry!"
+	sound/chat/axis/45b.wav	"Sorry!"
+	sound/chat/axis/45c.wav	"Sorry!"
+}
+
+Oops
+{
+	sound/chat/axis/46a.wav	"Oh shit!"
+	sound/chat/axis/46b.wav	"Sorry couldent help it!"
+	sound/chat/axis/46c.wav	"Hehehe!"
+	sound/chat/axis/46d.wav	"Cool down i must consentrate!"
+	sound/chat/axis/46e.wav	"OMG I shot my friend.!"
+}
+
+stop
+{
+	sound/chat/axis/47a.wav	"Stop!"
+	sound/chat/axis/47b.wav	"Stop u dog!"
+	sound/chat/axis/47c.wav	"Stop u deserters or I will kill you!"
+}
+
+help
+{
+	sound/chat/axis/48a.wav	"Help me!"
+}
+
+////////////////////
+// wm_quickglobal //
+////////////////////
+
+Hi
+{
+	sound/chat/axis/54a.wav	"Hello!"
+	sound/chat/axis/54b.wav	"Hello!"
+	sound/chat/axis/54c.wav	"Hello!"
+	sound/chat/axis/54d.wav	"Hi!"
+}
+
+Bye
+{
+	sound/chat/axis/55a.wav	"Bye Bye."
+	sound/chat/axis/55b.wav	"Bye Bye."
+}
+
+GreatShot
+{
+	sound/chat/axis/56a.wav			"Great shot!"
+	sound/chat/axis/56b.wav			"Great shot!!"
+	sound/chat/axis/56c.wav			"Great shot!!!"
+	sound/chat/axis/56d.wav			"Great shot!!!!"
+}
+
+Cheer
+{
+	sound/chat/axis/57a.wav			"HuRRA!"
+	sound/chat/axis/57b.wav			"Wunderbar!"
+	sound/chat/axis/57c.wav			"Commie pig!"
+	sound/chat/axis/57d.wav			"soo good!"
+	sound/chat/axis/57e.wav			"wunderbar!"
+	sound/chat/axis/57f.wav			"Jipy svinebake!"
+	sound/chat/axis/57g.wav			"Cheer!"
+	sound/chat/axis/57h.wav			"HAHA so good!"
+	sound/chat/axis/57i.wav			"HAHAHAHAHA Wunderbar!"
+	sound/chat/axis/57J.wav			"Your ass is on my list!"
+}
+
+/////////////////////
+// wm_quickglobal2 //
+/////////////////////
+
+GoodGame
+{
+	sound/chat/axis/586a.wav	"Good armbeit laute!"
+	sound/chat/axis/586b.wav	"Good game!"
+	sound/chat/axis/586c.wav	"Good game!"
+	sound/chat/axis/586d.wav	"Good game!"
+}
+
+
+///////////////////////
+// wm_sayplayerclass //
+///////////////////////
+
+IamSoldier
+{
+	sound/chat/axis/61a.wav	"We are soldiers and our home is war."
+}
+
+IamMedic
+{
+	sound/chat/axis/62a.wav	"I'm a medic."	sprites/voiceMedic
+	sound/chat/axis/62b.wav	"I'm a medic."	sprites/voiceMedic
+}
+
+IamEngineer
+{
+	sound/chat/axis/63a.wav	"Im not a human, Im not an animal, Im a PanzerMAN."
+	sound/chat/axis/63b.wav	"Im not a human, Im not an animal, Im a PanzerGrenadeir."
+}
+
+IamFieldOps
+{
+	sound/chat/axis/64a.wav	"Im a Officer in the Axis armee."	sprites/voiceAmmo
+	sound/chat/axis/64b.wav	"Im a Officer in the proud Axis armee." sprites/voiceAmmo
+}
+
+IamCovertOps
+{
+	sound/chat/axis/65a.wav		"Im a Sniper."
+	sound/chat/axis/65b.wav		"Im a sniper/Sabotör."
+}
+
+
+////////////////////
+// wm_quickattack //
+////////////////////
+
+DestroyPrimary
+{
+	sound/chat/axis/71a.wav	"Destroy primary objective!"
+}
+
+DestroySecondary
+{
+	sound/chat/axis/72a.wav	"Destroy secondary objective!"
+}
+
+DestroyConstruction
+{
+	sound/chat/axis/73a.wav	"Destroy construction!"
+}
+
+RepairVehicle
+{
+	sound/chat/axis/75a.wav	"Repair the vehicle!"
+}
+
+DestroyVehicle
+{
+	sound/chat/axis/76a.wav	"Disable the vehicle!"
+}
+
+EscortVehicle
+{
+	sound/chat/axis/77a.wav	"Escort the vehicle!"
+}
+
+
+////////////////////////
+// wm_quickobjectives //
+////////////////////////
+
+CommandAcknowledged
+{
+	sound/chat/axis/81a.wav	"Ok!"
+	sound/chat/axis/41a.wav	"Ein meister shot!"
+	sound/chat/axis/41b.wav	"Where are u little rat!"
+	sound/chat/axis/41c.wav	"You have NO chance!"
+	sound/chat/axis/41d.wav	"Where are u i cant shot u!"
+	sound/chat/axis/41e.wav	"I'll make u a germen bullet bag!"
+	sound/chat/axis/41f.wav	"I see u in your little whole!"
+	sound/chat/axis/41g.wav	"Come out, come out u litte rat!"
+	sound/chat/axis/41h.wav	"A blind shot better then u do!"
+	sound/chat/axis/41i.wav	"Victory or death!"
+	sound/chat/axis/41j.wav	"Coward!"
+	sound/chat/axis/41k.wav	"Victory is ours!"
+	sound/chat/axis/41l.wav	"Hands up!"
+}
+
+CommandDeclined
+{
+	sound/chat/axis/82a.wav	"Send me a MG42 grupp!"
+	sound/chat/axis/82b.wav	"AHHHHHHHHHHHHH!"
+	sound/chat/axis/82c.wav	"God dammit/Verdamt nochmal!"
+}
+
+CommandCompleted
+{
+	sound/chat/axis/83a.wav	"Command completed!"
+}
+
+ConstructionCommencing
+{
+	sound/chat/axis/84a.wav	"I'm constructing!"
+}
+
+
+///////////////////////
+// wm_quickfireteams //
+///////////////////////
+
+
+FTAttack
+{
+	sound/chat/axis/98a.wav	"A t t a c k!"
+	sound/chat/axis/98b.wav	"**German singing**!"
+	sound/chat/axis/98c.wav	"***Attack***!"
+	sound/chat/axis/98d.wav	"Attack!"
+	sound/chat/axis/98e.wav	"Attack!"
+	sound/chat/axis/98f.wav	"Unser R!"
+}
+
+FTFallBack
+{
+	sound/chat/axis/99a.wav	"Fall back!"
+	sound/chat/axis/99b.wav	"Fall back!"
+	sound/chat/axis/99c.wav	"Fall back!"
+}
+
+
+//////////////////////////////
+// wm_quickfireteamssoldier //
+//////////////////////////////
+
+FTCoverMe
+{
+	sound/chat/axis/25a.wav		"Covering fire!"
+	sound/chat/axis/25b.wav		"Covering fire!"
+	sound/chat/axis/25c.wav		"Cover me!"
+	sound/chat/axis/25d.wav		"Cover me!"
+}
+
+FTCoveringFire
+{
+	sound/chat/axis/25a.wav		"Covering fire!"
+	sound/chat/axis/25b.wav		"Covering fire!"
+	sound/chat/axis/25c.wav		"Cover me!"
+	sound/chat/axis/25d.wav		"Cover m e!"
+}
+
+FTMortar
+{
+	sound/chat/axis/911a.wav	"Deploy mortar!"
+}
+
+
+////////////////////////////
+// wm_quickfireteamsmedic //
+////////////////////////////
+
+FTHealSquad
+{
+	sound/chat/axis/921a.wav	"Heal the squad!"	sprites/voiceMedic
+}
+
+FTHealMe
+{
+	sound/chat/axis/922a.wav	"Heal me!"			sprites/voiceMedic
+}
+
+FTReviveTeamMate
+{
+	sound/chat/axis/923a.wav	"Revive team mate!"	sprites/voiceMedic
+}
+
+FTReviveMe
+{
+	sound/chat/axis/924a.wav	"Revive me!"			sprites/voiceMedic
+}
+
+
+///////////////////////////////
+// wm_quickfireteamsengineer //
+///////////////////////////////
+
+FTDestroyObjective
+{
+	sound/chat/axis/931a.wav	"Destroy the objective!"
+	sound/chat/axis/931b.wav	"***Destroy the objective***!"
+}
+
+FTRepairObjective
+{
+	sound/chat/axis/932a.wav	"Repair objective!"
+}
+
+FTConstructObjective
+{
+	sound/chat/axis/933a.wav	"Construct objective!"
+}
+
+FTDisarmDynamite
+{
+	sound/chat/axis/36a.wav		"Disarm the dynamite!"
+	sound/chat/axis/36b.wav		"Disarm the dynamite!"
+}
+
+FTDeployLandmines
+{
+	sound/chat/axis/934a.wav	"Deploy landmines!"
+}
+
+FTDisarmLandmines
+{
+	sound/chat/axis/935a.wav	"Disarm landmines!"
+}
+
+
+///////////////////////////////
+// wm_quickfireteamsfieldops //
+///////////////////////////////
+
+FTCallAirStrike
+{
+	sound/chat/axis/941a.wav	"Call an airstrike!"
+}
+
+FTCallArtillery
+{
+	sound/chat/axis/942a.wav	"Call in artillery!"
+}
+
+FTResupplySquad
+{
+	sound/chat/axis/944a.wav	"Resupply the squad!"	sprites/voiceAmmo
+}
+
+FTResupplyMe
+{
+	sound/chat/axis/945a.wav	"Resupply me!"			sprites/voiceAmmo
+}
+
+
+////////////////////////////////
+// wm_quickfireteamscovertops //
+////////////////////////////////
+
+FTExploreArea
+{
+	sound/chat/axis/951a.wav	"Explore the area!"
+}
+
+FTCheckLandmines
+{
+	sound/chat/axis/952a.wav	"Check for landmines!"
+}
+
+FTSatchelObjective
+{
+	sound/chat/axis/931a.wav	"Destroy the objective!"
+}
+
+FTInfiltrate
+{
+	sound/chat/axis/953a.wav	"Infiltrate!"
+	sound/chat/axis/953b.wav	"You must Infiltrate!"		
+}
+
+FTGoUndercover
+{
+	sound/chat/axis/954a.wav	"Go undercover!"	
+}
+
+FTProvideSniperCover
+{
+	sound/chat/axis/955a.wav	"Provide sniper cover!"
+	sound/chat/axis/955b.wav	"Provide sniper cover!"
+
+}
+

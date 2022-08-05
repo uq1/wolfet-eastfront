@@ -1,0 +1,56 @@
+#include "ui/menudef.h"
+
+// Defines //
+
+//#define WINDOW_X		32
+//#define WINDOW_Y		32
+//#define WINDOW_WIDTH	576
+//#define WINDOW_HEIGHT	416
+#define WINDOW_X		16
+#define WINDOW_Y		16
+#define WINDOW_WIDTH	300
+#define WINDOW_HEIGHT	218
+#define GROUP_NAME		"grpOptionsCustomiseHud"
+
+// Macros //
+
+#include "ui/menumacros.h"
+
+// Customise Hud Menu //
+	
+menuDef {
+	name		"ETEnhanced_customize_hud"
+	visible		0
+	fullscreen	0
+	rect		WINDOW_X WINDOW_Y WINDOW_WIDTH WINDOW_HEIGHT
+	style		WINDOW_STYLE_FILLED
+
+	onESC {
+		close ETEnhanced_customize_hud ;
+		open ETEnhanced
+	}
+
+// Window //
+
+	WINDOW( "HUD", 94 )
+
+// Subwindows //
+
+//#define SUBWINDOW_WIDTH		(SUBWINDOW_WIDTH)
+#define SUBWINDOW_WIDTH		WINDOW_WIDTH-12
+
+// ETpub specific HUD Display //
+
+	SUBWINDOW( 6, 32, (SUBWINDOW_WIDTH), 76, "ET Enhanced" )
+	MULTI( 8, 48, (SUBWINDOW_WIDTH)-4, 10, "Clock:", .2, 8, "cg_drawTime", cvarFloatList { "Off" 0 "24 hr" 1 "12 hr" 2}, "Show local time in 12/24 hour view" )
+	YESNO( 8, 60, (SUBWINDOW_WIDTH)-4, 10, "Show time w/seconds:", .2, 8, "cg_drawTimeSeconds", "Show seconds on clock time" )
+	
+// etmain hud settings
+	SUBWINDOW( 6, 112, (SUBWINDOW_WIDTH), 76, "ETMAIN" )
+	YESNO( 8, 128, (SUBWINDOW_WIDTH)-4, 10, "Atmospheric Effects:", .2, 8, "cg_atmosphericEffects", "Show rain/snow" )
+	YESNO( 8, 140, (SUBWINDOW_WIDTH)-4, 10, "Draw FPS:", .2, 8, "cg_drawFPS", "" )
+	YESNO( 8, 152, (SUBWINDOW_WIDTH)-4, 10, "Lagometer:", .2, 8, "cg_lagometer", "" )
+	
+// Buttons //
+	BUTTON( 6, WINDOW_HEIGHT-24, WINDOW_WIDTH-12, 18, "BACK", .3, 14, close etpub_customize_hud ; open etpub )
+}

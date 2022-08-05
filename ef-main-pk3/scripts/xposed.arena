@@ -1,0 +1,10 @@
+{
+	map			"xposed"
+	longname		"^4[^3EF^4] ^5X-posed"
+	type			"wolfmp wolfsw supremacy supremacy_campaign"
+	briefing		"Last night Axis forces bombed a small European town after an Allied attack to conquer it. Axis managed to hold the town but a team of Allies are still trapped in the town and their only way out is to steal a tank and drive thru the bombed city."
+	axiswintext		"Axis was victorious eliminating the Allied forces left behind"
+	alliedwintext		"Allies managed to escape from the town with the tank!"
+	mapposition_x	398
+	mapposition_y	622
+}

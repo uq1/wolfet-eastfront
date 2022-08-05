@@ -1,0 +1,4 @@
+headmodels
+{
+model0 "models/players/hud/head.md3"
+}

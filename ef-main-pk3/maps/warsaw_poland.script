@@ -1,0 +1,851 @@
+//
+// Map: Exodus alpha 1
+// Author:  Grzegorz "mlyn3k" Janicki
+
+
+game_manager
+{
+	spawn 
+   	{
+		remapshaderflush
+		wm_camo			"snowy"
+		// Game rules
+		wm_axis_respawntime	30
+		wm_allied_respawntime	15
+		wm_set_round_timelimit	25
+
+		wm_number_of_objectives 8
+
+		wm_set_main_objective		1	0
+		wm_set_main_objective		1	1
+
+		wm_objective_status 1 0 0
+		wm_objective_status 1 1 0
+		wm_objective_status 2 0 0
+		wm_objective_status 2 1 0
+		wm_objective_status 3 0 0
+		wm_objective_status 3 1 0
+		wm_objective_status 4 0 0
+		wm_objective_status 4 1 0
+            	wm_objective_status 5 0 0
+		wm_objective_status 5 1 0
+	      	wm_objective_status 6 0 0
+		wm_objective_status 6 1 0
+	      	wm_objective_status 7 0 0
+		wm_objective_status 7 1 0
+	      	wm_objective_status 8 0 0
+		wm_objective_status 8 1 0
+            
+		// 1 flaga
+		// 2 getto
+		// 3 door
+            // 4 secret
+		// 5 radio
+		// 6 cp
+		// 7 The Alter Pass
+            // 8 The Sacristy Window
+		
+		wm_set_main_objective		1	0
+		wm_set_main_objective		1	1
+		
+		
+		// ****** TANKS!********
+		create
+		{
+  		classname "misc_tank" //or misc_panzer
+   		origin "858 3944 67"
+    		targetname "tank1"
+		}
+		create
+		{
+ 		classname "misc_panzer"
+    		origin "7766 3885 69"
+    		targetname "tank2"
+		}
+
+		// ************************END DRIVABLE TANK SETUP*******************************
+
+		// *************TANK SETSTATES**********
+		setstate tank1 invisible
+		setstate tank2 invisible
+		// *************END TANK SETSTATES*********
+		wait 150
+
+		setautospawn "Bunker" 1
+		setautospawn "Bunker" 0
+
+
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		// wm_set_defending_team	0
+
+		
+		// Set the round winner:  0 == AXIS, 1 == ALLIED
+		wm_setwinner 0
+
+		wait 2000
+
+		wm_addteamvoiceannounce 0 "oasis_axis_wall_defend"
+		wm_addteamvoiceannounce 1 "oasis_allies_wall_destroy"
+
+		wm_teamvoiceannounce 0 "oasis_axis_wall_defend"
+		wm_teamvoiceannounce 1 "oasis_allies_wall_destroy"
+
+		
+	}
+
+	
+	trigger allies_win
+	{	
+		wm_setwinner 1
+		wm_announce "Allies win!"
+		wm_objective_status 5 0 2
+		wm_objective_status 5 1 1
+
+		wait 1000
+		wm_endround
+	}
+
+}
+
+// =========================================
+// =========== *start spawn points* ==============
+// =========================================
+//  ***description***          ***: team_wolf_objectives  targetname***   ***: spawns***
+//  1st_allied_spawn      : yel_al_blob         : 1st_blue
+//  Bunker         : bunker_wobj         : bunker_spawns
+//  2nd_axis_spawn      : yel_ax_blob         : 2nd_red
+
+// The description belongs to the 'team_wolf_objective' entity. Description is used to SETAUTOSPAWNS.... another way to think of autospawns is "forcespawns" (but in specific situations.)
+// The  'team_wolf_objective' targetname is how the CM team-flags are called (selectable flags on CM for spawning)
+// the spawn names are how the spawn entities themselves are set active and inactive
+// When you put all 3 together you can set a team to spawn in a location that is selectable or forceable.
+// This is one of the toughest things to grasp for beginners so don't get mad if this eludes you. ALSO: there are shortcuts and other ways to cut down on the insiduous work but I feel no need to confuse you at this point in the mapping lessons.
+// Setting spawns to "start-active" and w_obj's to default to allow a spawn location to be selected from the LIMBO screen....Using the SETAUTOSPAWN in scripting will force the team to spawn at the specified location if they haven't chosen a different one.
+// Be careful to not allow teams to spawn at locations where the other team has captured...or even a prior location that they once held...is a BIG MISTAKE I HAVE SEEN ON SEVERAL MAPS >>REMEMBER TO setstate your spawns and team_wobj's properly. 
+
+
+
+
+bunker_flag  // scriptname of the 'team_wolf_checkpoint' (FLAG)
+{
+   spawn     // tells game to show this entity
+   {
+      accum 0 set 0   //  Who has the flag: 0-Axis, 1-Allied
+      
+   }
+
+   trigger allied_capture      //  this is called by default when allies get the flag....it is always the same name but followed by different triggers and setstates.
+   {
+      accum 0 abort_if_equal 1 // do Allies own the flag?  if they do then this is cancelled from being called again.....essentially saving CPU processing
+ 
+      trigger bunker_flag bunker_flagblue     // calls a subroutine  >>    ***(a subroutine is a smaller section of script inside of a larger script portion. EXAMPLE: trigger allied_capture is a subroutine of the script section bunker_flag.
+      trigger bunker_flag setallies                // calls a subroutine from below
+
+   
+   }
+
+   trigger setallies      // this is triggered from the above portion of scripting 
+   {
+      accum 0 abort_if_equal 1  // do Allies own the flag?  if they do then this is cancelled from being called again.....essentially saving CPU processing
+      accum 0 set 1  // the way this script is setup is slightly more difficult to understand than a simple scripting event....this is done on purpose. Ya see...once the Allies get the flag...the allied_capture routine is called, which calls the set_allies routine....if it  is set to ALLIES then the game ignores the scripting, but if it is not ALLIES then it is then set to ALLIES.  --Confusing eh ?
+
+      alertentity bunker_wobj    //  changes the command map team flag from 1 team to another upon a specific team's capture.
+      alertentity bunker_spawns  // with the default 'flag-owning' teams spawns set to active and the other teams set to inactive........this command will change the activity of each spawn setting from 1 to the other, thus making axis spawns OFF and Allied spawns ON.
+      setautospawn "2nd_axis_spawn" 0  //  this tells the game where to force axis spawns since their initial Autospawn was lost
+      
+      // *----------------------------------- vo ------------------------------------------*
+                 //  This portion  "VO sounds" will be dealt with in another tutorial including the "NEWS" announcer
+      // *---------------------------------------------------------------------------------*
+   }
+
+   trigger axis_capture      //  this is called by default when axis get the flag....it is always the same name but followed by different triggers and setstates.
+   {
+      accum 0 abort_if_equal 0 // do Axis own the flag?    if they do then this is cancelled from being called again
+
+      trigger bunker_flag bunker_flagred    // calls a subroutine from below
+      trigger bunker_flag setaxis     // calls a subroutine from below
+
+   
+   }
+
+   trigger setaxis       // this is triggered from the above portion of scripting 
+   {
+      accum 0 abort_if_equal 0  // do Axis own the flag?    if they do then this is cancelled from being called again
+      accum 0 set 0    // if the axis did not own the flag already, this sets it to be aowned by the axis....using the math of 'accums' is something you will need to become comfortable with at some point. There are plenty of scripting tutorials out there....Look at the README.TXT for Links.
+
+      alertentity bunker_wobj   //  changes the command map team flag from 1 team to another upon a specific team's capture.
+      alertentity bunker_spawns    // with the default 'flag-owning' teams spawns set to active and the other teams set to inactive........this command will change the activity of each spawn setting from 1 to the other, thus making axis spawns ON and allied spawns OFF.
+      
+      // *----------------------------------- vo ------------------------------------------*
+                 //  This portion  "VO sounds" will be dealt with in another tutorial including the "NEWS" announcer
+      // *---------------------------------------------------------------------------------*
+   }
+
+   trigger bunker_flagblue   // this is triggered from the axis' portion of scripting 
+   {
+      
+      wm_announce   "Allies capture the Flag!"   // UI pop-up to alert players   (Any "wm_announce" event is broadcasted to the client in the messaging portion of the screen.)
+
+      wm_objective_status   1 1 1      // sets the objective status *See near top of script*
+      wm_objective_status   1 0 2      // sets the objective status  *See near top of script*
+   }
+
+   trigger bunker_flagred   // this is triggered from the allies' portion of scripting 
+   {
+      
+      wm_announce   "Axis capture the Flag!"  // UI pop-up to alert players     (Any "wm_announce" event is broadcasted to the client in the messaging portion of the screen.)
+
+      wm_objective_status   1 1 2     // sets the objective status  *See near top of script*
+      wm_objective_status   1 0 1     // sets the objective status  *See near top of script*
+   }
+   
+   trigger kill     // this is triggered from the wall's death portion of scripting...it makes the script section's titled header "bunker_flag" disappear".
+   {
+      remove
+   }
+   
+   trigger gone  // this is triggered from the wall's death portion of scripting...it makes the flag area spawn owned by allies
+   {
+      accum 0 abort_if_equal 1       // Do Allies own the flag?
+      alertentity bunker_wobj      // if not set the needed settings to make them spawn here
+      alertentity bunker_spawns      //   ^^
+      setautospawn "2nd_axis_spawn" 0   //   Sets the axis autospawn to their secondary spawn location....this is a good practice to keep.
+      setautospawn "Bunker" 1      //    makes allies that haven't selected another spawn area in the UI to spawn in the flag-area
+   }
+
+}
+
+
+// ====================================
+// ============== *end spawn point* ========
+// ==================================== 
+
+
+
+//Ammo
+//{
+//	spawn
+//	{
+//		wait 200
+//		constructible_class 3
+//		constructible_destructxpbonus 20
+//		wm_objective_status 5 0 0
+//		wm_objective_status 5 1 0
+
+//	}
+//	death
+//	{
+//	wm_announce "Allies has destroyed Axis Radio Transmitter!"
+	
+
+//	trigger game_manager allies_win
+
+
+//	}
+//}
+
+c_door
+
+{
+	spawn
+	{
+		wait 200
+		constructible_class 3
+		constructible_destructxpbonus 15
+	
+
+	}
+	death
+	{
+	wm_announce "Allies has destroyed The Church Doors!"
+	
+		wm_objective_status 3 0 2
+		wm_objective_status 3 1 1
+
+
+	wm_set_main_objective		4	0
+	wm_set_main_objective		4	1
+
+
+
+	}
+}
+
+g_wall
+{
+	spawn
+	{
+		wait 200
+		constructible_class 3
+		constructible_destructxpbonus 15
+	
+
+	}
+	death
+	{
+	wm_announce "The Soviets have destroyed The Ghetto Wall!"
+	
+		wm_objective_status 2 0 2
+		wm_objective_status 2 1 1
+
+	trigger bunker_flag kill
+	trigger bunker_flag gone
+ 		
+		wm_objective_status 1 0 2
+		wm_objective_status 1 1 1
+
+	wm_removeteamvoiceannounce 0 "oasis_axis_wall_defend"
+	wm_removeteamvoiceannounce 1 "oasis_allies_wall_destroy"
+	wm_teamvoiceannounce 0 "oasis_axis_wall_destroyed"
+	wm_teamvoiceannounce 1 "oasis_allies_wall_destroyed"
+
+
+
+
+	wm_set_main_objective		3	0
+	wm_set_main_objective		3	1
+//	***TANK VISIBLE!***	
+	setstate tank1 default
+	setstate tank2 default
+//	***END TANK VISIBLE!***
+
+	}
+}	
+
+//alterpass
+//{
+//	spawn
+//	{
+//		wait 200
+//		constructible_class 3
+//		constructible_destructxpbonus 15
+//	
+//
+//	}
+//	death
+//	{
+//	wm_announce "Soviets have destroyed the Kino Pass!"
+//	
+//
+//	wm_removeteamvoiceannounce 0 "oasis_axis_wall_defend"
+//	wm_removeteamvoiceannounce 1 "oasis_allies_wall_destroy"
+//	wm_teamvoiceannounce 0 "oasis_axis_wall_destroyed"
+//	wm_teamvoiceannounce 1 "oasis_allies_wall_destroyed"
+//
+//
+//	}
+//}	
+
+mg
+{
+	spawn
+	{
+		wait 200
+		constructible_class 1
+		constructible_chargebarreq 0.8
+		constructible_constructxpbonus 8
+		constructible_destructxpbonus 8
+		trigger mg startup
+	}
+
+	trigger setup
+	{
+		setstate mg_materials default
+		setstate mg_flag default
+		setstate mg_toi default
+
+
+		setstate mg invisible
+		
+	}
+	
+	buildstart final
+	{
+		setstate mg_materials default
+		setstate mg_flag default
+		setstate mg_toi default
+
+
+		setstate mg underconstruction
+		
+	}
+		
+	built final
+	{
+		setstate mg_materials invisible
+		setstate mg_flag invisible
+		setstate mg_toi invisible
+
+		setstate mg default
+		
+
+		wm_announce "Kino mg has been built!"
+
+		
+		
+		
+		wm_teamvoiceannounce 0 "allies_hq_const_completed"
+
+
+	}
+	decayed final
+	{
+		setstate mg_materials default
+		setstate mg_flag default
+		setstate mg_toi default
+
+		setstate mg invisible
+		
+
+	}
+	death
+	{
+		setstate mg_materials default
+		setstate mg_flag default
+		setstate mg_toi default
+
+		setstate mg invisible
+		
+
+		wm_announce "Kino mg has been destroyed!"
+
+		wm_teamvoiceannounce 0 "axis_hq_const_destroyed"
+		wm_teamvoiceannounce 1 "allies_hq_const_destroyed"
+
+	}
+
+}
+
+// ================================================
+// ============ NEUTRAL COMMAND POST ==============
+// ================================================
+
+allied_compost_built
+{
+   spawn
+   {
+      wait 400
+      trigger allied_compost_built setup
+
+      constructible_class 2
+   }
+
+   trigger setup
+   {
+      setchargetimefactor 1 soldier 1
+      setchargetimefactor 1 lieutenant 1
+      setchargetimefactor 1 medic 1
+      setchargetimefactor 1 engineer 1
+      setchargetimefactor 1 covertops 1
+      sethqstatus 1 0
+   }
+
+   buildstart final
+   {
+      setstate allied_compost_built_model underconstruction
+      setstate neutral_compost_closed_clip invisible
+      setstate neutral_compost_closed_model invisible
+   }
+
+   built final
+   {
+      setstate allied_compost_built_model default
+      setstate neutral_compost_closed_clip invisible
+      setstate neutral_compost_closed_model invisible
+
+      trigger allied_compost_built_model enable_allied_features
+
+      enablespeaker allies_compost_sound
+
+		wm_objective_status 6 0 2
+		wm_objective_status 6 1 1
+   }
+
+   decayed final
+   {
+      setstate allied_compost_built_model invisible
+      setstate neutral_compost_closed_clip default
+      setstate neutral_compost_closed_model default
+   }
+
+   death
+   {
+      setstate allied_compost_built_model invisible
+      setstate neutral_compost_closed_clip default
+      setstate neutral_compost_closed_model default
+
+      trigger allied_compost_built_model disable_allied_features
+
+      disablespeaker allies_compost_sound
+
+		wm_objective_status 6 0 0
+		wm_objective_status 6 1 0
+
+   }
+}
+
+allied_compost_built_model
+{
+   spawn
+   {
+      wait 400
+      setstate allied_compost_built_model invisible
+   }
+
+   trigger enable_allied_features
+   {
+      setchargetimefactor 1 soldier 0.75
+      setchargetimefactor 1 lieutenant 0.75
+      setchargetimefactor 1 medic 0.75
+      setchargetimefactor 1 engineer 0.75
+      setchargetimefactor 1 covertops 0.75
+      sethqstatus 1 1
+
+      wm_announce   "Allied Command Post constructed. Charge speed increased!"
+
+      // *----------------------------------- vo ------------------------------------------*
+      wm_teamvoiceannounce 0 "axis_hq_compost_constructed_allies"
+
+      wm_teamvoiceannounce 1 "allies_hq_compost_constructed"
+
+      wm_removeteamvoiceannounce 1 "allies_hq_compost_construct"
+      // *---------------------------------------------------------------------------------*
+
+
+   }
+
+   trigger disable_allied_features
+   {
+      setchargetimefactor 1 soldier 1
+      setchargetimefactor 1 lieutenant 1
+      setchargetimefactor 1 medic 1
+      setchargetimefactor 1 engineer 1
+      setchargetimefactor 1 covertops 1
+      sethqstatus 1 0
+
+      wm_announce   "Axis team has destroyed the Allied Command Post!"
+
+      // *----------------------------------- vo ------------------------------------------*
+      wm_addteamvoiceannounce 0 "axis_hq_compost_construct"
+
+      wm_addteamvoiceannounce 1 "allies_hq_compost_construct"
+
+      wm_teamvoiceannounce 0 "axis_hq_compost_construct"
+
+      wm_teamvoiceannounce 1 "allies_hq_compost_damaged"
+      // *---------------------------------------------------------------------------------*
+
+
+   }
+}
+
+axis_compost_built
+{
+   spawn
+   {
+      wait 400
+      trigger axis_compost_built setup
+
+      constructible_class 2
+   }
+
+   trigger setup
+   {
+      setchargetimefactor 0 soldier 1
+      setchargetimefactor 0 lieutenant 1
+      setchargetimefactor 0 medic 1
+      setchargetimefactor 0 engineer 1
+      setchargetimefactor 0 covertops 1
+      sethqstatus 0 0
+   }
+
+   buildstart final
+   {
+      setstate axis_compost_built_model underconstruction
+      setstate neutral_compost_closed_clip invisible
+      setstate neutral_compost_closed_model invisible
+   }
+
+   built final
+   {
+      setstate axis_compost_built_model default
+      setstate neutral_compost_closed_clip invisible
+      setstate neutral_compost_closed_model invisible
+
+      trigger axis_compost_built_model enable_axis_features
+
+      enablespeaker axis_compost_sound
+
+		wm_objective_status 6 0 1
+		wm_objective_status 6 1 2
+
+   }
+
+   decayed final
+   {
+      setstate axis_compost_built_model invisible
+      setstate neutral_compost_closed_clip default
+      setstate neutral_compost_closed_model default
+   }
+
+   death
+   {
+      setstate axis_compost_built_model invisible
+      setstate neutral_compost_closed_clip default
+      setstate neutral_compost_closed_model default
+
+      trigger axis_compost_built_model disable_axis_features
+
+      disablespeaker axis_compost_sound
+
+		wm_objective_status 6 0 0
+		wm_objective_status 6 1 0
+
+   }
+}
+
+axis_compost_built_model
+{
+   spawn
+   {
+      wait 400
+      setstate axis_compost_built_model invisible
+   }
+
+   trigger enable_axis_features
+   {
+      setchargetimefactor 0 soldier 0.75
+      setchargetimefactor 0 lieutenant 0.75
+      setchargetimefactor 0 medic 0.75
+      setchargetimefactor 0 engineer 0.75
+      setchargetimefactor 0 covertops 0.75
+      sethqstatus 0 1
+
+      wm_announce   "Axis Command Post constructed. Charge speed increased!"
+
+      // *----------------------------------- vo ------------------------------------------*
+      wm_teamvoiceannounce 0 "axis_hq_compost_constructed"
+
+      wm_teamvoiceannounce 1 "allies_hq_compost_constructed_axis"
+
+      wm_removeteamvoiceannounce 0 "axis_hq_compost_construct"
+      // *---------------------------------------------------------------------------------*
+   }
+
+   trigger disable_axis_features
+   {
+      setchargetimefactor 0 soldier 1
+      setchargetimefactor 0 lieutenant 1
+      setchargetimefactor 0 medic 1
+      setchargetimefactor 0 engineer 1
+      setchargetimefactor 0 covertops 1
+      sethqstatus 0 0
+
+      wm_announce   "Allied team has destroyed the Axis Command Post!"
+
+
+      // *----------------------------------- vo ------------------------------------------*
+      wm_addteamvoiceannounce 0 "axis_hq_compost_construct"
+
+      wm_addteamvoiceannounce 1 "allies_hq_compost_construct"
+
+      wm_teamvoiceannounce 0 "axis_hq_compost_damaged"
+
+      wm_teamvoiceannounce 1 "allies_hq_compost_construct"
+      // *---------------------------------------------------------------------------------*
+
+
+   }
+
+} 
+
+okno
+{
+	spawn
+	{
+		wait 200
+		constructible_class 2
+		constructible_destructxpbonus 10
+		
+		wm_objective_status 7 0 0
+		wm_objective_status 7 1 0
+	
+
+	}
+	death
+	{
+	wm_announce "The Allies are able to use The Alter Pass now!"
+
+		wm_objective_status 7 0 2
+		wm_objective_status 7 1 1
+	}
+}	
+
+tower
+{
+	spawn
+	{
+		wait 200
+		constructible_class 2
+		constructible_destructxpbonus 10
+
+            wm_objective_status 4 0 0
+		wm_objective_status 4 1 0
+	
+
+	}
+	death
+	{
+            
+
+	wm_announce "Allies has destroyed The Tower's Secret Entrance!"
+            wm_objective_status 4 0 2
+		wm_objective_status 4 1 1
+
+		wm_set_main_objective		5	0
+		wm_set_main_objective		5	1
+		
+	}
+}
+
+sawin
+{
+	spawn
+	{
+		wait 200
+		constructible_class 2
+		constructible_destructxpbonus 10
+
+            wm_objective_status 8 0 0
+		wm_objective_status 8 1 0
+	
+
+	}
+	death
+	{
+            
+
+	wm_announce "Allies has destroyed The Sacristy Window!"
+            wm_objective_status 8 0 2
+		wm_objective_status 8 1 1
+		
+	}
+}
+
+///////////////////////////////////////////////////////
+/// EBs gold ////////////////////////////////////////
+///////////////////////////////////////////////////////
+
+allied_gold                    // allied objective
+{
+    spawn                    // default
+        {
+    wait 200                    // 200 milliseconds
+    setstate allied_goldred_capt invisible        // setstate the Regular Allied captured gold model invisible until it is triggered to show because of it's capturing
+    wm_objective_status 5 0 0
+    wm_objective_status 5 1 0
+        }
+
+    trigger stolen                        // default script routine name
+        {
+    setstate t1 invisible                    // sets primary gold's position CM marker invisible because the gold has been stolen (removes icon from limbo screen)
+    setstate allied_gold_toi2 invisible            // sets the primary gold's position TOI invisible so that the TRACK does not appear to players (because the gold is gone!)
+    wm_announce  "Allies have taken The Radio Parts!"    // displays the quoted text to each client
+        }
+
+    trigger returned                    // default script routine name
+        {
+    wm_announce "Axis have returned The Radio Parts!"    // displays the quoted text to each client
+    setstate t1 default                    // sets primary gold's position CM marker Visible because the gold has been returned (replaces icon to limbo screen)
+    setstate allied_gold_toi2 default            //  sets the primary gold's position TOI Visible so that the TRACK Does appear to players (because the gold is returned!)
+        }
+
+    trigger captured                    // default script routine name
+        {
+    wm_announce "The Allies have secured The Radio Parts"    // displays the quoted text to each client
+    setstate allied_goldred invisible            // setstate the RED allied capture gold model invisible because the Regular gold has been captured
+    setstate allied_goldred_capt default            // setstate the Regular allied captured gold model Visible because it is captured
+    setstate t2 invisible                    // sets the gold's capture position CM marker invisible because the gold has been stolen (removes icon from limbo screen)
+    //alertentity allied_hardbox                 // (I use a 'func_static' entity here because it is easy and hassle-free.) This is what makes the gold's final position model solid.
+
+    trigger game_manager allies_win
+
+        }
+}
+
+
+// ASK ==============================
+
+
+konstrukcja
+{
+    spawn
+    {
+        wait 200
+       
+        constructible_class 2            // 3 dla obj zniszczalnych dynamitem
+                                    // 2- dla satchelem
+                                    // 1- granatem, pf'em etc
+ 
+        constructible_chargebarreq 1.0     // szybkosc budowy
+        constructible_constructxpbonus 10   // xp za zbudowanie
+        constructible_destructxpbonus 10    // xp za zniszczenie
+        trigger konstrukcja startup
+    }
+
+    trigger setup
+    {
+        setstate konstrukcja_materials default          //1*
+        setstate konstrukcja_toi default
+
+
+        setstate konstrukcja invisible                      //2*
+    }
+   
+    buildstart final
+    {
+        setstate konstrukcja_materials default
+        setstate konstrukcja_toi default
+
+
+        setstate  konstrukcja underconstruction        //3*
+    }
+       
+    built final
+    {
+        setstate konstrukcja_materials invisible
+        setstate konstrukcja_toi invisible
+
+        setstate konstrukcja default
+
+        wm_announce "Allies has build Anty Spawn Killer!"
+
+       
+   
+
+
+    }
+    decayed final
+    {
+        setstate konstrukcja_materials default
+        setstate konstrukcja_toi default
+
+
+        setstate konstrukcja invisible
+
+    }
+    death
+    {
+        setstate konstrukcja_materials default
+        setstate konstrukcja_toi default
+
+
+        setstate konstrukcja invisible
+
+        wm_announce "Axis has destroyed Allied Anty Spawn Killer!"
+
+       
+
+    }
+
+} 

@@ -1,0 +1,82 @@
+#include "ui/menudef.h"
+
+// Defines //
+
+#define WINDOW_X		16
+#define WINDOW_Y		16
+//#define WINDOW_WIDTH	192
+#define WINDOW_WIDTH	310
+#define WINDOW_HEIGHT	240
+#define GROUP_NAME		"grpIngameBots"
+
+// Macros //
+
+#include "ui/menumacros.h"
+		
+menuDef
+{
+	name		"ingame_bots"
+	visible		0
+	fullscreen	0
+	rect		WINDOW_X WINDOW_Y WINDOW_WIDTH WINDOW_HEIGHT
+	style		WINDOW_STYLE_EMPTY
+	itemDef {
+		name		"ingame_clip_back"
+		rect		-15 -25 360 400
+		style		WINDOW_STYLE_SHADER
+		background	"/ui/assets/ingame_clip_back"
+		visible		1
+		decoration
+	}
+	popup
+	
+	fadeClamp	0.5
+	
+	onESC
+	{
+		close ingame_bots
+		open ingame_menu   
+	}
+
+	
+// Background //
+
+	itemDef {
+		name		"background"
+		rect		0 0 640 480
+		style		WINDOW_STYLE_FILLED
+		background	"ui/assets/fadebox.tga"
+		backcolor	0 0 0 0
+		visible		1
+		decoration
+	}
+// Window //
+
+	WINDOW( "IN GAME BOTS", 96 )
+
+// Subwindows //
+
+#define SUBWINDOW_WIDTH		(WINDOW_WIDTH-12)
+
+
+	//SUBWINDOW( 6, 32, (SUBWINDOW_WIDTH), 160, "^1GENERAL" )
+	SUBWINDOW( 6, 32, (SUBWINDOW_WIDTH), 168, "^1GENERAL" )
+
+	LABEL( 6, 48, (SUBWINDOW_WIDTH)-4, 10, "^4Standard Gametypes", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	NUMERICFIELD( 8, 60, (SUBWINDOW_WIDTH)-4, 10, "Maximum Players:", .2, 8, "sv_maxclients", 3, "Maximum # of players that can connect to the server" )
+	MULTI( 6, 72, (SUBWINDOW_WIDTH)-4, 10, "Bot Skill Level:", .2, 8, "bot_skill", cvarFloatList { "Random Selection" -1 "Noobs" 0 "Amateurs" 1 "Average" 2 "Reasonable" 3 "Hardcore" 4 "Super Bots" 5 }, "Default skill level new bots start at in terms of class experience" )
+	NUMERICFIELD( 8, 84, (SUBWINDOW_WIDTH)-4, 10, "Active Bots:", .2, 8, "bot_minplayers", 2, "Set the number of active bots to less than maximum players" )
+	NUMERICFIELD( 8, 96, (SUBWINDOW_WIDTH)-4, 10, "Maximum NPCs:", .2, 8, "npc_minplayers", 3, "Maximum # of NPCs to spawn in standard gametypes." )
+	SLIDER( 8, 108, (SUBWINDOW_WIDTH)-4, 10, "Bot CPU usage:", .2, 8, "bot_cpu_use" .7 1 100, "How much CPU time should bots be given to think with?" )
+
+
+	LABEL( 6, 156, (SUBWINDOW_WIDTH)-4, 10, "^4Cooperative Gametype", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	NUMERICFIELD( 8, 168, (SUBWINDOW_WIDTH)-4, 10, "Random NPC count:", .2, 8, "npc_coop_numenemies", 3, "Maximum # of enemy NPCs to randomly spawn in CO-OP." )
+
+	
+
+	BUTTON( 8, 202, (SUBWINDOW_WIDTH)-4, 18, "OK", .3, 14, close ingame_bots ; open ingame_main )
+	BUTTON( 8, 220, (SUBWINDOW_WIDTH)-4, 18, "BACK", .3, 14, close ingame_bots ; open ingame_main )
+
+//	BUTTON( 6, WINDOW_HEIGHT-24, .5*(WINDOW_WIDTH-18), 18, "BACK", .3, 14, close hostgame_bots ; open hostgame )
+}

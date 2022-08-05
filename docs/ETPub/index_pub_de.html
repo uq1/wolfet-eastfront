@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>ETpub Client Dokumentation</title>
+	
+	<style type="text/css">
+	
+	body {
+		margin: 2em;
+		}
+	
+	dt 	{
+		font-weight: bold
+		}
+	
+	dd	{
+		margin-bottom: 15px
+		}
+	
+	hr	{
+		margin: 3em 0;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+<h2>ETpub Client Dokumentation</h2>
+<a href="#cvars">Die Cvars</a><br />
+<a href="#befehle">Befehle</a><br />
+<a href="#allg">Allgemeine &Auml;nderungen</a><br />
+
+
+<h3><a name="cvars">Die Cvars</a></h3>
+
+<dl>
+
+<dt>cg_drawTime [0|1|2]</dt>
+<dd>
+<p>Legt fest, ob die Lokalzeit unter der FPS-Anzeige abgebildet wird. 1 zeigt die Zeit im 24 Stunden Format an, 2 zeigt die Zeit im 12 Stunden Format mit am/pm Zusatz.</p>
+</dd>
+
+<dt>cg_drawTimeSeconds [0|1]</dt>
+<dd>
+<p>Legt fest, ob die Uhr Sekunden anzeigen soll oder nicht. Dazu muss nat&uuml;rlich cg_drawTime auf 1 oder 2 gesetzt sein.</p>
+</dd>
+
+<dt>cg_hud</dt>
+<dd>
+<p>Die Bezeichnung deines aktuellen HUDs (Informationsanzeige auf dem Bildschirm) das zu Beginn geladen wird.</p>
+</dd>
+
+<dt>cg_panzerhack [0|1]</dt>
+<dd>
+<p>Legt dein Automatikgewehr auf Waffenbank 2 statt 3, f&uuml;r den Falls, dass du Soldat Stufe 4 mit schwerer Waffe bist.<br />
+Standard: 1</p>
+</dd>
+
+</dl>
+
+<hr />
+
+
+<h3><a name="befehle">Befehle</a></h3>
+<dl>
+
+<dt>loadhud</dt>
+<dd><p>Wird verwendet um ein angepasstes HUD aus einer .hud Datei innerhalb einer .pk3 zu laden. Kann au&szlig;erdem verwendet werden um ein leeres (\loadhud blank) oder das normale ET HUD zu laden (\loadhud). Wenn ein HUD geladen wird, wird zuerst das Standard-HUD als Referenz aufgerufen und danach werden die Einstellungen aus der .hud Datei dar&uuml;ber geschrieben. Das hat zur Folge, dass die in der .hud Datei nicht ausdr&uuml;cklich deaktivierten Elemente an den jeweils &uuml;blichen Positionen zu finden sind.</p>
+</dd>
+
+<dt>edithud</dt>
+<dd><p>Dient zum anpassen des HUDs in Echtzeit. Kann au&szlig;erdem dazu verwendet werden ein HUD zu skripten, damit die Serveradministratoren nicht extra .hud Dateien in .pk3s verpacken m&uuml;ssen.</p>
+<p><strong>Format:</strong>
+<em>/edithud ElementName [Wert1] [Wert2] . . . . [WertX]</em></p>
+<p>Derzeitige <em>ElementNamen</em> and <em>(Werte)</em> sind wie folgt:</p>
+<ul>
+<li>ammocount (x, y, Skalierung)</li>
+<li>chargebar (x, y, Breite)</li>
+<li>compass (x, y, Gr&ouml;&szlig;e)</li>
+<li>upperright (y)</li>
+<li>fireteam (x, y, Breite)</li>
+<li>flagcov (x, y)</li>
+<li>head (x, y, Breite, H&ouml;he)</li>
+<li>healthbar (x, y, Breite)</li>
+<li>healthtext (x, y, Skalierung)</li>
+<li>lagometer (x, y)</li>
+<li>overheat (x, y, Breite, H&ouml;he)</li>
+<li>skillbox1 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skillbox2 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skillbox3 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skillpic1 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skillpic2 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skillpic3 (x, y, Gr&ouml;&szlig;e)</li>
+<li>skilltext1 (x, y, Skalierung)</li>
+<li>skilltext2 (x, y, Skalierung)</li>
+<li>skilltext3 (x, y, Skalierung)</li>
+<li>staminabar (x, y, Breite)</li>
+<li>weaponcard (x, y, Gr&ouml;&szlig;e)</li>
+<li>xptext (x, y, Skalierung)</li>
+<li>cpmtext (x, y, Skalierung)</li>
+<li>chattext (x, y, Skalierung)</li>
+<li>votefttext (x, y)</li>
+<li>livesleft (x, y)</li>
+</ul>
+<p>Alle Variablen, abgesehen von skilltextX sind Teil des Originalen HUDs. skillTextX steht als Ausdruck f&uuml;r die Erfahrungspunktstufen, z.B 0, 1, 2, 3, 4. Die skill[box,pic,text] Elemente korrespondieren wie folgt: 1 = klassenspezifische Fertigkeit, 2 = Kamperfahrung (battle sense), 3 = leichte Waffen.</p>
+<p>Standard <em>Skalierung</em> Werte, dort wo sie verwendet wurden, sind in ET normalerweise auf 25 gesetzt.</p>
+<p><em>upperright</em> steht f&uuml;r die Spawnzeit/Spielzeit Anzeige, die Uhr und die FPS Anzeige die normalerweise rechts auf dem Bildschirm angezeigt werden.</p>
+<p>(x,y) beziehen sich auf eine Aufl&ouml;sung von 640 x 480, unabh&auml;ngig von der Aufl&ouml;sung mit der ihr ET spielt. Deshalb steht (0,0) f&uuml;r oben links, (640,480) f&uuml;r unten recht und (320, 240) ist das Fadenkreuz.</p>
+<p>Um ein Element vollst&auml;ndig auszuschalten, m&uuml;sst ihr den ersten Wert auf -1 setzen. Derzeit kann votefttext NICHT deaktiviert werden.</p>
+</dd>
+
+<dt>dumphud</dt>
+<dd>Gibt das aktuelle HUD in einem .hud Datei tauglichen Format in der Konsole aus.</dd>
+
+</dl>
+
+<hr />
+
+<h3><a name="allg">Allgemeine &Auml;nderungen</a></h3>
+
+<ul>
+<li>Neues ETpub In-Game Men&uuml; zumkonfigurieren der cg_drawTime Variable.</li>
+<li>Integriert viele der <a href="http://games.chruker.dk/enemy_territory/modding_project_bugfix.php">&quot;Project: Bug Fix&quot;</a> Fixes.</li>
+<li>Unterst&uuml;tzung f&uuml;r den 'forcecvar' Server Befehl.</li>
+<li>Verwendet ETpubs Code f&uuml;r Spielerbewegungen, wodurch die client prediction besser auf den Server abgestimmt wird.</li>
+<li>Werden ET Pros 'etpromapscripts' verwendet, wird auf Battery &quot;You are near the Back Door&quot; nicht angezeigt, ehe diese nicht verwendet wird. (Unterst&uuml;tzung f&uuml;r EF_FAKEBMODEL).</li>
+<li>Wenn ihr euch tot stellt werden ihr keine Nachricht bekommen, dass ihr angeblich verwundet seid und auf einen Sanit&auml;ter wartet.</li>
+<li>Auf Servern mit g_weapons Schaltern 2 oder 4, werdet ihr nicht vom Client normalerweise ausgegebene Fehlklicken h&ouml;ren wenn ihr Spritze oder Bei&szlig;zange unter Wasser verwendet.</li>
+<li>'+lookdown' und '+lookup' Befehle sind deaktiviert, um geskriptete Anti-R&uuml;cksto&szlig; Cheats zu unterbinden.</li>
+</ul>
+
+</body>
+</html>
+

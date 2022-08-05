@@ -1,0 +1,15 @@
+{
+	map			"radar"
+	longname		"^4[^3EF^4] ^5Würzburg Radar"
+	type			"wolfmp wolfsw wolflms supremacy supremacy_campaign wolfsp wolfcoop"
+	timelimit		30
+	axisRespawnTime		20
+	alliedRespawnTime	20
+	lmsbriefing	"The Baltic coast of Axis-occupied Sweden is the location of a secret radar research facility. Axis and Allied forces clash by night in foul weather for control of this crucial test site. Once again, it's a mortal, lethal fight to the death."
+briefing		"The Allies are attempting to steal components of the new Axis Würzburg 62A radar for technical analysis. The Axis must guard their two prototype radars and prevent the Allies from escaping with any stolen parts."
+	axiswintext		"The success of the Allies' audacious foray has yielded vital technological information: from now on Allied bombers will be able to jam Axis air-defence radars with specially-tailored aluminium foil chaff. The failure of the Axis forces to conceal this weakness may cost them dear. They must hope that they can keep their secrets a little more secure in future."	
+	alliedwintext		"The alertness of the Axis and the alacrity and aggression with which they respond to Allied incursions are a source of pride to the Axis Commanders and alarm to the Allies. The Allies will have to match the Axis' resolve if they ever hope to reclaim Western Europe. Basic failings in resolve and tactics have resulted in a humiliating Allied defeat."
+	mapposition_x	616
+	mapposition_y	386
+}
+

@@ -1,0 +1,252 @@
+/*QUAKED npc (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+"scriptName" .npc file to use.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add an NPC to the map.
+*/
+
+/*QUAKED misc_control_point (1 0 0) (-16 -16 -16) (16 16 16) AXIS_OBJECTIVE ALLIED_OBJECTIVE
+-------- KEYS --------
+"model"	.md3 file to use. (default: ET default flag.)
+"radius" Set's the max distance a player can be from the flag to capture it. (default: 500)
+"modelscale_vec" Set scale per-axis. Overrides "modelscale", so if you have both, the "modelscale" is ignored
+"partofstage"	The flag number of this flag (only needed if you want to link misc_associated_spawnarea or misc_unassociated_spawnarea to the flag).
+-------- SPAWNFLAGS --------
+AXIS_OBJECTIVE  Set objective owned by AXIS.
+ALLIED_OBJECTIVE Set objective owned by ALLIES.
+-------- NOTES --------
+Create a control point for SUPREMACY gametypes.
+*/
+
+/*QUAKED misc_associated_spawnarea (1 0 0) (-16 -16 -16) (16 16 16) AXIS_OBJECTIVE ALLIED_OBJECTIVE
+-------- KEYS --------
+"partofstage"	The flag number this is associated with.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+SUPREMACY Flag's Associated spawn area... Used by map entitiy to call the flag's external spawns...
+*/
+
+/*QUAKED misc_unassociated_spawnarea (1 0 0) (-16 -16 -16) (16 16 16) AXIS_OBJECTIVE ALLIED_OBJECTIVE
+-------- KEYS --------
+"partofstage"	The flag number this is associated with.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+SUPREMACY Flag's Associated spawn area... Used by map entitiy to call the flag's external spawns...
+*/
+
+/*QUAKED npc_flametank (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a Flame Tank (vehicle) to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED npc_tank_light (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a Light Tank (vehicle) to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED npc_tank_medium (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a Medium Tank (vehicle) to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED npc_tank_heavy (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a heavy Tank (vehicle) to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED misc_stealth_area (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+"radius" Stealth radius.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a point to the map where players/bots can crawl/prone to become hidden (eg: in bushes).
+*/
+
+/*QUAKED ammo_crate (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+"radius" Ammo pickup radius.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a ammo crate to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED health_crate (1 0 0) (-16 -16 -16) (16 16 16) AXIS ALLIED
+-------- KEYS --------
+"radius" health pickup radius.
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a health crate to the map (can auto-link to closest capture point).
+*/
+
+/*QUAKED npc_cinematicplane_enter (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add an cinematic plane NPC to the map starting at this point.
+*/
+
+/*QUAKED npc_cinematicplane_exit (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Exit point for a cinematic plane NPC.
+*/
+
+/*QUAKED npc_lander_enter (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+"partofstage"	REQUIRED: The waypoint index this is associated with.
+"health"	REQUIRED: First waypoint number to head for. Waypoints are followed in sequential order!
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Add a lander NPC starting point to the map. 
+Angles will be created from the lander's first waypoint.
+
+partofstage is required!
+
+NOTE: Not currently enabled in the EF code!
+*/
+
+/*QUAKED npc_lander_waypoint (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+"partofstage"	REQUIRED: The waypoint index this is associated with.
+"mass" defaults to 0.  Move Forward (0) or Back (1) to this waypoint.
+"dmg" defaults to 0.  Rotate the lander Straight (0) Left (1) or Right (2) at this waypoint.
+"health"	REQUIRED: This waypoint's number. Waypoints are followed in sequential order!
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Lander waypoint.
+
+partofstage is required!
+
+NOTE: Not currently enabled in the EF code!
+*/
+
+/*QUAKED npc_lander_waypoint_target (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+"partofstage"	REQUIRED: The waypoint index this is associated with.
+"mass" defaults to 0.  Move Forward (0) or Back (1) to this waypoint.
+"dmg" defaults to 0.  Rotate the lander Straight (0) Left (1) or Right (2) at this waypoint.
+"health"	REQUIRED: This waypoint's number. Waypoints are followed in sequential order!
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+Lander target waypoint. (Where it lets troops off).
+
+partofstage is required!
+
+NOTE: Not currently enabled in the EF code!
+*/
+
+/*QUAKED bot_allied_attack_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+A bot attack spot. Bots will hold this position and wait for others to move past them.
+*/
+
+/*QUAKED bot_axis_attack_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+A bot attack spot. Bots will hold this position and wait for others to move past them.
+*/
+
+/*QUAKED bot_axis_cover_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+A bot cover spot.
+*/
+
+/*QUAKED bot_allied_cover_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+A bot cover spot.
+*/
+	
+/*QUAKED item_botroam (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot goal.
+*/
+
+/*QUAKED bot_landminespot_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot plant landmine spot.
+*/
+
+/*QUAKED bot_sniper_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot sniper point.
+*/
+
+/*QUAKED bot_attractor (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot attractor goal.
+*/
+
+/*QUAKED bot_seek_cover_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot cover spot.
+*/
+
+/*QUAKED bot_seek_cover_sequence (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib waypoint to cover spot.
+*/
+
+/*QUAKED bot_axis_seek_cover_spot (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib axis cover spot.
+*/
+
+/*QUAKED bot_jump_source (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib jump source.
+*/
+
+/*QUAKED bot_jump_dest (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib jump destination.
+*/
+
+/*QUAKED ai_marker (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib bot goal.
+*/
+
+/*QUAKED bot_landmine_area (1 0 0) (-16 -16 -16) (16 16 16)
+-------- KEYS --------
+-------- SPAWNFLAGS --------
+-------- NOTES --------
+An AAS/Botlib landmine laying area for bots.
+*/
+

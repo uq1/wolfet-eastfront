@@ -1,0 +1,8 @@
+{
+	name			"North Africa"
+	shortname		"cmpgn_northafrica"
+	description		"1942, and the Axis empire is at its height. While the Soviets battle the Axis in the East the remaining Allied forces damage and distract the Axis in the West until an amphibious liberation of Europe can be mounted.**The Allies are concentrating their efforts in North Africa. Here the Axis forces are keen to inflict further defeats and seize control of the oil-rich Middle East. The sands of the Sahara Desert will be your first battlefield. See that it is not your last."
+	maps			"oasis;battery;goldrush"
+	mapTC			374 374
+	type			"supremacy"
+}

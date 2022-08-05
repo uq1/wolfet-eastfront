@@ -1,0 +1,8 @@
+{
+	class	PC_COVERTOPS
+	skill	5
+	weapon	WP_AKIMBO_SILENCEDLUGER
+	patrol	true
+	mounted	false
+	hunter	true
+}

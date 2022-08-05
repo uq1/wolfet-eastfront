@@ -1,0 +1,75 @@
+#include "ui/menudef.h"
+
+// Defines //
+
+#define WINDOW_X		16
+#define WINDOW_Y		16
+#define WINDOW_WIDTH		608
+#define WINDOW_HEIGHT		448
+#define SUBWINDOW_WIDTH		.5*(WINDOW_WIDTH-18)
+#define GROUP_NAME		"grpHostGameBots"
+
+// Macros //
+
+#include "ui/menumacros.h"
+		
+// Host Game Advanced Menu //
+
+menuDef {
+	name		"hostgame_bots"
+	visible		0
+	fullscreen	0
+	rect		WINDOW_X WINDOW_Y WINDOW_WIDTH WINDOW_HEIGHT
+	style		WINDOW_STYLE_EMPTY
+	itemDef {
+		name		"man_fold_back2"
+		rect		-10 -10 630 470
+		style		WINDOW_STYLE_SHADER
+		background	"/ui/assets/man_fold_back2"
+		visible		1
+		decoration
+	}
+	
+	onESC {
+		close hostgame_bots ;
+		open hostgame
+	}
+
+// Window //
+	WINDOW( " ", 266 )
+	SUBWINDOW( 6, 10, (SUBWINDOW_WIDTH), 11, "AI CONFIGURATION" )
+	SUBWINDOW( 6+(SUBWINDOW_WIDTH)+6, 10, (SUBWINDOW_WIDTH), 11, "AI CONFIGURATION CONTINUED" )
+	LABEL( 6, 22, (SUBWINDOW_WIDTH)-4, 10, "Page 1 of 2", .2, ITEM_ALIGN_RIGHT, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	LABEL( 6+(SUBWINDOW_WIDTH)+6+2, 22, (SUBWINDOW_WIDTH)-8, 10, "Page 2 of 2", .2, ITEM_ALIGN_RIGHT, .5*((SUBWINDOW_WIDTH)-4), 8 )
+
+// Left Column //
+//-------------//
+// General Bot Info //
+
+	SUBWINDOW( 6, 32, (SUBWINDOW_WIDTH), 168, "^1GENERAL" )
+
+	LABEL( 6, 48, (SUBWINDOW_WIDTH)-4, 10, "^4Standard Gametypes", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	NUMERICFIELD( 8, 60, (SUBWINDOW_WIDTH)-4, 10, "Maximum Players:", .2, 8, "sv_maxclients", 3, "Maximum # of players that can connect to the server" )
+	MULTI( 6, 72, (SUBWINDOW_WIDTH)-4, 10, "Bot Skill Level:", .2, 8, "bot_skill", cvarFloatList { "Random Selection" -1 "Noobs" 0 "Amateurs" 1 "Average" 2 "Reasonable" 3 "Hardcore" 4 "Super Bots" 5 }, "Default skill level new bots start at in terms of class experience" )
+	NUMERICFIELD( 8, 84, (SUBWINDOW_WIDTH)-4, 10, "Active Bots:", .2, 8, "bot_minplayers", 2, "Set the number of active bots to less than maximum players" )
+	NUMERICFIELD( 8, 96, (SUBWINDOW_WIDTH)-4, 10, "Maximum NPCs:", .2, 8, "npc_minplayers", 3, "Maximum # of NPCs to spawn in standard gametypes." )
+	SLIDER( 8, 108, (SUBWINDOW_WIDTH)-4, 10, "Bot CPU usage:", .2, 8, "bot_cpu_use" .7 1 100, "How much CPU time should bots be given to think with?" )
+
+
+	LABEL( 6, 156, (SUBWINDOW_WIDTH)-4, 10, "^4Cooperative Gametype", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	NUMERICFIELD( 8, 168, (SUBWINDOW_WIDTH)-4, 10, "Random NPC count:", .2, 8, "npc_coop_numenemies", 3, "Maximum # of enemy NPCs to randomly spawn in CO-OP." )
+
+// Right Column //
+//--------------//
+// Node Binds Info //
+
+	SUBWINDOW( 6+(SUBWINDOW_WIDTH)+6, 32, (SUBWINDOW_WIDTH), 76, "^1NODE EDITING:" )
+	MULTI( 6+(SUBWINDOW_WIDTH)+6+2, 48, (SUBWINDOW_WIDTH)-8, 10, "Allow Node Editing:", .2, 8, "bot_node_edit", cvarFloatList { "Yes" 1 "No" 0}, "Can local host players create new node routes and save these?" )
+//	LABEL( 6+(SUBWINDOW_WIDTH)+6+2, 60, (SUBWINDOW_WIDTH)-8, 10, "Enter all nodes in route before saving", .2, ITEM_ALIGN_CENTER, .5*((SUBWINDOW_WIDTH)-4), 8 )
+	BIND( 6+(SUBWINDOW_WIDTH)+6+2, 72, (SUBWINDOW_WIDTH)-8, 10, "Add Node to Route:", .2, 8, "addnode", "" )
+	BIND( 6+(SUBWINDOW_WIDTH)+6+2, 84, (SUBWINDOW_WIDTH)-8, 10, "Delete Last Node:", .2, 8, "deletenode", "" )
+	BIND( 6+(SUBWINDOW_WIDTH)+6+2, 96, (SUBWINDOW_WIDTH)-8, 10, "Save Nodes:", .2, 8, "savenodes", "" )
+	
+	BUTTON( 6, WINDOW_HEIGHT-24, .5*(WINDOW_WIDTH-18), 18, "BACK", .3, 14,
+		close hostgame_bots ; open hostgame )
+}

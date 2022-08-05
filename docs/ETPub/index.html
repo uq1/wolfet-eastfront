@@ -1,0 +1,3182 @@
+<html>
+<head>
+<title>etpub documentation</title>
+<style type="text/css">
+dt {
+        font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h2>etpub documentation</h2>
+<p><i>Updated for etpub 0.6.3</i></p>
+<a href="#cvars">cvars</a><br>
+<a href="#statistics">Statistics / Rankings Terms</a><br>
+<a href="#consolecommands">Server Console Commands</a><br>
+<a href="#shrubbot">Shrubbot</a><br>
+<a href="#gen">General Changes</a><br>
+<br>
+
+<hr>
+<a name="cvars"><h3>cvars</h3>
+
+<dl>
+<dt>New for 0.6.x
+<dd>
+<p>The following cvars have been added or changed since 0.5.x</p>
+<table border=1 cellpadding=5 cellspacing=0>
+<tr>
+<td><a href="#g_ATB">g_ATB</a></td>
+<td><a href="#g_ATB_diff">g_ATB_diff</a></td>
+<td><a href="#g_ATB_rating">g_ATB_rating</a></td>
+<td><a href="#g_XPDecay">g_XPDecay</a></td>
+</tr><tr>
+<td><a href="#g_XPDecayFloor">g_XPDecayFloor</a></td>
+<td><a href="#g_XPDecayRate">g_XPDecayRate</a></td>
+<td><a href="#g_XPSaveFile">g_XPSaveFile</a></td>
+<td><a href="#g_XPSaveMaxAge">g_XPSaveMaxAge</a></td>
+</tr><tr>
+<td><a href="#g_XPSaveMaxAge_xp">g_XPSaveMaxAge_xp</a></td>
+<td><a href="#g_alliedSpawnInvul">g_alliedSpawnInvul</a></td>
+<td><a href="#g_asblock">g_asblock</a></td>
+<td><a href="#g_axisSpawnInvul">g_axisSpawnInvul</a></td>
+</tr><tr>
+<td><a href="#g_canisterKick">g_canisterKick</a></td>
+<td><a href="#g_constructibleXPSharing">g_constructibleXPSharing</a></td>
+<td><a href="#g_coverts">g_coverts</a></td>
+<td><a href="#g_dmg">g_dmg</a></td>
+</tr><tr>
+<td><a href="#g_damageXP">g_damageXP</a></td>
+<td><a href="#g_damageXPLevel">g_damageXPLevel</a></td>
+<td><a href="#g_dmgAir">g_dmgAir</a></td>
+<td><a href="#g_dmgAirRadius">g_dmgAirRadius</a></td>
+</tr><tr>
+<td><a href="#g_dmgArty">g_dmgArty</a></td>
+<td><a href="#g_dmgArtyRadius">g_dmgArtyRadius</a></td>
+<td><a href="#g_dmgDynamite">g_dmgDynamite</a></td>
+<td><a href="#g_dmgDynamiteRadius">g_dmgDynamiteRadius</a></td>
+</tr><tr>
+<td><a href="#g_dmgFG42">g_dmgFG42</a></td>
+<td><a href="#g_dmgFG42Scope">g_dmgFG42Scope</a></td>
+<td><a href="#g_dmgFlamer">g_dmgFlamer</a></td>
+<td><a href="#g_dmgGLauncher">g_dmgGLauncher</a></td>
+</tr><tr>
+<td><a href="#g_dmgGLauncherRadius">g_dmgGLauncherRadius</a></td>
+<td><a href="#g_dmgGrenade">g_dmgGrenade</a></td>
+<td><a href="#g_dmgGrenadeRadius">g_dmgGrenadeRadius</a></td>
+<td><a href="#g_dmgHeadShotMin">g_dmgHeadShotMin</a></td>
+</tr><tr>
+<td><a href="#g_dmgHeadShotRatio">g_dmgHeadShotRatio</a></td>
+<td><a href="#g_dmgInfRifle">g_dmgInfRifle</a></td>
+<td><a href="#g_dmgKnife">g_dmgKnife</a></td>
+<td><a href="#g_dmgLandmine">g_dmgLandmine</a></td>
+</tr><tr>
+<td><a href="#g_dmgLandmineRadius">g_dmgLandmineRadius</a></td>
+<td><a href="#g_dmgMG">g_dmgMG</a></td>
+<td><a href="#g_dmgMG42">g_dmgMG42</a></td>
+<td><a href="#g_dmgMortar">g_dmgMortar</a></td>
+</tr><tr>
+<td><a href="#g_dmgMortarRadius">g_dmgMortarRadius</a></td>
+<td><a href="#g_dmgPanzer">g_dmgPanzer</a></td>
+<td><a href="#g_dmgPanzerRadius">g_dmgPanzerRadius</a></td>
+<td><a href="#g_dmgPistol">g_dmgPistol</a></td>
+</tr><tr>
+<td><a href="#g_dmgSMG">g_dmgSMG</a></td>
+<td><a href="#g_dmgSatchel">g_dmgSatchel</a></td>
+<td><a href="#g_dmgSatchelRadius">g_dmgSatchelRadius</a></td>
+<td><a href="#g_dmgSniper">g_dmgSniper</a></td>
+</tr><tr>
+<td><a href="#g_dmgSten">g_dmgSten</a></td>
+<td><a href="#g_dyno">g_dyno</a></td>
+<td><a href="#g_friendlyFireOpts">g_friendlyFireOpts</a></td>
+<td><a href="#g_killRating">g_killRating</a></td>
+</tr><tr>
+<td><a href="#g_killingSpree">g_killingSpree</a></td>
+<td><a href="#g_killingSpreeMsg_X">g_killingSpreeMsg_X</a></td>
+<td><a href="#g_killingSpreeMsg_default">g_killingSpreeMsg_default</a></td>
+<td><a href="#g_killingSpreeMsg_end">g_killingSpreeMsg_end</a></td>
+</tr><tr>
+<td><a href="#g_killingSpreeMsg_futility">g_killingSpreeMsg_futility</a></td>
+<td><a href="#g_killingSpreeMsg_tk">g_killingSpreeMsg_tk</a></td>
+<td><a href="#g_killingSpreePos">g_killingSpreePos</a></td>
+<td><a href="#g_knifeDamage">g_knifeDamage</a></td>
+</tr><tr>
+<td><a href="#g_maxKnives">g_maxKnives</a></td>
+<td><a href="#g_maxXP">g_maxXP</a></td>
+<td><a href="#g_medicHealthRegen">g_medicHealthRegen</a></td>
+<td><a href="#g_medics">g_medics</a></td>
+</tr><tr>
+<td><a href="#g_minAirstrikeTime">g_minAirstrikeTime</a></td>
+<td><a href="#g_minArtyTime">g_minArtyTime</a></td>
+<td><a href="#g_misc">g_misc</a></td>
+<td><a href="#g_panzersGravity">g_panzersGravity</a></td>
+</tr><tr>
+<td><a href="#g_panzersSpeed">g_panzersSpeed</a></td>
+<td><a href="#g_panzersVulnerable">g_panzersVulnerable</a></td>
+<td><a href="#g_partyPanzersDamageMode">g_partyPanzersDamageMode</a></td>
+<td><a href="#g_partyPanzersEnabled">g_partyPanzersEnabled</a></td>
+</tr><tr>
+<td><a href="#g_partyPanzersPattern">g_partyPanzersPattern</a></td>
+<td><a href="#g_playerRating">g_playerRating</a></td>
+<td><a href="#g_playerRating_minplayers">g_playerRating_minplayers</a></td>
+<td><a href="#g_realHead">g_realHead</a></td>
+</tr><tr>
+<td><a href="#g_reflectFFWeapons">g_reflectFFWeapons</a></td>
+<td><a href="#g_reflectFriendlyFire">g_reflectFriendlyFire</a></td>
+<td><a href="#g_shortcuts">g_shortcuts</a></td>
+<td><a href="#g_shuffle_rating">g_shuffle_rating</a></td>
+</tr><tr>
+<td><a href="#g_staminaRecharge">g_staminaRecharge</a></td>
+<td><a href="#g_teamForceBalance_playerrating">g_teamForceBalance_playerrating</a></td>
+<td><a href="#g_throwKnifeWait">g_throwKnifeWait</a></td>
+<td><a href="#g_throwableKnives">g_throwableKnives</a></td>
+</tr><tr>
+<td><a href="#g_weapons">g_weapons</a></td>
+<td><a href="#skill_battlesense">skill_battlesense</a></td>
+<td><a href="#skill_covertops">skill_covertops</a></td>
+<td><a href="#skill_engineer">skill_engineer</a></td>
+</tr><tr>
+<td><a href="#skill_fieldops">skill_fieldops</a></td>
+<td><a href="#skill_lightweapons">skill_lightweapons</a></td>
+<td><a href="#skill_medic">skill_medic</a></td>
+<td><a href="#skill_soldier">skill_soldier</a></td>
+</tr><tr>
+<td><a href="#team_maxCovertOps">team_maxCovertOps</a></td>
+<td><a href="#team_maxEngineers">team_maxEngineers</a></td>
+<td><a href="#team_maxFieldOps">team_maxFieldOps</a></td>
+<td><a href="#team_maxMedics">team_maxMedics</a></td>
+</tr><tr>
+<td><a href="#vote_allow_shufflenorestart">vote_allow_shufflenorestart</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+</dl>
+
+<dl>
+
+<dt>g_shrubbot [filename]
+<dd>
+<p>This should be set to the name of your shrubbot.cfg file if you want to
+enable shrubbot.  See <a href="#shrubbot">shrubbot</a> documentation for
+more information about this file.</p>
+<p>Example:<pre>g_shrubbot "shrubbot.cfg"</pre></p>
+<p>This depends on punkbuster's guid, so don't turn this on unless you
+have punkbuster enabled on your server.</p>
+<p>Default is "" (Disabled)</p>
+
+<dt>g_logAdmin [filename]
+<dd>
+<p>The name of the file that all shrubbot commands will be logged to.  For example, 
+<pre>g_logAdmin "admin.log"</pre></p>
+<p>Default is "" (no log file)</p>
+
+<dt>g_hitsounds [integer]
+<dd>
+This is a bitflag cvar that supports the following values
+	<dl>
+	<dt>1
+	<dd>enables hitsounds
+	<dt>2
+	<dd>disables hitsounds when shooting wounded players.
+	<dt>4
+	<dd>disable the headshot sounds when shooting wounded players
+            in the head.   default hitsound will be used in it's place
+	    unless the 2 flag is set.
+	<dt>8
+	<dd>disable the &quot;hold your fire&quot; sound that would normally
+            be played when shooting a teammate for the first time.
+	<dt>16
+	<dd>disable hitsounds from poison damage.
+	</dl>
+A client will hear a sound when they damage another player.
+The sounds it uses are ones that are included in the pak0.pk3 file so it
+does not require additonal file downloads to use this mod.
+<p>
+A client can
+disable hitsounds by running <pre>/setu cg_hitsounds 0</pre> before connecting
+to the server, or toggle hitsounds on the fly with the /hitsounds command.
+<br><br>
+Starting with 0.1.1, the hitsounds used are configurable with the following cvars:<pre>
+g_hitsound_default (Default is "sound/weapons/impact/flesh2.wav")
+g_hitsound_helmet (Default is "sound/weapons/impact/metal4.wav")
+g_hitsound_head (Default is "sound/weapons/impact/flesh4.wav")
+g_hitsound_team_warn_axis (Default is "sound/chat/axis/26a.wav")
+g_hitsound_team_warn_allies (Default is "sound/chat/axis/26a.wav")
+g_hitsound_team_helmet (Default is "sound/weapons/impact/metal4.wav")
+g_hitsound_team_head (Default is "sound/weapons/impact/flesh4.wav")
+g_hitsound_team_default (Default is "sound/weapons/impact/flesh2.wav")
+</pre>
+<p>Note that these are server cvars.  If you want to use hitsounds that are not included in
+the game you'll have to put them in a pk3 for all clients to download. Your custom hitsounds
+must be 22khz, 16 bit, mono WAV files in order for ET to be able to use them.</p>
+
+<dt>g_shoveSound [string]
+<dd>
+<p>
+The sound that a player emits when shoved.  Set this to &quot;&quot; to
+disable it.
+</p>
+<p>
+Default is &quot;sound/weapons/grenade/gren_throw.wav&quot;
+
+<dt>g_poisonSound [string]
+<dd>
+<p>The sound that a poisoned player emits every second.  Set this to
+&quot;&quot; to disable it.
+</p>
+<p>
+Default is &quot;sound/player/gurp2.wav&quot;
+</p>
+
+<dt>g_fightSound [string]
+<dd>
+<p>
+The sound that will play at the end of warmup or when the match
+is unpaused.
+</p>
+<p>
+Example <pre>
+set g_fightSound "sound/world/rooster.wav"</pre>
+</p>
+<p>
+Set this to &quot;&quot; to disable it.
+</p>
+<p>
+Default is &quot;&quot;
+</p>
+
+<dt>g_playDead [0|1]
+<dd>
+<p>Allows players use the 'playdead' command and their character
+will act like it is dead until the playdead command is issued again (or they
+really die).</p>
+<p>Default is 0</p>
+
+<dt>g_shove [integer]
+<dd>Allows players to push other players with the "use" key.  The integer
+adjusts the amount of force players shove with.  80 seems fair.
+<p>
+NOTE: starting with etpub 0.5.1, this number has been changed to (hopefully)
+be more compatible with the value used in shrubet.  You will need to turn
+down this value greatly when upgrading from earlier versions of etpub.
+</p>
+<p>
+Default is 0.
+</p>
+
+<dt>g_shoveNoZ [0|1]
+<dd>
+<p>
+Set this to 1 if you want to disable shove in the up/down direction
+(a.k.a &quot;boosting&quot;).
+<p>
+Default is 0
+</p>
+
+<dt>g_dragCorpse [0|1]
+<dd>
+<p>Allows players do drag wounded players with the use key when moving
+backward slowly.  Works best when crouching or prone.</p>
+<p>Default is 0</p>
+
+<dt>g_classChange [0|1]
+<dd>
+<p>Allows players to take the class of a gibbed teammate temporarily similarly
+to how a covert steals a uniform.  Class changing does not latch, so the
+original class the player had will be restored on respawn.</p>
+<p>Default is 0</p>
+
+<dt>g_forceLimboHealth [0|1]
+<dd>
+<p>If set to 0 it takes about 3 shots to gib a wounded player, if set to 1
+it takes about 5.</p>
+<p>Default is 1</p>
+
+<dt>g_privateMessages [0|1]
+<dd>
+<p>
+If set to 1, players can send private messages to one another with the m
+command.  Example: <pre>/m tjw you totally suck!</pre>
+</p>
+<p>
+Starting in 0.2.1 players can also type '/m tjw you totally suck' in the
+'chat' dialog box and it will be recognized as a private message.
+</p>
+
+<p>
+Starting in 0.5.1, clients can reject private message from other
+individual clients with the /ignore client command.
+</p>
+
+<p>
+Default is 0
+</p>
+
+<dt>g_XPSave [integer]
+<dd>
+<p>If set to 1, XP and number of lives remaining will be saved if a player
+disconnects and reconnects later during the same campaign.
+As of 0.1.1, this is now a bitflag with the following values:</p>
+<dl>
+<dt>1<dd>store xp when a client disconnects
+<dt>2<dd>don't reset xp to the pre-map start values on a map restart,
+shuffle, etc.
+<dt>4<dd>never reset xp (ever).
+<dt>8<dd>force the disconnection of clients with the same GUID as the connecting
+    client.  This is useful in saving the stored XP of players with unreliable
+    network connections since they should still get their stored XP even if
+    reconnecting immediately with a new IP address.<br>
+    This feature is enabled by default unless you have sv_wwwDlDisconnected
+    enabled.   sv_wwwDlDisconnected seems to interfere with this feature, so
+    do not enable this flag if you change pk3's on your server often because
+    stored XP will be lost over disconencted downloads.
+</dl>
+<p>Storing XP on disconnect depends
+on the punkbuster guid, so don't turn this on unless you have punkbuster
+enabled on your server.</p>
+<p>Default is 0</p>
+
+<a name="g_XPSaveFile"></a>
+<dt>g_XPSaveFile [string]
+<dd>
+<p>
+Set this to the filename you want XPSave to store data in.  This file
+will be relative to your fs_game directory (like g_shrubbot).
+</p>
+<p>Default is &quot;xpsave.cfg&quot;
+</p>
+
+<a name="g_XPSaveMaxAge_xp"></a>
+<dt>g_XPSaveMaxAge_xp [integer]
+<dd>
+<p>
+The number of seconds that must pass without a connection from this
+player before XPSave forgets his/her xp skills.
+<p>
+NOTE: if <a href="#g_XPSaveMaxAge">g_XPSaveMaxAge</a> is less than
+g_XPSaveMaxAge_xp, g_XPSaveMaxAge will be used.
+</p>
+</p>
+<p>Default is 86400 (a.k.a 1 day)
+</p>
+
+<a name="g_XPSaveMaxAge"></a>
+<dt>g_XPSaveMaxAge [integer]
+<dd>
+<p>
+The number of seconds that must pass without a connection from this
+player before XPSave forgets his/her skills/killrating/playerrating/mute
+status.
+</p>
+<p>
+See also <a href="#g_XPSaveMaxAge_xp">g_XPSaveMaxAge_xp</a>
+</p>
+</p>
+<p>Default is 604800 (a.k.a 1 week)
+</p>
+
+<a name="g_XPDecay"></a>
+<dt>g_XPDecay [integer]
+<dd>
+<p>This is a bitmask that controls the XP decay feature.  The following
+bitflags are supported:
+	<dl>
+	<dt>1
+	<dd>Enable XP Decay
+	<dt>2
+	<dd>Do not decay a player's XP when they are disconnected from the
+	    server.
+	<dt>4
+	<dd>Do not decay a player's XP for the class they are currently playing
+            as (e.g. Medic).
+	<dt>8
+	<dd>Do not decay a player's XP while they are spectating.
+	<dt>16
+	<dd>Do not decay a player's XP during warmup/intermission.
+	<dt>32
+	<dd>Do not decay a player's XP when he/she is playing.  This means
+            that they are on a Allies or Axis and the game is active.
+
+	<dt>64
+	<dd>Do not decay a player's <b>Battle Sense</b> XP when he/she is
+            playing. 
+	<dt>128
+	<dd>Do not decay a player's <b>Light Weapons</b> XP when he/she is
+            playing.  
+	</dl>
+<p>See also <a href="#g_XPDecayRate">g_XPDecayRate</a>.
+<p>This feature was created in response to the g_XPSave 4 flag which allows
+XP to continue building forever.
+<p>Default is 0
+
+<a name="g_XPDecayRate">
+<dt>g_XPDecayRate [float]
+<dd>
+<p>
+This is the rate (in skillpoints per second) that XP skill points for each 
+skill will decay when <a href="#g_XPDecay">g_XPDecay</a> is enabled.
+<p>
+Setting this to 0.1 would result in a player losing 6 points per minute IN ALL 
+SKILLS, so up to 42XP per minute if the player has skill points for each skill.
+ 
+<p>Default is 0.0
+
+<a name="g_XPDecayFloor">
+<dt>g_XPDecayFloor [float]
+<dd>
+<p>
+This is the minimum that any particular skill can be reduced to by g_XPDecay.
+</p>
+<p>
+For example, setting this to 140.0 will ensure that no player will ever lose
+rank or skill levels due to g_XPDecay.
+</p>
+<p>Default is 0.0
+
+<a name="g_maxXP">
+<dt>g_maxXP [integer]
+<dd>
+<p>
+This is a vicious cvar that will reset a players XP once their overall XP
+score reaches it.  It has been requested by those who run servers with XPSave
+that never resets.
+<p>
+Set this to -1 to disable it.
+<p>
+Default is -1 (disabled)
+
+<a name="g_damageXP">
+<dt>g_damageXP [integer]
+<dd>
+<p>Optionally enables the awarding of XP based upon the amount of damage
+a player has done to the opposing team.</p>
+<p>Available options are:</p>
+	<dl>
+
+	<dt>0
+	<dd>disabled: use normal ET XP awarding methods
+
+	<dt>1
+	<dd>1 point of XP is awarded per g_damageXPLevel points of damage done.
+	The XP is placed in the skill category of the weapon used.
+	When this mode is enabled, kills (regardless of method) are awarded 
+	a fixed value of 1 point of XP.
+
+	<dt>2
+	<dd>1 point of XP is awarded per g_damageXPLevel points of damage done.
+	The XP is placed in the Battle Sense category.  
+	Normal XP amounts are awarded for kills (typically 3-5 XP).
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_damageXPLevel">
+<dt>g_damageXPLevel [integer]
+<dd>
+<p>This setting determines the amount of damage that a player must do to earn
+1 point of XP.  See g_damageXP for additional information.</p>
+<p>default is 50</p>
+
+<a name="g_weapons" /></a>
+<dt>g_weapons [bitmask]
+<dd>
+<p>This is meant to match the shrubmod g_weapons cvar, but so far the only
+implemented flags are:</p>
+<dl>
+<dt> 2
+<dd>syringes work underwater
+<dt> 4
+<dd>pliers work underwater
+<dt> 8
+<dd>Fully restore Field ops charge bar if airstrike is aborted
+<dt> 16
+<dd>Half restore FIeld ops charge bar if airstrike is aborted
+<dt> 32
+<dd>ammo packs restore helmets
+<dt> 64
+<dd>drop binoculars if player has them (requires etpub_client >= 20050927 or
+/weapons/binocs.weap in a pk3 file downloaded to the client)
+<dt> 128
+<dd>soldiers with level 4 heavy weapons don't lose their pistols
+<dt> 256
+<dd>garands can reload when not clip is not empty
+<dt> 512
+<dd>balance the clip size between the allies and axis rifles. allied rifles
+get same clip sizes and max ammo as the k43.
+<dt> 1024
+<dd>creates a hitbox for mortar shells.  This reduces (or eliminates   
+in some cases) the ability to fire mortars through smaller   
+windows and bunker slits. 
+</dl>
+<p>Default is 0</p>
+
+<dt>g_goomba [integer]
+<dd>
+<p>
+If set to a positive integer, players can damage each other by landing
+on each other.   The integer is multiplier that determines how much
+damage should be done to the player that was fallen on.  Also
+the impact for the falling player will be broken so that they
+only recieve 20% of the damage they would have normally.  It is also
+possible to do small amounts of damage (5HP) to other players by hopping
+up and down on them.
+</p>
+
+<p>
+Falling damage can be either 500, 50, 25, 15, or 10 depending on
+the length of the fall.  So if you set g_goomba to 5 and land on a
+player from a fall that would have damaged you 10HP, you will inflict
+50HP of damage on the player you land on, and you will only recieve 2HP of
+damage.
+</p>
+
+<p>
+See also <a href="#g_goombaFlags">g_goombaFlags</a>
+</p>
+
+<p>
+Set this to 0 to disable it
+</p>
+
+<p>
+Default is 0
+</p>
+
+<a name="g_goombaFlags"></a>
+<dt>g_goombaFlags [integer]
+<dd>
+<p>
+This is a bitflag cvar that controls the way g_goomba is handled.  Currently
+the following flags are supported:
+	<dl>
+	<dt>1
+	<dd>Cannot do goomba damage to teammates
+	<dt>2
+	<dd>Short falls (hopping) on another player does no damage.
+	<dt>4
+	<dd>Short falls (hopping) does no damage to teammates.
+	    (not necessary if 1 or 2 flag is set)
+	<dt>8
+	<dd>Falling player recieves no damage when landing on any other
+            player.  (default is to recieve 20% of the damage the fall
+            would have given if not landing on a player).
+	<dt>16
+	<dd>Insta-gib goomba.  All goomba damage will be 500HP regardless
+            of fall distance.  The exception is hopping on anther player
+            which still does 5HP of damage.
+	</dl>
+</p>
+<p>
+Set this to 31 to have g_goomba work like shrubet.
+</p>
+<p>
+Default is 0
+</p>
+
+<dt>g_spawnInvul [integer]
+<dd>
+<p>The number of seconds players will be invincible after they spawn.</p>
+<p>Default is 3</p>
+
+<a name="g_alliedSpawnInvul"></a>
+<dt>g_alliedSpawnInvul [integer]
+<dd>
+<p>The number of seconds Allied players will be invincible after they spawn.
+This will override g_spawnInvul if not 0</p>
+<p>Default is 0</p>
+
+
+<a name="g_axisSpawnInvul"></a>
+<dt>g_axisSpawnInvul [integer]
+<dd>
+<p>The number of seconds Axis players will be invincible after they spawn.
+This will override g_spawnInvul if not 0</p>
+<p>Default is 0</p>
+
+<dt>g_spinCorpse [0|1]
+<dd>
+<p>Allow players to use +left and +right binds to spin their corpse when dead
+or playing dead.</p>
+<p>Default is 0</p>
+
+<dt>g_teamChangeKills [1|0]
+<dd>
+<p>If set to 0, players are allowed one non-killing team change per respawn cycle.  If a player changes teams, he will be instantly spawned in the other teams default spawn point.  Players will die (but not lose a life) if they change teams
+a second time in one spawn cycle.</p>
+<p>Default is 1</p>
+
+<a name="g_ATB"></a>
+<a name="g_ATB_diff"></a>
+<dt>g_ATB [0|1|2]
+<dt>g_ATB_diff [integer]
+<dd>
+<p>
+g_ATB controls the type of active team balancing you want to use. Active team
+balancing will automatically move one of the top three player(s) from the
+team more likely to win, to the team more likely to lose. There are currently
+two versions. One uses XP, the other playerrating. Set g_ATB to choose between
+them. Note that g_ATB only decides WHEN to move a player, and NOT which player
+to move. See <a href="#g_ATB_rating">g_ATB_rating</a> to see how ATB chooses
+which player to move.
+	<dl>
+	<dt>0
+	<dd>No active team balancing.
+	<dt>1
+	<dd>Use team XP to balance the teams. Uses the following cvars:
+		<dl>
+		<dt>g_ATB_minXP [integer]
+		<dt>g_ATB_minPlayers [integer]
+		<dt>g_ATB_axisHoldoff [integer]
+		<dt>g_ATB_alliedHoldoff [integer]
+		<dd>
+		<p>Active Team Balance watches the team XP during the match and will force
+		one of the top 3 players from the dominant team to switch teams when
+		his/her team hits it's respawn time if the following criteria is met:</p>
+		<ol>
+		<li>One team has at least g_ATB_minXP (default 300) team XP.
+		<li>There are at least g_ATB_minPlayers (default 5) players playing
+		<li>The resulting team change will not give one team an advantage by number of players unless:
+			<ol>
+			<li>If 16 or more people are playing, the losing team may get up to a
+				1 player advantage.
+			<li>If 26 or more people are playing, the losing team may get up to a
+				2 player advantage.
+			</ol>
+		<li>The winning team is ahead in team XP by a margin of g_ATB_fidd
+		 percent.
+		</ol>
+		<p>For example, setting <pre>g_ATB_diff 50</pre> a player would be
+		moved if he/she was the top player on the team and his/her team had 750XP and
+		the other team had 500XP.</p>
+		<p>You can also adjust the rate at which ATB moves players with the
+		g_ATB_axisHoldoff (default 5)  and g_ATB_alliedHoldoff (default 5) cvars.
+		For example, if g_ATB_axisHoldoff is set to 5 and an axis player is moved
+		to the allied team, ATB will take no other action until the axis spawn timer
+		cycles 5 times.</p>
+		<p>NOTE: this calculation is based on <b>TeamXP</b> NOT the total XP of all
+		the players on the team.  TeamXP is the total score earned for the team by
+		all players on the team during the map.  When a player changes teams, the
+		TeamXP they earned for their team does not move with them.</p>
+		<p>Default values:</p>
+		<p>
+		g_ATB_diff: 75<br>
+		g_ATB_minXP: 300<br>
+		g_ATB_minPlayers: 5<br>
+		g_ATB_axisHoldoff: 5<br>
+		g_ATB_alliedHoldoff: 5
+		</p>
+		</dl>
+	<dt>2
+	<dd>Use player rating to balance the teams. This will balance the teams by
+	moving one of the the top 3 players when the probability of one team winning
+	exceeds g_ATB_diff. g_ATB_diff is an integer and defaults
+	to 75 meaning 75%. If the Axis team has more than a 75% chance of winning,
+	ATB will move one of its players to the Allies, and this will often instantly
+	lower the probability enough that another move will not be necessary. This
+	version will not use any of the XP version's variables and it uses
+	<a href="#g_playerRating_minplayers">g_playerRating_minplayers</a>
+	instead of g_ATB_minPlayers as the minimum number of players that must
+	be playing before it will act. It will also not swap players between teams
+	since unbalanced team numbers is fine with player rating. It will actually
+	stack team numbers on purpose to even out the teams unless g_ATB_swap is
+	set.
+	<p>
+	Note: Read 
+	<a href="#g_teamForceBalance_playerrating">g_teamForceBalance_playerrating</a>
+	carefully also. You probably don't want to turn option 2 on until after
+	running your server long enough to learn map and player stats.
+	</p>
+	<p>
+	<b>NOTE: you must set g_ATB_rating to 4 and g_shuffle_rating to 4 if
+                 you use g_ATB 2 or ATB will by hyperactive and ineffective</b>
+	</p>
+	</dl>
+
+<a name="g_ATB_swap"></a>
+<dt>g_ATB_swap [1|0]
+<dd>
+<p>
+If set to 1, one of 3 loweset scoring players on the losing team will be
+moved to the winning team when ATB acts (unless the losing team has
+less players).
+</p>
+<p>
+Default is 1
+</p>
+
+<a name="g_ATB_rating"></a>
+<dt>g_ATB_rating [integer]
+<dd>
+<p>
+Sets the rating system used by Active Team Balance. This is how ATB chooses
+which players to move, it is NOT how ATB decides WHEN to move them. That is
+g_ATB.
+The following options are supported:
+	<dl>
+	<dt>1
+	<dd>Use player XP
+	<dt>2
+	<dd>Use the rate at which players have gained XP since connecting.
+	<dt>3
+	<dd>Use the killRating (g_killRating must be nonzero)
+	<dt>4
+	<dd>Use the playerRating (g_playerRating must be nonzero)
+	</dl>
+</p>
+<p>
+Default is 3
+</p>
+
+<a name="g_shuffle_rating"></a>
+<dt>g_shuffle_rating [integer]
+<dd>
+<p>
+Sets the rating system used by shuffle.  The following options
+are supported:
+	<dl>
+	<dt>1
+	<dd>Use player XP
+	<dt>2
+	<dd>Use the rate at which players have gained XP since connecting.
+	<dt>3
+	<dd>Use the killRating (g_killRating must be nonzero)
+	<dt>4
+	<dd>Use the playerRating (g_playerRating must be nonzero)
+	</dl>
+</p>
+<p>
+Default is 3
+</p>
+
+<dt>g_maxTeamLandmines [integer]
+<dd>
+<p>Sets the maximum number of landmines a team can have planted at any given time. This
+value should be 0 or greater.</p>
+<p>Default is 10</p>
+
+<dt>team_maxPanzers [integer]
+<dd>
+<p>Limits the number of Panzerfausts per team.  A value of -1 means no limit</p>
+<p>Default is -1</p>
+
+<dt>team_maxMortars [integer]
+<dd>
+<p>Limits the number of mortars per team.  A value of -1 means no limit</p>
+<p>Default is -1</p>
+
+<dt>team_maxFlamers [integer]
+<dd>
+<p>Limits the number of flamethrowers per team.  A value of -1 means no limit</p>
+<p>Default is -1</p>
+
+<dt>team_maxMG42s [integer]
+<dd>
+<p>Limits the number of mobile MG's per team.  A value of -1 means no limit</p>
+<p>Default is -1</p>
+
+<dt>team_maxGrenLaunchers [integer]
+<dd>
+<p>Limits the number of grenade launching engineer rifles per team.  A value of -1 means no limit</p>
+<p>Default is -1</p>
+
+<dt>g_mapConfigs [string]
+<dd>
+<p>When a new map starts, load the map specific config file named [mapname].cfg in the folder [string].  For example if you set g_mapConfigs to 'mapcfg', when the map fueldump starts, the server will try to exec 'mapcfg/fueldump.cfg'.</p>
+<p>Set this to "" to disable it.</p>
+<p>Set this to "." to look for the cfg file in the current directory (fs_home_path).</p>
+<p>Default is ""</p>
+
+<dt>g_packDistance [integer]
+<dd>
+<p>Set the distance at which health packs and ammo packs are thrown.  Set
+this to 0 to make it just like etmain.  The settings should be similar to
+shrubet so set this to 2 for a subtle improvement.</p>
+<p>Default is 0</p>
+
+<dt>g_dropHealth [integer]
+<dd>
+<p>If set to a positive integer, medics will drop [integer] number of health
+packs when they are gibbed.  If set to -1, medics will drop the number of
+health packs that they could have dropped at the moment of their death.</p>
+<p>Set this to 0 to turn it off.</p>
+<p>Default is 0</p>
+
+<dt>g_dropAmmo [integer]
+<dd>
+<p>If set to a positive integer, fieldops will drop [integer] number of ammo
+packs when they are gibbed.  If set to -1, fieldops will drop the number of
+ammo packs that they could have dropped at the moment of their death.</p>
+<p>Set this to 0 to turn it off.</p>
+<p>Default is 0</p>
+
+<dt>g_tossDistance [integer]
+<dd>
+<p>Set the velocity at which health or ammo packs are tossed from the dead
+body when g_dropHealth or g_dropAmmo are activated.   This changes the
+distance that these packs travel from the corpse.</p>
+<p>Default is 0</p>
+
+<a name="g_logOptions"></a>
+<dt>g_logOptions [integer]
+<dd>
+This is meant to match the shrubmod g_logOptions cvar, but so far the only
+implemented flags are:
+	<dl>
+
+	<dt>1
+	<dd>
+	Use server-side obituaries displayed in chat instead of cpm.
+	Will increase bandwidth usage.  This will not have any effect
+	unless <a href="#g_obituary">g_obituary</a> is set to 3.
+
+	<dt>2
+	<dd>
+	Adrenaline countdown displayed
+
+	<dt>4
+	<dd>
+	Disable display of tap-out confirmation box
+
+	<dt>8
+	<dd>
+	Display connection attempts by banned players
+
+	<dt>16
+	<dd>
+	Display gib reports ("&lt;victim&gt; was gibbed by &lt;attacker&gt;")
+
+	<dt>32
+	<dd>
+	Omit "item" lines from log file
+
+	<dt>128
+	<dd>
+	GUID's are logged in the game log
+
+	<dt>256
+	<dd>
+	Log all private messages (/m commands).  Starting with 0.5.1, this
+	setting won't have any effect unless <a href="#g_tyranny">g_tyranny</a>
+	is enabled.
+
+	<dt>512
+	<dd>
+	Logs the real time into logs, instead of the normal uptime of the
+	server.
+
+	<dt>2048
+	<dd>
+	Print TK death message like a normal kill message, giving killing
+	weapon, except it is preceeded by a red TEAMKILL: identifier.
+	Only works if <a href="#g_obituary">g_obituary</a> is set to 3.
+
+	</dl>
+
+<p>Default is 0</p>
+
+<dt>g_censor [string]
+<dd>
+<p>A comma delimited string of words that will be censored from
+chat.</p>
+<p>Default is ""</p>
+
+<dt>g_censorNames [string]
+<dd>
+<p>A comma delimited string of words that will be censored from
+player names.</p>
+<p>Default is ""</p>
+
+<dt>g_censorPenalty [integer]
+<dd>
+<p>This is a bitflag that currently supports the following flags:</p>
+	<dl>
+	<dt>1
+	<dd>kill the player
+	<dt>2
+	<dd>kick players with names containing words in g_censorNames<br>
+	<dt>4
+	<dd>kill, but don't gib<br>
+	<dt>8
+	<dd>Auto-mute for g_censorMuteTime [60] seconds.
+	</dl>
+<p>Note: If you use both 1 and 4, it will gib (like shrub did).</p>
+<p>Default is 0</p>
+
+<dt>g_censorMuteTime [integer]
+<dd>
+<p>The number of seconds to auto-mute as a censor penalty. Only works
+if bitflag 8 is added to g_censorPenalty.</p>
+<p>Default is 60</p>
+
+<dt>g_intermissionTime [integer]
+<dd>
+<p>Set the length of time the end of game screens displays before loading
+the next map.</p>
+<p>Default is 60</p>
+
+<dt>g_intermissionReadyPercent [integer]
+<dd>
+<p>The percent of connected players who need to hit the "READY" button to
+move on to the next map without waiting g_intermissionTime to run out.</p>
+<p>Default is 100</p>
+
+<dt>g_skills [integer]
+<dd>
+<p>This is a bitflag cvar that currently supports the following flags:</p>
+	<dl>
+	<dt>1
+	<dd>players with level 4 battle sense can spot landmines for teammates.
+	<dt>2
+	<dd>players with level 4 engineering can keep the flak jacket for other classes.
+	<dt>4
+	<dd>players with level 4 first aid can keep adrenaline for other classes.
+	</dl>
+<p>Default is 0</p>
+
+<dt>g_hitboxes [integer]
+<dd>
+This is a bitflag cvar that currently supports the following flags:<br>
+	<dl>
+	<dt>1
+	<dd>lower the standing player's body hitbox to the shoulders.
+	<dt>2
+	<dd>lower the crouching player's body hitbox to the shoulders.
+	<dt>4
+	<dd>lower the wounded player's body hitbox to a reasonable height
+	<dt>8
+	<dd>lower the prone player's body hitbox to a reasonable height
+	<dt>16
+	<dd>lower the playdead player's body hitbox to a reasonable height
+	</dl>
+<br>
+The default is 31 which means use all of the improved hitboxes.  Set it to 0
+to use the unmodified hitboxes from etmain.
+<br>
+See <a href="http://et.tjw.org/etpub/hitboxes/">http://et.tjw.org/etpub/hitboxes/</a> for comparision screen shots.
+
+<a name="g_misc"></a>
+<dt>g_misc [integer]
+<dd>
+This is a bitflag cvar that currently supports the following flags:
+<dl>
+<dt>1
+<dd>Enable double jump.
+<dt>2
+<dd>Enable binoc master competition.
+    Requires <a href="#g_weapons">g_weapons 64</a> to be set.
+    (etpubclient >= 20050927 required)
+<dt>8
+<dd>Enable killing spree streaks to be printed.  
+Require <a href="#g_killingSpree">g_killingSpree</a> to be set > 0.  When
+set, a top 3 current killing sprees message will be printed every minute,
+similar to binoc masters, and a map's longest killing spree will be 
+printed every two minutes
+<dt>16
+<dd>Players can not jump if stamina is too low.
+    (etpubclient > 20050927 required)
+<dt>32
+<dd>Players cannot put their heads into other solids when prone/playdead.
+    This is the behaviour of etpub 0.5.x. (etpubclient required).
+    If using etpubclient before 20050927, this must be enabled.
+</dl>
+
+Default is 0
+
+
+<dt>g_skipCorrection [1|0]
+<dd>
+Set this to 1 to enable Neil Toronto's unlagged2 skip correction.
+This will smooth out the movement of players with high packet loss
+(to a degree).
+This is similar to etpro's antiwarp, but has some differences.
+Neil likes this version better, bani likes his better.
+<br><br>
+This replaces g_smoothClients from etmain.
+<br><br>
+You can find a demo that shows g_skipCorrection in action at:
+<a href="http://et.tjw.org/etpub/skipCorrection/">
+http://et.tjw.org/etpub/skipCorrection/</a>
+<br><br>
+Defaults to 1 (on)
+
+<dt>g_maxWarp [integer]
+<dd>
+This allows you to control the amount of "warping" that players with
+high packet loss can do.  The [integer] is the number of server frames
+that you allow a player to miss before their next movement is put in
+check.
+<br><br>
+A server frame is 50ms on a typical server (sv_fps set to 20).  This
+means that if you set g_maxWarp to 5 you won't allow players to warp
+from point A to point B if that distance takes an normal player 1/4
+of a second to travel. Setting this to 1 is a good way to drive off
+just about everyone from your server.
+<br><br>
+As far as I can tell, 1000ms is allowed by default in the game, so
+setting this to any value higher than 39 should have no effect if
+sv_fps is set to 10.
+<br><br>
+You can find a demo that shows g_maxWarp in action at:
+<a href="http://et.tjw.org/etpub/skipCorrection/">
+http://et.tjw.org/etpub/skipCorrection/</a>
+<br><br>
+Defaults to 4
+
+<dt>g_teamDamageRestriction [integer]
+<dd>
+<p>When greater than 0, anybody that has this percentage of hits inflicted on a
+teammate will automatically be kicked.  A minimum of g_minhits hits total required
+before this is calculated.  Client can see current stats for themselves by doing a
+/damage in console.  Implemented to mimic shrub behavior as much as is possible, there
+are other ways to implement this feature, which may be implemented in addition to
+current manner.</p>
+<p>Default is 0</p>
+
+<dt>g_minHits [integer]
+<dd>
+<p>Minimum number of damaging hits required before calculating if player has
+reached g_teamDamageRestriction threshold.  Flamethrower and landmine hits are
+adjusted similar to shrub.  Medics get -2 hits for every revive.</p>
+<p>Default is 6</p>
+
+<dt>g_autoTempBan [0|1]
+<dd>
+<p>When set, anyone kicked because of the g_teamDamageRestriction setting will be
+temporarily banned for g_autoTempBanTime seconds</p>
+<p>Default is 0</p>
+
+<dt>g_autoTempBanTime [integer]
+<dd>
+<p>The number of seconds kicked for when g_autoTempBan is set</p>
+<p>Default is 1800</p>
+
+<dt>g_voting [integer]
+<dd>
+This is a bitflag cvar that supports the following flags:
+	<dl>
+	<dt>1
+	<dd>votes will pass on the number of votes cast rather than total
+            eligible voters.
+	<dt>2
+	<dd>votes that pass do not count against the vote_limit for the caller.
+	<dt>4
+	<dd>" (called by NAME)" is appended to the vote description where
+	NAME is the name of the player that called the vote.
+	</dl>
+
+<dt>g_moverScale [float]
+<dd>
+Multiply the speed of movers (e.g. tanks) by float.
+<br>
+Defaults to 1.0
+
+<dt>g_poison [integer]
+<dd>
+<p>
+Gives medics the ability to poison enemies by sticking with their medic
+syringe.  Enemies will be damaged at g_poison/second when g_poison is
+set to a value more than 0.  Setting to 0 will disable poison needles.
+</p>
+<p>
+Default is 0
+</p>
+
+<dt>g_poisonFlags [integer]
+<dd>
+<p>This bitflag cvar controls the effects of g_poison.  The following flags
+are supported:
+	<dl>
+	<dt>1
+	<dd>Poisoned player's screen shakes.
+	<dt>2
+	<dd>Other players see the poisoned player's head shaking.
+	<dt>4
+	<dd>Poisoned player appears to bend over (hurl) every 2 seconds.
+            (poisoned player does not see this happen.)
+	<dt>8
+	<dd>Poisoned player cannot use +attack.  NOTE: because of
+            client side prediction, the client may see the gun firing
+	    occasionally if they hold down +attack, but no shots are fired.
+	<dt>16
+	<dd>Poisoned player is disoriented (view turned upside down).
+	</dl>
+
+</p>
+<p>Default is 7</p>
+
+<dt>g_slashKill [bitmask]
+<dd>
+<p>
+Bitmask that controls the behavior of the /kill command.
+	<dl>
+	<dt>1
+	<dd>Player spawns with half charge bar after /kill
+	<dt>2
+	<dd>Player spawns with 0 charge bar after /kill
+	<dt>4
+	<dd>Restores the charge bar to the same state it was in at the moment the
+player issued /kill (regardless of how long they were in limbo)
+	<dt>8
+	<dd>Disables /kill command
+	<dt>16
+	<dd>Disable /kill when player is poisoned
+	</dl>
+</p>
+<p>
+See also <a href="#g_fear">g_fear</a>
+</p>
+<p>Default is 0</p>
+
+<dt>g_ammoCabinetTime [integer]
+<dd>
+The time between ammo cabinet regenerations in milliseconds.
+<br>Default is 60000.
+
+<dt>g_healthCabinetTime [integer]
+<dd>
+The time between health cabinet regenerations in milliseconds.
+<br>Default is 10000.
+
+<dt>g_spectator [integer]
+<dd>
+<p>This is a bitmask that controls spectator behaviour.  It supports the
+following flags:</p>
+	<dl>
+	<dt>1
+	<dd>When in freelook mode, you can 'fire' at a player to follow.  If
+	    you miss a player, nothing happens.
+	<dt>2
+	<dd>When in freelook mode with the 1 flag set, if you shoot and miss
+            you start following the next available player.
+	<dt>4
+	<dd>When the player you're following goes into limbo, don't move to
+            the next available player.
+	<dt>8
+	<dd>When the player you're following goes into limbo, go to freelook
+            instead of following the next available player.  (4 has precedence)
+	</dl>
+<p>Default is 0 (no changes from etmain).</p>
+
+<a name="g_medics"></a>
+<dt>g_medics [bitmask]
+<dd>
+<p>Bitmask to control various aspects of the medic, to nerf or otherwise change
+their behavior.  Currently supported flags include:</p>
+	<dl>
+	<dt>1
+	<dd>Medics can't pick up their own health packs to cure themselves of
+	    poison needle effects
+	<dt>2
+	<dd>Medics can't pick up their own health packs at all
+	<dt>16
+	<dd>Medics do not spawn with akimbo pistols, regardless of their light
+            weapons skill
+	<dt>32
+	<dd>Medics spawn with pistol only, and can't pick up SMG of either team
+            However, any class can steal a medics uni, if g_classChange is 
+            set to 1, and receive the medic benefits while retaining their 
+            current weapons, including akimbos and SMG
+	<dt>64
+	<dd>Medics can use syringes to heal living teammates as an alternative
+	    to the tk/revive cycle.
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_medicHealthRegen"></a>
+<dt>g_medicHealthRegen [integer]
+<dd>
+<p>The rate at which medics regenerate health (in HP per second).  This rate is divided
+into two parts:  The first is from 1 to 110-125 HP (depending on the number of
+medics per team), and then above that.  The system default is 3/2 (3 HP per second,
+then 2 HP per second).</p>
+<p>Possible values are:</p>
+	<dl>
+	<dt>0
+	<dd>3/2
+	<dt>1
+	<dd>2/2
+	<dt>2
+	<dd>2/1
+	<dt>3
+	<dd>2/0
+	<dt>4
+	<dd>1/1
+	<dt>5
+	<dd>1/0
+	<dt>6
+	<dd>0/0 (no health regeneration)
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_coverts"></a>
+<dt>g_coverts [bitmask]
+<dd>
+<p>Bitmask to control various aspects of the Covert Op class.
+Currently supported flags include:</p>
+	<dl>
+	<dt>1
+	<dd>Level 4 Coverts have more accurate scoped weapons.
+	<dt>2
+	<dd>Disguised coverts can only be identified with the
+        "crosshair name" by level 4 Field Ops.
+	(requires etpub_client >= 20051016)
+	<dt>4
+	<dd>After detonating a satchel charge, the primary weapon will
+	be selected instead of satchel again.
+	(requires etpub_client >= 20051016)
+	<dt>8
+	<dd>Coverts in disguise take half the normal combat damage.
+	<dt>16
+	<dd>Coverts in disguise take no splash damage.
+	<dt>32
+	<dd>Coverts do not automatically lose their uniform if an enemy sees
+            them firing a weapon.
+	<dt>64
+	<dd>Coverts do not automatically lose their uniform if they fire a
+            non-silent weapon.
+	<dt>128
+	<dd>Coverts do not automatically lose their uniforms if they attach
+            to an emplaced MG weapon.  Note that this flag has nothing to do
+            with firing.  (etpub_client 20051030 required for proper client
+            side prediction).
+	</dl>
+<p>Default is 0</p>
+
+<dt>g_truePing [0|1]
+<dd>
+<p>Allows players to see the true amount of time it takes until their
+actions are processed on the server. Pings will show around 50 ms higher
+than normal, but it's more accurate. Shows in the scoreboard.</p>
+<p>Default is 0</p>
+
+<dt>g_dropObj [integer]
+<dd>
+Sets the number of times a player can drop/toss the objective
+(e.g. parts on radar) per life.<br><br>
+The parts are dropped by pressing the +activate key
+(usually bound to F) when there's nothing else around to be
+activated.
+<br><br>
+Before enabling this recall how spammy the voiceovers can be.
+Then picture a player tossing the parts to himself over and
+over again.  For this reason you probably don't want to set
+this very high.
+<br><br>
+Starting in 0.4.4 players must switch to knife in order to drop the
+objective.  If they are not holding knife and hit +activate they will
+see a message that notifies them that they must switch to knife.  This
+change was made to prevent accidental dropping of the objective when
+trying to push, drag, pick up, or activate something else.
+<br><br>
+Default is 0.
+
+<dt>g_doubleJumpHeight [float]
+<dd>Adjusts the height of the second jump in a double jump.  This value is a
+multiplier to the default jump velocity.  The greater g_doubleJumpHeight is,
+the greater the height of the second jump.  This setting has no effect if
+double jump is disabled in g_misc.  The default value of 1.4 matches shrub's
+double jump.
+
+<a name="skill_soldier"></a>
+<a name="skill_medic"></a>
+<a name="skill_engineer"></a>
+<a name="skill_fieldops"></a>
+<a name="skill_covertops"></a>
+<a name="skill_battlesense"></a>
+<a name="skill_lightweapons"></a>
+<dt>skill_soldier [string]<br>
+skill_medic [string]<br>
+skill_engineer [string]<br>
+skill_fieldops [string]<br>
+skill_covertops [string]<br>
+skill_battlesense [string]<br>
+skill_lightweapons [string]
+<dd>
+<p>
+These variables allow customization of the experience points necessary to go
+up in ranks.  These settings consist of four space-separated integers
+indicating the number of XP required to go up a rank.  A string such as
+"3 10 10 10" indicates that 3 points are required to go up the first rank,
+and the next three ranks are granted when the players has 10 points.  If, for
+example, you want to grant akimbo pistols upon the first kill, you would set
+skill_lightweapons to "3 3 3 3".  The default for each of these variables is
+"20 50 90 140"
+</p>
+
+<dt>g_serverInfo [integer]
+<dd>
+Use this cvar to change the behaviour of the 'serverinfo' string.  This string
+is printed in response to the 'getstatus' primative command used by
+game browsers.  This is a bitflag cvar that currently accepts the
+following flags:
+	<dl>
+	<dt>1
+	<dd>
+	Display player team information using the 'P' cvar in the server info
+	string. (etpro and etmain 2.60 behaviour)
+	<dt>2
+	<dd>
+	Display player team information using the 'Players_Axis' and
+	'Players_Allies' cvars in the server info string.
+	(etmain < 2.60 behaviour)
+	<dt>4
+	<dd>
+	Display the 'campaign_maps' cvar in the server info string.  This
+	contains a comma delimited list off all the maps in the current
+	campaign.  Only works if you have g_gametype set to 4.
+	<dt>8
+	<dd>
+	Displays the 'C' CVAR in the server info string.  This is a string
+	containing the current map number in the campaign, and total maps in
+	current campaign, in the form of &quot;xx,yy&quot;.  Only works if
+	you have g_gametype set to 4.
+	<dt>16
+	<dd>
+	Starting with 0.5.1, the class charge times will not be present
+	in the server info string unless this flag is set.   They were
+	removed by default in order to make room in the serverInfo string
+	for more useful information.
+	These cvars are g_medicChargeTime, g_engineerChargeTime,
+	g_LTChargeTime, g_covertopChargeTime, g_soldierChargeTime.
+	</dl>
+<p>
+NOTE: <b>this cvar MUST be set prior to loading the first map.</b>  You
+will not be able to change this cvar once the game code is loaded.
+</p>
+
+<p>
+NOTE: the serverInfo string has a fixed length of 1024 characters.  This
+space is shared with any cvar you create on your server with the 'sets'
+command.  If you use up too much space with 'sets', your server will
+fail to start.  It will print the message
+&quot;Info string length exceeded&quot; if you don't have enough space left
+in your serverinfo string to handle the g_serverInfo flags you've selected.
+To fix this, either remove some sets cvars from your config, or use
+different g_serverInfo flags.
+<p>
+Default is 1.
+</p>
+
+<a name="g_killRating"></a>
+<dt>g_killRating [integer]
+<dd>
+g_killRating is a bitflag variable.
+<br><br>
+When not set to 0 etpub will track a player's killing ability using an
+<a href="http://en.wikipedia.org/wiki/ELO_rating_system">ELO type statistic</a>
+similar to chess. Each kill will increase a player's kill rating
+based on how hard the kill was. Killing unskilled players will result in very
+few points whereas an unskilled player killing a skilled player will result in
+more points. Kill rating also takes into account the weapon used (less for
+arty, more for knife).
+<br><br>
+Here are the bitflag options:
+	<dl>
+	<dt>1
+	<dd>Use kill rating. A dummy flag since any non-zero value for g_killRating
+	    will enable it.
+	<dt>2
+	<dd>Make kill rating visible. Players can use /killrating and at the end of
+	    each map a message will display the top killers for the map and
+	    overall.
+	</dl>
+<p>
+NOTE: in 0.5.x there was a 4 flag that allowed killRating to be used for
+shuffle.  This has been depriciated.  This is now controlled through the
+<a href="#g_shuffle_rating">g_shuffle_rating</a> cvar.
+</p>
+<p>
+See also <a href="#g_ATB_rating">g_ATB_rating</a>.
+</p>
+<p>
+See also <a href="#g_shuffle_rating">g_shuffle_rating</a>.
+</p>
+
+<p>
+Default is 3.
+</p>
+
+<a name="g_playerRating"></a>
+<dt>g_playerRating [integer]
+<dd>
+g_playerRating is a bitflag variable.
+<br><br>
+When not set to 0 etpub will track a player's ability to win against good teams
+using an <a href="http://en.wikipedia.org/wiki/ELO_rating_system">
+ELO type statistic</a> similar to chess. Each win will increase a player's
+rating based on how hard the opposing team was. Skilled teams defeating less
+skilled teams will result in very few points whereas an relatively low-
+rated team defeating a good team will result in more points. Player rating also
+takes into account the number of players on each team (less points when a very
+large defeats a small one) and which side tends to win more often on the
+current map (e.g. Allies tend to win tc_base).
+<br><br>
+Here are the bitflag options:
+	<dl>
+	<dt>1
+	<dd>Use player rating. A dummy flag since any non-zero value for g_playerRating
+	    will enable it.
+	<dt>2
+	<dd>Make player rating visible. Players can use /playerrating and at the end of
+	    each map a message will display the top player.
+	</dl>
+<p>
+See also <a href="#g_ATB_rating">g_ATB_rating</a>.
+</p>
+<p>
+See also <a href="#g_shuffle_rating">g_shuffle_rating</a>.
+</p>
+<p>
+See also <a href="#g_teamForceBalance_playerrating">g_teamForceBalance_playerrating</a>.
+</p>
+<p>
+Default is 3.
+</p>
+
+<a name="g_playerRating_minplayers"></a>
+<dt>g_playerRating_minplayers [integer]
+<dd>
+<p>
+The minimum number of players that must participate in a map in order for it
+to count towards each player's player rating.
+</p>
+<p>Default is 8 (e.g. 4v4)
+</p>
+
+<a name="g_teamForceBalance_playerrating"></a>
+<dt>g_teamForceBalance_playerrating [0..100]
+<dd>
+<p>
+Set to 0 to disable.  <i>If this setting is enabled, it overrides g_teamForceBalance.</i>
+If g_teamForceBalance_playerrating is non-zero, etpub will
+not allow players to join a team whose chances of winning are already above
+g_teamForceBalance_playerrating. The winning chance is calculated using 3 things:
+the average player rating of the team, the number of players on each team, and
+how often each team wins the current map (e.g. Allies usually win tc_base). If
+the team being joined rates too highly, a message will tell the player to join
+the other team.
+<br><br>
+Important Notes:
+<br>
+First of all, g_teamForceBalance_playerrating WILL allow unbalanced numbers to
+offset map or team difficulty. If the Axis has VERY good players, it will allow
+the Allies to have a few more players than Axis, given a map that is equally
+difficult for both sides to win. Also, given teams equal in skill,
+g_teamForceBalance_playerrating will force Allies to have a large team if the
+map is almost always won by Axis.
+<br><br>
+Because g_teamForceBalance_playerrating uses info tracked over time, it may be
+best to run through your cycle or campaign a few times without it before turning
+it on, so that it can learn how good the players are, and how hard the maps are.
+<br><br>
+If you want an idea why it's working a certain way, use the !listteams command
+server console (or game). This will show you how many points each team is
+predicted to win. If a team is going to win less than 4 points, it's too good.
+The other information shows you the breakdown of how the points are calculated.
+<br>
+<pre>
+Ratings       Win Prob       Win Points
+---------------------------------------------
+Allies          0.65            5
+Axis            0.35           10
+</pre>
+The above says that Axis has a 35% chance of winning based on the players and
+map. It takes into account the number of players per team also. The points
+are calculated as 16*(1 - win prob). So there you have it.
+<br><br>
+Remember, g_teamForceBalance_playerrating is contantly adapting, so if it seems
+dumb at first, give it some time to adapt to your server. Maybe don't turn it on
+for the first week.
+</p>
+<p>
+See also <a href="#listteams">!listteams</a>.
+</p>
+<p>
+See also <a href="#g_ATB">g_ATB</a>.
+</p>
+<p>Recommended Setting when used: 60
+</p>
+<p>Default is 0.
+</p>
+
+<dt>g_stats [integer]
+<dd>
+This is a bitflag cvar used to control the way statistics are handled.
+The following flags are supported:
+	<dl>
+	<dt>1
+	<dd>When shooting a corpse to gib, do not count it as a hit.
+	<dt>2
+	<dd>When shooting a corpse to gib, do not count it as a shot.
+	</dl>
+<p>Set this to 3 to use the behaviour of etmain and shrubet.</p>
+<p>Default is 0</p>
+
+<a name="g_tyranny"></a>
+<dt>g_tyranny [0|1]
+<dd>
+<p>
+This cvar controls the use of administrator commands that could
+be used by admins to cheat or abuse players.  If it is set to
+0 you will not be able to use commands on your server such as !gib,
+!slap, !burn, etc.
+</p>
+<p>
+Also, you will not be able to use g_logOptions flag 256 (log private
+messages) unless g_tyranny is enabled.
+</p>
+<p>
+g_tyranny must also be enabled in order to specify a client in
+using the 'playsound' server command.
+</p>
+<p>
+'g_tyranny' and its value appear in the serverInfo string to serve
+as a warning for perspective players.
+</p>
+<p>
+<b>NOTE:</b> If you enable this, you MUST do so immediately when the server
+	starts (before the first map is loaded).  This means putting
+	<pre>set g_tyranny 1 </pre> in the .cfg file that is exec'ed on
+	server start.  If you try to change this on a running server,
+	you will get the message <pre>g_tyranny is read only.</pre>
+
+</p>
+<p>
+Default is 0
+</p>
+<dt>g_mapScriptDirectory [string]
+<dd>
+<p>
+Similar to ETPro's b_mapscriptsdirectory.  Set it to the name of a
+directory in your fs_path that contains custom map scripts.
+</p>
+<p>
+For example you can copy the 'etpromapscripts' directory from the
+ETPro distribution to your 'etpub' directory and add: <pre>
+set g_mapScriptDirectory "etpromapscripts"</pre> to your cfg.
+</p>
+<p>
+Setting this to &quot;&quot; disables it.
+</p>
+<p>
+Default is &quot;&quot;
+</p>
+
+
+<dt>g_campaignFile [string]
+<dd>
+<p>Similar to ETPro's b_campaignFile.  If you set this to the name
+of a file in your fs_path it will be interpreted as a .campaign
+script and all other .campaign scripts in your pk3 files will be
+ignored.
+</p>
+<p>
+This is useful for making custom campaigns since you don't need to
+offer a pk3 file containing a custom .campaign script for all clients
+to download.  However, if the client has not downloaded this .campaign
+file in a pk3, they will not see information about the campaign.
+Such information includes:
+	<ul>
+	<li>will not display in the VOTE -> MAP list
+	<li>map locations will not draw on the map of Europe.
+	<li>campaign description will not draw in the right panel
+	<li>total number of maps and current maps order in the campaign
+            will not be shown in the intermission screens.
+	</ul>
+</p>
+<p>
+Also, even though the built-in campaigns cmpgn_centraleurope and
+cmpgn_northafrica will not be valid, they will still appear in the
+client's VOTE -> MAP menu.  If a vote for one of them passes, nothing
+will happen.
+</p>
+<p>
+Setting this to &quot;&quot; disables it.
+</p>
+<p>
+Default is &quot;&quot;
+</p>
+
+<dt>
+vote_allow_surrender [1|0]<br>
+vote_allow_nextcampaign [1|0]<br>
+vote_allow_restartcampaign [1|0]<br>
+vote_allow_poll [1|0]<br>
+vote_allow_maprestart [1|0]<br>
+vote_allow_shufflenorestart [1|0]
+<dd>
+<p>
+Cvars that restrict the rights of players to use the respective
+/callvote command.
+</p>
+<p>
+Default is 1 (allowed)
+</p>
+
+<a name="g_fear"></a>
+<dt>g_fear [integer]
+<dd>
+<p>
+If a player uses the /kill command within g_fear milliseconds after
+taking damage from an enemy, the attacker that last damaged that player
+will recieve full credit for the kill and the mode of death will be
+recorded as MOD_FEAR.  Other restrictions are that the attacker must be
+on the opposite team and the attacker must still be alive.
+</p>
+
+<p>
+In-game statistics will reflect that the death
+was caused by the weapon that did the last recorded damage to the player.
+</p>
+
+<p>
+Set this to 0 to disable this behaviour.
+</p>
+
+<p>
+Default is 2000 (2 seconds)
+</p>
+
+<a name="g_msgs"></a>
+<dt>g_msgs [integer]
+<dd>
+<p>
+The duration, in seconds, between messages displayed to all users.  Set
+messages by setting the g_msg1, g_msg2, g_msg3 . . . g_msgX cvars. These
+must be set consecutively, the first blank or missing number in the order
+will cycle the message back to the first message
+</p>
+
+<p>
+Set this to 0 to disable this behavior
+</p>
+
+<p>
+Default is 0 (disabled)
+</p>
+
+<a name="g_msgpos"></a>
+<dt>g_msgpos [integer]
+<dd>
+<p>The locations of messages, if g_msgs is non-zero, and g_msgX variables are set</p>
+	<dl>
+	<dt>0
+	<dd>Chat area
+	<dt>1
+	<dd>Center of screen
+	<dt>2
+	<dd>Left notification area
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_obituary"></a>
+<dt>g_obituary [integer]
+<dd>
+<p>
+This cvar controls how player Obituaries are handled.  Obituarys are the
+messages normally printed in the cpm space with a skull next to them to
+notify all players of another player's death.
+</p>
+
+<p>Available options are:
+	<dl>
+	<dt>0
+	<dd>Obituaries are disabled.
+
+	<dt>1
+	<dd>All Obituaries will ALWAYS be handled by the client with
+	the EV_OBITUARY event.  Since the etmain client does not know
+	about some etpub MODs (e.g. MOD_GOOMBA) the default message
+	will be printed for those deaths.
+
+	<dt>2
+	<dd>Only those Obituaries that the etmain client knows how to handle
+	will be handled by the client.  If someone is killed by a MOD that
+	the etmain client doesn't know about, the Obituary is generated by the
+	server.
+
+	<dt>3
+	<dd>All Obituaries are handled by the server and the EV_OBITUARY event
+	is never sent to the client.  This results in
+	&quot;Instant Obituaries&quot;.  This comes at the cost of increased
+	network bandwidth and absence of the skull icon in the obituaries.
+	(when using this option, you can use
+	<a href="obituaries.html">Custom Obituaries</a> starting with
+	0.6.1)
+	</dl>
+</p>
+
+<p>
+See also <a href="#g_logOptions">g_logOptions</a>.
+</p>
+
+<p>
+Default is 2
+</p>
+
+<a name="g_minAirstrikeTime"></a>
+<dt>g_minAirstrikeTime [integer]
+<dd>The time (in seconds) that must elapse between airstrikes PER TEAM.
+<p>Default is 10</p>
+
+<a name="g_minArtyTime"></a>
+<dt>g_minArtyTime [integer]
+<dd>The time (in seconds) that must elapse between airtillery strikes PER TEAM.
+Attempts to do airstrike before the timeout will get "Insuffient fire
+support" message.
+<p>Default is 10</p>
+
+<a name="g_throwableKnives"></a>
+<dt>g_throwableKnives [integer]
+<dd><p>Number of knives player starts with.  Set to zero to disable.
+Player throws a knife with the /throwknife command.  Use the /knives
+command to see how many knives you have left.</p>
+<p>Requires etpub_client >= 20050927 or /weapons/knife.weap in a pk3 file
+downloaded to the client</p>
+<p>Default is 0</p>
+
+<a name="g_maxKnives"></a>
+<dt>g_maxKnives [integer]
+<dd>Maximum number of knives a player can pick up
+<p>Default it 5</p>
+
+<a name="g_knifeDamage"></a>
+<dt>g_knifeDamage [integer]
+<dd>Maximum amount of damage a thrown knife will cause to enemy.
+Actual amount of damage is random.
+<p>Default is 35</p>
+
+<dt>g_throwKnifeWait [integer]
+<dd>How many seconds a player must wait between knife throws
+<p>Default is 2</p>
+
+<a name="g_constructibleXPSharing"></a>
+<dt>g_constructibleXPSharing [1|0]
+<dd>When multiple engineers help build a constructible, each gets his share of XP
+once the constructible is build.  The share of gainex XP is proportional to
+how much the engineer built.
+<p>Default is 0</p>
+
+<a name="g_asblock"></a>
+<dt>g_asblock [integer]
+<dd>Airstrike blocking.
+<p>Available options are:
+	<dl>
+	<dt>1
+	<dd>Make an announcement whenever an airstrike is blocked.
+
+	<dt>2
+	<dd>A player may easily block an airstrike by crouching, standing, or proning over the
+		enemy's canister to block the airstrike.
+
+	<dt>4
+	<dd>Reserved.
+
+	<dt>8
+	<dd>Lvl 3 FieldOPs and higher cannot have the airstrikes blocked by players.
+	</dl>
+
+</p>
+<p>Default is 0</p>
+
+<a name="g_partyPanzersEnabled"></a>
+<dt>g_partyPanzersEnabled [0|1]
+<dd>
+<p>Set to 1 to enable party panzers.</p>
+<p>Default is 0</p>
+
+<a name="g_partyPanzersPattern"></a>
+<dt>g_partyPanzersPattern [string]
+<dd>
+<p>The pattern of the drawn panzers.  This is a string of &quot;bits&quot; that represents where  the
+panzers shots are aimed.  The default value of &quot;10001;01010;00100;01010;10001&quot; means there
+are five rows of panzers fired (rows are separated by the semicolon (;) character), and an X pattern 
+is drawn as &quot;1&quot; represents a panzer and &quot;0&quot; represents a space without a panzer.</p>
+<p>There is no limit to the number of panzers that can be shot, although too many panzers will cause
+extreme lag on the server.</p>
+<p>Default is &quot;10001;01010;00100;01010;10001&quot;</p>
+
+<a name="g_partyPanzersDamageMode"></a>
+<dt>g_partyPanzersDamageMode [integer]
+<dd>
+<p>Damage caused by the party panzers.</p>
+<p>Available options are:
+	<dl>
+	<dt>0
+	<dd>No damage.
+
+	<dt>1
+	<dd>Normal damage.  Each panzer does normal damage (see g_dmgPanzer).
+
+	<dt>2
+	<dd>Proportional.  Each panzer does damage proportional to the number fired panzers.
+		For example, if your pattern has 10 panzers, then each panzer will do 1/10 the damage
+		that a normal panzer shot does (see g_dmgPanzer).
+	</dl>
+</p>
+<p>Default is 2</p>
+
+<a name="g_panzersVulnerable"></a>
+<dt>g_panzersVulnerable [0|1]
+<dd>
+<p>If set to 1, panzers that are shot in mid-air will explode.  If party panzers are on,
+nearby panzers will explode as well due to splash damage.</p>
+<p>Default is 0</p>
+
+<a name="g_panzersSpeed"></a>
+<dt>g_panzersSpeed [integer]
+<dd>
+<p>Speed of the panzers (Applies to normal and party panzers).  Normal panzer speed is 2500.</p>
+<p>Default is 2500</p>
+
+<a name="g_panzersGravity"></a>
+<dt>g_panzersGravity [integer]
+<dd>
+<p>If set to 1, panzer trajectory will be affected by gravity (Applies to normal and
+party panzers).</p>
+<p>Default is 0</p>
+
+<a name="g_realHead"></a>
+<dt>g_realHead [0|1]
+<dd>Head Box Positions
+<p>Available options are:
+	<dl>
+	<dt>0
+	<dd>Regular headbox positions.
+
+	<dt>1
+	<dd>Server tracks the animations so the headbox will match the playermodels exactly. This is the recommended value.
+	</dl>
+</p>
+<p>
+This code was originally from ETPro (b_realhead).  It was contributed by zinx
+and added to etpub by forty. 
+</p>
+<p>Default is 1</p>
+
+
+<a name="g_dyno"></a>
+<dt>g_dyno [bitmask]
+<dd>Dynamite Behaviour
+<p>Available options are:
+	<dl>
+	<dt>1
+	<dd>Sudden Death Dynamites enabled. If there is 30 seconds or less on the clock and dynamite is planted on an objective, the clock will continue to run past zero. The match will not end until the dynamite either explodes, or is disarmed. You are not allowed to plant additional dynamite during sudden death. 
+
+	<dt>2
+	<dd>Dynamite chaining enabled. Dynamite will cause other similar dynamites to explode when exploding. Dynamites not planted on an objective will blow any other dynamite not on an objective. Dynamite planted on an objective will only blow dynamite on the same objective.
+	</dl>
+</p>
+<p>Default is 0</p>
+
+<a name="g_canisterKick"></a>
+<dt>g_canisterKick [integer]
+<dd>Canister and grenade kicking.
+<p>
+Allows players to kick smoke, and air strike canisters, along with grendaes. The integer adjust the amount of force put behind the kick. 75 is a good value, anything below 60 is about useless, and above about 125 is probably too much.
+</p>
+<p>Default is 0</p>
+
+
+<a name="g_killingSpree"></a>
+<dt>g_killingSpree [integer]
+<dd>
+<p>
+This is the number of consecutive kills or deaths a player must accumulate
+before a spree message is printed. 
+<p>
+For example, if g_killingspree 5 is set, a player will receive kill spree or death messages at 5, 10, 15, 20, etc, in a row.
+</p>
+<p>
+If <a href="#g_misc">g_misc</a> flag 8 is set, a top 3 three killing spree 
+message will print every minute, and a map best killing spree will print
+every two minutes.
+</p>
+<p>Set this to 0 to disable spree messages</p>
+<p>Default is 0</p>
+
+<a name="g_killingSpreePos"></a>
+<dt>g_killingSpreePos [integer]  
+<dd>
+<p>Controls the location of killing spree messages on the client</p>
+<p>Available options are:</p>
+	<dl>
+
+	<dt>0
+	<dd>Display messages in chat area
+
+	<dt>1
+	<dd>Display messages in center display area
+
+	<dt>2
+	<dd>Display messages in left-center display area
+
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_killingSpreeMsg_end"></a>
+<dt>g_killingSpreeMsg_end [string]  
+<dd>
+<p>
+The string used to draw the end-of-spree message.
+<p>
+[n] will be replaced by the name of the player
+<p>
+[k] will be replaced by the number of kills at the end of the spree
+<p>
+[a] will be replaced by the name of the attacking player that ended the spree.
+<p>
+Default is "[n]^8's killing spree came to an end after ^7[k] ^8kills."
+
+
+<a name="g_killingSpreeMsg_tk"></a>
+<dt>g_killingSpreeMsg_tk [string]  
+<dd>
+<p>
+The string used to draw the end-of-spree message due to teamkill.
+<p>
+[n] will be replaced by the name of the player
+<p>
+[k] will be replaced by the number of kills at the end of the spree
+<p>
+[a] will be replaced by the name of the attacking player that ended the spree.
+<p>
+Default is [n]^8's killing spree was stopped by a ^1TEAMKILL^8 after ^7[k] ^8kills!"
+
+
+<a name="g_killingSpreeMsg_futility"></a>
+<dt>g_killingSpreeMsg_futility [string]  
+<dd>
+<p>
+The string used to draw the message indicating an anti-kill spree.
+<p>
+[n] will be replaced by the name of the player
+<p>
+[d] will be replaced by the number of deaths so far.
+<p>
+Default is "[n] ^8seems to be having a bad day... ^7[d] ^8deaths without a kill!"
+
+
+<a name="g_killingSpreeMsg_default"></a>
+<dt>g_killingSpreeMsg_default [string]  
+<dd>
+<p>
+The default string used to draw a message indicating an
+ongoing kill spree
+<p>
+[n] will be replaced by the name of the player
+<p>
+[k] will be replaced by the number of kills so far.
+<p>
+Default is "[n] ^8is on a killing spree ^7[k] ^8kills without a death!"
+
+<a name="g_killingSpreeMsg_X"></a>
+<dt>g_killingSpreeMsg_X [string]  
+<dd>
+<p>The string used in place of g_killingSpreeMsg_default for an ongoing
+killing spree of multiple X.</p>
+<p>[n] will be replaced by the name of the player</p>
+<p>[k] will be replaced by the number of kills so far.</p>
+<p>Some examples:</p>
+<p><pre>
+set g_killingSpreeMsg_1 "[n] ^8is on a killing spree! ^7[k] ^8kills without a death!"
+set g_killingSpreeMsg_2 "[n] ^8is a killing machine! ^7[k] ^8kills without a death!"
+set g_killingSpreeMsg_3 "[n] ^8is on a rampage! ^7[k] ^8kills without a death!"
+set g_killingSpreeMsg_4 "[n] ^8is dominating! ^7[k] ^8kills without a death!"
+set g_killingSpreeMsg_5 "[n] ^8is invincible! ^7[k] ^8kills without a death!"
+</pre></p>
+<p>Default is to use g_killingSpreeMsg_default</p>
+
+<a name="g_dmgKnife"></a>
+<dt>g_dmgKnife [integer]
+<dd>
+<p>Amount of damage done by the knife.</p>
+<p>Default is 10</p>
+
+<a name="g_dmgSten"></a>
+<dt>g_dmgSten [integer]
+<dd>
+<p>Amount of damage done by the sten.</p>
+<p>Default is 14</p>
+
+<a name="g_dmgFG42"></a>
+<dt>g_dmgFG42 [integer]
+<dd>
+<p>Amount of damage done by the FG-42</p>
+<p>Default is 15</p>
+
+<a name="g_dmgPistol"></a>
+<dt>g_dmgPistol [integer]
+<dd>
+<p>Amount of damage done by by pistol weapons</p>
+<p>Default is 18</p>
+
+<a name="g_dmgSMG"></a>
+<dt>g_dmgSMG [integer]
+<dd>
+<p>Amount of damage done by the SMG weapoins (MP40 and Thompson).</p>
+<p>Default is 18</p>
+
+<a name="g_dmgMG42"></a>
+<dt>g_dmgMG42 [integer]
+<dd>
+<p>Amount of damage done by the MG42.</p>
+<p>Default is 18</p>
+
+<a name="g_dmgMG"></a>
+<dt>g_dmgMG [integer]
+<dd>
+<p>Amount of damage done by an emplaced MG.</p>
+<p>Default is 20</p>
+
+<a name="g_dmgFG42Scope"></a>
+<dt>g_dmgFG42Scope [integer]
+<dd>
+<p>Amount of damage done by the FG-42 when scoped.</p>
+<p>Default is 30</p>
+
+<a name="g_dmgInfRifle"></a>
+<dt>g_dmgInfRifle [integer]
+<dd>
+<p>Amount of damage done by unscoped rifles (K43 and Garand).</p>
+<p>Default is 34</p>
+
+<a name="g_dmgSniper"></a>
+<dt>g_dmgSniper [integer]
+<dd>
+<p>Amount of damage done by a scoped Garand or K43.</p>
+<p>Default is 50</p>
+
+<a name="g_dmgFlamer"></a>
+<dt>g_dmgFlamer [integer]
+<dd>
+<p>Amount of damage done, per tick, by a flamethrower.</p>
+<p>Also controls the per-tick damage done to a player who has been set on fire
+by a flamethrower and is still burning.</p>
+<p>Default is 5</p>
+
+<a name="g_dmgGrenade"></a>
+<dt>g_dmgGrenade [integer]
+<dd>
+<p>Amount of damage done by a grenade</p>
+<p>Default is 250</p>
+
+<a name="g_dmgGrenadeRadius"></a>
+<dt>g_dmgGrenadeRadius [integer]
+<dd>
+<p>Blast radius of a grenade</p>
+<p>Default is 250</p>
+
+<a name="g_dmgGLauncher"></a>
+<dt>g_dmgGLauncher [integer]
+<dd>
+<p>Amount of damage done by an engineer's grenade-launcher grenades</p>
+<p>Default is 250</p>
+
+<a name="g_dmgGLauncherRadius"></a>
+<dt>g_dmgGLauncherRadius [integer]
+<dd>
+<p>Blast radius of an engineer's grenade-launcher grenades</p>
+<p>Default is 250</p>
+
+<a name="g_dmgLandmine"></a>
+<dt>g_dmgLandmine [integer]
+<dd>
+<p>Amount of damage done by a landmine</p>
+<p>Default is 250</p>
+
+<a name="g_dmgLandmineRadius"></a>
+<dt>g_dmgLandmineRadius [integer]
+<dd>
+<p>Blast radius of a landmine</p>
+<p>Default is 250</p>
+
+<a name="g_dmgSatchel"></a>
+<dt>g_dmgSatchel [integer]
+<dd>
+<p>Amount of damage done by a satchel</p>
+<p>Default is 250</p>
+
+<a name="g_dmgSatchelRadius"></a>
+<dt>g_dmgSatchelRadius [integer]
+<dd>
+<p>Blast radius of a satchel</p>
+<p>Default is 250</p>
+
+<a name="g_dmgPanzer"></a>
+<dt>g_dmgPanzer [integer]
+<dd>
+<p>Amount of damage done by a panzerfaust rocket</p>
+<p>Default is 400</p>
+
+<a name="g_dmgPanzerRadius"></a>
+<dt>g_dmgPanzerRadius [integer]
+<dd>
+<p>Blast radius of a panzerfaust rocket</p>
+<p>Default is 300</p>
+
+<a name="g_dmgMortar"></a>
+<dt>g_dmgMortar [integer]
+<dd>
+<p>Amount of damage done by a mortar round</p>
+<p>Default is 400</p>
+
+<a name="g_dmgMortarRadius"></a>
+<dt>g_dmgMortarRadius [integer]
+<dd>
+<p>Blast radius of a mortar round</p>
+<p>Default is 400</p>
+
+<a name="g_dmgDynamite"></a>
+<dt>g_dmgDynamite [integer]
+<dd>
+<p>Amount of damage done by dynamite</p>
+<p>Default is 400</p>
+
+<a name="g_dmgDynamiteRadius"></a>
+<dt>g_dmgDynamiteRadius [integer]
+<dd>
+<p>Blast radius of dynamite</p>
+<p>Default is 400</p>
+
+<a name="g_dmgAir"></a>
+<dt>g_dmgAir [integer]
+<dd>
+<p>Amount of damage done PER BOMB by an airstrike</p>
+<p>Default is 400</p>
+
+<a name="g_dmgAirRadius"></a>
+<dt>g_dmgAirRadius [integer]
+<dd>
+<p>Blast Radius PER BOMB of an airstrike</p>
+<p>Default is 400</p>
+
+<a name="g_dmgArty"></a>
+<dt>g_dmgArty [integer]
+<dd>
+<p>Amount of damage done PER BOMB by Artillery fire</p>
+<p>Note: if this value is non-zero, the spotting round
+will follow normal ET behavior (can do damage, but to a
+(VERY small radius, making damage unlikely)</p>
+<p>Default is 400</p>
+
+<a name="g_dmgArtyRadius"></a>
+<dt>g_dmgArtyRadius [integer]
+<dd>
+<p>Blast Radius PER BOMB of Artillery fire</p>
+<p>Note: if this value is non-zero, the spotting round
+will follow normal ET behavior (can do damage, but to a
+(VERY small radius, making damage unlikely)</p>
+<p>Default is 400</p>
+
+<a name="g_dmg"></a>
+<dt>g_dmg [bitmask]</dt>
+<dd>
+<p>Enables experimental advanced combat options</p>
+<p>Available options are:</p>
+	<dl>
+
+	<dt>0
+	<dd>Use traditional ET settings for combat.
+
+	<dt>1
+	<dd>Use Advanced Hit Locations: Differentiates between Head,
+		Body, Arm, and Leg shot when computing damage
+
+	<dt>2
+	<dd>Applies a more realistic damage vs. range equation for
+		short-ranged weapons. This will reduce the effectiveness
+		of these weapons at longer ranges.
+
+	<dt>4
+	<dd>Gives a damage bonus to short-range weapons when used in
+		close combat situations.  This will increase the
+		effectiveness of these weapons at closer ranges.
+
+	<dt>8
+	<dd>Use bullet fall-off approximations when computing shot trajectory.
+
+	<dt>16
+	<dd>Improve accuracy of non-scoped single-shot rifles  
+
+	<dt>32
+	<dd>Use alternate bullet-spread characteristics for   
+		automatic or rapid-fire weapons.  
+	
+	<dt>64
+	<dd>Damage from players who are spectators or have disconnected   
+		is ignored, and XP is not awarded.  
+
+	</dl>
+<p>Default is 0</p>
+
+<a name="g_dmgHeadShotMin"></a>
+<dt>g_dmgHeadShotMin [Integer]
+<dd>
+<p>This represents the minimum damage done by a headshot  
+regardless of the weapon used to make the shot.</p>
+<p>Headshots that would do damage below this value will be  
+adjusted upward to equal g_dmgHeadshotMin.</p>
+<p>Headshots from a weapon with damage at or above this value   
+will do a multiple of their damage, as specified by g_dmgHeadShotRatio.</p>
+<p>(The actual damage may undergo additional modification  
+due to range and other conditions)</p>
+<p>Default is 50</p>
+
+<a name="g_dmgHeadShotRatio"></a>
+<dt>g_dmgHeadShotRatio [float]
+<dd>
+<p>This specifies the multiplier used for headshots that do
+damage ABOVE g_dmgHeadShotMin.</p>
+<p>Default is 2.0</p>
+
+<a name="g_reflectFriendlyFire"></a>
+<dt>g_reflectFriendlyFire [float]  
+<dd>
+<p>Similar to Shrub's g_friendlyfire 2 cvar.</p>  
+<p>A multiplier value that determines how much friendly-fire damage,   
+if any, is reflected back to the player that caused the damage.  
+This setting is independent of g_friendlyfire, so damage can be   
+set to reflect on both FF and non-FF servers.</p>
+<p>A value of 1.0 would reflect full damage.<br />
+A value of 0.5 would reflect half damage.<br />
+Set to 0 to disable reflected friendly fire.</p>
+<p>Default is 0</p>
+
+<a name="g_reflectFFWeapons"></a>
+<dt>g_reflectFFWeapons [bitmask]
+<dd>
+<p>Selects which category of weapon will reflect when g_reflectFriendlyFire
+is non-zero.</p>
+<p><b>Note:</b> Setting this value to zero will override any multiplier
+set via g_reflectFriendlyFire, effectively disabling reflecting damage.</p>
+<p>Available options are:</p>
+	<dl>
+	<dt>1
+	<dd>Enable reflected damage for Firearms (all types of guns)
+	<dt>2
+	<dd>Enable reflected damage for Grenades and grenade launchers
+	<dt>4
+	<dd>Enable reflected damage for Knives (includes thrown knives)
+	<dt>8
+	<dd>Enable reflected damage for Panzers
+	<dt>16
+	<dd>Enable reflected damage for Flamethrowers
+	<dt>32
+	<dd>Enable reflected damage for Mortars
+	<dt>64
+	<dd>Enable reflected damage for Satchel Charges
+	<dt>128
+	<dd>Enable reflected damage for Artillery and Air Strikes
+	<dt>256
+	<dd>Enable reflected damage for Dynamite and Construction Damage
+	<dt>512
+	<dd>Enable reflected damage for Landmines
+	</dl>
+<p>Default is 31 (Firearms + Grenades + Knives + Panzers + Flamers)</p>
+
+<a name="g_friendlyFireOpts"></a>
+<dt>g_friendlyFireOpts [bitmask]
+<dd>
+<p>Allows greater control over friendly fire events.</p>
+<p>Available options are:</p>
+	<dl>
+	<dt>1
+	<dd>Landmines ALWAYS damage teammates regardless of g_friendlyfire setting
+	<dt>2
+	<dd>Allow 'grenade boosting' when friendly fire is off
+	<dt>4
+	<dd>Non-engineer players do not trigger landmines on their own team
+	</dl>
+<p>Default is 0</p>
+
+<a name="team_maxMedics"></a>
+<a name="team_maxEngineers"></a>
+<a name="team_maxFieldOps"></a>
+<a name="team_maxCovertOps"></a>
+<dt>team_maxMedics [string]<br />
+team_maxEngineers [string]<br />
+team_maxFieldOps [string]<br />
+team_maxCovertOps [string]</dt>
+<dd>
+<p>Restricts the number of players that can play a specific class / team.
+You can either set it to a whole number to set a hard limit, or you can set
+it to a percentage value using the % symbol to limit based on the number of 
+players on the team. When using percentage values, any partial values are 
+rounded <strong>up</strong></p>
+<p><strong>Example:</strong><em>set team_maxMedics "5"</em>  This will limit
+each team to 5 medics, regardless of how many players are on the team</p>
+<p><strong>Example:</strong><em>set team_maxMedics "15%"</em>This will limit
+each team to having only 15% of their players medics.</p>
+<p>Set this to -1 to disable limits</p>
+<p>Default is -1</p>
+</dd>
+
+<a name="g_staminaRecharge"></a>
+<dt>g_staminaRecharge [float]
+<dd>
+<p>Multiplies the rate at which stamina is rebuilt. Setting this
+value to zero will cause players to not regain any stamina once it is used
+except through the use of adrenalin.
+Setting this value is recommended only if you have etpub client versions
+20050927 or later.</p>
+<p>Default is 1.0</p>
+
+<a name="g_shortcuts"></a>
+<dt>g_shortcuts [0|1]
+<dd>
+<p>
+Turns on the replacement of the following keys in say messages
+
+<dl>
+<dt>[a]
+<dd>last player who gave you ammo
+<dt>[d]
+<dd>last player who killed you
+<dt>[h]
+<dd>last player who gave you health
+<dt>[k]
+<dd>last player you killed
+<dt>[l]
+<dd>your location (letter,number)
+<dt>[n]
+<dd>your name
+<dt>[r]
+<dd>last player who revived you
+<dt>[p]
+<dd>last player you looked at
+<dt>[s]
+<dd>health remaining
+<dt>[w]
+<dd>name of current weapon
+<dt>[t]
+<dd>ammo for current weapon
+</dl>
+
+</p>
+<p>Default is 0</p>
+
+</dl>
+<hr>
+
+<a name="statistics"></a><h3>Statistics / Rankings Terms</h3>
+<p>There are several settings in ETPub that attempt to determine how "good" a player is
+in terms (hopefully) more meaningful than just XP or XP per unit of time.  Here are the
+terms used and their definitions:</p>
+
+<dl>
+<dt>Kill Rating
+<dd><p>How good of a killer the player is, based on how many other players the player kills,
+and their kill rating.  In other words, killing players with a high kill rating increases
+the shooter's kill rating more than killing players with a low kill rating.</p>
+
+<dt>Player Rating
+<dd><p>This is a measure of how much the player contributes to winning a map.  This
+measure is calculated by seeing how many times this player is on the winning team after
+every map, and how good the opposing team was. Like kill rating, winning against teams with a high average player rating results in player rating increasing faster.</p>
+
+<dt>Win Probability
+<dd><p>The probability that a team will win a map (based on the players' player rating,
+team size, and the map).</p>
+
+</dl>
+
+<p>These statistics are gathered by etpub and the data is saved to local files on disk.</p>
+
+<p>The etpub development team member responsible for implementing these player rankings and
+ratings is Josh Menke.  He has been kind enough to begin working on an academic write-up
+to explain the mathematics and statistics methods behind these rankings.  Due to time
+constraints the document is being gradually updated and expanded. The latest version can
+be seen at:
+<a href="http://axon.cs.byu.edu/~josh/et.pdf">http://axon.cs.byu.edu/~josh/et.pdf</a></p>
+
+<p>If you cannot find the document at the above location, please visit
+<a href="http://etpub.org">http://etpub.org</a></p>
+
+<hr>
+<a name="consolecommands"></a><h3>Server Console Commands</h3>
+<p>The following server console commands (for use in the server console or
+through rcon) commands have been added in etpub:
+
+<dl>
+
+<dt>chat [message]
+<dd>
+<p>Display a message to all users in the chat area</p>
+
+<dt>chatclient [slot#|name] [message]
+<dd>
+<p>Display a message to a specific user in the chat area.  A partial name match can be
+used, and in this case the message will be sent to all users that match the partial name</p>
+
+<dt>clearxp
+<dd>
+<p>Clears the XP of all users</p>
+
+<dt>cp [message]
+<dd>
+<p>Display a message to all users in the center of the screen</p>
+
+<dt>cpmsay [message]
+<dd>
+<p>Display a message to all users in the popup message area of the screen</p>
+
+<dt>forcecvar [cvar] [value]
+<dd>
+<p>Forces a client cvar to have a certain value for all clients</p>
+
+<dt>m [slot#|name] [message]
+<dd>
+<p>Send a private message to a player. A partial name match can be used, and in
+this case the private message will be sent to all users that match the partial
+name</p>
+
+<dt>playsound [filename]
+<dd>
+<p>Plays the specified sound file.  All players hear the sound.</p>
+
+<dt>ratingsinfo
+<dd>
+<p> Returns the ratings points that would be granted to either team if they won the
+current map</p>
+
+<dt>readxp
+<dd>
+<p>(Requires that g_tyranny be enabled) Loads the XPSave
+file from disk.  There is no reason to call this function, etpub loads the XPSave
+file automatically as needed.</p>
+
+<dt>writexp
+<dd>
+<p>Commits the in-memory XPSave info to disk.  Normally,
+etpub does this automatically every time a map ends or the server is shut down.</p>
+
+</dl>
+
+<p>Additionally, all of the shrubbot commands can be used on the server console as well, the
+leading "!" is optional.</p>
+
+<hr>
+<a name="shrubbot"></a><h3>Shrubbot</h3>
+<p>
+shrubbot is an <a href="http://www.etstats.com/shrubet/index.php?ver=2&id=10">
+invention</a> of Ryan Mannion.  etpub tries to clone shubbot as accurately
+as possible, both in user interface and in the shrubbot configuration file
+(usually called "shrubbot.cfg").
+</p>
+
+Below are the shrubbot commands that etpub currently supports and the
+corresponding flag to be used in the shrubbot config file to give permission
+to the command:
+<dl>
+<dd>
+<table cellspacing=0 cellpadding=3 border=1>
+<tr>
+<td><b>COMMAND</b></td>
+<td><b>FLAG</b></td>
+<td><b><a href="#g_tyranny">g_tyranny</a></b></td>
+<td><b>USAGE</b></td>
+<td><b>DESCRIPTION</b></td>
+</tr>
+<tr><td>
+	!readconfig
+	</td><td>
+	G
+	</td><td>
+	-
+	</td><td>
+	!readconfig
+	</td><td>
+	read g_shrubbot file
+</td></tr>
+
+<tr><td>
+	!time
+	</td><td>
+	C
+	</td><td>
+	-
+	</td><td>
+	!time
+	</td><td>
+	prints out localtime of the server in global chat
+</td></tr>
+
+<tr><td>
+	!setlevel
+	</td><td>
+	s
+	</td><td>
+	-
+	</td><td nowrap>
+	!setlevel (NAME|SLOT) LEVEL
+	</td><td>
+	sets the connected player in slot number SLOT or with name
+	containing NAME to the level indicated by LEVEL.  A player cannot
+	!setlevel another player to a lever higher than him/herself.
+</td></tr>
+
+<tr><td>
+	!kick
+	</td><td>
+	k
+	</td><td>
+	-
+	</td><td>
+	!kick (NAME|SLOT) REASON
+	</td><td>
+	kicks the player in slot number SLOT or with name containing NAME off
+	off the server.  REASON is given to the client as the drop message.
+	The client will be banned for 2 minutes.
+</td></tr>
+
+<tr><td>
+	!ban
+	</td><td>
+	b
+	</td><td>
+	-
+	</td><td nowrap>
+	!ban (NAME|SLOT) SECONDS REASON
+	</td><td>
+	kicks the player in slot number SLOT or with name containing
+	NAME off the server and will not let them connect again for
+	SECONDS seconds.
+</td></tr>
+
+<tr><td>
+	!unban
+	</td><td>
+	b
+	</td><td>
+	-
+	</td><td>
+	!unban BAN_NUMBER
+	</td><td>
+	removes the ban that !showbans lists as BAN_NUMBER
+</td></tr>
+
+<tr><td>
+	!putteam
+	</td><td>
+	p
+	</td><td>
+	-
+	</td><td>
+	!putteam (NAME|SLOT) (r|b|s)
+	</td><td>
+	puts the player in slot number SLOT or with name containing NAME on
+	the indicated team.<br>
+	r - AXIS<br>
+	b - ALLIES<br>
+	s - SPECTATORS
+</td></tr>
+
+<tr><td>
+	!pause
+	</td><td>
+	Z
+	</td><td>
+	-
+	</td><td>
+	!pause
+	</td><td>
+	pauses the match
+</td></tr>
+
+<tr><td>
+	!unpause
+	</td><td>
+	Z
+	</td><td>
+	-
+	</td><td>
+	!unpause
+	</td><td>
+	unpauses the match
+</td></tr>
+
+<tr><td>
+	!listplayers
+	</td><td>
+	i
+	</td><td>
+	-
+	</td><td>
+	!listplayers
+	</td><td>
+	prints out a list of information about the connected players.  the
+	columns are:
+	<table border=1>
+	<tr><td>slot number</td></tr>
+	<tr><td>team R=axis B=allies S=spectator C=connecting</td></tr>
+	<tr><td>admin level</td></tr>
+	<tr><td>last 8 digits of guid</td></tr>
+	<tr><td>M if muted</td></tr>
+	<tr><td>first letter of fireteam name</td></tr>
+	<tr><td>name</td></tr>
+	<tr><td>stored name (if different)</td></tr>
+	</table>
+
+</td></tr>
+
+<tr><td>
+	!mute
+	</td><td>
+	m
+	</td><td>
+	-
+	</td><td>
+	!mute (NAME|SLOT)
+	</td><td>
+	mutes the player in slot number SLOT or with name containing NAME
+</td></tr>
+
+<tr><td>
+	!unmute
+	</td><td>
+	m
+	</td><td>
+	-
+	</td><td>
+	!unmute (NAME|SLOT)
+	</td><td>
+	unmutes the player in slot number SLOT or with name containing NAME
+</td></tr>
+
+<tr><td>
+	!showbans
+	</td><td>
+	B
+	</td><td>
+	-
+	</td><td>
+	!showbans [SKIP]
+	</td><td>
+	lists up to 30 shrubbot bans currently in effect.  columns are
+	<table border=1>
+	<tr><td>ban number</td></tr>
+	<tr><td>banned player's name</td></tr>
+	<tr><td>date of the ban</td></tr>
+	<tr><td>name of the banning admin</td></tr>
+	<tr><td>when the ban will expire</td></tr>
+	<tr><td>reason for the ban</td></tr>
+	</table>
+	If SKIP is provided, that number of bans are skipped before
+	printing starts.  SKIP can also be negative (e.g. '!showbans -10'
+	would display the last 10 bans.
+</td></tr>
+
+<tr><td>
+	!help
+	</td><td>
+	h
+	</td><td>
+	-
+	</td><td>
+	!help
+	</td><td>
+	lists all available shrubbot commands.
+</td></tr>
+
+<tr><td>
+	!admintest
+	</td><td>
+	a
+	</td><td>
+	-
+	</td><td>
+	!admintest
+	</td><td>
+	prints out player's current shrubbot admin level in global chat.
+</td></tr>
+
+<tr><td>
+	!cancelvote
+	</td><td>
+	c
+	</td><td>
+	-
+	</td><td>
+	!cancelvote
+	</td><td>
+	makes a vote in progress fail
+</td></tr>
+
+<tr><td>
+	!passvote
+	</td><td>
+	V
+	</td><td>
+	-
+	</td><td>
+	!passvote
+	</td><td>
+	makes a vote in progress pass
+</td></tr>
+
+<tr><td>
+	!spec999
+	</td><td>
+	P
+	</td><td>
+	-
+	</td><td>
+	!spec999
+	</td><td>
+	moves all players with ping of 999 to the spectators team.
+</td></tr>
+
+<tr><td>
+	!shuffle
+	</td><td>
+	S
+	</td><td>
+	-
+	</td><td>
+	!shuffle
+	</td><td>
+	shuffles teams, but does NOT restart (see !restart)
+</td></tr>
+
+<tr><td>
+	!rename
+	</td><td>
+	N
+	</td><td>
+	YES
+	</td><td>
+	!rename (NAME|SLOT) NEWNAME
+	</td><td>
+	sets the player in slot number SLOT or with name containing NAME
+	to NEWNAME.
+</td></tr>
+
+<tr><td>
+	!gib
+	</td><td>
+	g
+	</td><td>
+	YES
+	</td><td>
+	!gib (NAME|SLOT)
+	</td><td>
+	kills and gibs the player in slot number SLOT or with name containing
+	NAME
+</td></tr>
+
+<tr><td>
+	!slap
+	</td><td>
+	A
+	</td><td>
+	YES
+	</td><td nowrap>
+	!slap (NAME|SLOT) [DAMAGE] [REASON]
+	</td><td>
+	does DAMAGE (default 20) damage to player in slot SLOT or with name
+	containing NAME.  If REASON is specified it's center-printed to the
+	victim.
+</td></tr>
+
+<tr><td>
+	!burn
+	</td><td>
+	U
+	</td><td>
+	YES
+	</td><td>
+	!burn (NAME|SLOT) [REASON]
+	</td><td>
+	sets the player in slot number SLOT or with name containing NAME on
+	fire.  REASON will be center-printed to the victim.
+</td></tr>
+
+<tr><td>
+	!warn
+	</td><td>
+	R
+	</td><td>
+	-
+	</td><td>
+	!warn (NAME|SLOT) [WARNING]
+	</td><td>
+	plays the whistle sound and center-prints WARNING to the player
+	in slot number SLOT or with name containing NAME.
+</td></tr>
+
+<tr><td>
+	!news
+	</td><td>
+	W
+	</td><td>
+	-
+	</td><td>
+	!news
+	</td><td>
+	plays the map specific news audio to all players if it is available.
+</td></tr>
+
+<tr><td>
+	!lock
+	</td><td>
+	K
+	</td><td>
+	-
+	</td><td>
+	!lock (r|b|s|all)
+	</td><td>
+	locks the team specified.  recognized values are
+	r=AXIS b=ALLIES s=SPECTATORS all=ALL
+</td></tr>
+
+<tr><td>
+	!unlock
+	</td><td>
+	K
+	</td><td>
+	-
+	</td><td>
+	!unlock (r|b|s|all)
+	</td><td>
+	unlocks the team specified.  recognized values are
+	r=AXIS b=ALLIES s=SPECTATORS all=ALL
+</td></tr>
+
+<tr><td>
+	!lol
+	</td><td>
+	x
+	</td><td>
+	YES
+	</td><td>
+	!lol [NAME|SLOT] [GRENADES]
+	</td><td>
+	makes all players drop grenades.  If NAME or SLOT is provided only
+	that player will drop grenades.  GRENADES is the number of grenades
+	to be dropped (default is 1).
+</td></tr>
+
+<tr><td>
+	!restart
+	</td><td>
+	r
+	</td><td>
+	-
+	</td><td>
+	!restart
+	</td><td>
+	restarts the match
+</td></tr>
+
+<tr><td>
+	!reset
+	</td><td>
+	r
+	</td><td>
+	-
+	</td><td>
+	!reset
+	</td><td>
+	resets the match
+</td></tr>
+
+<tr><td>
+	!swap
+	</td><td>
+	w
+	</td><td>
+	-
+	</td><td>
+	!swap
+	</td><td>
+	swaps the players to the opposite team
+</td></tr>
+
+<tr><td>
+	!pip
+	</td><td>
+	z
+	</td><td>
+	YES
+	</td><td>
+	!pip [NAME|SLOT]
+	</td><td>
+	draws sparks (pixie dust) around the player in slot number SLOT or
+	with name containing NAME.  does it to all players if no NAME/SLOT
+	is not providied.
+</td></tr>
+
+<tr><td>
+	!pop
+	</td><td>
+	z
+	</td><td>
+	YES
+	</td><td>
+	!pop [NAME|SLOT]
+	</td><td>
+	pops the helmet off of player in slot number SLOT or with name
+	containing NAME.  If no paramter is provided it pops the helmets
+	off of all players.
+</td></tr>
+
+<tr><td>
+	!fling<br>
+	!launch<br>
+	!throw
+	</td><td>
+	l
+	</td><td>
+	YES
+	</td><td>
+	!fling (NAME|SLOT)
+	</td><td>
+	send the player in slot number SLOT or with name containing NAME
+	flying.
+</td></tr>
+
+<tr><td>
+	!flinga<br>!launcha<br>!throwa
+	</td><td>
+	L
+	</td><td>
+	YES
+	</td><td>
+	!flinga
+	</td><td>
+	sends all players flying
+</td></tr>
+
+<tr><td>
+	!listteams
+	</td><td>
+	I
+	</td><td>
+	-
+	</td><td>
+	!listteams
+	</td><td>
+	<a name="listteams"></a>
+	prints out a list of statistical information about each team.
+	This lists ends with ratings information based on how likely each
+	team is to win the current map. The team with more points is LESS
+	likely to win, therefore a good way to balance the teams is to join
+	the team with more points, or move people to that team, until the points
+	are about even.
+</td></tr>
+
+
+<tr><td>
+	!disorient
+	</td><td>
+	d
+	</td><td>
+	YES
+	</td><td>
+	!disorient (NAME|SLOT) [REASON]
+	</td><td>
+	turns the view upside down for the client in slot number SLOT
+	or with name containing NAME.  If REASON is specified it is
+	printed to the client.
+</td></tr>
+
+<tr><td>
+	!orient
+	</td><td>
+	d
+	</td><td>
+	YES
+	</td><td>
+	!orient (NAME|SLOT)
+	</td><td>
+	reverses the action of !disorient for the client in slot number
+	SLOT or with name containing NAME.
+</td></tr>
+
+<tr><td>
+	!resetxp
+	</td><td>
+	X
+	</td><td>
+	YES
+	</td><td>
+	!resetxp (NAME|SLOT) [REASON]
+	</td><td>
+	clears all XP and skillpoints for player in slot number SLOT or
+	with name containing NAME.  If reason is provided it is printed
+	to the client.
+</td></tr>
+
+<tr><td>
+	!nextmap
+	</td><td>
+	n
+	</td><td>
+	-
+	</td><td>
+	!nextmap
+	</td><td>
+	moves to the next map in campaign or in the objective cycle
+	end game intermission is skipped
+</td></tr>
+
+<tr><td>
+	!resetmyxp
+	</td><td>
+	M
+	</td><td>
+	-
+	</td><td>
+	!resetmyxp
+	</td><td>
+	clears all XP and skillpoints for the player who runs this command.
+</td></tr>
+
+</table>
+</dl>
+
+The following flags are also supported:
+<dl>
+<dt>1
+<dd>cannot be vote kicked, vote muted, dropped from inactivity, or
+        complained against.
+<dt>2
+<dd>cannot be censored
+<dt>3
+<dd>Can run commands silently with /!COMMAND in the console
+<dt>4
+<dd>Can see Axis/Allies team chats as a spectator
+<dt>5
+<dd>can switch teams any time, regardless of balance
+<dt>6
+<dd>does not need to specify a reason for !kick or !ban
+<dt>7
+<dd>Can call a vote at any time (regardless of disabled voting
+    or voting limitations)
+<dt>8
+<dd>does not need to specify a duration for a ban (defaults to PERMANENT)
+<dt>9
+<dd>Can do shrubbot commands via team and fireteam chats
+</dl>
+
+The following operators are supported in the flags field:
+<dl>
+<dt>*
+<dd>This means all available commands are allowed.  Any flags that
+    come after the * are negated.  So for example:
+<pre>
+[level]
+level   = 5
+name    =
+flags   = *xU
+</pre>
+would give level 5 admins all commands except !lol and !burn.
+<dt>-
+<dd>This subtracts the flags that follow it from the allowed flags.
+Example:
+<pre>
+[admin]
+name    = tjw
+guid    = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+level   = 5
+flags   = -bs
+</pre>
+would give tjw all of the commands a level 5 admin has except !ban
+and !setlevel.<br>
+NOTE: this operator is for admin flags only.
+
+<dt>+
+<dd>This is pretty useless since it is implied that any flags will be
+appended anyway unless they follow '-'.  Therefore, the only use for
+this operator is for use after the '-' operator.
+Example:
+<pre>
+[admin]
+name    = tjw
+guid    = XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+level   = 5
+flags   = -bs+U
+</pre>
+would give tjw all of the commands a level 5 user has except !ban and
+!setlevel, but he also gets the !burn command which typical level 5
+admins do not have.<br>
+NOTE: this operator is for admin flags only.
+</dl>
+
+<p>
+The configuration file itself is layed out in blocks serpated by blank lines.
+The three types of blocks supported are [level], [admin], and [ban].
+If you ever need to edit the shrubbot.cfg file by hand,  you need to run the
+!readconfig command (or restart etded) to load it.
+</p>
+
+<p>
+When setting up a new shrubbot.cfg file, simply set the g_shrubbot cvar to
+the name you want to use for the configuration file, then connect to the
+server with your et, and run the following command in the <b>server</b> console:
+<pre>!setlevel ETPlayer 5</pre>
+(where ETPlayer is your name).  This will create the shrubbot.cfg file with
+default levels and your guid set to level 5 admin (the highest default level).
+You can then edit the level definitions in this file to match your preferences
+and run the !readconfig command to load them up.
+</p>
+
+<hr>
+<a name="gen"><h3>General Changes</h3>
+<ul>
+<li>stats are not reset when a player changes teams
+<li>incorporated many of bani and rain's etpro weapon fixes that were
+    <a href="http://bani.anime.net/banimod/forums/viewtopic.php?t=4138">
+	published in the etpro forum</a>.
+<li>used bani's self-headshot when prone fix
+    <a href="http://bani.anime.net/banimod/forums/viewtopic.php?t=3475">
+	published in the etpro forum</a>.
+<li>used bani's oversize server command fix
+    <a href="http://bani.anime.net/banimod/forums/viewtopic.php?t=2706">
+	published in the etpro forum</a>.
+<li> you can no longer steal a uniform from a corpse that has sunk into the world.
+<li> On limited lives servers running dual objective maps, people that join after the timelimit runs out no longer get unlimited lives.
+<li>XP shuffle now sorts players by the rate at which they have been gaining XP instead of the total amount of XP they have.
+<li>ref commands work in the server console.
+<li>shooting breakables (like windows) doesn't count for 'hits' anymore, but shooting wounded players now does.
+<li>players are no longer allowed to pick up weapons if they wouldn't be allowed to switch to that weapon in the limbo menu.  (e.g. heavy weapon restrictions or the team_maxWEAPON cvars).
+<li>if the time has run out on a dual objective map on a limited lives server, the round will now end if one team runs out of lives even if the objective hasn't been completed.
+<li>On limited lives servers running dual objective maps, landmines can be
+diffused after the time runs out.
+<li><a href="http://et.tjw.org/etpub/hitboxes/">hitboxes</a> are more accurate for several player states. (see g_hitboxes)
+<li>if a match is paused and nobody unpauses it, it will start back up again after match_timeoutlength seconds.
+<li>on non-limited lives servers, players will no longer have a skull next to
+their name after they switch teams.
+<li>teams are no longer locked when the warmup countdown starts.
+<li>added cp, cpmsay, cpm, chatclient, m, and priv console commands.
+<li>akimbo weapons can be reloaded if only one shot has been fired.
+<li>when wounded, viewlock should no longer lock on to non-medic teamates.
+<li>when following a teammate, you stop following them if they switch to the
+    other team.
+<li>merged Chruker's bug fixes (<a href="http://games.chruker.dk/enemy_territory/modding_project_bugfix.php">Project: Bug Fix</a>)
+<li>ignore and unignore client commands will now accept slot number or
+    partial name match.
+<li>vsay* commands recognize the ignore list
+<li>clients are notified when you add/remove them from your ignore list
+<li>when ignoring another client their messages will be visible in the
+    console (~), but not chat.
+<li>voting for Competition Settings (/callvote comp) makes the server
+    try to &quot;exec default_comp.cfg&quot; instead of loading the
+    built-in competition settings.
+<li>voting for Public Settings (/callvote pub) makes the server try to
+    &quot;exec default_pub.cfg&quot; instead of loading the built-in pub
+    settings.
+<li>voting for Next Map (/callvote nextmap) now loads the next map in
+    the campaign instead of loading the next campaign.
+<li>added vote_allow_maprestart cvar to control the existing maprestart vote.
+    etmain client will still show the button in the menu even if it is
+    disabled though.
+<li>added <a href="obituaries.html">Custom Obituaries</a>. 
+</ul>
+
+</body>
+</html>
+

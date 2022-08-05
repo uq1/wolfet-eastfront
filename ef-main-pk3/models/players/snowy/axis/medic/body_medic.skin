@@ -1,0 +1,9 @@
+md3_back,		"models/players/snowy/axis/medic/acc/backpack.md3"
+md3_hat,		"models/players/snowy/axis/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+md3_beltl,		"models/players/snowy/axis/medic/acc/belt.md3"
+
+l_legs,			"models/players/snowy/axis/legs"
+u_body,			"models/players/snowy/axis/medic/body"
+u_rthand,		"models/players/snowy/axis/hand"
+u_lfthand,		"models/players/snowy/axis/hand"

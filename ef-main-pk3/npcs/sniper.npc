@@ -1,0 +1,8 @@
+{
+	class	PC_COVERTOPS
+	skill	4
+	weapon	WP_K43_SCOPE
+	patrol	false
+	mounted	false
+	hunter	false
+}

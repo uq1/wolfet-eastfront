@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>etpub client documentation</title>
+  <style type="text/css">
+dt {
+        font-weight: bold;
+}
+  </style>
+</head>
+<body>
+<h2>Client etpub</h2>
+<a href="#cvars">cvars</a><br>
+<a href="#cmds">commandes</a><br>
+<a href="#gen">modifications g&eacute;n&eacute;rales</a><br>
+<a name="cvars">
+<h3>cvars</h3>
+</a>
+<dl>
+  <dt>cg_drawTime [0|1|2]</dt>
+  <dd>Premet l'affichage de l'heure locale en dessous de l'affichage
+des FSP. &nbsp;Les valeurs possibles sont :<span
+ style="font-weight: bold;"></span></dd>
+</dl>
+<ul>
+  <li>0 - L'heure n'est pas affich&eacute;e</li>
+  <li>1 - L'heure est affich&eacute;e au format 24 heures</li>
+  <li>2 - L'heure est affich&eacute;e au format 12 heures suivi de am
+ou pm.</li>
+</ul>
+<dl>
+  <dt>cg_drawTimeSeconds [0|1]</dt>
+  <dd>Permet l'affichage des secondes dans l'heure. N'est utile que
+lorsque c_drawTime est &agrave; une valeur &gt; 0. les valeurs
+possibles sont</dd>
+</dl>
+<ul>
+  <li>0 - Les secondes ne sont pas affich&eacute;es</li>
+  <li>1 - Les secondes sont affich&eacute;es</li>
+</ul>
+<dl>
+  <span style="font-weight: bold;"></span><dt>cg_hud</dt>
+  <dd>Nom du hud courant qui sera loader au d&eacute;marrage suivant du
+jeu.</dd>
+  <dt></dt>
+  <dt>cg_panzerhack [0|1]</dt>
+  <dd>
+    <p>Place la SMG dans le bank 2 des armes (au lieu du 3&agrave;
+lorsque vous jouez en soldier ayant un niveau 4 dans le skill&nbsp;
+Heavy Weapons</p>
+    <p>La valeur par d&eacute;faut est 1</p>
+  </dd>
+</dl>
+<hr>
+<a name="cmds">
+<h3>Commandes</h3>
+</a>
+<dl>
+  <dt>loadhud</dt>
+  <dd>Utilis&eacute; pour charger un hud customiser d'un fichier .hud
+contenu dans un fichier pk3. Autorise aussi l'utilisation de "/loadhud
+blank" pour charger un hud vide, ou "/loadhud" pour charger le hud par
+d&eacute;faut d'ET. Lors du chargement&nbsp; d'un hud, celui par
+d&eacute;faut d'ET est charg&eacute;, puis les valeurs du hud
+charg&eacute; surchargent toutes les valeurs modifi&eacute;es. Donc si
+un &eacute;l&eacute;ment du HUD n'est pas sp&eacute;cifiquement
+modifi&eacute;/d&eacute;sactiv&eacute; dans le hud charg&eacute;, il
+appara&icirc;tra &agrave; la place qu'il occupe dans le hud par
+d&eacute;faut.</dd>
+  <dt>edithud</dt>
+  <dd>Utilis&eacute; pour &eacute;diter le hud&nbsp;en temps
+r&eacute;el. Peut aussi &ecirc;tre utilis&eacute; pour cr&eacute;er un
+script pour un&nbsp;hud afin que les admins du serveur n'est pas de
+fichier .hud &agrave; packager dans un .pk3.</dd>
+  <dd>
+    <p><strong>format:</strong> <em>/edithud
+nom-de-l-&eacute;l&eacute;ment [valeur1] [valeur2] . . . . [valeurX]</em></p>
+    <p>Les <em>nom-de-l-&eacute;l&eacute;ment</em> et <em>les
+(valeurs)</em> support&eacute;s sont: </p>
+    <ul>
+      <li>ammocount (x, y, taille du texte) </li>
+      <li>chargebar (x, y, largeur) </li>
+      <li>compass (x, y, taille) </li>
+      <li>upperright (y) </li>
+      <li>fireteam (x, y, largeur) </li>
+      <li>flagcov (x, y) </li>
+      <li>head (x, y, largeur, hauteur) </li>
+      <li>healthbar (x, y, largeur) </li>
+      <li>healthtext (x, y, taille du texte) </li>
+      <li>lagometer (x, y) </li>
+      <li>overheat (x, y, largeur, hauteur) </li>
+      <li>skillbox1 (x, y, taille) </li>
+      <li>skillbox2 (x, y, taille) </li>
+      <li>skillbox3 (x, y, taille) </li>
+      <li>skillpic1 (x, y, taille) </li>
+      <li>skillpic2 (x, y, taille) </li>
+      <li>skillpic3 (x, y, taille) </li>
+      <li>skilltext1 (x, y, taille du texte) </li>
+      <li>skilltext2 (x, y, taille du texte) </li>
+      <li>skilltext3 (x, y, taille du texte) </li>
+      <li>staminabar (x, y, largeur) </li>
+      <li>weaponcard (x, y, taille) </li>
+      <li>xptext (x, y, taille du texte) </li>
+      <li>cpmtext (x, y, taille du texte) </li>
+      <li>chattext (x, y, taille du texte) </li>
+      <li>votefttext (x, y) </li>
+      <li>livesleft (x, y) </li>
+    </ul>
+    <p></p>
+    <p>Tous les &eacute;l&eacute;ment sont inclus dans le hud original
+d'ET &agrave; l'exc&eacute;ption des skilltextX, qui repr&eacute;sent
+une forme textuelle des niveau d'XP (i.e. 0, 1, 2, 3, 4). Les
+&eacute;l&eacute;ments&nbsp;skill[box,pic,text] repr&eacute;sentent
+resp&eacute;ctivement 1 = Les attributs dans la classe
+s&eacute;lectionn&eacute;e, 2 = le battle sense, 3 = les light weapons.</p>
+  </dd>
+  <dd>
+    <p>Les tailles par d&eacute;faut des valeurs 'taille du texte" est
+de 25 dans le hud par d&eacute;faut d'ET.</p>
+    <p><em>upperright</em> repr&eacute;sente les affichage du compteur
+de spawn, temps de jeux, horloge, fps normalement affich&eacute;s sur
+la droite de l'&eacute;cran.</p>
+    <p>(x,y) sont bas&eacute;s sur une &eacute;chelle de 640x480
+quelque soit la r&eacute;solution courante de&nbsp;l'&eacute;cran. Donc
+(0,0) est le coin en faut &agrave; gauche, (640,480) le coin en bas
+&agrave; droite et (320,240) la position du viseur.</p>
+  </dd>
+  <dd>
+    <p><br>
+Pour ne pas afficher un &eacute;l&eacute;ment, mettez sa valeur ) -1.
+Actuellement le votefttext ne peut &ecirc;tre d&eacute;sactiv&eacute;.</p>
+  </dd>
+  <dd> </dd>
+  <dt>dumphud</dt>
+  <dd>Dump le hud courant dans un format pouvant &ecirc;tre mit dans un
+fichier .hud.</dd>
+</dl>
+<hr>
+<a name="gen">
+<h3>Modifications g&eacute;n&eacute;rales</h3>
+</a>
+<ul>
+  <li>Ajout d'une entr&eacute;e de menu pour etpub permettant de
+configurer les cvars cg_drawTime. </li>
+  <li>Int&egrave;gre beaucoup de corrections de Chruker (<a
+ href="http://games.chruker.dk/enemy_territory/modding_project_bugfix.php">"Project:
+Bug Fix"</a>). </li>
+  <li>Supporte des commandes forcecvar du serveur. </li>
+  <li>Utilise le code d'etpub pour le d&eacute;placement des joueurs
+afin d'am&eacute;liorer les pr&eacute;dictions sur les serveurs. </li>
+  <li>Si les scripts de map d'ETPro sont utilis&eacute;s, vous ne
+verrez pas le message&nbsp;
+"You are near the Back Door" &nbsp;dans battery &agrave; moins que vous
+l'utilisiez.
+(support de EF_FAKEBMODEL). </li>
+  <li>Lorsque vous utilisez la commande /playdead, le message indiquant
+que vous &ecirc;tes bless&eacute; &nbsp;et que vous attendez&nbsp; un
+medic n'est pas affich&eacute;. </li>
+  <li>Sur les serveurs utilisant les flag 2 ou 4 du cvar g_weapons, le
+son "pr&eacute;dit" lors de l'utilisation des pinces ou des seringues
+ne sera pas &eacute;mit si vous tentez de les utiliser sous l'eau. </li>
+  <li>Les commandes '+lookdown' et '+lookup' sont
+d&eacute;sactiv&eacute;es pour &eacute;viter les tricherie s des script
+r&eacute;duisant le recul des armes. </li>
+</ul>
+</body>
+</html>

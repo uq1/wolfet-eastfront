@@ -1,0 +1,190 @@
+models/weapons/grenade/impactTrailPS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync explode11 explode12 explode13 explode14 explode15 explode16 explode17 explode18 explode19 explode110 explode111 explode112 explode113 explode114 explode115 explode116 explode117 explode118 explode119 explode120 explode121 explode122 explode123
+
+      displacement 0 0 0 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 30
+      velocity          0 0 -1 ~0
+
+      radius 0 30.0 10.0
+      alpha  0 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0
+
+//      lifeTime 500
+lifeTime 1500
+    }
+
+    count 5
+    delay 0
+    period 40 - 0
+  }
+}
+
+models/weapons/grenade/impactPS_ORIGINAL
+{
+  ejector
+  {
+    particle
+    {
+      shader sync explode11 explode12 explode13 explode14 explode15 explode16 explode17 explode18 explode19 explode110 explode111 explode112 explode113 explode114 explode115 explode116 explode117 explode118 explode119 explode120 explode121 explode122 explode123
+
+      displacement 0 0 11 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 200~75%
+//      velocity          0 0 1 ~10
+      velocity          0 0 0 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 -1 0
+
+      radius 0 10.0 40.0
+      alpha  0 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0
+
+      lifeTime 500
+
+      childSystem models/weapons/grenade/impactTrailPS
+    }
+
+    count 5
+    delay 0
+    period 10 - ~0%
+  }
+
+  ejector
+  {
+    particle
+    {
+      shader sync gfx/grenade/flare_01
+
+      displacement 0 0 8 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 10~50%
+      velocity          0 0 1 ~60
+
+      radius 0 100.0 200.0
+      alpha  250 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0.0
+
+//      lifeTime 300
+      lifeTime 1300
+    }
+
+    count 1
+    delay 0
+    period 10 - ~0%
+  }
+
+  ejector
+  {
+    particle
+    {
+      shader sync gfx/sprites/spark
+
+      displacement 0 0 8 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 700~3%
+      velocity          0 0 1 ~180
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 800
+      acceleration          0 0 1 0
+
+      radius 0 10.0 2.0
+      alpha  0 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0
+
+//      lifeTime 300
+      lifeTime 1300
+    }
+
+    count 150
+    delay 0
+    period 0 - ~0%
+  }
+}
+
+models/weapons/grenade/impactPS
+{
+  ejector
+  {
+    particle
+    {
+      //shader sync gfx/grenade/flare_01
+      shader sync sparkFlareParticle
+
+      displacement 0 0 8 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 10~50%
+      velocity          0 0 1 ~60
+
+      radius 0 100.0 200.0
+      //alpha  250 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0.0
+
+//      lifeTime 300
+      lifeTime 1300
+    }
+
+    count 1
+    delay 0
+    period 10 - ~0%
+  }
+
+  ejector
+  {
+    particle
+    {
+      shader sync gfx/sprites/spark
+
+      displacement 0 0 8 ~0
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 700~3%
+      velocity          0 0 1 ~180
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 800
+      acceleration          0 0 1 0
+
+      radius 0 10.0 2.0
+      //radius 0 3.0 2.0
+      alpha  0 1.0 0.0
+      rotation 0 ~360 -
+      bounce 1
+
+//      lifeTime 300
+      lifeTime 1300
+    }
+
+    //count 150
+    count 250
+    delay 0
+    period 0 - ~0%
+  }
+}

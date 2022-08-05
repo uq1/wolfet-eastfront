@@ -1,0 +1,15 @@
+b3_sleeve,		"models/players/snowy/arms/arm_axis_medic"
+w_bleeve,		"models/players/snowy/arms/arm_axis_medic"
+sleeve_optimized_axis,	"models/players/snowy/arms/arm_axis_medic"
+w_bleeve01,		"models/players/snowy/arms/arm_axis_medic"
+b6_sleeve,		"models/players/snowy/arms/arm_axis_medic"
+
+b3_lhand,		"models/weapons2/mp40/hand16.tga"
+b3_hand,		"models/weapons2/mp40/hand16.tga"
+w_arm,			"models/weapons2/mp40/hand16.tga"
+b3_handr,		"models/weapons2/mp40/hand16.tga"
+w_hand,			"models/weapons2/mp40/hand16.tga"
+b3_fullfingers,		"models/weapons2/mp40/hand16.tga"
+
+w_colt,			"models/weapons2/colt/colt4"
+w_luger,		"models/weapons2/luger/luger7"

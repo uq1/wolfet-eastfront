@@ -1,0 +1,34 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "misc_control_point"
+origin "-57 2471 -16"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-1656 156 -55"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "903 455 46"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "1111 -2448 -4"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-3427 -3036 -2"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-613 -3977 -14"
+spawnflags "2"
+}

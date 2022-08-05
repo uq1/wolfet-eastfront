@@ -1,0 +1,67 @@
+Game_manager
+{
+
+spawn
+{
+	wm_camo_allies		"snowy"
+	wm_camo_axis		"snowy"
+
+	// Game rules
+	wm_axis_respawntime	15
+	wm_allied_respawntime	14
+	wm_set_round_timelimit	30
+
+	setstate supplies invisible
+	setstate supplies_toi invisible
+	setstate supplies2 invisible
+	setstate supplies2_toi invisible
+	setstate barricade invisible
+	setstate barricade_toi invisible
+	setstate generator invisible
+	setstate generator_toi invisible
+		
+	// Stopwatch mode defending team (0=Axis, 1=Allies)
+	wm_set_defending_team	1
+
+	// Winner on expiration of round timer (0=Axis, 1=Allies -1=None)
+	wm_setwinner	-1
+}
+
+}
+
+supplies 	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	
+		wait 100
+  	  	remove
+  	} 	 
+} 	  	 
+ 	  	 
+supplies2	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+		wait 100
+  	  	remove
+  	} 	 
+} 	  	 
+ 	  	 
+barricade	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+		wait 100
+  	  	remove
+  	} 	 
+} 	  	 
+ 	  	 
+generator 	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+		wait 100
+  	  	remove
+  	} 	 
+} 	  	 
+ 	  	 

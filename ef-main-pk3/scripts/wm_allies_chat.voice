@@ -1,0 +1,577 @@
+////////////////////////////////////////
+// quickchat script for allied player //
+/// last edited by WOTHAN   07/05/03 ///
+////////////////////////////////////////
+
+male
+
+
+////////////////////////
+// wm_quickstatements //
+////////////////////////
+
+PathCleared
+{
+	sound/chat/allies/11a.wav	"Path Clear/HURRRA HURRRA."
+}
+
+EnemyWeak
+{
+	sound/chat/allies/12a.wav	"The enemy is weakened."
+}
+
+AllClear
+{
+	sound/chat/allies/13a.wav	"All secure."
+}
+
+Incoming
+{
+	sound/chat/allies/14a.wav	"Incoming!"
+	sound/chat/allies/14b.wav	"Incoming/AHHHHHHHHH!"
+}
+
+FireInTheHole
+{
+	sound/chat/allies/15b.wav	"Fire in the hole!"
+	sound/chat/allies/15c.wav	"Fire in the hole!"
+}
+
+OnDefense
+{
+	sound/chat/allies/16a.wav	"I'm on defense/Hold your positions."
+	sound/chat/allies/16b.wav	"Be quiet."
+	sound/chat/allies/16c.wav	"HOLD this position."
+}
+
+OnOffense
+{
+	sound/chat/allies/17a.wav	"On Offense/I will kill u Germanski."
+}
+
+TakingFire
+{
+	sound/chat/allies/18a.wav	"Regroup Taking fire/come!"
+}
+
+MinesCleared
+{
+	sound/chat/allies/19a.wav	"Mines Cleared/Russian insult."
+}
+
+EnemyDisguised
+{
+	sound/chat/allies/10a.wav	"stop stop tavarish???"
+	sound/chat/allies/10b.wav	"shutup stand to attention, u belong to the 9 team???."
+}
+
+
+//////////////////////
+// wm_quickrequests //
+//////////////////////
+
+Medic
+{
+	sound/chat/allies/21a.wav	"Need a Medic/Alert!"		sprites/voiceMedic
+	sound/chat/allies/21b.wav	"I need a Medic/Ahhh!"	        sprites/voiceMedic
+	sound/chat/allies/21c.wav	"Mama dont leave me!"        sprites/voiceMedic
+	sound/chat/allies/21d.wav	"MEDIC MEDIC!"                  sprites/voiceMedic
+}
+
+NeedAmmo
+{
+	sound/chat/allies/22a.wav	"I need ammo/Urgently!"		sprites/voiceAmmo
+	sound/chat/allies/22b.wav	"I need ammo/Urgently!"		sprites/voiceAmmo
+	sound/chat/allies/22c.wav	"I need ammo/AHHHHHHH!"		sprites/voiceAmmo
+	sound/chat/allies/22d.wav	"I need ammo!"		        sprites/voiceAmmo
+}
+
+NeedBackup
+{
+	sound/chat/allies/23a.wav	"Fallback!"
+}
+
+NeedEngineer
+{
+	sound/chat/allies/24a.wav	"We need an engineer/*******!"
+}
+
+CoverMe
+{
+	sound/chat/allies/25a.wav	"Fire mission!"
+	sound/chat/allies/25b.wav	"Covering fire!"
+}
+
+HoldFire
+{
+	sound/chat/allies/26a.wav	"TAVARICH!"
+	sound/chat/allies/26b.wav	"We are here to fight imperial facists!"
+	sound/chat/allies/26c.wav	"Suppress"
+}
+
+WhereTo
+{
+	sound/chat/allies/27b.wav	"Sqard stand up"
+}
+
+NeedOps
+{
+	sound/chat/allies/28a.wav	"No retreat...!"
+	sound/chat/allies/28b.wav	"We need Covert Ops!"
+	sound/chat/allies/28c.wav	"Hold position!"
+}
+
+
+//////////////////////
+// wm_quickcommands //
+//////////////////////
+
+FollowMe
+{
+	sound/chat/allies/31a.wav	"Attac Attac!"
+	sound/chat/allies/31b.wav	"Follow me!"
+	sound/chat/allies/31C.wav	"Follow me!!"
+	sound/chat/allies/31d.wav	"Follow me/AHHHHHHHH!"
+}
+
+LetsGo
+{
+	sound/chat/allies/32a.wav	"Move in!"
+	sound/chat/allies/32b.wav	"hurry up!"
+	sound/chat/allies/32c.wav	"Group attac right flank!"
+	sound/chat/allies/32d.wav	"Broken through!"
+	sound/chat/allies/32e.wav	"GO GO GO!"
+	sound/chat/allies/32f.wav	"Dawaj Dawaj!"
+	sound/chat/allies/32g.wav	"Comrades forward to attac!"
+}
+
+Move
+{
+	sound/chat/allies/33a.wav	"Move/Davai Davai!"
+	sound/chat/allies/33b.wav	"Move/Davai Davai!"
+	sound/chat/allies/33c.wav	"hurry up/Progronia!"
+	sound/chat/allies/33d.wav	"hurry up/Nasadogojod!"
+	sound/chat/allies/33e.wav	"Group attac left flank!"
+}
+
+ClearPath
+{
+	sound/chat/allies/34a.wav	"Clear the path!"
+	sound/chat/allies/34b.wav	"Clear the path!"
+}
+
+DefendObjective
+{
+	sound/chat/allies/35a.wav	"Lissen to me Lt. Hold the line as loong as u can. Moscava is on our side. This is an order!"
+	sound/chat/allies/35b.wav	"Defend our objective!"
+}
+
+DisarmDynamite
+{
+	sound/chat/allies/36a.wav	"Disarm the dynamite!"
+	sound/chat/allies/36b.wav	"stop what ur doing/Stoj jeje!"
+	sound/chat/allies/36c.wav	"stop/Stoj !"
+}
+
+ClearMines
+{
+	sound/chat/allies/37a.wav	"Clear the mines!"
+}
+
+ReinforceDefense
+{
+	sound/chat/allies/38a.wav	"Reinforce the defense!"
+	sound/chat/allies/38b.wav	"R e i n f o r c e!"
+	sound/chat/allies/38c.wav	"Regroup indefense!"
+}
+
+ReinforceOffense
+{
+	sound/chat/allies/39a.wav	"Need arty support!"
+	sound/chat/allies/39b.wav	"Reinforce the offense!"
+}
+
+
+//////////////////
+// wm_quickmisc //
+//////////////////
+
+Affirmative
+{
+	sound/chat/allies/41a.wav	"Affirmative/Da Tovarich!"
+	sound/chat/allies/41b.wav	"Affirmative/Da Tovarich!"
+	sound/chat/allies/41c.wav	"Affirmative/Da Tovarich!!"
+	sound/chat/allies/41d.wav	"On my way!!"
+}
+
+Negative
+{
+	sound/chat/allies/42a.wav	"No/Neit tovarich!"
+	sound/chat/allies/42b.wav	"No/Neit tovarich!"
+	sound/chat/allies/42c.wav	"Noooo/Neit!"
+	sound/chat/allies/42d.wav	"No/Neit tovarich!!"
+}
+
+Thanks
+{
+	sound/chat/allies/43a.wav	"Thanks/Spasiva!"
+	sound/chat/allies/43b.wav	"Thanks/Spasiva tavarich!"
+	sound/chat/allies/43c.wav	"Thank/Spasiva!"
+}
+
+Welcome
+{
+	sound/chat/allies/44c.wav	"No problem."
+}
+
+Sorry
+{
+	sound/chat/allies/45a.wav	"Sorry/Salets!"
+}
+
+Oops
+{
+	sound/chat/allies/46a.wav	"Oops!"
+	sound/chat/allies/46b.wav	"Oops!"
+	sound/chat/allies/46c.wav	"Oops!"
+}
+
+
+////////////////////
+// wm_quickglobal //
+////////////////////
+
+Hi
+{
+	sound/chat/allies/54a.wav	"Hi!"
+}
+
+Bye
+{
+	sound/chat/allies/55a.wav	"Bye/Dos viedanje."
+	sound/chat/allies/55b.wav	"Bye/Preshati."
+	sound/chat/allies/55c.wav	"Bye/Dos viedanje."
+}
+
+GreatShot
+{
+	sound/chat/allies/56a.wav	"Great shot!"
+}
+
+Cheer
+{
+	sound/chat/allies/57a.wav	"KILL all facist/Smerts facisti!"
+	sound/chat/allies/57b.wav	"Your crazy!"
+	sound/chat/allies/57c.wav	"Go home u been here to long!"
+	sound/chat/allies/57d.wav	"*****puchi sokas*****!"
+	sound/chat/allies/57e.wav	"*O h  my  G O D!"
+	sound/chat/allies/57f.wav	"Sneeze!"
+	sound/chat/allies/57g.wav	"KILL all facist/Smerts facisti!"
+	sound/chat/allies/57h.wav	"*****hm!"
+	sound/chat/allies/57i.wav	"HURRA HURRA HURRA!"
+	sound/chat/allies/57j.wav	"***** soka!"
+	sound/chat/allies/57k.wav	"Yaaannn!"
+	sound/chat/allies/57l.wav	"Yaaannnnn!"
+	sound/chat/allies/57m.wav	"Prrrrrt!"
+	sound/chat/allies/57n.wav	"I will kill u."
+	sound/chat/allies/57o.wav	"Russian insult."
+	sound/chat/allies/57p.wav	"Kill all the invaders."
+	sound/chat/allies/57q.wav	"Die you FRITZY."
+	sound/chat/allies/57r.wav	"FAcist da gadjona."
+	sound/chat/allies/57s.wav	"Comrades forward to attac AAAHHHHHH!"
+}
+
+/////////////////////
+// wm_quickglobal2 //
+/////////////////////
+
+GoodGame
+{
+	sound/chat/allies/586a.wav	"Good jobb!"
+}
+
+
+///////////////////////
+// wm_sayplayerclass //
+///////////////////////
+
+IamSoldier
+{
+	sound/chat/allies/61a.wav	"I'm a soldier."
+	sound/chat/allies/61b.wav	"I'm a soldier."
+}
+
+IamMedic
+{
+	sound/chat/allies/62a.wav	"I'm a medic."
+	sound/chat/allies/62b.wav	"I'm a medic."
+}
+
+IamEngineer
+{
+	sound/chat/allies/63a.wav	"I'm an engineer."
+	sound/chat/allies/63b.wav	"I'm an engineer."
+}
+
+IamFieldOps
+{
+	sound/chat/allies/64a.wav	"I'm a field ops."
+}
+
+IamCovertOps
+{
+	sound/chat/allies/65a.wav	"I'm a covert ops."
+}
+
+
+////////////////////
+// wm_quickattack //
+////////////////////
+
+DestroyPrimary
+{
+	sound/chat/allies/71a.wav	"Destroy primary objective!"
+	sound/chat/allies/71b.wav	"Destroy primary objective!"
+}
+
+DestroySecondary
+{
+	sound/chat/allies/72a.wav	"Who the hell are we!"
+	sound/chat/allies/72b.wav	"we are the Soviet armee!"
+}
+
+DestroyConstruction
+{
+	sound/chat/allies/73a.wav	"Destroy construction!"
+	sound/chat/allies/73b.wav	"Destroy construction!"
+}
+
+RepairVehicle
+{
+	sound/chat/allies/75a.wav	"Repair the vehicle!"
+	sound/chat/allies/75b.wav	"Repair the vehicle!"
+}
+
+DestroyVehicle
+{
+	sound/chat/allies/76a.wav	"Disable the vehicle!"
+	sound/chat/allies/76b.wav	"Disable the vehicle!"
+}
+
+EscortVehicle
+{
+	sound/chat/allies/77a.wav	"Escort the vehicle!"
+	sound/chat/allies/77b.wav	"Escort the vehicle!"
+}
+
+
+////////////////////////
+// wm_quickobjectives //
+////////////////////////
+
+CommandAcknowledged
+{
+	sound/chat/allies/81a.wav	"Idiot/Dorac!"
+	sound/chat/allies/81b.wav	"Drunk or not,keep your tongue. Think before talking!"
+	sound/chat/allies/81c.wav	"Right away!"
+	sound/chat/allies/81d.wav	"Right away!"
+}
+
+CommandDeclined
+{
+	sound/chat/allies/82a.wav	"Command declined!"
+	sound/chat/allies/82b.wav	"Command declined!"
+	sound/chat/allies/82c.wav	"No can do!"
+	sound/chat/allies/82d.wav	"No can do!"
+}
+
+CommandCompleted
+{
+	sound/chat/allies/83a.wav	"Command completed Commander!"
+	sound/chat/allies/83b.wav	"Command completed!"
+}
+
+ConstructionCommencing
+{
+	sound/chat/allies/84a.wav	"I'm constructing!"
+	sound/chat/allies/84b.wav	"I'm constructing!"
+}
+
+
+///////////////////////
+// wm_quickfireteams //
+///////////////////////
+
+FTAttack
+{
+	sound/chat/allies/98a.wav	"AHHHHHHHHHHHHHHH !"
+	sound/chat/allies/98b.wav	"M A C H I N G U N!"
+	sound/chat/allies/98c.wav	"Russian singing"
+}
+
+FTFallBack
+{
+	sound/chat/allies/99a.wav	"Fall back/Nasada qojod!"
+	sound/chat/allies/99b.wav	"Fall back/Pregrojmina!"
+	sound/chat/allies/99c.wav	"Cossack song"
+}
+
+
+//////////////////////////////
+// wm_quickfireteamssoldier //
+//////////////////////////////
+
+FTCoverMe
+{
+	sound/chat/allies/25c.wav	"Cover me!"
+	sound/chat/allies/25d.wav	"Cover me!"
+}
+
+FTCoveringFire
+{
+	sound/chat/allies/25a.wav	"Covering fire!"
+	sound/chat/allies/25b.wav	"Covering fire!"
+}
+
+FTMortar
+{
+	sound/chat/allies/911a.wav	"Deploy mortar!"
+	sound/chat/allies/911b.wav	"Deploy mortar!"
+}
+
+
+////////////////////////////
+// wm_quickfireteamsmedic //
+////////////////////////////
+
+FTHealSquad
+{
+	sound/chat/allies/921a.wav	"Heal the squad!"
+	sound/chat/allies/921b.wav	"Heal the squad!"
+}
+
+FTHealMe
+{
+	sound/chat/allies/922a.wav	"Here Here-Heal me!"			sprites/voiceMedic
+}
+
+FTReviveTeamMate
+{
+	sound/chat/allies/923a.wav	"Revive team mate!"
+	sound/chat/allies/923b.wav	"Revive team mate!"
+}
+
+FTReviveMe
+{
+	sound/chat/allies/924a.wav	"Revive me!"			sprites/voiceMedic
+	sound/chat/allies/924b.wav	"Revive me!"			sprites/voiceMedic
+}
+
+
+///////////////////////////////
+// wm_quickfireteamsengineer //
+///////////////////////////////
+
+FTDestroyObjective
+{
+	sound/chat/allies/931a.wav	"Destroy the objective!"
+	sound/chat/allies/931b.wav	"Destroy the objective!"
+}
+
+FTRepairObjective
+{
+	sound/chat/allies/932a.wav	"Repair objective!"
+	sound/chat/allies/932b.wav	"Repair objective!"
+}
+
+FTConstructObjective
+{
+	sound/chat/allies/933a.wav	"Construct objective!"
+	sound/chat/allies/933b.wav	"Construct objective!"
+}
+
+FTDisarmDynamite
+{
+	sound/chat/allies/36a.wav	"Disarm the dynamite!"
+	sound/chat/allies/36b.wav	"Disarm the dynamite!"
+}
+
+FTDeployLandmines
+{
+	sound/chat/allies/934a.wav	"Deploy landmines!"
+	sound/chat/allies/934b.wav	"Deploy landmines!"
+}
+
+FTDisarmLandmines
+{
+	sound/chat/allies/935a.wav	"Disarm landmines!"
+	sound/chat/allies/935b.wav	"Disarm landmines!"
+}
+
+
+///////////////////////////////
+// wm_quickfireteamsfieldops //
+///////////////////////////////
+
+FTCallAirStrike
+{
+	sound/chat/allies/941a.wav	"Call an airstrike!"
+	sound/chat/allies/941a.wav	"Call an airstrike!"
+}
+
+FTCallArtillery
+{
+	sound/chat/allies/942a.wav	"Call in artillery!"
+	sound/chat/allies/942b.wav	"Call in artillery!"
+}
+ 
+FTResupplySquad
+{
+	sound/chat/allies/944a.wav	"Resupply the squad!"
+	sound/chat/allies/944b.wav	"Resupply the squad!"
+}
+
+FTResupplyMe
+{
+	sound/chat/allies/945a.wav	"Resupply me!"			sprites/voiceAmmo
+	sound/chat/allies/945b.wav	"Resupply me!"			sprites/voiceAmmo
+}
+
+
+////////////////////////////////
+// wm_quickfireteamscovertops //
+////////////////////////////////
+
+FTExploreArea
+{
+	sound/chat/allies/951a.wav	"Explore the area!"
+	sound/chat/allies/951b.wav	"Explore the area!"
+}
+
+FTCheckLandmines
+{
+	sound/chat/allies/952a.wav	"Check for landmines/Stras vojtshe!"
+}
+
+FTSatchelObjective
+{
+	sound/chat/allies/931a.wav	"Destroy the objective!"
+	sound/chat/allies/931b.wav	"Destroy the objective!"
+}
+
+FTInfiltrate
+{
+	sound/chat/allies/953a.wav	"Infiltrate!"
+	sound/chat/allies/953b.wav	"Infiltrate!"
+}
+
+FTGoUndercover
+{
+	sound/chat/allies/954a.wav	"Go undercover!"
+}
+
+FTProvideSniperCover
+{
+	sound/chat/allies/955a.wav	"S n i p e r!"
+	sound/chat/allies/955b.wav	"We need a S n i p e r!"
+}

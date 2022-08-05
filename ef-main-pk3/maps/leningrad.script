@@ -1,0 +1,158 @@
+Game_manager
+{
+
+spawn
+{
+	wm_camo_allies		"snowy"
+	wm_camo_axis		"winter"
+	// Game rules
+	wm_axis_respawntime	15
+	wm_allied_respawntime	14
+	wm_set_round_timelimit	30
+		
+	// Stopwatch mode defending team (0=Axis, 1=Allies)
+	wm_set_defending_team	1
+
+	// Winner on expiration of round timer (0=Axis, 1=Allies -1=None)
+	wm_setwinner	1
+}
+
+trigger objective_counter
+{
+accum 1 inc 1
+trigger game_manager checkgame
+}
+
+trigger checkgame
+{
+accum 1 abort_if_not_equal 5
+wm_announce "The Axis have taken control of the city!"
+wm_setwinner 0
+wait 2500
+wm_endround
+}
+}
+
+supplies 	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+  	  	wait 300
+  	  	constructible_class 3
+  	} 	 
+  	death 	 
+  	{ 
+		alertentity Supply1_R
+			 
+  	  	trigger supplies_toi remove
+  	  	wm_announce "The Fascists have blazed our Frontline Supplies Room!Kill them!"
+  	  	trigger game_manager objective_counter
+  	} 	 
+} 	  	 
+ 	  	 
+supplies_toi 	  	 
+{ 	  	 
+  	trigger remove 	 
+  	{ 	 
+  	  	remove
+  	} 	 
+}
+
+supplies2	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+  	  	wait 300
+  	  	constructible_class 3
+  	} 	 
+  	death 	 
+  	{ 	
+		alertentity Supply2_R
+		 
+  	  	trigger supplies2_toi remove
+  	  	wm_announce "The Axis have blown up the Last Supply Room!"
+  	  	trigger game_manager objective_counter
+  	} 	 
+} 	  	 
+ 	  	 
+supplies2_toi 	  	 
+{ 	  	 
+  	trigger remove 	 
+  	{ 	 
+  	  	remove
+  	} 	 
+}
+
+tanks	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+  	  	wait 300
+  	  	constructible_class 3
+  	} 	 
+  	death 	 
+  	{ 	
+		alertentity Tank_R
+		 
+  	  	trigger tanks_toi remove
+  	  	wm_announce "The Nazis have destroyed our remaining petrol!Damnit!"
+  	  	trigger game_manager objective_counter
+  	} 	 
+} 	  	 
+ 	  	 
+tanks_toi 	  	 
+{ 	  	 
+  	trigger remove 	 
+  	{ 	 
+  	  	remove
+  	} 	 
+}
+
+barricade	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+  	  	wait 300
+  	  	constructible_class 3
+  	} 	 
+  	death 	 
+  	{ 	 
+  	  	trigger barricade_toi remove
+  	  	wm_announce "They have broken into the factory! Protect the Generator! Defend the ammo!"
+  	  	trigger game_manager objective_counter
+  	} 	 
+} 	  	 
+ 	  	 
+barricade_toi 	  	 
+{ 	  	 
+  	trigger remove 	 
+  	{ 	 
+  	  	remove
+  	} 	 
+}
+
+generator 	   	 
+{ 	  	 
+  	spawn 	 
+  	{ 	 
+  	  	wait 300
+  	  	constructible_class 3
+  	} 	 
+  	death 	 
+  	{ 
+		alertentity Generator_R
+			 
+  	  	trigger generator_toi remove
+  	  	wm_announce "The fascists have taken out our last power supply!They do not deserve to breath on Soviet Soil! Attack!!!"
+  	  	trigger game_manager objective_counter
+  	} 	 
+} 	  	 
+ 	  	 
+generator_toi 	  	 
+{ 	  	 
+  	trigger remove 	 
+  	{ 	 
+  	  	remove
+  	} 	 
+}
+

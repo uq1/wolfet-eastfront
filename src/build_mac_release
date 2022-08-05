@@ -1,0 +1,1 @@
+scons BUILD="release" BUILD_ROOT='mac_build'

@@ -1,0 +1,34 @@
+game_manager
+{
+	spawn
+	{
+		wait 100
+		wm_camo			"snowy" 
+		
+		 //game rules
+		 wait 100
+		 wm_axis_respawntime 15 //respawn time in minutes
+		 wm_allied_respawntime 15
+		 wm_set_round_timelimit 35 // how long it takes for the map end
+		
+		// Stopwatch mode defending team (0=Axis, 1=Allies)
+		wm_set_defending_team	0
+
+		// Winner on expiration of round timer (0=Axis, 1=Allies -1=None)
+		wm_setwinner	-1
+
+		setstate captured invisible
+		setstate flag_obj invisible
+		
+		wait 350
+	}
+}
+
+flag
+{
+	spawn
+	{
+		wait 400
+		remove
+	}
+}

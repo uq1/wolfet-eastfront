@@ -1,0 +1,108 @@
+models/weapons/mp40/muzzlePS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync smokepuff
+
+      displacement 0 0 0 ~16.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 30.0 30.0 140.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 200
+    }
+
+    count 1
+    delay 0
+    period 1 - ~0%
+
+  }
+}
+
+models/weapons/mp40/muzzlePS2
+{
+  ejector
+  {
+    particle
+    {
+      shader sync smokePuff
+
+      displacement 0 0 0 ~0.0
+
+      parentVelocityFraction 0.9
+
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 20
+      velocity          0 0 0 0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 0 10.0 40.0
+      //radius 0 2.0 4.0
+      alpha  0 0.4 0.0
+      rotation 0 ~360 -
+      bounce 0.0
+
+      lifeTime 2000
+    }
+    
+    count 1
+    delay 0
+    period 0 - ~0%
+  }
+}
+
+models/weapons/mp40/muzzlePSTEST
+{
+  ejector
+  {
+    particle
+    {
+      //shader sync poisonCloud
+	shader sync smokepuff
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 20 - ~0%
+  }
+}

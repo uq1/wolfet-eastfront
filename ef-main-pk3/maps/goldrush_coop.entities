@@ -1,0 +1,647 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "npc"
+origin "-2500 -87 40"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-2496 737 76"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-2372 725 76"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-2446 1490 205"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-1447 1485 226"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-992 1483 390"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-726 285 256"
+scriptName "medic"
+}
+{
+classname "npc"
+origin "-1200 40 192"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-1523 -618 112"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-1063 -778 96"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-1526 -1260 34"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-2282 -1126 120"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-2034 -921 4"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-2453 -574 12"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-1013 -1874 12"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-593 -1108 -101"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "60 -407 -127"
+scriptName "default"
+}
+{
+classname "npc"
+origin "712 -310 -159"
+scriptName "flamer"
+}
+{
+classname "npc"
+origin "1048 -843 -351"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1210 -829 -351"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1205 -1278 -351"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1065 -1303 -348"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "920 -1375 -255"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1116 -2112 -319"
+scriptName "default"
+}
+{
+classname "npc"
+origin "777 -2509 -343"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1208 -2375 -343"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1366 -2835 -351"
+scriptName "flamer"
+}
+{
+classname "npc"
+origin "1813 -2552 -348"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1938 -3057 -303"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "3113 -2545 -394"
+scriptName "default"
+}
+{
+classname "npc"
+origin "2841 -1954 -384"
+scriptName "default"
+}
+{
+classname "npc"
+origin "2263 -1878 -344"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1986 -1856 -343"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1533 -1660 -287"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1712 -1657 -287"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1633 -1080 -306"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1642 -164 -344"
+scriptName "default"
+}
+{
+classname "npc"
+origin "2007 255 -340"
+scriptName "flamer"
+}
+{
+classname "npc"
+origin "2223 1273 -255"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "1762 1197 -340"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "3075 1366 -361"
+scriptName "default"
+}
+{
+classname "npc"
+origin "2850 1277 -355"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "2750 196 -191"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1134 454 -31"
+scriptName "fieldops"
+}
+{
+classname "npc"
+origin "1148 -436 8"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "813 -181 8"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "327 -118 73"
+scriptName "flamer"
+}
+{
+classname "npc"
+origin "130 -132 75"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-145 -163 68"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-71 548 -63"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "190 348 94"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "646 1256 199"
+scriptName "default"
+}
+{
+classname "npc"
+origin "1046 2268 267"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "478 1755 308"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-723 2559 380"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-538 1410 369"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-205 1599 360"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-351 1281 360"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-930 1345 396"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-835 1891 384"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "-13 903 360"
+scriptName "mp42"
+}
+{
+classname "npc"
+origin "67 1249 347"
+scriptName "default"
+}
+{
+classname "npc"
+origin "-56 -1674 -147"
+scriptName "panzer"
+}
+{
+classname "npc"
+origin "2347 -1065 -343"
+scriptName "panzer"
+}
+{
+classname "npc"
+origin "2910 1538 -367"
+scriptName "panzer"
+}
+{
+classname "npc"
+origin "1134 2400 264"
+scriptName "panzer"
+}
+{
+classname "npc"
+origin "-2200 1876 226"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "-1040 2065 384"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "-1035 -1034 96"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "-1671 -754 21"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "764 -1641 -159"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "3195 -1595 -332"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "2247 691 -349"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "3087 140 -175"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "573 -376 64"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "-126 -254 288"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "806 -133 224"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "1172 123 224"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "1202 1851 259"
+scriptName "sniper"
+}
+{
+classname "npc"
+origin "-1700 -1752 156"
+scriptName "mounted"
+}
+{
+classname "npc"
+origin "735 -1789 -159"
+scriptName "mounted"
+}
+{
+classname "npc"
+origin "1932 1416 -159"
+scriptName "mounted"
+}
+{
+spawnflags "1"
+origin "1081 2254 263"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-239 1269 360"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-110 -272 288"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "740 -137 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "837 -139 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1175 -144 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1164 167 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "2104 1384 -193"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "3074 1149 -351"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1614 -1676 -287"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "748 -1632 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-1044 -1034 96"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-1666 -1868 156"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "532 -400 64"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "627 -407 64"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1433 643 -31"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-812 1749 384"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-552 924 360"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "828 -184 224"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1148 16 224"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "867 104 4"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1891 -235 -351"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1593 -1813 -287"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1603 -1451 -351"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-86 -959 -151"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-1176 -984 96"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-1176 -984 96"
+classname "bot_allied_defence_point"
+}
+{
+classname "misc_stealth_area"
+origin "-2509 1372 230"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-2413 625 38"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-1990 175 24"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-3329 468 -27"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-3233 -143 -29"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-3226 -278 -26"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-3626 -464 -19"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-1818 -597 14"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-1558 -1885 57"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "149 -1365 -141"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-978 2135 388"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-808 3067 408"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-480 3067 408"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "444 2421 343"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "1498 578 -339"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "1622 -1052 -307"
+radius "96"
+}
+{
+classname "misc_stealth_area"
+origin "1201 -1893 -335"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "1375 -894 -317"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-495 -994 -109"
+radius "32"
+}
+
+
+

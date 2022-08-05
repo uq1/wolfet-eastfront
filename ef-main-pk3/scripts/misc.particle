@@ -1,0 +1,385 @@
+firePS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync flamethrowerfire1 flamethrowerfire2 flamethrowerfire3 flamethrowerfire4 flamethrowerfire5 flamethrowerfire6 flamethrowerfire7 flamethrowerfire8 flamethrowerfire9
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 10.0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 5 - ~0%
+
+  }
+
+  ejector
+  {
+    particle
+    {
+      shader sync smokepuff smokepuffblack1 smokepuffblack2 smokepuffblack3 smokepuffblack4 smokepuffblack5
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 10.0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 3000
+    }
+
+    count infinite
+    delay 0
+    period 5 - ~0%
+
+  }
+}
+
+planeFlameTrailPS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync flamethrowerfire1 flamethrowerfire2 flamethrowerfire3 flamethrowerfire4 flamethrowerfire5
+
+      displacement 0 0 0 ~16.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 10.0 10.0 40.0
+      //radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 100
+    }
+
+    particle
+    {
+      shader sync smokepuff smokepuffblack1 smokepuffblack2
+
+      displacement 0 0 0 ~16.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 50.0 50.0 240.0
+      //radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 400
+    }
+
+    count infinite
+    delay 0
+    period 1 - ~0%
+
+  }
+}
+
+fire2PS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync flamethrowerfire1 flamethrowerfire2 flamethrowerfire3 flamethrowerfire4 flamethrowerfire5 smokepuff smokepuffblack1 smokepuffblack2
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 10.0 10.0 40.0
+      //radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 5 - ~0%
+
+  }
+}
+
+fire3PS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync flamethrowerfire1 flamethrowerfire2 flamethrowerfire3 flamethrowerfire4 flamethrowerfire5 smokepuff smokepuffblack1 smokepuffblack2
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 30.0 30.0 120.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 5 - ~0%
+
+  }
+}
+
+onfirePS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync entityonfire1
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 10.0 10.0 40.0
+      //radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 5 - ~0%
+
+  }
+}
+
+sparksPS
+{
+  ejector
+  {
+    particle
+    {
+      shader sync spurt
+
+      displacement 0 0 8 ~0
+      
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 350~75%
+      velocity          0 0 1 ~60
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 800
+      acceleration          0 0 -1 0
+
+      radius 0 4.0 2.0
+      alpha  0 1.0 0.0
+      rotation 0 ~360 -
+      bounce 0.4~100%
+
+      lifeTime 5000~100%
+    }
+
+    count infinite
+    delay 0
+    period 20 - ~0%
+//    period 0 - ~0%
+  }
+}
+
+smokepuffPS
+{
+  ejector
+  {
+    particle
+    {
+      //shader sync poisonCloud
+	shader sync smokepuff
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 20 - ~0%
+  }
+}
+
+smokepuffblackPS
+{
+  ejector
+  {
+    particle
+    {
+      //shader sync poisonCloud
+	shader sync smokepuffblack1 smokepuffblack2 smokepuffblack3 smokepuffblack4 smokepuffblack5
+
+      displacement 0 0 0 ~32.0
+
+      parentVelocityFraction  1.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 16
+      velocity          0 0 1 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 300
+      acceleration          0 0 1 0
+
+      radius 0 10.0 40.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 20 - ~0%
+  }
+}
+
+wilsflame1PS
+{
+  ejector
+  {
+    particle
+    {
+      //shader sync poisonCloud
+	shader sync textures/sfx/wilsflame1
+
+      displacement 0 0 0 ~0.0
+
+      parentVelocityFraction  0.0
+      velocityType      static
+      velocityDir       linear
+      velocityMagnitude 0
+      velocity          0 0 0 ~0
+
+      accelerationType      static
+      accelerationDir       linear
+      accelerationMagnitude 0
+      acceleration          0 0 0 0
+
+      radius 0 100.0 140.0
+      alpha  0 0.5 0.0
+      rotation 0 ~360 -
+      bounce 0.5
+
+      lifeTime 1000
+    }
+
+    count infinite
+    delay 0
+    period 20 - ~0%
+  }
+}
+

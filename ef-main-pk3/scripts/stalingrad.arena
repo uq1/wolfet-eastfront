@@ -1,0 +1,14 @@
+{
+	map			"Stalingrad"
+	longname		"^4[^3EF^4] ^5Stalingrad"
+	type			"wolfmp wolfsw supremacy supremacy_campaign wolfcoop wolfsp"
+	timelimit		20
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	briefing		"The Axis have taken control over large portions of the Russian city of Stalingrad. In order to re-take the city, the Allies must gain control of a small neighborhood on the southern side of the city.  This area is a key strategic position, from which the allies hope to launch further missions deeper into the city.  Aware of the importance of this area, the Axis have placed two tanks within this area, which must be destroyed in order for the allies to secure the area. The Axis must defend these tanks in order to maintain their hold on the city."
+	axiswintext		"The Axis have repelled the assault and maintained control of the city!"
+	alliedwintext		"The Allies are victorious!  The city of Stalingrad will be retaken with ease now that this key area has been secured."
+	mapposition_x	1000
+	mapposition_y	570
+}
+

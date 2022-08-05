@@ -1,0 +1,8 @@
+{
+	class	PC_SOLDIER
+	skill	2
+	weapon	WP_PANZERFAUST
+	patrol	false
+	mounted	false
+	hunter	false
+}

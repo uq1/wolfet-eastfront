@@ -1,0 +1,350 @@
+{
+classname "misc_noentity"
+origin "0 0 0"
+}
+{
+classname "npc_tank_light"
+origin "-2294 1533 166"
+spawnflags "1"
+}
+{
+classname "npc_tank_light"
+origin "-317 -1105 -181"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "-1994 1733 146"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "-452 2638 310"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-46 414 49"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-1993 -1294 -47"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "2929 1406 -433"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "2133 -2894 -420"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "-117 -1605 -221"
+spawnflags "2"
+}
+{
+spawnflags "1"
+origin "1081 2254 263"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-239 1269 360"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-110 -272 288"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "740 -137 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "837 -139 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1175 -144 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1164 167 224"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "2104 1384 -193"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "3074 1149 -351"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1614 -1676 -287"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "748 -1632 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-1044 -1034 96"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-1666 -1868 156"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "532 -400 64"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "627 -407 64"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "1433 643 -31"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "-812 1749 384"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-552 924 360"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "828 -184 224"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1148 16 224"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "867 104 4"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1891 -235 -351"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1593 -1813 -287"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "1603 -1451 -351"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-86 -959 -151"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-1176 -984 96"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "-1176 -984 96"
+classname "bot_allied_defence_point"
+}
+{
+classname "ammo_crate"
+origin "-1877 1565 154"
+radius "64"
+}
+{
+classname "health_crate"
+origin "-1941 2027 152"
+radius "64"
+angle "180"
+}
+{
+classname "ammo_crate"
+origin "-643 1533 310"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "20 2357 295"
+radius "64"
+angle "90"
+}
+{
+classname "ammo_crate"
+origin "281 154 14"
+radius "64"
+angle "90"
+}
+{
+classname "health_crate"
+origin "-5 121 39"
+radius "64"
+angle "270"
+}
+{
+classname "ammo_crate"
+origin "2985 1525 -434"
+radius "64"
+angle "90"
+}
+{
+classname "health_crate"
+origin "3200 1359 -427"
+radius "64"
+angle "90"
+}
+{
+classname "ammo_crate"
+origin "1997 -2677 -407"
+radius "64"
+angle "180"
+}
+{
+classname "health_crate"
+origin "2380 -3031 -405"
+radius "64"
+angle "90"
+}
+{
+classname "ammo_crate"
+origin "-2158 -1044 -59"
+radius "64"
+angle "0"
+}
+{
+classname "health_crate"
+origin "-2268 -974 -59"
+radius "64"
+angle "270"
+}
+{
+classname "misc_stealth_area"
+origin "-2509 1372 230"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-2413 625 38"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-1990 175 24"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-3329 468 -27"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-3233 -143 -29"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-3226 -278 -26"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-3626 -464 -19"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-1818 -597 14"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-1558 -1885 57"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "149 -1365 -141"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-978 2135 388"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-808 3067 408"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "-480 3067 408"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "444 2421 343"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "1498 578 -339"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "1622 -1052 -307"
+radius "96"
+}
+{
+classname "misc_stealth_area"
+origin "1201 -1893 -335"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "1375 -894 -317"
+radius "16"
+}
+{
+classname "misc_stealth_area"
+origin "-495 -994 -109"
+radius "32"
+}

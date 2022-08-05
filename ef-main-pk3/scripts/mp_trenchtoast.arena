@@ -1,0 +1,10 @@
+{
+map					"mp_trenchtoast"
+longname			"^4[^3EF^4] ^5Trench Toast"
+type				"wolfcp supremacy"
+timelimit			10
+axisRespawnTime		30
+alliedRespawnTime	30
+}
+
+

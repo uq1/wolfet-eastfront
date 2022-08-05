@@ -1,0 +1,62 @@
+::::::::::::::::::: STALINGRAD :::::::::::::::::::
+
+Filename:	stalingrad.bsp
+Author:		Justin "StormShadow" Ingels
+Website:	http://www.planetquake.com/stormshadow
+Email:		stormshadow@planetquake.com or justiningels@hotmail.com
+ICQ:		135532353
+Release Date:	3/24/2004
+
+Description:	Multiplayer map for Wolfenstein: Enemy Territory
+
+Story:		The Axis have taken control over large portions of the Russian city of Stalingrad. In order to 
+		re-take the city, the Allies must gain control of a small neighborhood on the western side of 
+		the city.  This area is a key strategic position, from which the allies hope to launch further
+		missions deeper into the city.  However, being aware of the importance of this area, the axis
+		have placed two jagdpanther tanks somewhere within this area, which must be destroyed in order for
+		the allies to move in their own tanks, and secure the area.
+
+Objectives:
+
+Allies:
+1) capture munitions depot spawn
+2) build command post
+3) destroy upper wall
+4) destroy main gate to secure munitions depot spawn
+5) destroy east tank
+6) destroy west tank
+7) prevent axis from building ccommand post/destroy axis command post
+
+Axis:
+1) defend forward spawn
+2) prevent allies from building command post
+3) defend uper wall
+4) defend main gate
+5) defend east tank
+6) defend west tank
+7) build axis command post
+
+
+Technical Info:	
+	Construction:	GtkRadiant-ET-1.4.0 w/q3map2
+			Easygen v_142
+			Adobe Photoshop 7.0
+
+Credits:	
+		Textures:
+			Standard ET textures and sky courtesy of Splash Damage
+			Most of the brick and concrete textures are from www.shaderlab.com
+			Some brick and concrete textures are from BerneyBoy - www.planetquake.com/berneyboy
+		Command map:
+			M Schaffer (you da man!)
+		Thanks to:
+			All the friendly folks at Splash Damage forums for comments, criticisms, and technical help.
+			Everyone at Burial-Grounds.com forums for feedback.
+			Special thanks to M. Schaffer and ][ET-S][Cartman for all their help.
+						
+			
+Notes:		a) There are a bunch of neat (and useful) jumps on this map.. try and find 'em :)
+		b) Many of the roofs are accessible.  Some are accessible by climbing up pipes (like the factory and the
+		church for instance).  
+
+Hope you enjoy the map!

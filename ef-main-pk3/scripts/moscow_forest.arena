@@ -1,0 +1,15 @@
+{
+	map			"moscow_forest"
+	longname		"^4[^3EF^4] ^5Moscow Forest"
+	type			"wolfmp wolfsw wolflms wolfcoop wolfsp supremacy supremacy_campaign"
+	timelimit		30
+	axisRespawnTime		30
+	alliedRespawnTime	20
+	lmsbriefing		"All-or-nothing fight to the death."
+	briefing		"The Axis Invasion deep into Soviet territory has been halted by the ultimate Russian defense weapon... Winter"
+	axiswintext		"."	
+	alliedwintext		"."
+	mapposition_x	0
+	mapposition_y	0
+}
+

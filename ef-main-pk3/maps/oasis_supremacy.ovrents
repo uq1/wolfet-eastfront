@@ -1,0 +1,2569 @@
+{
+_fog "textures/skies/sd_siwafog"
+mapcoordsmaxs "10496 -2048"
+mapcoordsmins "-768 9216"
+_color "0.8 0.84 0.9"
+gridsize "128 128 256"
+_minvertexlight "20"
+_minlight "20"
+classname "worldspawn"
+_blocksize "2048 2048 0"
+_mingridlight "64"
+}
+{
+model "models/mapobjects/props_sd/vase_broken_1.md3"
+origin "5662 7579 -569"
+classname "misc_gamemodel"
+angles "0 76 92"
+_cs "1"
+}
+{
+targetname "path_water_discharge_2_bottom"
+origin "6208 6912 -648"
+classname "path_corner_2"
+}
+{
+targetname "path_water_discharge_2_top"
+origin "6208 6912 -600"
+classname "path_corner_2"
+}
+{
+model "*1"
+origin "6208 6912 -648"
+spawnflags "2"
+scriptname "water_discharge_2"
+classname "script_mover"
+}
+{
+classname "misc_vis_dummy"
+origin "3360 7264 -288"
+target "mg42_materials_2"
+}
+{
+model "*2"
+noise "sound/world/boardbreak.wav"
+mass "75"
+health "15"
+classname "func_explosive"
+spawnflags "20"
+}
+{
+classname "props_chair_side"
+angle "172"
+origin "8032 3116 -224"
+}
+{
+origin "8520 5604 -164"
+angle "180"
+classname "props_chair_side"
+}
+{
+model "*3"
+spawnflags "20"
+classname "func_explosive"
+health "15"
+mass "75"
+noise "sound/world/boardbreak.wav"
+}
+{
+angle "180"
+origin "7615 5304 -340"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "8476 3745 -376"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "8448 4129 -376"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "8064 3329 -376"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "8064 4033 -376"
+angle "90"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "7448 4159 -376"
+angle "270"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "7193 4336 -376"
+angle "360"
+}
+{
+angle "360"
+origin "7401 4336 -376"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "6945 4780 -376"
+angle "360"
+}
+{
+harc "180"
+targetname "mg42_1"
+angle "360"
+origin "8712 4256 -178"
+classname "misc_mg42"
+}
+{
+angle "180"
+origin "8095 3894 -122"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "360"
+origin "8161 3896 -122"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "270"
+origin "8126 4367 -82"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "8128 4385 -82"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "8001 4704 -54"
+angle "360"
+}
+{
+origin "8255 4880 -74"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+angle "180"
+}
+{
+angle "90"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "9295 3177 -98"
+}
+{
+angle "90"
+origin "8879 3177 -98"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "8059 3057 -120"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "90"
+origin "9589 3841 -128"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "270"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "9451 4031 -128"
+}
+{
+angle "180"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "9775 5312 -128"
+}
+{
+angle "90"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "9467 5137 -128"
+}
+{
+angle "270"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "9483 4799 -134"
+}
+{
+angle "180"
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "8703 5664 -72"
+}
+{
+angle "360"
+origin "8449 5552 -72"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+origin "8960 5695 -122"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+angle "270"
+}
+{
+_cs "1"
+modelscale "1"
+model "models/mapobjects/tanks_sd/jagdpanther_africa_turret.md3"
+origin "8537 3536 -394"
+classname "misc_gamemodel"
+_rs "1"
+}
+{
+model "*4"
+origin "3632 2976 -544"
+classname "script_mover"
+scriptname "water_tunnel2"
+targetname "water_tunnel2"
+spawnflags "2"
+}
+{
+model "*5"
+origin "3632 2976 -544"
+scriptname "water_tunnel"
+spawnflags "2"
+classname "script_mover"
+targetname "water_tunnel"
+}
+{
+classname "team_CTF_redspawn"
+origin "7964 3416 -456"
+angle "90"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "90"
+origin "7472 4164 -196"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+angle "180"
+origin "7972 4188 -456"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+angle "90"
+origin "7544 4160 -196"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+angle "90"
+origin "7476 4100 -196"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+angle "360"
+origin "7420 4128 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7420 4064 -456"
+angle "360"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "45"
+origin "7220 4284 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7220 4224 -456"
+angle "45"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "7040 4752 -448"
+angle "45"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "7040 4872 -448"
+angle "360"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "270"
+origin "3744 7444 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3612 7444 -460"
+angle "270"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "270"
+origin "3672 7444 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3660 7360 -460"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "360"
+origin "3596 7360 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3596 7300 -460"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "360"
+origin "3596 7240 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3720 7300 -460"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "360"
+origin "3660 7300 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3660 7240 -460"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "360"
+origin "3720 7240 -460"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "180"
+origin "3884 7236 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3884 7300 -460"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "180"
+origin "3884 7360 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3884 7440 -448"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "270"
+origin "3816 7440 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3816 7360 -460"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "180"
+origin "3816 7300 -460"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "3816 7236 -460"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "3"
+scriptname "oldcityspawns"
+}
+{
+targetname "oldcityspawns"
+angle "270"
+origin "3606 7444 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+targetname "oldcityspawns"
+angle "360"
+origin "3720 7296 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+classname "team_CTF_bluespawn"
+origin "3720 7236 -460"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+targetname "oldcityspawns"
+angle "225"
+origin "4160 7332 -476"
+classname "team_CTF_redspawn"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4160 7328 -476"
+angle "225"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+classname "team_CTF_redspawn"
+origin "4064 7308 -476"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "360"
+origin "4064 7312 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4288 7328 -476"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "180"
+origin "4288 7392 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4200 7452 -476"
+angle "225"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "180"
+origin "4160 7452 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4224 7392 -476"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "180"
+origin "4224 7328 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4164 7384 -476"
+angle "270"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "270"
+origin "4076 7380 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4008 7436 -476"
+angle "315"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "360"
+origin "4008 7372 -476"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "4008 7312 -476"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+targetname "oldcityspawns"
+angle "180"
+origin "3816 7240 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+classname "team_CTF_bluespawn"
+origin "3816 7304 -460"
+angle "180"
+targetname "oldcityspawns"
+spawnflags "1"
+}
+{
+targetname "oldcityspawns"
+angle "225"
+origin "3884 7444 -448"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3816 7444 -456"
+angle "270"
+targetname "oldcityspawns"
+}
+{
+targetname "oldcityspawns"
+angle "270"
+origin "3738 7444 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3666 7444 -460"
+angle "270"
+targetname "oldcityspawns"
+}
+{
+spawnflags "3"
+origin "760 2282 -516"
+classname "team_CTF_bluespawn"
+}
+{
+spawnflags "3"
+origin "832 2344 -516"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "832 2664 -498"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "832 2600 -498"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "832 2536 -508"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "832 2472 -510"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "832 2408 -514"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "988 2120 -464"
+spawnflags "3"
+}
+{
+spawnflags "3"
+origin "988 2184 -498"
+classname "team_CTF_bluespawn"
+angle "90"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "920 2184 -514"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "856 2184 -514"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "792 2184 -514"
+spawnflags "3"
+}
+{
+angle "360"
+modelscale "0.5"
+model "models/mapobjects/pump_sd/pump_base.md3"
+origin "4632 6470 -286"
+classname "misc_gamemodel"
+scriptname "pump2_p1"
+targetname "pump2_p1"
+_cs "1"
+_rs "1"
+}
+{
+model "*6"
+healtotal "400"
+target "cabinet_health"
+classname "trigger_heal"
+scriptname "allied_hacabinet_health"
+targetname "allied_hacabinet_health"
+}
+{
+model "*7"
+target "cabinet_ammo"
+ammototal "20"
+ammorate "1"
+classname "trigger_ammo"
+targetname "allied_hacabinet_ammo"
+scriptname "allied_hacabinet_ammo"
+}
+{
+angle "270"
+targetname "cabinet_health"
+classname "misc_cabinet_health"
+origin "4248 7474 -512"
+}
+{
+angle "270"
+targetname "cabinet_ammo"
+origin "4112 7474 -512"
+classname "misc_cabinet_supply"
+}
+{
+skin "models/mapobjects/radios_sd/compostaxisopened.skin"
+model "models/mapobjects/radios_sd/compostaxisopened.md3"
+origin "8575 5739 -164"
+classname "misc_gamemodel"
+angle "360"
+modelscale "1.5"
+targetname "axis_radio_built_model"
+scriptname "axis_radio_built_model"
+_rs "1"
+}
+{
+model "*8"
+origin "8577 5696 -116"
+targetname "axis_radio_built"
+scriptname "axis_radio_built"
+classname "func_constructible"
+spawnflags "4"
+}
+{
+scriptname "axis_radio_destroyed_model"
+targetname "axis_radio_destroyed_model"
+skin "models/mapobjects/radios_sd/compostaxisdamaged.skin"
+model "models/mapobjects/radios_sd/compostaxisdamaged.md3"
+origin "8575 5739 -164"
+classname "misc_gamemodel"
+angle "360"
+modelscale "1.5"
+_rs "1"
+}
+{
+model "*9"
+origin "8577 5696 -116"
+spawnflags "2"
+scriptname "axis_radio_destroyed"
+targetname "axis_radio_destroyed"
+classname "script_mover"
+}
+{
+model "*10"
+origin "8577 5696 -120"
+objflags "128"
+scriptname "axis_command_post_toi"
+targetname "axis_command_post_toi"
+classname "trigger_objective_info"
+infoAllied "Construct Command Post for faster charge bars."
+infoAxis "Construct Command Post for faster charge bars."
+shortname "Axis Command Post"
+track "the Axis Command Post"
+score "5"
+target "axis_radio_built"
+spawnflags "64"
+}
+{
+targetname "axis_radio_closed_model"
+scriptname "axis_radio_closed_model"
+skin "models/mapobjects/radios_sd/compostaxisclosed.skin"
+modelscale "1.5"
+angle "360"
+classname "misc_gamemodel"
+origin "8575 5739 -164"
+model "models/mapobjects/radios_sd/compostaxisclosed.md3"
+_rs "1"
+}
+{
+model "*11"
+origin "8577 5696 -116"
+spawnflags "2"
+targetname "axis_radio_closed"
+scriptname "axis_radio_closed"
+classname "script_mover"
+}
+{
+model "*12"
+scriptname "water_pump_1"
+targetname "water_pump_1"
+spawnflags "8"
+track "wp1"
+classname "func_constructible"
+}
+{
+model "*13"
+classname "func_static"
+targetname "water_pump_2_oldclip"
+scriptname "water_pump_2_oldclip"
+}
+{
+model "*14"
+classname "func_static"
+scriptname "water_pump_1_oldclip"
+targetname "water_pump_1_oldclip"
+}
+{
+origin "7363 5411 -163"
+angle "180"
+classname "props_chair"
+}
+{
+model "*15"
+spawnflags "20"
+classname "func_explosive"
+health "15"
+mass "75"
+noise "sound/world/boardbreak.wav"
+}
+{
+model "*16"
+noise "sound/world/boardbreak.wav"
+mass "75"
+health "15"
+classname "func_explosive"
+spawnflags "20"
+}
+{
+origin "9696 5200 -224"
+angle "360"
+classname "props_chair_side"
+}
+{
+classname "props_chair_side"
+angle "360"
+origin "9696 5320 -224"
+}
+{
+model "*17"
+sound "sound/multiplayer/hurt_barbwire.wav"
+classname "trigger_hurt"
+spawnflags "16"
+dmg "25"
+}
+{
+model "*18"
+classname "trigger_hurt"
+sound "sound/multiplayer/hurt_barbwire.wav"
+spawnflags "16"
+dmg "25"
+}
+{
+model "*19"
+classname "func_constructible"
+spawnflags "4"
+targetname "mg42_clip_1"
+scriptname "mg42_clip_1"
+}
+{
+model "*20"
+spawnflags "1"
+score "5"
+shortname "Garrison MG Nest"
+target "mg42_clip_1"
+track "the Garrison MG Nest"
+classname "trigger_objective_info"
+infoAxis "Axis MG emplacements provide supporting firepower to the defending Axis garrison soldiers."
+infoAllied "Axis MG emplacements provide supporting firepower to the defending Axis garrison soldiers."
+targetname "garrison_mg42_toi"
+scriptname "garrison_mg42_toi"
+}
+{
+model "*21"
+classname "func_static"
+targetname "mg42_materials_clip_1"
+}
+{
+spawnflags "3"
+angle "360"
+origin "6980 4872 -448"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "6980 4824 -448"
+angle "360"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "45"
+origin "6980 4752 -448"
+classname "team_CTF_redspawn"
+}
+{
+scriptname "axis_garrison_wobj"
+origin "7344 4400 -432"
+description "Axis Garrison"
+classname "team_WOLF_objective"
+spawnflags "1"
+targetname "axis_garrison_wobj"
+}
+
+{
+scriptname "pump2_p2"
+targetname "pump2_p2"
+classname "misc_gamemodel"
+origin "4632 6470 -286"
+model "models/mapobjects/pump_sd/pump_animated.md3"
+angle "360"
+modelscale "0.5"
+frames "40"
+spawnflags "2"
+}
+{
+targetname "path_water_tunnel_bottom"
+classname "path_corner_2"
+origin "3632 2976 -928"
+}
+{
+origin "3632 2976 -888"
+classname "path_corner_2"
+targetname "path_water_tunnel_lower"
+}
+{
+targetname "path_water_discharge_bottom"
+origin "2432 1344 -640"
+classname "path_corner_2"
+}
+{
+model "*24"
+origin "2432 1344 -640"
+classname "script_mover"
+scriptname "water_discharge"
+spawnflags "2"
+}
+{
+classname "path_corner_2"
+origin "2432 1344 -594"
+targetname "path_water_discharge_top"
+}
+{
+angle "360"
+modelscale "0.5"
+model "models/mapobjects/pump_sd/pump_base.md3"
+origin "3208 2934 -326"
+classname "misc_gamemodel"
+scriptname "pump1_p1"
+targetname "pump1_p1"
+_cs "1"
+_rs "1"
+}
+{
+spawnflags "2"
+frames "40"
+modelscale "0.5"
+angle "360"
+model "models/mapobjects/pump_sd/pump_animated.md3"
+origin "3208 2934 -326"
+classname "misc_gamemodel"
+targetname "pump1_p2"
+scriptname "pump1_p2"
+}
+{
+classname "team_WOLF_objective"
+origin "664 2216 -552"
+description "Allied Camp"
+spawnflags "2"
+targetname "allied_camp_wobj"
+scriptname "allied_camp_wobj"
+}
+{
+spawnflags "3"
+origin "696 2280 -502"
+classname "team_CTF_bluespawn"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2344 -486"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2344 -510"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2408 -486"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2408 -510"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2472 -486"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2472 -510"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2536 -490"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2536 -510"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2600 -502"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2600 -502"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2664 -502"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2664 -502"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "696 2728 -502"
+spawnflags "3"
+}
+{
+classname "team_CTF_bluespawn"
+origin "760 2728 -502"
+spawnflags "3"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "728 2184 -514"
+spawnflags "3"
+}
+{
+spawnflags "3"
+origin "792 2120 -480"
+classname "team_CTF_bluespawn"
+angle "90"
+}
+{
+spawnflags "3"
+origin "856 2120 -484"
+classname "team_CTF_bluespawn"
+angle "90"
+}
+{
+spawnflags "3"
+origin "920 2120 -480"
+classname "team_CTF_bluespawn"
+angle "90"
+}
+{
+scriptname "game_manager"
+origin "616 2136 -392"
+classname "script_multiplayer"
+}
+{
+objflags "4"
+spawnflags "1"
+scriptname "oldcityflag"
+origin "3736 7352 -508"
+classname "team_WOLF_checkpoint"
+targetname "oldcityflag"
+target "oldcityspawns"
+}
+{
+spawnflags "3"
+classname "team_CTF_redspawn"
+origin "4068 7380 -476"
+angle "270"
+targetname "oldcityspawns"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "270"
+origin "4160 7384 -476"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "180"
+origin "4288 7332 -476"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "360"
+origin "4008 7308 -476"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "360"
+origin "3596 7236 -460"
+classname "team_CTF_bluespawn"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3596 7296 -460"
+angle "360"
+targetname "oldcityspawns"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "360"
+origin "3660 7236 -460"
+classname "team_CTF_bluespawn"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3660 7296 -460"
+angle "360"
+targetname "oldcityspawns"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "180"
+origin "3884 7304 -460"
+classname "team_CTF_bluespawn"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3884 7240 -460"
+angle "180"
+targetname "oldcityspawns"
+}
+{
+spawnflags "1"
+classname "team_CTF_bluespawn"
+origin "3884 7364 -460"
+angle "180"
+targetname "oldcityspawns"
+}
+{
+spawnflags "1"
+targetname "oldcityspawns"
+angle "270"
+origin "3816 7364 -460"
+classname "team_CTF_bluespawn"
+}
+{
+spawnflags "3"
+classname "team_CTF_redspawn"
+origin "4288 7396 -476"
+angle "180"
+targetname "oldcityspawns"
+}
+{
+spawnflags "3"
+classname "team_CTF_redspawn"
+origin "4224 7332 -476"
+angle "180"
+targetname "oldcityspawns"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "180"
+origin "4224 7396 -476"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "4008 7368 -476"
+angle "360"
+targetname "oldcityspawns"
+spawnflags "3"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "315"
+origin "4008 7432 -476"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+targetname "oldcityspawns"
+angle "225"
+origin "4200 7460 -476"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+classname "team_CTF_redspawn"
+origin "4160 7456 -476"
+angle "225"
+targetname "oldcityspawns"
+}
+{
+targetname "oldcityspawns"
+angle "360"
+origin "3660 7356 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+targetname "oldcityspawns"
+angle "360"
+origin "3596 7356 -460"
+classname "team_CTF_bluespawn"
+spawnflags "1"
+}
+{
+spawnflags "1"
+classname "team_WOLF_objective"
+origin "3732 7352 -428"
+description "Old City"
+scriptname "old_city_wobj"
+targetname "old_city_wobj"
+}
+{
+frames "190"
+spawnflags "2"
+modelscale "0.4"
+classname "misc_gamemodel"
+origin "3302 3141 -474"
+model "models/mapobjects/cmarker/cmarker_flag.md3"
+skin "models/mapobjects/cmarker/allied_cflag.skin"
+angle "135"
+targetname "pump_flag_1"
+}
+{
+model "*28"
+targetname "water_pump_1_toi"
+scriptname "water_pump_1_toi"
+objflags "16"
+infoAxis "If this water pump is damaged, the water being pumped away will slowly begin to flood back in again."
+infoAllied "Used to transfer large volumes of water from one area to another, these heavy duty pumps only work when combined."
+track "the Oasis Water Pump"
+classname "trigger_objective_info"
+target "water_pump_1"
+score "5"
+shortname "Oasis Water Pump"
+spawnflags "2"
+}
+{
+classname "misc_gamemodel"
+origin "3284 3178 -520"
+skin "models/mapobjects/cmarker/allied_crates.skin"
+targetname "pump_materials_1"
+model "models/mapobjects/cmarker/cmarker_crates.md3"
+angle "270"
+}
+{
+model "*29"
+targetname "pump_materials_clip_1"
+classname "func_static"
+}
+{
+model "*30"
+classname "func_constructible"
+track "wp2"
+spawnflags "8"
+targetname "water_pump_2"
+scriptname "water_pump_2"
+}
+{
+model "*31"
+classname "func_static"
+targetname "pump_materials_clip_2"
+}
+{
+angle "270"
+model "models/mapobjects/cmarker/cmarker_crates.md3"
+targetname "pump_materials_2"
+skin "models/mapobjects/cmarker/allied_crates.skin"
+origin "4654 6626 -502"
+classname "misc_gamemodel"
+}
+{
+model "*32"
+scriptname "water_pump_2_toi"
+targetname "water_pump_2_toi"
+objflags "32"
+spawnflags "2"
+shortname "Old City Water Pump"
+score "5"
+target "water_pump_2"
+classname "trigger_objective_info"
+track "the Old City Water Pump"
+infoAllied "Used to transfer large volumes of water from one area to another, these heavy duty pumps only work when combined."
+infoAxis "If this water pump is damaged, the water being pumped away will slowly begin to flood back in again."
+}
+{
+targetname "mg42_2"
+angle "315"
+origin "3368 7056 -320"
+classname "misc_mg42"
+}
+{
+model "*33"
+infoAllied "Allied MG emplacement providing supporting firepower to defending of the Old City."
+infoAxis "Allied MG emplacement providing supporting firepower to defending of the Old City."
+classname "trigger_objective_info"
+track "the Old City MG Nest"
+target "mg42_clip_2"
+shortname "Old City MG Nest"
+score "5"
+spawnflags "2"
+scriptname "oldcity_mg42_toi"
+targetname "oldcity_mg42_toi"
+}
+{
+frames "190"
+spawnflags "2"
+modelscale "0.4"
+classname "misc_gamemodel"
+origin "3374 7241 -298"
+model "models/mapobjects/cmarker/cmarker_flag.md3"
+skin "models/mapobjects/cmarker/allied_cflag.skin"
+angle "270"
+targetname "mg42_flag_2"
+}
+{
+classname "misc_gamemodel"
+origin "3356 7278 -344"
+skin "models/mapobjects/cmarker/allied_crates.skin"
+targetname "mg42_materials_2"
+model "models/mapobjects/cmarker/cmarker_crates.md3"
+angle "270"
+}
+{
+model "*34"
+targetname "mg42_materials_clip_2"
+classname "func_static"
+}
+{
+classname "info_notnull"
+origin "9408 3424 -416"
+targetname "spect_01"
+}
+{
+classname "info_player_intermission"
+origin "8867 4636 -328"
+target "spect_01"
+spawnflags "2"
+}
+{
+targetname "path_water_tunnel_lower"
+classname "path_corner_2"
+origin "3632 2976 -888"
+}
+{
+origin "3632 2976 -928"
+classname "path_corner_2"
+targetname "path_water_tunnel_bottom"
+}
+{
+classname "path_corner_2"
+origin "3632 2976 -544"
+targetname "path_water_tunnel_top"
+}
+{
+targetname "path_water_tunnel_mid"
+origin "3632 2976 -720"
+classname "path_corner_2"
+}
+{
+model "*35"
+classname "func_static"
+targetname "pak75_clip_broken_1"
+}
+{
+model "*36"
+classname "func_explosive"
+targetname "pak75_clip_1"
+scriptname "pak75_clip_1"
+}
+{
+targetname "pak75_model_broken_1"
+model "models/mapobjects/pak75_sd/pak75_broken.md3"
+origin "9812 4704 -137"
+classname "misc_gamemodel"
+angle "270"
+modelscale "0.6"
+_rs "1"
+}
+{
+modelscale "0.6"
+angle "270"
+classname "misc_gamemodel"
+origin "9812 4704 -137"
+model "models/mapobjects/pak75_sd/pak75.md3"
+targetname "pak75_model_1"
+_cs "1"
+_rs "1"
+scriptname "pak75_model_1"
+}
+{
+scriptname "pak75_smoke_1"
+end_size "56"
+start_size "16"
+time "7000"
+duration "1"
+wait "50"
+classname "target_smoke"
+origin "9720 4700 -123"
+spawnflags "5"
+targetname "pak75_smoke_1"
+}
+{
+model "*37"
+scriptname "pak75_1_toi"
+targetname "pak75_1_toi"
+objflags "1"
+classname "trigger_objective_info"
+spawnflags "17"
+track "the North Anti-Tank Gun"
+target "pak75_clip_1"
+shortname "North Anti-Tank Gun"
+score "10"
+customalliesimage "gfx/limbo/cm_dynamite"
+customaxisimage "gfx/limbo/cm_oasis_pakgun"
+}
+{
+model "*38"
+classname "func_static"
+targetname "pak75_clip_broken_2"
+}
+{
+model "*39"
+scriptname "pak75_clip_2"
+targetname "pak75_clip_2"
+classname "func_explosive"
+}
+{
+targetname "pak75_model_2"
+modelscale "0.6"
+angle "270"
+classname "misc_gamemodel"
+origin "9812 3936 -137"
+model "models/mapobjects/pak75_sd/pak75.md3"
+_cs "1"
+_rs "1"
+scriptname "pak75_model_2"
+}
+{
+modelscale "0.6"
+angle "270"
+classname "misc_gamemodel"
+origin "9812 3936 -137"
+model "models/mapobjects/pak75_sd/pak75_broken.md3"
+targetname "pak75_model_broken_2"
+_rs "1"
+}
+{
+scriptname "pak75_smoke_2"
+targetname "pak75_smoke_2"
+spawnflags "5"
+origin "9720 3932 -123"
+classname "target_smoke"
+wait "50"
+duration "1"
+time "7000"
+start_size "16"
+end_size "56"
+}
+{
+model "*40"
+targetname "pak75_2_toi"
+scriptname "pak75_2_toi"
+objflags "2"
+target "pak75_clip_2"
+track "the South Anti-Tank Gun"
+spawnflags "17"
+classname "trigger_objective_info"
+shortname "South Anti-Tank Gun"
+score "10"
+customalliesimage "gfx/limbo/cm_dynamite"
+customaxisimage "gfx/limbo/cm_oasis_pakgun"
+}
+{
+wait "60"
+time "10000"
+duration "800"
+spawnflags "5"
+origin "12100 4404 -404"
+classname "target_smoke"
+}
+{
+end_size "48"
+start_size "16"
+time "6000"
+duration "400"
+wait "50"
+classname "target_smoke"
+origin "12128 4524 -452"
+spawnflags "5"
+}
+{
+model "*41"
+scriptname "mg42_clip_2"
+targetname "mg42_clip_2"
+spawnflags "8"
+classname "func_constructible"
+}
+{
+classname "team_CTF_redspawn"
+origin "7556 4328 -456"
+angle "270"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "225"
+origin "7492 4336 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7420 4008 -456"
+angle "360"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "7396 4024 -196"
+angle "45"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "8060 4188 -456"
+angle "180"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "180"
+origin "8060 4140 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7964 4060 -456"
+angle "90"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "180"
+origin "8060 3484 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "8060 3548 -456"
+angle "180"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "180"
+origin "8060 3612 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "8060 4068 -456"
+angle "135"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "8060 3420 -456"
+angle "135"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "135"
+origin "8060 3356 -456"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7964 3356 -456"
+angle "90"
+spawnflags "3"
+}
+{
+spawnflags "3"
+angle "360"
+origin "7396 4088 -196"
+classname "team_CTF_redspawn"
+}
+{
+spawnflags "3"
+angle "90"
+origin "7540 4024 -196"
+classname "team_CTF_redspawn"
+}
+{
+classname "team_CTF_redspawn"
+origin "7476 4024 -196"
+angle "90"
+spawnflags "3"
+}
+{
+classname "team_CTF_redspawn"
+origin "7548 4096 -196"
+angle "90"
+spawnflags "3"
+}
+{
+angle "225"
+model "models/mapobjects/tanks_sd/churchhill_broken_oasis.md3"
+origin "12100 4424 -468"
+classname "misc_gamemodel"
+_rs "1"
+_cs "1"
+}
+{
+angle "225"
+model "models/mapobjects/tanks_sd/churchhill_turret_oasis.md3"
+origin "12096 4424 -420"
+classname "misc_gamemodel"
+_rs "1"
+}
+{
+model "*42"
+scriptname "north_pak_clipbrush"
+targetname "north_pak_clipbrush"
+classname "func_static"
+}
+{
+model "*43"
+targetname "south_pak_clipbrush"
+scriptname "south_pak_clipbrush"
+classname "func_static"
+}
+{
+frames "190"
+spawnflags "2"
+modelscale "0.4"
+classname "misc_gamemodel"
+origin "4672 6589 -456"
+model "models/mapobjects/cmarker/cmarker_flag.md3"
+skin "models/mapobjects/cmarker/allied_cflag.skin"
+angle "135"
+targetname "pump_flag_2"
+}
+{
+targetname "mg42_flag_1"
+angle "135"
+skin "models/mapobjects/cmarker/axis_cflag.skin"
+model "models/mapobjects/cmarker/cmarker_flag.md3"
+origin "8710 4118 -184"
+classname "misc_gamemodel"
+modelscale "0.4"
+spawnflags "2"
+frames "190"
+}
+{
+skin "models/mapobjects/cmarker/axis_crates.skin"
+classname "misc_gamemodel"
+origin "8696 4158 -224"
+model "models/mapobjects/cmarker/cmarker_crates.md3"
+targetname "mg42_materials_1"
+}
+{
+_cs "1"
+classname "misc_gamemodel"
+origin "8714 4864 -467"
+model "models/mapobjects/blitz_sd/blitzwheelsb.md3"
+angle "360"
+_rs "1"
+}
+{
+_cs "1"
+angle "360"
+classname "misc_gamemodel"
+origin "8645 4864 -489"
+model "models/mapobjects/blitz_sd/blitzbody3.md3"
+_rs "1"
+}
+{
+_cs "1"
+angle "360"
+classname "misc_gamemodel"
+origin "8885 4864 -467"
+model "models/mapobjects/blitz_sd/blitzwheelsf.md3"
+_rs "1"
+}
+{
+_cs "1"
+classname "misc_gamemodel"
+origin "8454 3536 -488"
+model "models/mapobjects/tanks_sd/jagdpanther_africa_body.md3"
+angle "360"
+modelscale "1"
+_rs "1"
+}
+{
+angle "360"
+origin "7297 5332 -72"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+angle "180"
+origin "7551 5392 -72"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "6945 5008 -126"
+angle "360"
+}
+{
+angle "360"
+origin "6945 4542 -126"
+modelscale "1.5"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+classname "misc_gamemodel"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "7425 4150 -126"
+angle "360"
+}
+{
+origin "7988 3172 -224"
+angle "282"
+classname "props_chair_side"
+}
+{
+target "pak75_model_broken_1"
+origin "9592 4704 -160"
+classname "misc_vis_dummy"
+}
+{
+classname "misc_vis_dummy"
+origin "9592 4704 -160"
+target "pak75_model_1"
+}
+{
+target "pak75_model_2"
+origin "9592 3936 -160"
+classname "misc_vis_dummy"
+}
+{
+classname "misc_vis_dummy"
+origin "9592 3936 -160"
+target "pak75_model_broken_2"
+}
+{
+angles "0 0 0"
+model "models/mapobjects/spool_sd/spool.md3"
+origin "7127 4582 -479"
+classname "misc_gamemodel"
+_cs "1"
+}
+{
+_cs "1"
+classname "misc_gamemodel"
+origin "7127 4582 -479"
+model "models/mapobjects/spool_sd/wires.md3"
+angles "0 0 0"
+}
+{
+angle "90"
+model "models/mapobjects/spool_sd/wires.md3"
+origin "8310 3981 -470"
+classname "misc_gamemodel"
+_cs "1"
+}
+{
+angle "90"
+classname "misc_gamemodel"
+origin "8310 3981 -470"
+model "models/mapobjects/spool_sd/spool.md3"
+_cs "1"
+}
+{
+angle "90"
+classname "team_CTF_bluespawn"
+origin "988 2248 -518"
+spawnflags "3"
+}
+{
+target "limbocam1"
+objective "1"
+origin "10249 4897 -211"
+classname "info_limbo_camera"
+}
+{
+targetname "limbocam1"
+origin "9760 4704 -152"
+classname "info_notnull"
+}
+{
+classname "info_limbo_camera"
+origin "10140 3819 -194"
+objective "2"
+target "limbocam2"
+}
+{
+classname "info_notnull"
+origin "9760 3936 -152"
+targetname "limbocam2"
+}
+{
+targetname "limbocam3"
+origin "5152 7312 -448"
+classname "info_notnull"
+}
+{
+classname "info_limbo_camera"
+origin "3595 7469 -407"
+objective "4"
+target "limbocam4"
+}
+{
+classname "info_notnull"
+origin "3732 7352 -424"
+targetname "limbocam4"
+}
+{
+classname "info_limbo_camera"
+origin "3884 2196 296"
+objective "5"
+target "limbocam5"
+}
+{
+classname "info_notnull"
+origin "3568 2984 -600"
+targetname "limbocam5"
+}
+{
+target "limbocam6"
+objective "6"
+origin "4635 7033 -407"
+classname "info_limbo_camera"
+}
+{
+classname "info_notnull"
+origin "4732 6480 -376"
+targetname "limbocam6"
+}
+{
+target "limbocam8"
+objective "8"
+origin "8443 5476 -87"
+classname "info_limbo_camera"
+}
+{
+classname "info_notnull"
+origin "8584 5720 -124"
+targetname "limbocam8"
+}
+{
+classname "info_limbo_camera"
+origin "2476 4908 -201"
+objective "7"
+target "limbocam7"
+}
+{
+targetname "limbocam7"
+origin "2392 4648 -232"
+classname "info_notnull"
+}
+{
+model "*44"
+origin "2393 4678 -232"
+classname "script_mover"
+scriptname "allied_radio_closed"
+targetname "allied_radio_closed"
+spawnflags "2"
+}
+{
+skin "models/mapobjects/radios_sd/compostalliedopened.skin"
+scriptname "allied_radio_built_model"
+targetname "allied_radio_built_model"
+modelscale "1.5"
+angle "180"
+classname "misc_gamemodel"
+origin "2395 4631 -280"
+model "models/mapobjects/radios_sd/compostalliedopened.md3"
+_rs "1"
+}
+{
+scriptname "allied_radio_closed_model"
+targetname "allied_radio_closed_model"
+skin "models/mapobjects/radios_sd/compostalliedclosed.skin"
+model "models/mapobjects/radios_sd/compostalliedclosed.md3"
+origin "2395 4630 -280"
+classname "misc_gamemodel"
+angle "180"
+modelscale "1.5"
+_cs "1"
+_rs "1"
+}
+{
+model "*45"
+origin "2393 4678 -232"
+objflags "64"
+targetname "allied_command_post_toi"
+scriptname "allied_command_post_toi"
+target "t2"
+score "5"
+infoAllied "Construct Command Post for faster charge bars."
+infoAxis "Construct Command Post for faster charge bars."
+shortname "Allied Command Post"
+track "the Allied Command Post"
+classname "trigger_objective_info"
+spawnflags "64"
+}
+{
+model "*46"
+origin "2393 4678 -232"
+targetname "t2"
+scriptname "allied_radio_built"
+classname "func_constructible"
+spawnflags "8"
+}
+{
+origin "3595 7469 -407"
+classname "info_limbo_camera"
+target "old_city_wobj"
+}
+{
+spawnflags "2"
+target "allied_camp_wobj"
+origin "1387 2912 -302"
+classname "info_limbo_camera"
+}
+{
+spawnflags "2"
+classname "info_limbo_camera"
+origin "7435 5296 -302"
+target "axis_garrison_wobj"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "2527 4752 -166"
+angle "180"
+}
+{
+model "models/mapobjects/props_sd/basketsand_empty.md3"
+origin "489 3178 -538"
+classname "misc_gamemodel"
+angles "2 1 6"
+modelscale "0.5"
+_cs "1"
+}
+{
+model "models/mapobjects/props_sd/basketsand_empty.md3"
+origin "1455 2406 -442"
+classname "misc_gamemodel"
+angles "12 48 12"
+modelscale "0.5"
+_cs "1"
+}
+{
+model "models/mapobjects/props_sd/basketsand_empty.md3"
+origin "1419 2494 -453"
+classname "misc_gamemodel"
+angles "2 348 6"
+modelscale "0.5"
+_cs "1"
+}
+{
+targetname "limbocam0"
+origin "1536 2816 -448"
+classname "info_notnull"
+}
+{
+spawnflags "2"
+target "limbocam0"
+origin "2877 1573 -387"
+classname "info_limbo_camera"
+objective "0"
+}
+{
+modelscale "0.5"
+classname "misc_gamemodel"
+origin "6864 4258 -460"
+model "models/mapobjects/props_sd/basketsand_empty.md3"
+angles "2 98 352"
+_cs "1"
+}
+{
+classname "info_limbo_camera"
+origin "4375 7376 -426"
+objective "3"
+target "limbocam3"
+}
+{
+scriptname "axis_radio_built_lms_model"
+targetname "axis_radio_built_lms_model"
+modelscale "1.5"
+angle "90"
+classname "misc_gamemodel"
+origin "6457 6603 -280"
+model "models/mapobjects/radios_sd/compostaxisopened.md3"
+skin "models/mapobjects/radios_sd/compostaxisopened.skin"
+_rs "1"
+}
+{
+modelscale "1.5"
+angle "90"
+classname "misc_gamemodel"
+origin "6457 6603 -280"
+model "models/mapobjects/radios_sd/compostaxisdamaged.md3"
+skin "models/mapobjects/radios_sd/compostaxisdamaged.skin"
+targetname "axis_radio_destroyed_lms_model"
+scriptname "axis_radio_destroyed_lms_model"
+_rs "1"
+}
+{
+model "*47"
+origin "6500 6605 -236"
+target "axis_radio_built_lms"
+score "5"
+track "the Axis Command Post"
+shortname "Axis Command Post"
+infoAxis "Construct Command Post for faster charge bars."
+infoAllied "Construct Command Post for faster charge bars."
+classname "trigger_objective_info"
+targetname "axis_command_post_lms_toi"
+scriptname "axis_command_post_lms_toi"
+objflags "128"
+spawnflags "65"
+}
+{
+model "models/mapobjects/radios_sd/compostaxisclosed.md3"
+origin "6457 6603 -280"
+classname "misc_gamemodel"
+angle "90"
+modelscale "1.5"
+skin "models/mapobjects/radios_sd/compostaxisclosed.skin"
+scriptname "axis_radio_closed_lms_model"
+targetname "axis_radio_closed_lms_model"
+_rs "1"
+}
+{
+model "*48"
+spawnflags "2"
+classname "script_mover"
+scriptname "axis_command_post_clip_garison"
+}
+{
+model "*49"
+spawnflags "2"
+classname "script_mover"
+scriptname "axis_command_post_clip_lms"
+}
+{
+model "*50"
+origin "6500 6605 -232"
+spawnflags "4"
+classname "func_constructible"
+scriptname "axis_radio_built_lms"
+targetname "axis_radio_built_lms"
+}
+{
+model "*51"
+origin "6500 6605 -232"
+classname "script_mover"
+targetname "axis_radio_lms_destroyed"
+scriptname "axis_radio_lms_destroyed"
+spawnflags "2"
+}
+{
+model "*52"
+origin "6500 6605 -232"
+classname "script_mover"
+scriptname "axis_radio_lms_closed"
+targetname "axis_radio_lms_closed"
+spawnflags "2"
+}
+{
+angles "-1 0 7"
+_cs "1"
+modelscale "2.5"
+classname "misc_gamemodel"
+origin "2220 2536 -497"
+model "models/mapobjects/tree_desert_sd/floorpalmleaf.md3"
+}
+{
+angles "31 135 180"
+model "models/mapobjects/tree_desert_sd/floorpalmleaf1.md3"
+origin "2924 1768 -509"
+classname "misc_gamemodel"
+modelscale "2.8"
+_cs "1"
+_rs "1"
+}
+{
+model "*53"
+origin "4182 7470 -456"
+customimage "gfx/limbo/cm_healthammo"
+spawnflags "35"
+shortname "Health and Ammo Cabinets"
+classname "trigger_objective_info"
+track "the Health and Ammo Cabinets"
+target "hacabinet_marker"
+targetname "healthammocab_toi"
+scriptname "healthammocab_toi"
+infoAxis "Health and Ammo cabinets can be used as a regroup or meeting point for your squad."
+infoAllied "Health and Ammo cabinets can be used as a regroup or meeting point for your squad."
+}
+{
+classname "misc_commandmap_marker"
+origin "4180 7476 -456"
+targetname "hacabinet_marker"
+}
+{
+classname "info_notnull"
+origin "9816 5136 -208"
+targetname "spect_02"
+}
+{
+classname "info_player_intermission"
+origin "10154 3351 -299"
+target "spect_02"
+spawnflags "1"
+}
+{
+classname "misc_gamemodel"
+origin "11540 4312 -468"
+model "models/mapobjects/tanks_sd/churchhill_oasis.md3"
+angle "180"
+_rs "1"
+scriptname "end_tank"
+targetname "end_tank"
+}
+{
+classname "misc_gamemodel"
+origin "11536 4312 -420"
+model "models/mapobjects/tanks_sd/churchhill_turret_oasis.md3"
+angle "180"
+_rs "1"
+targetname "end_turret"
+scriptname "end_turret"
+}
+{
+classname "target_effect"
+origin "9931 3939 -134"
+targetname "end_boom_south"
+scriptname "end_boom_south"
+spawnflags "4"
+}
+{
+scriptname "end_boom_north"
+targetname "end_boom_north"
+origin "9931 4707 -134"
+classname "target_effect"
+spawnflags "4"
+}
+{
+classname "misc_gamemodel"
+origin "9929 3939 -134"
+model "models/mapobjects/tanks_sd/churchhill_flash.mdc"
+modelscale "2"
+targetname "end_south_pak_muzzle"
+scriptname "end_south_pak_muzzle"
+}
+{
+modelscale "2"
+model "models/mapobjects/tanks_sd/churchhill_flash.mdc"
+origin "9929 4707 -134"
+classname "misc_gamemodel"
+scriptname "end_north_pak_muzzle"
+targetname "end_north_pak_muzzle"
+}
+{
+scriptname "allied_radio_destroyed_model"
+targetname "allied_radio_destroyed_model"
+skin "models/mapobjects/radios_sd/compostallieddamaged.skin"
+modelscale "1.5"
+angle "180"
+classname "misc_gamemodel"
+origin "2395 4630 -280"
+model "models/mapobjects/radios_sd/compostallieddamaged.md3"
+_rs "1"
+}
+{
+model "*54"
+origin "2393 4678 -232"
+spawnflags "2"
+scriptname "allied_radio_destroyed"
+targetname "allied_radio_destroyed"
+classname "script_mover"
+}
+{
+model "*55"
+classname "func_static"
+scriptname "water_pump_1_lms_clip"
+targetname "water_pump_1_lms_clip"
+}
+{
+model "*56"
+scriptname "water_pump_2_lms_clip"
+classname "func_static"
+targetname "water_pump_2_lms_clip"
+}
+{
+classname "misc_gamemodel"
+model "models/mapobjects/props_sd/xlight_fg2_oasis.md3"
+modelscale "1.5"
+origin "8273 3900 -376"
+angle "360"
+}
+{
+noise "sound/maps/expl_med.wav"
+targetname "end_explosion_sound"
+scriptname "end_explosion_sound"
+origin "11008 4288 -416"
+classname "info_notnull"
+}
+{
+targetname "spect_04"
+origin "2922 6920 -416"
+classname "info_notnull"
+}
+{
+target "spect_04"
+origin "2656 7841 -262"
+classname "info_player_intermission"
+}
+{
+classname "misc_control_point"
+origin "857 2319 -541"
+spawnflags "1"
+}
+{
+classname "misc_control_point"
+origin "2895 5385 -599"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "3747 6881 -491"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "6694 6711 -542"
+spawnflags "0"
+}
+{
+classname "misc_control_point"
+origin "7405 4758 -486"
+spawnflags "2"
+}
+{
+classname "misc_control_point"
+origin "10160 4285 -486"
+spawnflags "2"
+}
+{
+spawnflags "1"
+origin "4146 6500 -135"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "4271 6281 -143"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "4279 6454 -143"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "3322 7063 -279"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "3882 7241 -231"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "2476 5092 -239"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "2430 5695 -239"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "2220 6531 -367"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "6146 7236 -215"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "6788 5971 -215"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "9397 6070 -208"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "9156 5550 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "9503 4970 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "9072 3211 -111"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "8046 4098 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "8042 3467 -159"
+classname "bot_sniper_spot"
+}
+{
+spawnflags "1"
+origin "4540 6794 -450"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "2757 7239 -403"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "2611 6691 -502"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "4292 6445 -143"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "5135 6451 -135"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "4875 6989 -167"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "6186 7249 -215"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "6760 5960 -215"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "7454 5781 -429"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "9540 4994 -159"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "9114 4263 -423"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "9055 3216 -111"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "8656 4249 -137"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "8041 3465 -159"
+classname "bot_axis_defence_point"
+}
+{
+spawnflags "1"
+origin "7138 3291 -431"
+classname "bot_axis_defence_point"
+}
+{
+classname "misc_stealth_area"
+origin "2402 4052 -279"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "3146 5544 -571"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2298 6406 -533"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2348 6554 -515"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2341 6630 -505"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2330 6510 -520"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "2678 6510 -524"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "4687 7516 -267"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "6234 6757 -217"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "5422 6561 -135"
+radius "96"
+}
+{
+classname "misc_stealth_area"
+origin "7099 6389 -215"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "8505 3060 -260"
+radius "48"
+}
+{
+classname "misc_stealth_area"
+origin "9887 5541 -340"
+radius "64"
+}
+{
+classname "misc_stealth_area"
+origin "9494 5947 -246"
+radius "128"
+}
+{
+classname "misc_stealth_area"
+origin "8282 4887 -417"
+radius "32"
+}
+{
+classname "misc_stealth_area"
+origin "7963 4848 -388"
+radius "32"
+}
+
+
+
+
+

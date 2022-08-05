@@ -1,0 +1,8 @@
+{
+	class	PC_SOLDIER
+	skill	4
+	weapon	WP_MOBILE_MG42
+	patrol	false
+	mounted	false
+	hunter	true
+}

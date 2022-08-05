@@ -1,0 +1,8 @@
+md3_back,		"models/players/winter/axis/soldier/acc/fieldkit.md3"
+md3_hat,		"models/players/winter/axis/helmet.md3"
+md3_rank,		"models/players/temperate/common/rank_blank.md3"
+
+l_legs,			"models/players/winter/axis/legs1"
+u_body,			"models/players/winter/axis/engineer/body"
+u_rthand,		"models/players/winter/axis/hand"
+u_lfthand,		"models/players/winter/axis/hand"

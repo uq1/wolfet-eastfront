@@ -1,0 +1,9 @@
+{
+	class	PC_ENGINEER
+	skill	2
+	weapon	WP_GRENADE_LAUNCHER
+//	weapon	WP_MP40
+	patrol	false
+	mounted	false
+	hunter	true
+}
